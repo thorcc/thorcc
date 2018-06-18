@@ -1,3 +1,3 @@
 
-console.log("script.js er startet")
+console.log("script.js er startet");
 
