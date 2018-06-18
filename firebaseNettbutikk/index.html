@@ -64,7 +64,6 @@
     <h1>Chat</h1>
 </header>
 <nav>
-<input type="text" id="avsender" value="avsender"><br>
 <input type="text" id="melding" value="melding">
 
 <button id="send" onclick="sendTrykket()">Send</button>
@@ -79,6 +78,7 @@
 <footer>
 
 </footer>
+
 
 <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase.js"></script>
 <script>
@@ -97,29 +97,34 @@
 
 <script>
 
+    var provider, user;
+
+    window.onload = function(){
+        googleLogin();
+    };
+
     let database = firebase.database();
     let meldinger = database.ref("meldinger");
 
 
-    function pushMelding(melding,avsender){
+    function pushMelding(melding){
         let nyMelding = {
-            "avsender": avsender,
+            "avsender": user.displayName,
             "melding" : melding};
 
         meldinger.push(nyMelding);
     }
 
-    let avsender = document.getElementById("avsender");
     let melding = document.getElementById("melding");
     let chat = document.getElementById("chat")
 
 
     function sendTrykket() {
         //chat.innerHTML += "Avsender: " + avsender.value + "<br>" + "Melding: " + melding.value + "<br>";
-        pushMelding(melding.value,avsender.value);
+        pushMelding(melding.value);
         console.log("Melding sendt.");
-        console.log("Avsender " + avsender.value);
-        console.log("Melding " + melding.value);
+        console.log("Avsender: " + user.displayName);
+        console.log("Melding: " + melding.value);
     }
 
     function visMelding(snapShot){
@@ -127,6 +132,21 @@
         chat.innerHTML += `<p> <b>${melding.avsender}:</b> ${melding.melding}</p>`
     }
     meldinger.on("child_added", visMelding)
+
+
+
+    function googleLogin() {
+        provider = new firebase.auth.GoogleAuthProvider();
+
+        firebase.auth().signInWithPopup(provider)
+
+            .then(result => {
+                user = result.user;
+                console.log(user);
+                console.log(user.displayName);
+            })
+
+    }
 
 </script>
 
