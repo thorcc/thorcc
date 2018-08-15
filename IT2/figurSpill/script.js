@@ -165,12 +165,12 @@ function drawBallNumbers(balls) {
     if(balls.length === 0) {
         ctx.fillText("Game Over!", 20, 30);
     } else if(goodBallsEaten === numberOfGoodBalls) {
-        ctx.fillText("You Win! Final score : " + (initialNumberOfBalls - wrongBallsEaten),
+        ctx.fillText("Du vant! Din poengsum ble: " + (initialNumberOfBalls - wrongBallsEaten),
             20, 30);
     } else {
-        ctx.fillText("Balls still alive: " + balls.length, 210, 30);
-        ctx.fillText("Good Balls eaten: " + goodBallsEaten, 210, 50);
-        ctx.fillText("Wrong Balls eaten: " + wrongBallsEaten, 210, 70);
+        ctx.fillText("Levende kuler: " + balls.length, 210, 30);
+        ctx.fillText("Gode kuler spist: " + goodBallsEaten, 210, 50);
+        ctx.fillText("Dårlige kuler spist: " + wrongBallsEaten, 210, 70);
     }
     ctx.restore();
 }
