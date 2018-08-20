@@ -25,4 +25,4 @@ https://www.youtube.com/watch?v=WOn7vau5DEI&list=PL8WTkszC0wYcILfEPOTP9n9CwqtWBq
 
 
 **Kode fra timen**
-[inde.html](../index.html)
+[index.html](../uke34/index.html)
