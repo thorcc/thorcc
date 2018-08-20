@@ -17,6 +17,7 @@ Open in browser
 https://github.com/thorcc/IT2/blob/master/github_pages.md
 
 ## Oppgave 2
+**Min første hjemmeside**
 Lag en nettside hvor du skriver om noe kult du har gjort i sommerferien.
 
 **HTML-tagger**  
