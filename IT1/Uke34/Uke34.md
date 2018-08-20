@@ -24,5 +24,5 @@ Side 11 i Kode1.
 https://www.youtube.com/watch?v=WOn7vau5DEI&list=PL8WTkszC0wYcILfEPOTP9n9CwqtWBqt_Z
 
 
-**Kode fra timen**
+**Kode fra timen**  
 [index.html](../uke34/index.html)
