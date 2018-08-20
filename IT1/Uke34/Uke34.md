@@ -22,3 +22,7 @@ Side 11 i Kode1.
 
 **Youtube-filmer**  
 https://www.youtube.com/watch?v=WOn7vau5DEI&list=PL8WTkszC0wYcILfEPOTP9n9CwqtWBqt_Z
+
+
+**Kode fra timen**
+[inde.html](../index.html)
