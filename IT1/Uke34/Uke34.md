@@ -1,7 +1,7 @@
 # Uke 34
 
 ## Oppgave 1  
-**Oppsett av github og Atom**  
+### Oppsett av github og Atom  
 
 a) Oprett en bruker på [github.com](https://github.com/)  
 b) Lag en repository med navn ```dittGithubBrukernavn.github.io```, husk å huke av for ```initialize with readme```.  
@@ -17,7 +17,7 @@ Open in browser
 https://github.com/thorcc/IT2/blob/master/github_pages.md
 
 ## Oppgave 2
-**Min første hjemmeside**
+### Min første hjemmeside  
 Lag en nettside hvor du skriver om noe kult du har gjort i sommerferien.
 
 **HTML-tagger**  
