@@ -16,7 +16,7 @@ www.atom.io
 **Github.pages**  
 https://github.com/thorcc/IT2/blob/master/github_pages.md
 
-**HTML-tagger**
+**HTML-tagger**  
 Oversikt: https://www.w3schools.com/tags/ref_byfunc.asp   
 Se også s. 11 i Kode1
 
