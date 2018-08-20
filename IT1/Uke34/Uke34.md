@@ -1,6 +1,15 @@
 # Uke 34
 
-## Oppgave  
+## Oppgave 1
+**Oppsett av github og Atom**
+a) Oprett en bruker på [github.com](https://github.com/)
+b) Lag en repository med navn ```dittGithubBrukernavn.github.io```, husk å huke av for ```initialize with readme```.
+c) Last ned og installer [github desktop](https://desktop.github.com/)
+d) Klon din repository med navn ```dittGithubBrukernavn.github.io```.
+e) Last ned og installler [Atom](atom.io)
+
+
+## Oppgave 2
 Lag en nettside hvor du skriver om noe kult du har gjort i sommerferien.
 
 
