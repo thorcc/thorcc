@@ -29,3 +29,6 @@ https://www.youtube.com/watch?v=WOn7vau5DEI&list=PL8WTkszC0wYcILfEPOTP9n9CwqtWBq
 
 **Kode fra timen**  
 [index.html](../Uke34/uke34.html)
+
+**Facebook-gruppe**
+https://www.facebook.com/groups/1773973192710168/
