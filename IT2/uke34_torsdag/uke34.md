@@ -32,4 +32,4 @@ w3school: https://www.w3schools.com/cssref/default.asp
 https://www.youtube.com/watch?v=WOn7vau5DEI&list=PL8WTkszC0wYcILfEPOTP9n9CwqtWBqt_Z
 
 **Kode fra timen**  
-[index.html](../uke34/uke34.html)
+[index.html](../uke34_torsdag/uke34.html)
