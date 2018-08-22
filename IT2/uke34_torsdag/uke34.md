@@ -22,12 +22,12 @@ Bruk både HTML-tagger og CSS.
 ## Lenker  
 
 **HTML-tagger**  
-Inni omslaget på Kode2  
+I omslaget på Kode2  
 w3school: https://www.w3schools.com/tags/ref_byfunc.asp   
 
 
 **CSS-stiler**  
-Inni omslaget på Kode2  
+I omslaget på Kode2  
 w3school: https://www.w3schools.com/cssref/default.asp
 
 
