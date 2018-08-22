@@ -9,7 +9,7 @@ c) Last ned og installer [github desktop](https://desktop.github.com/)
 d) Klon din repository med navn ```dittGithubBrukernavn.github.io```.  
 e) Last ned og installer [webstorm](https://www.jetbrains.com/webstorm/)  
 f) Hent lisens på It's learning  
-g) I webstorm, åpne mappen ```dokumenter/gitHub/dittGithubBrukernavn.github.io```
+g) I webstorm åpne mappen ```dokumenter/gitHub/dittGithubBrukernavn.github.io```
 
 **Github.pages**  
 https://github.com/thorcc/IT2/blob/master/github_pages.md
