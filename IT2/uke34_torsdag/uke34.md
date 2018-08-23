@@ -19,6 +19,7 @@ https://github.com/thorcc/IT2/blob/master/github_pages.md
 Lag en nettside hvor du skriver om noe kult du har gjort i sommerferien.  
 Bruk både HTML-tagger og CSS.
 
+
 **HTML-tagger**  
 Inni omslaget på Kode2  
 w3school: https://www.w3schools.com/tags/ref_byfunc.asp   
