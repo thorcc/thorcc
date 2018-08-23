@@ -1,3 +1,5 @@
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script>
+
 Uke 34
 ---
 ## Oppgave 1  
@@ -9,12 +11,15 @@ d) Legg til tekst på nettsiden ved å bruke javascript-metoder.
 e) Bytt ut bilde med et annet ved bruk av javascript.  
 f) Bruk javascript for å endre font og bakgrunn på nettsiden.  
 
-## Oppgave 2
-### Variabler og konstanter
-Lag et program som finner areal og omkrets av et kvadrat. Finn arealet og omkretsen til et kvadrat som har bredde og høyde 4 cm.  
-a) Skriv resultatet ut i konsollen  
-b) Skriv resultatet på nettsiden din  
-c) La brukeren selv skrive inn lengden på sidene i kvadratet ved å bruke ```prompt(...)```.
+
+
+## Oppgave 3
+### Tallvariabler
+Lag en kode hvor brukeren skriver inn radien til en kule. Koden skal bruke den innskrevne verdien og regne ut:
+a) Omkresten av kulen, O = 2 \pi r  
+b) Volumet av kulen, V = \frac{4 \pi r^3 }{3}
+c) Areal av kulas overflate, O = 4 \pi r^2
+
 
 
 Lenker
