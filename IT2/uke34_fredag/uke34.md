@@ -8,7 +8,8 @@ b) Gi nettsiden ny bakgrunn og ny font.
 c) Legg inn et bilde på nettsiden, sett bilde til å være 300px i bredden.  
 d) Legg til tekst på nettsiden ved å bruke javascript-metoder.  
 e) Bytt ut bilde med et annet ved bruk av javascript.  
-f) Bruk javascript for å endre font og bakgrunn på nettsiden.  
+f) Endre bredden på bilde til å være 150px.
+g) Bruk javascript for å endre font og bakgrunn på nettsiden.  
 
 
 Variabler
