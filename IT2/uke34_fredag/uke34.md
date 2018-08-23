@@ -21,9 +21,9 @@ c) Lag en innbydelse til en klassefest. Den skal inneholde en personlig tekst, h
 ## Oppgave 3
 ### Tallvariabler
 Lag en kode hvor brukeren skriver inn radien til en kule. Koden skal bruke den innskrevne verdien og regne ut:
-a) Omkresten av kulen
-b) Volumet av kulen
-c) Areal av kulas overflate
+a) Omkresten av kulen  
+b) Volumet av kulen  
+c) Areal av kulas overflate  
 
 
 
