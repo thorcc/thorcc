@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="utf-8">
+    <title>Min første JS-nettside</title>
+
+    <style>
+        body{
+            background-color: whitesmoke;
+            font-family: Helvetica, sans-serif;
+        }
+        p{
+            color: dimgray;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Min første nettside</h1>
+
+    <img id="myImg" src="bilder/fisketur.jpg" alt="fisketur">
+
+
+    <script>
+        alert("hei hei"); // lager en alert melding
+        prompt("Hva heter du?"); //lager en innskrivningsboks
+
+        document.write("<p>Dette har jeg skrevet med javascript</p>"); // document.write kan også inneholde html-tagger
+
+        document.body.innerHTML = "dette var fint"; //skriver til hele body, obs: overskriver hele body!
+        document.body.style.background = "white"; // setter bakgrunnsfargen i body til å være svart
+
+
+        document.getElementById("myImg").width = "2000"; // setter bredden på bildet med id "myImg" til 2000
+
+    </script>
+</body>
+</html>
