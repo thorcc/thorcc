@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8f6e60cb-e867-4fa1-8228-7a387190479f" name="Default Changelist" comment="Oppgaver uke 34">
-      <change beforePath="$PROJECT_DIR$/IT2/uke34_torsdag/uke34_2.html" beforeDir="false" afterPath="$PROJECT_DIR$/IT2/uke34_torsdag/uke34_2.html" afterDir="false" />
-    </list>
+    <list default="true" id="8f6e60cb-e867-4fa1-8228-7a387190479f" name="Default Changelist" comment="Oppgaver uke 34" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -17,15 +15,15 @@
     <session id="-319069123">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="7" />
+          <entry key="project.closed" value="8" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.1" value="2" />
           <entry key="project.open.time.2" value="1" />
           <entry key="project.open.time.4" value="1" />
           <entry key="project.open.time.5" value="1" />
-          <entry key="project.open.time.6" value="1" />
+          <entry key="project.open.time.6" value="2" />
           <entry key="project.open.time.8" value="1" />
-          <entry key="project.opened" value="8" />
+          <entry key="project.opened" value="9" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -42,14 +40,14 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="html" value="6668" />
+          <entry key="html" value="6675" />
           <entry key="md" value="3343" />
           <entry key="txt" value="93" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="HTML" value="6668" />
+          <entry key="HTML" value="6675" />
           <entry key="Markdown" value="3343" />
           <entry key="PLAIN_TEXT" value="93" />
         </counts>
@@ -61,8 +59,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/IT2/uke34_fredag/minFørsteJsSide.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
+            <state relative-caret-position="555">
+              <caret line="37" column="7" lean-forward="true" selection-start-line="37" selection-start-column="7" selection-end-line="37" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -121,6 +119,7 @@
         <option value="$PROJECT_DIR$/IT2/uke34_fredag/termo_kalk.html" />
         <option value="$PROJECT_DIR$/IT2/uke34_fredag/variabler.html" />
         <option value="$PROJECT_DIR$/IT2/uke34_fredag/htmlCss.html" />
+        <option value="$PROJECT_DIR$/IT2/uke34_fredag/minFørsteJsSide.html" />
       </list>
     </option>
   </component>
@@ -227,6 +226,7 @@
       <workItem from="1535092174043" duration="424000" />
       <workItem from="1535092725389" duration="9738000" />
       <workItem from="1535293539461" duration="171000" />
+      <workItem from="1535370732996" duration="279000" />
     </task>
     <task id="LOCAL-00001" summary="uke34_torsdag markdown">
       <created>1534945946538</created>
@@ -330,10 +330,11 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33466000" />
+    <option name="totallyTimeSpent" value="33745000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="962" height="830" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21360256" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -472,8 +473,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/IT2/uke34_fredag/minFørsteJsSide.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
+        <state relative-caret-position="555">
+          <caret line="37" column="7" lean-forward="true" selection-start-line="37" selection-start-column="7" selection-end-line="37" selection-end-column="7" />
         </state>
       </provider>
     </entry>
