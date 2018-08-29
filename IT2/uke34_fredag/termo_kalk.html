@@ -10,7 +10,7 @@
 
 
     <script>
-        var fahrenheit = prompt("Skriv inn temperatur i fahrenheit:"); //definerer en variabel fahrenheit med verdien som brukereren skriver i prompt-vinduet.
+        var fahrenheit = Number(prompt("Skriv inn temperatur i fahrenheit:")); //definerer en variabel fahrenheit med verdien som brukereren skriver i prompt-vinduet. VIKTIG: funksjonen Number(..) gjør det brukeren skriver inn om til et tall.
         var celsius = (fahrenheit - 32)/1.8; //definerer en variabel celsius med verdien (fahrenheit - 32)/1.8.
         console.log(celsius); // skriver variabelen celsius ut i konsollen
         document.write(`${fahrenheit} grader fahrenheit er ${celsius.toFixed(2)} grader celsius`); //Skriver ut på nettsiden
