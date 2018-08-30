@@ -4,17 +4,17 @@
 |:---|:-----|:----|:-----|:-----|
 | 33 |17 aug|Velkommen til IT2 |github.pages, HTML-tagger, HTML-elementer og CSS-selektorer| 1.1 - 1.5|
 | 34 |24 aug|Javascript-metoder| DOM (Document Object Model)| 2.1 - 2.4 |
-| 35 |31 aug|Variabler| Variabler, konstanter og datatyper| 3.1 - 3.3 |
-| 36 |7 sep|Andre datatyper og tegning med Javascript | | 3.3 - 3.5 |
-| 37 |14 sep|If-setninger og løkker | | 4.1 - 4.2 |
-| 38 |21 sep|**Prøve kap. 1 - 3** ||
-| 39 |28 sep|Switch og løkker| |4.3 - 4.5|
+| 35 |31 aug|Variabler| Variabler, konstanter og datatyper. | 3.1 - 3.5 |
+| 36 |7 sep|If-setninger og løkker | | 4.1 - 4.2 |
+| 37 |14 sep|Switch og løkker | | 4.3 - 4.5 |
+| 38 |21 sep|**Prøve kap. 1 - 4** ||
+| 39 |28 sep|Funksjoner| |5.1 - 5.2|
 | 40 |5 okt|Høstferie|||
-| 41 |12 okt|Funksjoner| |5.1 - 5.3|
+| 41 |12 okt|Funksjoner| |5.3|
 | 42 |19 okt|Funksjoner| |5.4 - 5.5|
 | 43 |26 okt|Interkativitet og brukergrensesnitt| |6.1 - 6.2|
 | 44 |2 nov|Interkativitet og brukergrensesnitt| |6.3 - 6.4|
-| 45 |9 nov|**Prøve kap. 4-6.** Multimedier| |7.1 - 7.3|
+| 45 |9 nov|**Prøve kap. 5-6.** Multimedier| |7.1 - 7.3|
 | 46 |16 nov|Bilder| |7.3 - 7.4|
 | 47 |23 nov|Vektorgrafikk| |7.5|
 | 48 |30 nov|Video| |7.6 - 7.7|
