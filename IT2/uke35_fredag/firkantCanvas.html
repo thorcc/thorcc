@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+    <meta charset="UTF-8">
+    <title>En firkant i Canvas</title>
+</head>
+<body>
+
+    <canvas id="lerret" width="200" height="140"></canvas> <!-- Lager et canvas-element med ID lerret -->
+
+
+    <script>
+        var lerret = document.getElementById("lerret"); //Lager en variabel som refererer til canvas-elementet
+        var ctx = lerret.getContext("2d"); /* Lager en ny variabel som refererer til innholdet i canvas-elementet
+                                              og angir at tegningen skal være i 2d.*/
+
+        ctx.fillRect(10,10,50,60); /* Tegner en firkant som starter 10px ned og 10px bort fra øverste venstre hjørne,
+                                      og tegner en firkant som er 50x60px. */
+
+    </script>
+</body>
+</html>
+

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+    <meta charset="UTF-8">
+    <title>Variabler og Datatyper</title>
+
+    <style>
+        body{
+            font-family: Helvetica, Futura, sans-serif;
+            background-color: whitesmoke;
+        }
+        header{
+            text-align: center;
+        }
+        main{
+            margin:auto;
+            width:500px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Uke 35 - Fredag</h1>
+        <h2>Variabler og datatyper</h2>
+        <hr>
+    </header>
+
+
+    <main>
+        <p>Denne siden inneholder javascript, sjekk konsollen og kildekoden.</p>
+        <p><b>Windows:</b> Trykk <b>F12</b> for å åpne konsollen i Chrome.</p>
+        <p><b>Mac:</b> Trykk <b>Cmd</b>+<b>Opt</b>+<b>J</b> for å åpne konsollen i Chrome.</p>
+
+
+        <img id="bilde"> <!--Oppretter en tom bilde-tag -->
+
+    </main>
+
+
+
+    <script>
+
+        var imgBilde = document.getElementById("bilde"); // Oppretter en variabel som refererer til img-elemnentet
+
+        var bildeArray = ["Aerial01.jpg", "Aerial02.jpg", "Aerial03.jpg"]; // Oppretter en array med filnavnene til bildene mine.
+
+        var tilfeldigTall = Math.random()*2 // Oppretter en variabel som er et tilfeldig tall mellom 0 og 2.
+
+        var tilfeldigAvrundet = Math.round(tilfeldigTall); //Oppretter en variabel som runder opp tilfeldig tall til nærmeste heltall
+
+        imgBilde.src = bildeArray[tilfeldigAvrundet]; // Setter imgBilde sin source til å være bildeArray[tilfeldigTall]
+
+
+    </script>
+
+</body>
+</html>
+
