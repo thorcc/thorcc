@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8f6e60cb-e867-4fa1-8228-7a387190479f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/IT2/uke35_fredag/firkantCanvas.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IT2/uke35_fredag/tegningMedJavascript.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IT2/uke35_fredag/variablerOgDatatyper.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IT2/uke35_fredag/tegningMedJavascript.html" beforeDir="false" afterPath="$PROJECT_DIR$/IT2/uke35_fredag/tegningMedJavascript.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -20,16 +18,16 @@
     <session id="-319069123">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="12" />
+          <entry key="project.closed" value="13" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.1" value="2" />
           <entry key="project.open.time.2" value="1" />
           <entry key="project.open.time.4" value="3" />
           <entry key="project.open.time.5" value="3" />
           <entry key="project.open.time.6" value="2" />
-          <entry key="project.open.time.7" value="1" />
+          <entry key="project.open.time.7" value="2" />
           <entry key="project.open.time.8" value="1" />
-          <entry key="project.opened" value="14" />
+          <entry key="project.opened" value="15" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -47,16 +45,16 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="html" value="14406" />
+          <entry key="html" value="14411" />
           <entry key="md" value="3492" />
-          <entry key="txt" value="155" />
+          <entry key="txt" value="177" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="HTML" value="14405" />
+          <entry key="HTML" value="14410" />
           <entry key="Markdown" value="3492" />
-          <entry key="PLAIN_TEXT" value="155" />
+          <entry key="PLAIN_TEXT" value="177" />
           <entry key="Scratch" value="1" />
         </counts>
       </usages-collector>
@@ -67,8 +65,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/IT2/uke35_fredag/variablerOgDatatyper.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="389">
-              <caret line="42" lean-forward="true" selection-start-line="42" selection-end-line="42" />
+            <state relative-caret-position="630">
+              <caret line="42" selection-start-line="42" selection-end-line="42" />
             </state>
           </provider>
         </entry>
@@ -76,8 +74,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/IT2/uke35_fredag/tegningMedJavascript.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="147">
-              <caret line="9" column="12" lean-forward="true" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
+            <state relative-caret-position="90">
+              <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -85,7 +83,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/IT2/uke34_fredag/termo_kalk.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
+            <state relative-caret-position="285">
               <caret line="19" column="7" selection-start-line="18" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
             </state>
           </provider>
@@ -267,7 +265,8 @@
       <workItem from="1535620940264" duration="249000" />
       <workItem from="1535621278828" duration="6544000" />
       <workItem from="1535657914862" duration="723000" />
-      <workItem from="1535696339058" duration="6379000" />
+      <workItem from="1535696339058" duration="7019000" />
+      <workItem from="1535903722632" duration="164000" />
     </task>
     <task id="LOCAL-00001" summary="uke34_torsdag markdown">
       <created>1534945946538</created>
@@ -388,15 +387,21 @@
       <option name="project" value="LOCAL" />
       <updated>1535658462104</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="kode fra timen uke35">
+      <created>1535711516487</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1535711516487</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="52437000" />
+    <option name="totallyTimeSpent" value="53241000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21071176" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -451,7 +456,8 @@
     <MESSAGE value="Kode fra timen på fredag" />
     <MESSAGE value="Oppgaver uke 34 - Feil i koden: hadde glemt number." />
     <MESSAGE value="Oppdatert fremdriftsplan" />
-    <option name="LAST_COMMIT_MESSAGE" value="Oppdatert fremdriftsplan" />
+    <MESSAGE value="kode fra timen uke35" />
+    <option name="LAST_COMMIT_MESSAGE" value="kode fra timen uke35" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/IT1/Uke34/Uke34.md">
@@ -553,6 +559,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/IT2/uke35_fredag/variablerOgDatatyper.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="630">
+          <caret line="42" selection-start-line="42" selection-end-line="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/IT2/uke34_fredag/termo_kalk.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="7" selection-start-line="18" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/IT2/uke35_fredag/firkantCanvas.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
@@ -570,24 +590,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/IT2/uke34_fredag/termo_kalk.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="19" column="7" selection-start-line="18" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/IT2/uke35_fredag/variablerOgDatatyper.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="389">
-          <caret line="42" lean-forward="true" selection-start-line="42" selection-end-line="42" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/IT2/uke35_fredag/tegningMedJavascript.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="9" column="12" lean-forward="true" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
+        <state relative-caret-position="90">
+          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
         </state>
       </provider>
     </entry>

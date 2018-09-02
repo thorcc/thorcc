@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="nb" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Uke 36 - tabeller og skjema</title>
+  </head>
+  <body>
+
+    <h2>1.6 Tabeller</h2>
+
+    <table> <!-- En tabell skrives i et table-element -->
+      <thead> <!-- Overskriftene skrives i et thead-element -->
+        <tr> <!-- Overskriftene legges i en egen rad i tabellen -->
+          <th>Artist</th>  <!-- Overskriften for hver kolonne skrives i et th-element -->
+          <th>Album</th>
+          <th>År</th>
+        </tr>
+      </thead>
+      <tbody> <!-- Innholdet i tabellen skrives i et tbody-element -->
+        <tr> <!-- Lager en ny rad -->
+          <td>Malibu</td> <!-- Innholdet i kolonnene skrives i td-elementer -->
+          <td>Anderson .Paak</td>
+          <td>2016</td>
+        </tr>
+        <tr>
+          <td>Thriller</td>
+          <td>Michael Jackson</td>
+          <td>1982</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <hr>
+
+    <h2>1.7 Skjema</h2>
+
+    <h3>Registreringskjema til min konfirmasjon</h3>
+
+    <form action="register.html"> <!-- Oppretter et skjema, og sier at informasjonen til skjemaet skal sendes til registrer.html-->
+      <label>Navn:</label> <!-- Lager en tekst som beksriver innskrivningsfeltet -->
+      <input type="text" name="navn" placeholder="Hva heter du?"> <!--Lager et input-felt av typen tekst -->
+      <label>Alder:</label> <!--Lager en besrkivende tekst-->
+      <input type="number" name="alder" placeholder="Hvor gammel er du?"><!--lager et input felt av typen number for alderen-->
+      <br>
+
+      <label>Hva ønsker du å drikke til maten?</label> <!--Beskrivende tekst-->
+      <br>
+      <input type="radio" value="Brus" name="rbDrikke"> <label>Brus</label> <!--Lager tre radio-buttons.             -->
+      <input type="radio" value="Saft" name="rbDrikke"> <label>Saft</label> <!-- Når radio-buttons har samme navn    -->
+      <input type="radio" value="Vann" name="rbDrikke"> <label>Vann</label> <!-- kan brukeren kun velge en av gangen.-->
+
+      <br>
+      <select name="velgMat" required> <!--lager en nedtrekksmeny, hvor brukeren må ta et valg-->
+        <option value="">Hva ønsker du å spise?</option> <!-- Ved å skrive value="" gjelder ikke denne som et valg-->
+        <option value="pizza">Pizza</option>
+        <option value="torsk">Torsk</option>
+        <option value="taco">Taco</option>
+      </select>
+
+      <br> <!--Linjeskift-->
+      <button type="submit">Send inn</button> <!-- Oppretter en knapp som registrerer informasjonen-->
+    </form>
+
+
+  </body>
+</html>@
