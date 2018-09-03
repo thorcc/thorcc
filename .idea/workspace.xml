@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8f6e60cb-e867-4fa1-8228-7a387190479f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IT2/uke35_fredag/tegningMedJavascript.html" beforeDir="false" afterPath="$PROJECT_DIR$/IT2/uke35_fredag/tegningMedJavascript.html" afterDir="false" />
-    </list>
+    <list default="true" id="8f6e60cb-e867-4fa1-8228-7a387190479f" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -18,7 +15,7 @@
     <session id="-319069123">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="13" />
+          <entry key="project.closed" value="14" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.1" value="2" />
           <entry key="project.open.time.2" value="1" />
@@ -266,7 +263,7 @@
       <workItem from="1535621278828" duration="6544000" />
       <workItem from="1535657914862" duration="723000" />
       <workItem from="1535696339058" duration="7019000" />
-      <workItem from="1535903722632" duration="164000" />
+      <workItem from="1535903722632" duration="167000" />
     </task>
     <task id="LOCAL-00001" summary="uke34_torsdag markdown">
       <created>1534945946538</created>
@@ -398,7 +395,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="53241000" />
+    <option name="totallyTimeSpent" value="53244000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />

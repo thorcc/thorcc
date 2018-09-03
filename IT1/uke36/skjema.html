@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="nb" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Skjema</title>
+  </head>
+  <body>
+
+    <h1>Registreringsskjema til min konfirmasjon</h1>
+
+    <form action="register.html"> <!-- Oppretter et skjema -->
+      <label>Navn:</label> <!-- Lager en beskrivende tekst til input-feletet-->
+
+
+      <input type="text" name="navn" required placeholder="Skriv inn ditt navn"> <!-- lager et input-felt av typen text-->
+      <label>Alder:</label>
+      <input type="number" name="alder" required placeholder="Skriv inn din alder">
+      <br> <!--Linjeskift-->
+
+      <label>Hva ønsker du å spise?</label>
+      <br>
+      <input type="radio" value="taco" name="rbMat"><label>Taco</label>
+      <input type="radio" value="Pizza" name="rbMat"><label>Pizza</label>
+      <input type="radio" value="Torsk" name="rbMat"><label>Torsk</label>
+      <br>
+
+
+      <label>Hva har du lyst til å drikke?</label>
+      <br>
+
+      <select name="velgDrikke" required> <!--Oppretter en nedtrekksmeny-->
+        <option value="">Hva har du lyst til å drikke?</option>
+        <option value="brus">Brus</option>
+        <option value="saft">Saft</option>
+        <option value="vann">Vann</option>
+
+
+      </select>
+
+
+      <br>
+      <button type="submit">Send inn</button>
+    </form>
+
+  </body>
+</html>
