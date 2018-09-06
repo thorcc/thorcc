@@ -3,10 +3,10 @@
 |-----|--------|--------------------------------------------|--------------------|-------------| 
 | 34  | 23.aug | Velkommen til IT2                          | HTML og CSS        | 1.1 - 1.5   | 
 | 35  | 30.aug | Elevsamtaler                               |                    |             | 
-| 36  | 06.sep | Javascript-metoder                         | Javascript-metoder | 2.1 - 2.3   | 
-| 37  | 13.sep | Feilmeldinger og variabler                 |                    | 2.4 - 3.2   | 
-| 38  | 20.sep | Andre datatyper og tegning med Javascript  |                    | 3.3 - 3.5   | 
-| 39  | 27.sep | **Prøve kap. 1-3.** If-setninger og løkker |                    | 4.1 - 4.2   | 
+| 36  | 06.sep | Variabler og hendelser                     | Javascript-metoder | 2.1 - 2.3   | 
+| 37  | 13.sep | Array                                      |                    | 2.4 - 3.2   | 
+| 38  | 20.sep | Array og løkker                            |                    | 3.3 - 3.5   | 
+| 39  | 27.sep | **Prøve kap. 1-4.** If-setninger og løkker |                    | 4.1 - 4.2   | 
 | 40  | 04.okt | Høstferie                                  |                    |             | 
 | 41  | 11.okt | Switch og løkker                           |                    | 4.3 - 4.5   | 
 | 42  | 18.okt | Funksjoner                                 |                    | 5.1 - 5.3   | 
