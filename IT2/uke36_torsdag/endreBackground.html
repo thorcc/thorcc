@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Endre bakgrunnsfarge</title>
+</head>
+<body>
+
+<input id="inpFarge" type="color">
+
+
+<script>
+
+     var inpFarge = document.getElementById("inpFarge");
+
+     /*inpFarge.onkeyup = function(){
+         document.body.style.backgroundColor = inpFarge.value;
+
+     };*/
+
+     inpFarge.onchange = function(){
+        document.body.style.backgroundColor = inpFarge.value;
+     };
+
+         //document.body.style.backgroundColor
+
+</script>
+
+</body>
+</html>

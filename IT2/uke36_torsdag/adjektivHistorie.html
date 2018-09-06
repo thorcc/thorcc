@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+    <input type="text" id="adjektiv1">
+    <input type="text" id="adjektiv2">
+    <input type="text" id="adjektiv3">
+    <input type="text" id="adjektiv4">
+    <input type="text" id="adjektiv5">
+    <input type="text" id="adjektiv6">
+    <input type="text" id="adjektiv7">
+    <input type="text" id="adjektiv8">
+    <input type="text" id="adjektiv9">
+    <input type="text" id="adjektiv10">
+
+
+    <button id="knapp">Lag historie</button>
+
+<script>
+
+    var adjektiv1 = document.getElementById("adjektiv1");
+    var adjektiv2 = document.getElementById("adjektiv2");
+    var adjektiv3 = document.getElementById("adjektiv3");
+    var adjektiv4 = document.getElementById("adjektiv4");
+    var adjektiv5 = document.getElementById("adjektiv5");
+    var adjektiv6 = document.getElementById("adjektiv6");
+    var adjektiv7 = document.getElementById("adjektiv7");
+    var adjektiv8 = document.getElementById("adjektiv8");
+    var adjektiv9 = document.getElementById("adjektiv9");
+    var adjektiv10 = document.getElementById("adjektiv10");
+
+    var knapp = document.getElementById("knapp");
+
+
+    knapp.onclick = function () {
+      var historie = `En ${adjektiv1.value} vinterdag skulle den
+      		          ${adjektiv2.value} IT-klassen på overnattingstur.
+      		          Alle de ${adjektiv3.value} elevene hadde med seg
+      		          langrennsski, soveposer og en ${adjektiv4.value}
+      		          sekk med mat og varmt tøy.  Alle gledet seg til denne
+      		          ${adjektiv5.value} turen. Janne hadde på seg en
+      		          ${adjektiv6.value} ny lue, og den
+      		          ${adjektiv7.value} Tormod hadde på seg en jakke. Den 		 Anne og 		 Sabrina hadde nye langrennsski som de hadde fått til jul`
+        document.write(historie);
+    };
+
+
+
+    //En 			 vinterdag skulle den 			 IT-klassen på overnattingstur.  Alle de 			 elevene hadde med seg langrennsski, soveposer og en 		 sekk med mat og varmt tøy.  Alle gledet seg til denne 	 turen. Janne hadde på seg en 		 ny lue, og den 		 Tormod hadde på seg en   		 jakke. Den 		 Anne og 		 Sabrina hadde nye langrennsski som de hadde fått til ju
+
+</script>
+
+</body>
+</html>
