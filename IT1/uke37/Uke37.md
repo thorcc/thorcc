@@ -1,7 +1,8 @@
 # Uke 37 - CSS
 
-### Oppgave
-Lag et nettsted som handler om et tema du jobber med i et annet fag på skolen.
+### Oppgaver
+* Se filmene som ligger under ressurser. 
+* Lag et nettsted som handler om et tema du jobber med i et annet fag på skolen.
 
 ## Krav
 * Nettstedet skal inneholde minst tre forskjellige nettsider.
@@ -9,7 +10,6 @@ Lag et nettsted som handler om et tema du jobber med i et annet fag på skolen.
     * Navigasjonsbar
     * Tekst
     * Bilder
-    * Footer (bunntekst)
     * Endret font og bakgrunn
 
 ## Ressurser
