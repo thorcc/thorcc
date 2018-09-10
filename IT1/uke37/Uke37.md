@@ -10,7 +10,6 @@
     * Navigasjonsbar
     * Tekst
     * Bilder
-    * Footer (bunntekst)
     * Endret font og bakgrunn
 
 ## Ressurser
