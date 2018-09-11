@@ -1,0 +1,31 @@
+/* ---Selektorer---*/
+
+/* En selektor sier hvilket HTML-element stilen
+   skal gjelde for */
+
+/* Denne stilen gjelder for body-elementet */
+body{
+  color:white;
+  background-color: grey;
+  font-family: helvetica, arial, sans-serif;
+}
+
+
+/* Om man ønsker å gjøre samme endring på
+   flere elementer kan selektorene ramses
+   opp med komma. */
+p,h1,h2,h3 {
+  color: lightblue;
+}
+
+
+/* Hashtag-selektor velger ett enkelt
+   HTML-element med en id: */
+#idNavn{
+  padding: 10px;
+}
+/* punkt-selektor velger flere
+   HTML-elementer med class: */
+.klasseNavn{
+  text-align: center;
+}

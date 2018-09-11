@@ -1,0 +1,42 @@
+body{ /* Endrer stiler på body */
+  background-color: #e9e9e9; /* Endrer bakgrunnsfarge. #e9e9e9 er fargekoden til en lysgrå-fagrge.*/
+  font-family: Helvetica, Aerial, sans-serif; /* Velger hvilken font nettsiden skal ha, hvis brukeren ikke den første fonten på pcen sin velger den den neste på listen osv.*/
+  color: #323232; /*Velger en skriftfarge som gjelder for hele siden*/
+}
+
+header, main{ /* Endrer stil på både header og main på likt, dette kommer vi tilbake til neste time */
+  width:60%; /*Sier at header og main skal ha en bredde på 60% av nettleser-vinduet.*/
+  margin: auto; /*Midtstiller, ved å si at marginen på venstre og høyre side av header og main skal være like stor.*/
+}
+
+img{ /*Endrer stil på alle bildene på nettsiden */
+  width: 300px; /*Setter en bildestørrelse på 300 piksler*/
+  display: block; /* Sier at bildene skal vises som blokk-elementer, dette må gjøres for at bildene skal sentreres på nettsiden.*/
+  margin: auto; /* Midstiller bildene ved å sette margene til auto, dette gjør at det blir like stor marg på høyre og venstre side av bildene.*/
+}
+/*--- Navigasjonsbaren ---*/
+
+ul{ /* Endrer stil på alle ul-elementer*/
+  list-style-type: none; /* Fjerner kulepunktene fra listen, ved å sette listestil-typen til å være none.*/
+  padding: 0; /*Fjerner "luften" rundt listen, gjør at den kommer helt til venstre i header-elementet.*/
+}
+li{ /* Endrer stil på alle li-elementer*/
+  display: inline; /* Sier at listeelementene skal ligge på linje*/
+}
+li a{ /*Endrer stil på a-elementer(linker) som ligger inne i li-elementer. Dette kommer vi nærmere tilbake til neste gang.
+        Dette blir selve knappene i Navigasjonsbaren.*/
+    text-decoration: none; /*Fjerner understrekene på linkene*/
+    background-color: #f06505; /*Setter en bakgrunnsfarge på knappene*/
+    padding-left: 30px; /* Legger litt luft inni knappen, mellom teksten og kanten på knappen */
+    padding-right: 30px; /* Legger litt luft inni knappen, mellom teksten og kanten på knappen */
+    padding-top: 10px; /* Legger litt luft inni knappen, mellom teksten og kanten på knappen */
+    padding-bottom: 10px; /* Legger litt luft inni knappen, mellom teksten og kanten på knappen */
+    border-radius: 5px; /* Avrunder kantene på knappen */
+    font-weight: bold; /* Lager fet skrift */
+    color: white;
+
+}
+
+li a:hover{ /*Endrer stil på a-elementer som ligger inne i li-elementer som musen holdes over. Denne skal vi se på neste gang.*/
+    background-color: #ebe584; /* Endrer fargen på knappene når musepekeren er over de */
+}
