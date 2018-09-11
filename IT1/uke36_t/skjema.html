@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="nb" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Skjema</title>
+  </head>
+  <body>
+
+    <h1>Skjema</h1>
+
+    <form action="register.html">
+      <label><h2>Registrering til min konfirmasjon</h2></label>
+
+      <label for="inputNavn">Navn:</label>
+      <input id="inputNavn" type="text" name="navn" placeholder="Skriv inn ditt navn" required>
+
+      <label for="inputAlder">Alder:</label>
+      <input id="inputAlder" type="number" name="alder" placeholder="Skriv inn din alder" required>
+
+      <br>
+      <label>Hva ønsker du å spise?</label>
+      <br>
+      <input id="rbTaco" type="radio" name="rbMat" value="taco"><label for="rbTaco">Taco</label>
+      <input id="rbPizza" type="radio" name="rbMat" value="pizza"><label for="rbPizza">Pizza</label>
+      <input id="rbFisk" type="radio" name="rbMat" value="fisk"><label for="rbFisk">Fisk</label>
+
+      <br>
+
+      <button type="sumbit" name="registreingsKnapp">Send inn</button>
+
+    </form>
+
+  </body>
+</html>

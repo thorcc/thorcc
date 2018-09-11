@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Quiz</title>
+</head>
+<body>
+
+    <p>Hva er hovedstaden i Mongolia?</p>
+    <input type="text" id="inpSvar" placeholder="Skriv inn ditt svar her">
+    <button id="btnSvar">Send inn</button>
+    <div id="divSvar"></div>
+
+
+    <script>
+
+        //--- Referanser ----
+
+        var inpSvar = document.getElementById("inpSvar"); //variabel som refererer til inpSvar
+        var btnSvar = document.getElementById("btnSvar"); // ref. til knappen
+        var divSvar = document.getElementById("divSvar"); // ref. til divSvar
+
+        //----- Else --------
+
+        btnSvar.onclick = function(){ //funksjon som kjører hvis knappen trykkes på
+                if(inpSvar.value === "Ulan Bator" || inpSvar.value === "Ulanbataar"){ // hvis brukeren skriver Ulan Bator eller Ulanbataar i input-feltet kjør denne koden:
+                   divSvar.innerHTML = "Gratulerer! Du er veldig flink!"; //Skriver tekst til divSvar sin indre HTML
+                }
+                else { //kode som kjører hvis brukeren ikke skriver Ulan Bator eller Ulanbataar:
+                   divSvar.innerHTML = "Det var feil! Du er dårlig i geografi."
+                }
+        };
+
+        //----- Else-if------
+
+        btnSvar.onclick = function() { //funksjon som kjører hvis knappen trykkes på
+            if (inpSvar.value === "Ulan Bator") {
+                divSvar.innerHTML = "Det var riktig, du skriver på norsk";
+            }
+            else if (inpSvar.value === "Ulanbataar") {
+                divSvar.innerHTML = "Det var riktige, du skriver på mongolsk"
+            } else {
+                divSvar.innerHTML = "FEIL!"
+            }
+        }
+
+    </script>
+</body>
+</html>
+
+
+
+
+
+
