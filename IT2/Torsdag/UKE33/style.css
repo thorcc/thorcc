@@ -1,0 +1,26 @@
+
+body{
+    background-color: #0d99a5;
+}
+
+header{
+    background-color: green;
+}
+h1 {
+    background-color: red;
+}
+
+p{
+    background-color: green;
+}
+
+#paris{
+    background-color: orange;
+}
+.rosa{
+    background-color: pink;
+}
+
+figure{
+    background-color: black;
+}
