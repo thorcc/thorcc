@@ -27,10 +27,16 @@ Lag en nettside med et bilde og en knapp. Lag kode slik at når brukeren trykker
 [Fagtekst operatorer](https://github.com/thorcc/IT2/blob/master/Fagtekster/Operatorer.md)  
 [Fagtekst if-setninger (tester)](https://github.com/thorcc/IT2/blob/master/Fagtekster/Tester.md)  
 [Youtube if-setninger](https://www.youtube.com/watch?v=knb51nt6wC8&list=PLJC9cL8YfNXo_CUCsG17Nr5e1Zv8jm9HW)
-### Oppgave 4 - Spørreprogram
+
+### Oppgave 4 - Berg og dalbane
+1. For å ta Thundercoaster i Tusenfryd må man være over 100cm. Skriv en if-setning som sjekker om en person er høy nok.
+2. Mens for å ta Ragnarok må man være over 100cm og under 180cm. Skriv en if-setning som tester om en person kan kjøre med Ragnarok. 
+
+### Oppgave 5 - Spørreprogram
 Lag et spørreprogram som stiler spørsmål du velger selv.
 1. Hvis brukeren svarer riktig skal teksten "Du svarte riktig!" vises. Er svaret feil skal det stå "Du svarte feil!".
 2. Legg inn et bilde som skal vises hvis svaret er riktig og et annet bilde som skal vises hvis svaret er feil.
 
-### Oppgave 5 - Kalkulator
+### Oppgave 6 - Kalkulator
 Lag en kalkulator. Bruk tre input-felt og la brukeren skrive inn ```tall1```, ``tall2`` og ``regneart`` (+,-,*,/).
+
