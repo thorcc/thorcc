@@ -1,6 +1,7 @@
-# Oppgaver uke 37
+# Uke 37
 
 ## Datatyper
+[Fagtekst variabler og datatyper](https://github.com/thorcc/IT2/blob/master/Fagtekster/Variabler.md)
 ### Oppgave 1 - Input og number
 
 
@@ -29,6 +30,10 @@ Lag en nettside med et bilde og en knapp. Lag kode slik at når brukeren trykker
 **Hint:** Lag en array med adressen til bildene, og bruk metodene Math.random() og Math.floor()
 
 ## If-setninger
+
+### Ressurser
+[Fagtekst if-setninger (tester)](https://github.com/thorcc/IT2/blob/master/Fagtekster/Tester.md)  
+[Youtube if-setninger](https://www.youtube.com/watch?v=knb51nt6wC8&list=PLJC9cL8YfNXo_CUCsG17Nr5e1Zv8jm9HW)
 ### Oppgave 5 - Spørreprogram
 Lag et spørreprogram som stiler spørsmål du velger selv.
 1. Hvis brukeren svarer riktig skal teksten "Du svarte riktig!" vises. Er svaret feil skal det stå "Du svarte feil!".
