@@ -1,27 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8f6e60cb-e867-4fa1-8228-7a387190479f" name="Default Changelist" comment="kode fra timen uke36">
+    <list default="true" id="8f6e60cb-e867-4fa1-8228-7a387190479f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/IT2/Fredag/uke37/switch.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IT2/UKE33/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/IT2/UKE33/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/IT2/uke34_fredag/bilder/cover.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/IT2/uke34_fredag/bilder/fisketur.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/IT2/uke34_fredag/matteJs.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/IT2/uke34_fredag/minFørsteJsSide.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/IT2/uke34_fredag/termo_kalk.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/IT2/uke34_fredag/uke34.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/IT2/uke34_fredag/variabler.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/IT2/uke35_fredag/Aerial01.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/IT2/uke35_fredag/Aerial02.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/IT2/uke35_fredag/Aerial03.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/IT2/uke35_fredag/firkantCanvas.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/IT2/uke35_fredag/tegningMedJavascript.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/IT2/uke35_fredag/variablerOgDatatyper.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/IT2/uke36_fredag/endreBakgrunn.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/IT2/uke36_fredag/enkelKalkulator.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/IT2/uke36_fredag/firkant.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/IT2/uke36_fredag/kalkulator.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/IT2/Fredag/uke37/oppgaver.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/IT2/Fredag/uke37/uke37.md" beforeDir="false" afterPath="$PROJECT_DIR$/IT2/Fredag/uke37/uke37.md" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -53,32 +37,32 @@
         <counts>
           <entry key="breddePåNettsiden" value="1" />
           <entry key="css" value="4" />
-          <entry key="html" value="68" />
-          <entry key="md" value="20" />
+          <entry key="html" value="69" />
+          <entry key="md" value="21" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CSS" value="4" />
-          <entry key="HTML" value="68" />
-          <entry key="Markdown" value="20" />
+          <entry key="HTML" value="69" />
+          <entry key="Markdown" value="21" />
           <entry key="Scratch" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="css" value="304" />
-          <entry key="html" value="32727" />
-          <entry key="md" value="10161" />
-          <entry key="txt" value="267" />
+          <entry key="html" value="33075" />
+          <entry key="md" value="10235" />
+          <entry key="txt" value="273" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="304" />
-          <entry key="HTML" value="32726" />
-          <entry key="Markdown" value="10161" />
-          <entry key="PLAIN_TEXT" value="267" />
+          <entry key="HTML" value="33074" />
+          <entry key="Markdown" value="10235" />
+          <entry key="PLAIN_TEXT" value="273" />
           <entry key="Scratch" value="1" />
         </counts>
       </usages-collector>
@@ -89,24 +73,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/IT2/Torsdag/uke37/hendelser.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="213">
-              <caret line="10" column="9" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/IT2/Torsdag/uke37/oppgave1.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="365">
-              <caret line="21" column="32" selection-start-line="21" selection-start-column="32" selection-end-line="21" selection-end-column="32" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/IT2/Torsdag/uke37/arrayOgObject.html">
           <provider selected="true" editor-type-id="text-editor">
@@ -146,8 +112,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/IT2/Torsdag/uke37/oppgave4.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="319">
-              <caret line="11" column="96" lean-forward="true" selection-start-line="11" selection-start-column="96" selection-end-line="11" selection-end-column="96" />
+            <state relative-caret-position="196">
+              <caret line="7" selection-start-line="7" selection-end-line="7" />
             </state>
           </provider>
         </entry>
@@ -161,12 +127,21 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/IT2/Fredag/uke37/switch.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="615">
+              <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/IT2/Fredag/uke37/uke37.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="90">
-                <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+              <first_editor relative-caret-position="-34">
+                <caret line="5" column="1" lean-forward="true" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
               </first_editor>
               <second_editor />
             </state>
@@ -198,7 +173,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/IT2/uke34_torsdag/uke34_2.html" />
         <option value="$PROJECT_DIR$/IT2/uke34_fredag/uke34.md" />
         <option value="$PROJECT_DIR$/IT2/uke34_fredag/matteJs.html" />
         <option value="$PROJECT_DIR$/IT2/uke34_fredag/variabler.html" />
@@ -234,7 +208,6 @@
         <option value="$PROJECT_DIR$/IT1/uke37/reformasjonen.html" />
         <option value="$PROJECT_DIR$/IT1/uke37/css/style.css" />
         <option value="$PROJECT_DIR$/IT2/Torsdag/uke37/operatorer.md" />
-        <option value="$PROJECT_DIR$/IT2/Fredag/uke37/oppgaver.md" />
         <option value="$PROJECT_DIR$/IT2/Torsdag/uke37/if-setninger.html" />
         <option value="$PROJECT_DIR$/IT2/Torsdag/uke37/quiz.html" />
         <option value="$PROJECT_DIR$/IT2/Torsdag/uke37/Uke37.md" />
@@ -248,6 +221,8 @@
         <option value="$PROJECT_DIR$/IT2/Torsdag/uke37/if-setninger2.html" />
         <option value="$PROJECT_DIR$/IT2/Fredag/uke36_fredag/endreBakgrunn.html" />
         <option value="$PROJECT_DIR$/IT2/Torsdag/uke37/oppgave4.html" />
+        <option value="$PROJECT_DIR$/IT2/Fredag/uke37/switch.html" />
+        <option value="$PROJECT_DIR$/IT2/Fredag/uke37/oppgaver.md" />
         <option value="$PROJECT_DIR$/IT2/Fredag/uke37/uke37.md" />
       </list>
     </option>
@@ -412,7 +387,7 @@
       <workItem from="1536734899836" duration="12091000" />
       <workItem from="1536776340795" duration="2738000" />
       <workItem from="1536781471522" duration="31000" />
-      <workItem from="1536819110718" duration="13291000" />
+      <workItem from="1536819110718" duration="14333000" />
     </task>
     <task id="LOCAL-00001" summary="uke34_torsdag markdown">
       <created>1534945946538</created>
@@ -610,11 +585,25 @@
       <option name="project" value="LOCAL" />
       <updated>1536836906957</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="uke 37">
+      <created>1536850248330</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1536850248330</updated>
+    </task>
+    <task id="LOCAL-00030" summary="uke 37">
+      <created>1536850307297</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1536850307297</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="115774000" />
+    <option name="totallyTimeSpent" value="116816000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -690,16 +679,10 @@
     <MESSAGE value="kode fra timen uke37" />
     <MESSAGE value="uke37" />
     <MESSAGE value="if-setninger" />
-    <option name="LAST_COMMIT_MESSAGE" value="if-setninger" />
+    <MESSAGE value="uke 37" />
+    <option name="LAST_COMMIT_MESSAGE" value="uke 37" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/IT2/Fredag/uke34_fredag/termo_kalk.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="7" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/IT2/Fredag/uke35_fredag/tegningMedJavascript.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -866,16 +849,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/IT2/Fredag/uke37/oppgaver.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="285">
-            <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/IT2/Torsdag/uke36_torsdag/breddePåFirkant.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="465">
@@ -952,17 +925,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/IT2/Torsdag/uke37/if-setninger.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="44" lean-forward="true" selection-start-line="44" selection-end-line="44" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/IT2/Torsdag/uke37/if-setninger2.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-126">
           <caret line="22" column="6" lean-forward="true" selection-start-line="22" selection-start-column="6" selection-end-line="22" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/IT2/Torsdag/uke37/oppgave4.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
         </state>
       </provider>
     </entry>
@@ -973,18 +946,33 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/IT2/Torsdag/uke37/oppgave4.html">
+    <entry file="file://$PROJECT_DIR$/IT2/Fredag/uke37/switch.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="319">
-          <caret line="11" column="96" lean-forward="true" selection-start-line="11" selection-start-column="96" selection-end-line="11" selection-end-column="96" />
+        <state relative-caret-position="615">
+          <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/IT2/Torsdag/uke37/if-setninger.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="44" lean-forward="true" selection-start-line="44" selection-end-line="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/IT2/Fredag/uke37/oppgaver.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/IT2/Fredag/uke37/uke37.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="90">
-            <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+          <first_editor relative-caret-position="-34">
+            <caret line="5" column="1" lean-forward="true" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
           </first_editor>
           <second_editor />
         </state>
