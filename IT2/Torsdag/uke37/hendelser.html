@@ -33,6 +33,10 @@
             var y = event.clientY; // lager en variabel y som henter y-koordinaten(pikselen) til musen
             console.log("x= " + x); // skriver ut x-koordinaten i konsollen
             console.log("y= " + y); // skriver ut y-koordinaten i konsollen
+            
+            // sett pekeren i midten
+            x = x - (firkant.offsetWidth / 2)
+            y = y - (firkant.offsetHeight / 2)
 
             firkant.style.marginLeft = x + "px"; // endrer verdien på marginLeft til firkanten
             firkant.style.marginTop = y + "px"; // endrer verdien på marginRight til firkanten
