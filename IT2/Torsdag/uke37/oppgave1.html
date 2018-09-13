@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+ <button id="knapp">Klikk her</button>
+
+ <input id="inputFelt" type="text" placeholder="Skriv inn en ny film">
+
+ <script>
+
+     var filmListe = ["Pulp Fiction", "The Darjeeling Limited", "Fight Club"];
+
+     var knapp = document.getElementById("knapp");
+     var inputFelt = document.getElementById("inputFelt");
+
+
+     knapp.onclick = function(){
+         filmListe.push(inputFelt.value);
+         console.log(filmListe);
+         document.write(filmListe);
+     };
+
+
+
+
+ </script>
+
+</body>
+</html>

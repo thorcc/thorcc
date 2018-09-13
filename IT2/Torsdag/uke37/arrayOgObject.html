@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Array og object</title>
+</head>
+<body>
+
+
+<script>
+
+    // -----  Array ------------
+    var minArray = [1, "thor", 45, 634, "jajaja"]; // oppretter en array, som er en liste med "ting"
+
+    console.log(minArray[2]); // henter ut elementet med indeksen 2, som er det tredje elementet i listen
+    minArray.push("Hallo!"); // legger til "Hallo!" i minArray
+    console.log(minArray); // Skriver ut minArray i konsollen
+
+    var minAndreArray = [minArray, 23, "hallo"]; // definerer en variabel minAndreArray som er en array.
+    console.log(minAndreArray); // Skriver ut minAndreArray i konsollen
+
+    console.log(minAndreArray[0][1]); //For å hente ut en verdi fra en array som ligger inne i en array bruker vi to indekser.
+    // --------------------------
+
+    //---- Object ----
+
+    var megSelv = { // Oppretter et ojekt med variabelnavn megSelv
+        navn: "Thor Christian", // definerer en egenskap navn, med en verdi "Thor Christian"
+        jobb: "It-lærer" // definerer en egenskap jobb, med verdi "it-lærer".
+    };
+
+    console.log(megSelv.navn); // Skriver ut verdien til egenskapen navn i objektet megSelv til konsollen
+
+    megSelv.jobb = "Student"; //bytter verdi på egenskapen jobb i objektet megSelv
+
+
+
+</script>
+
+</body>
+</html>
