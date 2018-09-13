@@ -13,7 +13,7 @@ Lag et program som sjekker:
 
 Brukeren skal kunne skrive inn tall eller navn i et input-felt, og det skal komme en tekst på siden som viser resulatet av sjekken.
 
-#####Oppgave 2 - Switch-setning
+##### Oppgave 2 - Switch-setning
 1. Lag en switch-setning med variabelen mobil. 
 La brukeren skrive inn hvilken mobil han har i et input-felt, og når brukeren trykker på en knapp skal det skrives ut en kort beskrivelse av brukerens mobilmerke på nettsiden.
 2. Oppdater koden i oppgave 1 slik at bakgrunnsfargen endrer seg til de ulike mobilmerkene.
