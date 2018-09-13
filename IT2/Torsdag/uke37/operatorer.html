@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Operatorer</title>
+</head>
+<body>
+
+
+<script>
+
+    var minVariabel, minAndreVariabel, minTredjeVariabel; // oppretter tre variabler på samme linje, ved å skille dem med komma
+
+    // ---- Tilordningsoperatorer ----
+
+    minVariabel = 23; // Vi sier at vi tilordner minVariabel verdien 23, ved å bruke en tilordningsvariabel.
+
+    minVariabel = 42; // vi tilordner minVariabel en ny verdi 42.
+
+    minVariabel += 3; // minVariabel = minVariabel +3;
+    minVariabel -= 2;
+    minVariabel *= 4;
+    minVariabel /= 6;
+
+    // ----------------------------
+
+    // ------- Sammenlikningsoperatorer ----
+
+    var tall1 = 3;
+    var tall2 = 5;
+    var tall3 = "3";
+
+    console.log(tall1 == tall3); // Denne gir true, fordi den sjekker om verdiene er like
+    console.log(tall1 === tall3); // Denne gir false, fordi === sjekker om de er HELT LIKE (lik datatype og verdi)
+    console.log(tall1 > tall2); // Denne gir false, fordi tall2 er større enn tall1
+    console.log(tall1 < tall2); // Denne gir true, fordi tall2 er større enn tall1
+
+    console.log(tall1 !== tall2); //Denne gir true, fordi de helt er ulike. Altså ulik verdi eller ulik datatype
+
+    console.log(tall1 != tall3); // Denne gir false, fordi de har samme verdi
+    console.log(tall1 !== tall3);//Denne gir true, fordi de har forskjellig datatype
+
+
+</script>
+
+</body>
+</html>
