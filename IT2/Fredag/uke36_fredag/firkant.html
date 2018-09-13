@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>En firkant</title>
+
+
+    <style>
+
+        #minFirkant{
+            background-color: PeachPuff;
+            width: 200px;
+            height: 200px;
+            transition: 1s;
+            box-shadow: dimgray 10px 10px;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <input type="range" id="inpStorrelse" min="0" max="1024">
+    <input type="range" id="skyggeX" min="0" max="1024">
+    <input type="range" id="skyggeY" min="0" max="1024">
+
+    <div id="minFirkant"></div>
+
+    <span id="mousePos"></span>
+
+
+    <script>
+
+        var inpStorrelse = document.getElementById("inpStorrelse");
+        var minFirkant = document.getElementById("minFirkant");
+
+
+        var skyggeX = document.getElementById("skyggeX");
+        var skyggeY = document.getElementById("skyggeY");
+
+        inpStorrelse.onmousemove = function(){
+            minFirkant.style.width = inpStorrelse.value + "px";
+
+
+
+
+        };
+        skyggeX.onmousemove = function(){
+            minFirkant.style.boxShadow = `10px 20px ${skyggeX.value} red`;
+
+
+        }
+
+        /*window.onmousemove = function(){
+                  mousePos.innerHTML = document.pos.value;
+
+        }   */
+    </script>
+
+</body>
+</html>

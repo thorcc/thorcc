@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kalkulator</title>
+</head>
+<body>
+
+
+<input id="tall1" type="number"> <!-- Lager tre input-felt -->
+<input id="tall2" type="number">
+<input id="tegn" type="text">
+
+<button id="knapp">Regn ut</button>
+
+<div id="resultat"></div>
+
+
+<script>
+
+    //--- Referanser --
+
+    var tall1 = document.getElementById("tall1");
+    var tall2 = document.getElementById("tall2");
+    var tegn = document.getElementById("tegn");
+    var knapp = document.getElementById("knapp");
+    var resultat = document.getElementById("resultat");
+
+    //-----
+
+    knapp.onclick = function(){
+
+        if(tegn.input === "+"){ // Denne koden skal kjøres om tegn.input === +
+           resultat.innerHTML = Number(tall1.value) + Number(tall2.value);
+           console.log("pluss")
+        }
+        else if(tegn.input === "-"){
+            resultat.innerHTML = Number(tall1.value) - Number(tall2.value);
+        }
+        else if(tegn.input === "*"){
+            resultat.innerHTML = Number(tall1.value) * Number(tall2.value);
+        }
+        else if(tegn.input === "/"){
+            resultat.innerHTML = Number(tall1.value) / Number(tall2.value);
+        }
+    };
+</script>
+
+</body>
+</html>
