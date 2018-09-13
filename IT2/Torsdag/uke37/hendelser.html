@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Firkant som følger musen</title>
+
+    <style>
+
+        body{
+            cursor: none; /* Fjerner musepekerern */
+        }
+
+        #firkant{
+            background-color: #0d99a5;
+            height: 200px;
+            width: 200px;
+            border-radius: 50%;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <div id="firkant"></div> <!-- Oppretter et div-element som skal være firkanten -->
+
+    <script>
+
+        var firkant = document.getElementById("firkant"); // Lager en referanse til firkanten
+
+        document.onmousemove = function(){ // "Lytter" etter hendelsen onmousemove på hele dokumentet, hvis musen beveger seg kjøres denne koden:
+            var x = event.clientX; // lager en variabel x som henter x-koordinaten(pikselen) til musen
+            var y = event.clientY; // lager en variabel y som henter y-koordinaten(pikselen) til musen
+            console.log("x= " + x); // skriver ut x-koordinaten i konsollen
+            console.log("y= " + y); // skriver ut y-koordinaten i konsollen
+
+            firkant.style.marginLeft = x + "px"; // endrer verdien på marginLeft til firkanten
+            firkant.style.marginTop = y + "px"; // endrer verdien på marginRight til firkanten
+        }
+
+    </script>
+
+</body>
+</html>
