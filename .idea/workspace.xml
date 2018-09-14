@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8f6e60cb-e867-4fa1-8228-7a387190479f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/IT2/Fredag/uke37/switch.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IT2/Fredag/uke37/oppgaver.md" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/IT2/Fredag/uke37/uke37.md" beforeDir="false" afterPath="$PROJECT_DIR$/IT2/Fredag/uke37/uke37.md" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -20,17 +18,17 @@
     <session id="-319069123">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="25" />
+          <entry key="project.closed" value="26" />
           <entry key="project.open.time.0" value="4" />
           <entry key="project.open.time.1" value="2" />
           <entry key="project.open.time.2" value="2" />
           <entry key="project.open.time.3" value="2" />
           <entry key="project.open.time.4" value="7" />
-          <entry key="project.open.time.5" value="4" />
+          <entry key="project.open.time.5" value="5" />
           <entry key="project.open.time.6" value="3" />
           <entry key="project.open.time.7" value="2" />
           <entry key="project.open.time.8" value="1" />
-          <entry key="project.opened" value="27" />
+          <entry key="project.opened" value="28" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -53,7 +51,7 @@
         <counts>
           <entry key="css" value="304" />
           <entry key="html" value="33075" />
-          <entry key="md" value="10235" />
+          <entry key="md" value="11327" />
           <entry key="txt" value="273" />
         </counts>
       </usages-collector>
@@ -61,7 +59,7 @@
         <counts>
           <entry key="CSS" value="304" />
           <entry key="HTML" value="33074" />
-          <entry key="Markdown" value="10235" />
+          <entry key="Markdown" value="11327" />
           <entry key="PLAIN_TEXT" value="273" />
           <entry key="Scratch" value="1" />
         </counts>
@@ -72,12 +70,12 @@
     <favorites_list name="thorcc.github.io" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/IT2/Torsdag/uke37/arrayOgObject.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="399">
-              <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
+            <state relative-caret-position="540">
+              <caret line="36" selection-start-line="36" selection-end-line="36" />
             </state>
           </provider>
         </entry>
@@ -85,8 +83,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/IT2/Torsdag/uke37/oppgave3.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="495">
-              <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+            <state relative-caret-position="360">
+              <caret line="24" selection-start-line="24" selection-end-line="24" />
             </state>
           </provider>
         </entry>
@@ -94,8 +92,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/IT2/Torsdag/uke37/operatorer.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="42" lean-forward="true" selection-start-line="42" selection-end-line="42" />
+            <state relative-caret-position="630">
+              <caret line="42" selection-start-line="42" selection-end-line="42" />
             </state>
           </provider>
         </entry>
@@ -103,8 +101,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/IT2/Torsdag/uke37/if-setninger2.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-126">
-              <caret line="22" column="6" lean-forward="true" selection-start-line="22" selection-start-column="6" selection-end-line="22" selection-end-column="6" />
+            <state relative-caret-position="330">
+              <caret line="22" column="6" selection-start-line="22" selection-start-column="6" selection-end-line="22" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -112,7 +110,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/IT2/Torsdag/uke37/oppgave4.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="196">
+            <state relative-caret-position="105">
               <caret line="7" selection-start-line="7" selection-end-line="7" />
             </state>
           </provider>
@@ -140,8 +138,8 @@
         <entry file="file://$PROJECT_DIR$/IT2/Fredag/uke37/uke37.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="-34">
-                <caret line="5" column="1" lean-forward="true" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
+              <first_editor relative-caret-position="240">
+                <caret line="16" column="16" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
               </first_editor>
               <second_editor />
             </state>
@@ -151,7 +149,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/IT2/Torsdag/uke37/if-setninger.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="418">
+            <state relative-caret-position="660">
               <caret line="44" lean-forward="true" selection-start-line="44" selection-end-line="44" />
             </state>
           </provider>
@@ -387,7 +385,8 @@
       <workItem from="1536734899836" duration="12091000" />
       <workItem from="1536776340795" duration="2738000" />
       <workItem from="1536781471522" duration="31000" />
-      <workItem from="1536819110718" duration="14333000" />
+      <workItem from="1536819110718" duration="14786000" />
+      <workItem from="1536905593365" duration="596000" />
     </task>
     <task id="LOCAL-00001" summary="uke34_torsdag markdown">
       <created>1534945946538</created>
@@ -599,11 +598,25 @@
       <option name="project" value="LOCAL" />
       <updated>1536850307297</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="uke 37">
+      <created>1536851301074</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1536851301074</updated>
+    </task>
+    <task id="LOCAL-00032" summary="uke 37">
+      <created>1536851333246</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1536851333246</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="116816000" />
+    <option name="totallyTimeSpent" value="117865000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -842,13 +855,7 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/IT2/Torsdag/uke37/operatorer.md" />
-    <entry file="file://$PROJECT_DIR$/IT2/Torsdag/uke37/followTheMouse.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/IT2/Torsdag/uke37/followTheMouse.html" />
     <entry file="file://$PROJECT_DIR$/IT2/Torsdag/uke36_torsdag/breddePåFirkant.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="465">
@@ -904,37 +911,38 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/IT2/Fredag/uke37/oppgaver.md" />
     <entry file="file://$PROJECT_DIR$/IT2/Torsdag/uke37/arrayOgObject.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
+        <state relative-caret-position="540">
+          <caret line="36" selection-start-line="36" selection-end-line="36" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/IT2/Torsdag/uke37/oppgave3.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+        <state relative-caret-position="360">
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/IT2/Torsdag/uke37/operatorer.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="42" lean-forward="true" selection-start-line="42" selection-end-line="42" />
+        <state relative-caret-position="630">
+          <caret line="42" selection-start-line="42" selection-end-line="42" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/IT2/Torsdag/uke37/if-setninger2.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-126">
-          <caret line="22" column="6" lean-forward="true" selection-start-line="22" selection-start-column="6" selection-end-line="22" selection-end-column="6" />
+        <state relative-caret-position="330">
+          <caret line="22" column="6" selection-start-line="22" selection-start-column="6" selection-end-line="22" selection-end-column="6" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/IT2/Torsdag/uke37/oppgave4.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
+        <state relative-caret-position="105">
           <caret line="7" selection-start-line="7" selection-end-line="7" />
         </state>
       </provider>
@@ -955,24 +963,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/IT2/Torsdag/uke37/if-setninger.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
+        <state relative-caret-position="660">
           <caret line="44" lean-forward="true" selection-start-line="44" selection-end-line="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/IT2/Fredag/uke37/oppgaver.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/IT2/Fredag/uke37/uke37.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="-34">
-            <caret line="5" column="1" lean-forward="true" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
+          <first_editor relative-caret-position="240">
+            <caret line="16" column="16" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
           </first_editor>
           <second_editor />
         </state>

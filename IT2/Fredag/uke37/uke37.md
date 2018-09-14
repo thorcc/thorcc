@@ -1,17 +1,25 @@
 # Uke 37
 
 ## Oppgaver
-##### Oppgave 1 - Tester og operatorer
+##### Tester og operatorer
 
- 
+##### Oppgave 1a
 Lag et program som sjekker:
 
 1. Om et tall er lik 10.
 2. Om et tall er større enn 6.
 3. Om et tall er mindre enn 5 ELLER større enn 15.
-4. Om brukeren sitt navn er Per.
+4. Om et tall er større enn 5 OG mindre enn 15.
+5. Om en string er lik "Per".
 
-Brukeren skal kunne skrive inn tall eller navn i et input-felt, og det skal komme en tekst på siden som viser resulatet av sjekken.
+Skrive svarene ut i konsollen.
+
+##### Oppgave 1b
+Bruk koden fra eksempelet i starten av timen, og lag en nettside hvor et bilde følger musepekeren.
+Når brukeren holder musen på den venstre halvdelen av skjermen skal et bilde vises, mens når brukeren holder musepekeren på høyre side av skjermen skal et annet bilde vises.
+
+**Hint:** Start med å lage en if-setning som bytter ut ```bilde.src``` når musepekeren er under 300px i x-retning.  
+Når dette fungerer kan du bruke``window.innerWidth`` for å finne bredden på nettleservinduet, og deretter endre if-setningen til å bytte bilde ved halvparten av bredden.
 
 ##### Oppgave 2 - Switch-setning
 1. Lag en switch-setning med variabelen mobil. 
