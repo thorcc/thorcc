@@ -4,8 +4,8 @@
 
 1. Lag en nettside med overskrift i ``<header>`` og en ``<main>`` som inneholder 8 ``<article>``-elementer med noe tekst i.
 2. Opprett en grid i ``<main>`` med tre kolonner i bredden, gi ``<article>``-elementene en ny bakgrunnsfarge og sett på grid-column-gap og grid-row-gap.
-3. Legg bilder inn i ``<article>`-elementene.
-4. Endre egenskapene til grid slik at det kun er to ``<article>`-elementer i bredden. Endre størrelsen på de slik at det ene elementet tar opp 1/3 av bredden og det andre 2/3 av bredden.
+3. Legg bilder inn i ``<article>``-elementene.
+4. Endre egenskapene til grid slik at det kun er to ``<article>``-elementer i bredden. Endre størrelsen på de slik at det ene elementet tar opp 1/3 av bredden og det andre 2/3 av bredden.
 
 
 ### Oppgave 2 - Øve til prøve
