@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="nb" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Enkel Grid</title>
+  </head>
+
+  <style>
+    main{
+      display:grid;
+      grid-template-columns: 200px 200px 200px;
+      grid-column-gap: 5px;
+      grid-row-gap: 5px;
+    }
+
+    main > article{
+      background-color: lightblue;
+    }
+
+  </style>
+  <body>
+    <main>
+        <article>grid-element 1</article>
+        <article>grid-element 2</article>
+        <article>grid-element 3</article>
+        <article>grid-element 4</article>
+        <article>grid-element 5</article>
+        <article>grid-element 6</article>
+        <article>grid-element 7</article>
+        <article>grid-element 8</article>
+    </main>
+  </body>
+</html>

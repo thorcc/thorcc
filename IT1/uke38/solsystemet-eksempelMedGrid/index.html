@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="nb" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Solsystemet</title>
+
+    <style>
+
+      /* Setter en egen font (skrifttype) på hele nettsiden */
+      body{
+        font-family: Helvetica, sans-serif;
+      }
+
+
+      /* Setter samme stil på både header,main og footer -elementer.
+         Bredden på hele nettsiden blir 1000px, og innholdet midtstilles
+         ved å sette margin til auto */
+      header, main, footer{
+        width: 1000px;
+        margin: auto;
+      }
+
+
+      img{
+        width: 100%;
+        margin-top: auto;
+        margin-bottom: auto;
+      }
+
+      /*------- Grid -----*/
+
+      main{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 10px
+      }
+      /* -----------------*/
+
+
+
+      /* Alle div-elementer som ligger inne i et main-element,
+         i dette tilfelle blir det alle grid-elementene */
+      main>div{
+        background-color: darkgrey;
+        padding: 5px;
+        border-radius: 5px;
+      }
+      /* ------ */
+
+    </style>
+
+  </head>
+  <body>
+
+    <header>
+      <h1>Solsystemet</h1>
+    </header>
+
+    <main>
+
+      <!-- Alle elementene som ligger inne i dette main-elementet blir en grid -->
+
+      <div>
+        <img src="bilder/mercury.png" alt="Merkur">
+        <p>Merkur</p>
+      </div>
+      <div>
+        <img src="bilder/venus.png" alt="Merkur">
+        <p>Venus</p>
+      </div>
+      <div>
+        <img src="bilder/earth.png" alt="Merkur">
+        <p>Jorden</p>
+      </div>
+      <div>
+        <img src="bilder/mars.png" alt="Merkur">
+        <p>Mars</p>
+      </div>
+      <div>
+        <img src="bilder/jupiter.png" alt="Merkur">
+        <p>Jupiter</p>
+      </div>
+      <div>
+        <img src="bilder/saturn.png" alt="Merkur">
+        <p>Saturn</p>
+      </div>
+      <div>
+        <img src="bilder/uranus.png" alt="Merkur">
+        <p>Uranus</p>
+      </div>
+      <div>
+        <img src="bilder/neptune.png" alt="Merkur">
+        <p>Neptun</p>
+      </div>
+    </main>
+
+  </body>
+</html>
