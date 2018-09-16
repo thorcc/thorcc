@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+    <div id="minDiv"></div>
+
+
+<script>
+
+    var a;
+
+    // Datatyper
+
+    a = 3; // a får verdien 3, som er datatypen number
+    a = "Hei"; // a får verdien "Hei", som er datatypen string
+    a = [3, 4, "Hei", 2, "Hallo"]; // a blir tilordnet en array
+    a = { // a blir tilordnet et objekt, med egenskapene navn og jobb.
+        navn: "Thor", //navn er en egenskap og "Thor" er verdien som hører til egenskapen
+        jobb: "It-lærer"
+    }
+    a = true // kan også være false, dette er datatypen boolean, den enten true eller false
+
+
+    // Metoder som vi kan bruke på datatyper
+
+    // Arrays
+    var filmer = ["Ben Hur", "Fight Club", "The Darjeeling Limited"]; // en array med filmer
+    filmer.push("Bølgen"); // Legger til filmen "bølgen" i listen
+
+
+    // Objekt
+    var megSelv = {
+        navn: "Thor",
+        jobb: "It-lærer"
+    }
+    megSelv.navn; // Henter vi ut verdien som hører til egenskapen navn i objektet megSelv
+    megSelv.navn = "Jens Christian"; // Endrer verdien på egenskapen navn i objektet megSelv
+
+
+    // Variabler
+
+    var enVariabel = 23; // Defnerer en variabel 23
+
+    enVariabel = 43;
+    enVariabel += 1; // enVariabel = enVariabel + 1; legger til en på variabelen enVariabel
+
+    const PI = 3.14; // definerer en konstant, og tilordner verdien 3.14. Denne verdien kan ikke endres på senere i koden
+
+    // Casting - Endre datatype
+    var enString = "35";
+    Number(enString); // Endrer datatypen på enString til å være et tall
+
+
+    // Lage referanser til HTML-objekter
+    var minDiv = document.getElementById("minDiv"); // Lager en referanse til div-elementet minDiv
+
+    // Endre attributter på HTML-elementer
+    minBilde.src = "nyttBilde.jpg";
+    minDiv.style.backgroundColor = blue;
+
+    document.write("Hallo"); // Skriver ut hallo på nettsiden
+    minDiv.innerHTML = "Ny tekst som kommer inn i HTML-elementet minDiv";
+
+
+
+</script>
+
+</body>
+</html>

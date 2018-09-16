@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+        body{
+            cursor: none;
+        }
+
+        #firkant{
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            margin-left: 40px;
+            margin-top: 40px;
+            border-radius: 50%;
+        }
+
+    </style>
+
+</head>
+<body>
+
+<img src="bardhoksrud.jpeg" id="firkant">
+
+
+<script>
+
+    var firkant = document.getElementById("firkant"); // oppretter en variabel som refererer til div-elementet
+
+    document.onmousemove = function(event){
+        var x = event.clientX - 100; // oppretter en variabel x, som er x-koordinaten til posisjonen til musen på nettsiden minus 100, for å få musen i midten
+        var y = event.clientY - 100; // oppretter en variabel y, som er y-koordinaten til posisjonen til musen på nettsiden minus 100, for å få musen i midten
+        console.log("x= " + x); // skriver ut x-koordinaten i konsollen
+        console.log("y= " + y);
+
+        firkant.style.marginLeft = x + "px"; // firkant sin marginLeft skal være lik verdien av x pluss stringen "px"
+        firkant.style.marginTop = y + "px";
+
+
+        if(x < 0.5*window.innerWidth - 100){ // Hvis musepekeren er mindre enn (halvparten av nettleservinduet - 100) gjør dette:
+              console.log("X er mindre enn halvparten av vinduet");
+              firkant.src = "erna.jpg"; // Skift bilde med id firkant sin attributt src til "erna.jpg"
+        }
+        else{
+            console.log("X er større enn halvparten av vinduet");
+            firkant.src = "bardhoksrud.jpeg";
+        }
+
+    }
+
+</script>
+
+</body>
+</html>

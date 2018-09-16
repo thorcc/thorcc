@@ -1,0 +1,2 @@
+[Fagtekst if-setninger (tester)](https://github.com/thorcc/IT2/blob/master/Fagtekster/Tester.md)  
+[Youtube if-setninger](https://www.youtube.com/watch?v=knb51nt6wC8&list=PLJC9cL8YfNXo_CUCsG17Nr5e1Zv8jm9HW)

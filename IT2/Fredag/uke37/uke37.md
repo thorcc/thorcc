@@ -33,7 +33,7 @@ La brukeren skrive inn hvilken mobil han har i et input-felt, og når brukeren t
 Kapitler:
 - 2 Javascript
 - 3 Variabler
-- 4.1 - 4.2 If-setinger og Switch-setning
+- 4.1 - 4.3 If-setinger og Switch-setning
 
 ##### Sammendrag av pensum
 - [Hallo verden!](https://github.com/thorcc/IT2/blob/master/Fagtekster/Hallo-verden.md)  

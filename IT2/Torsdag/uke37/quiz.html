@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Quiz</title>
+</head>
+<body>
+
+<input id="sporsmal" type="text" placeholder="er du sulten?">
+<button id="knapp">Svar her</button>
+<span id="svar"></span>
+
+<script>
+    var sporsmal = document.getElementById("sporsmal");
+    var svar = document.getElementById("svar");
+    var knapp = document.getElementById("knapp");
+
+    knapp.onclick = function () {
+        if(sporsmal.value==="ja"){
+            svar.innerHTML="Ta deg ei brødskive!";
+        }
+        else{
+            svar.innerHTML="Ta deg ei brødskive likevel!";
+        }
+    }
+
+</script>
+
+</body>
+</html>

@@ -10,8 +10,8 @@
         }
 
         #firkant{
-            width: 200px;
-            height: 200px;
+            width: 100px;
+            height: 100px;
             background-color: pink;
             margin-left: 40px;
             margin-top: 40px;
@@ -31,13 +31,14 @@
         var firkant = document.getElementById("firkant"); // oppretter en variabel som refererer til div-elementet
 
         document.onmousemove = function(event){
-            var x = event.clientX - 100; // oppretter en variabel x, som er x-koordinaten til posisjonen til musen på nettsiden minus 100, for å få musen i midten
-            var y = event.clientY - 100; // oppretter en variabel y, som er y-koordinaten til posisjonen til musen på nettsiden minus 100, for å få musen i midten
+            var x = event.clientX - 10; // oppretter en variabel x, som er x-koordinaten til posisjonen til musen på nettsiden minus 100, for å få musen i midten
+            var y = event.clientY - 10; // oppretter en variabel y, som er y-koordinaten til posisjonen til musen på nettsiden minus 100, for å få musen i midten
             console.log("x= " + x); // skriver ut x-koordinaten i konsollen
             console.log("y= " + y);
 
             firkant.style.marginLeft = x + "px"; // firkant sin marginLeft skal være lik verdien av x pluss stringen "px"
             firkant.style.marginTop = y + "px";
+
 
         }
 
