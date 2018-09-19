@@ -16,6 +16,7 @@ Kapitler:
 ##### Youtube
 - [Variabler og datatyper](https://www.youtube.com/watch?v=U0v1tuIWTro&list=PLJC9cL8YfNXqrTQvaYx5sabProlYmqUoW)  
 - [If-setninger](https://www.youtube.com/watch?v=knb51nt6wC8)
+- [Switch-setninger](https://www.youtube.com/watch?v=fM5qnyasUYI)
 
 ##### Hour-of-code
 - http://silentteacher.toxicode.fr/hourofcode
