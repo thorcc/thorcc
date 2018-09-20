@@ -1,0 +1,82 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Valg-setninger</title>
+</head>
+<body>
+<h1>Tester</h1>
+
+
+    <script>
+
+
+
+        // If-setning
+
+
+
+/*
+        if (navn === "Thor"){
+            document.write("Halla Thor!")
+        }
+        else if (navn === "Hans"){
+            document.write("Hei Hans!")
+        }
+        else if (navn === "Kari"){
+            document.write("Halla Kari!")
+        }
+        else if (navn === "Jens"){
+            document.write("God morgen Jens!")
+        }
+        else{
+            document.write("Hei " + navn + ", du har et sjeldent navn.")
+        }
+        */
+
+
+
+        // Switch-setning
+
+
+        //var navn = prompt("Hva heter du?");
+
+/*
+        switch(navn){
+            case "Thor":
+                document.write("Halla Thor!");
+                break;
+            case "Hans":
+                document.write("Hei Hans!");
+                break;
+            case "Kari":
+                document.write("Halla Kari!");
+                break;
+            default:
+                document.write("Hei " + navn + ", du har sjeldent navn");
+        }
+        */
+
+
+
+        // Switch-setning
+
+        var verdi = prompt("Skriv inn en tekst");
+
+        switch(verdi){
+            case "hei":
+                document.write("Hei");
+                break;
+            case "jada":
+            case "JADA":
+                document.write("Jada");
+                break;
+            case "Nokia":
+                document.write("Du har nokia");
+                break;
+            default: // Kjører hvis ingen andre verdier eller caser stemmer
+                document.write("Du har en rar mobil");
+        }
+    </script>
+
+</body>
+</html>

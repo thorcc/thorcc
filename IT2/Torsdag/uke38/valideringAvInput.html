@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+    <meta charset="UTF-8">
+    <title>Validering av input-felt</title>
+</head>
+<body>
+
+    <h1>Validering av input-felt ved å bruke if-setning</h1>
+
+    <p>Skriv inn ditt navn</p>
+
+    <div>
+        <span>Navn:</span>
+        <input type="text" id="inpNavn">
+    </div>
+
+    <div id="divResultat">
+
+    </div>
+
+    <script>
+
+        var inpNavn = document.getElementById("inpNavn"); // Oppretter vi en variabel som refererer til inpNavn elementet
+        var divResultat = document.getElementById("divResultat"); // refererer vi til div-resultat-elementet
+
+
+        // Oppretter vi en funksjon som kjører hver gang en tast trykkes i input-feltet
+        inpNavn.onkeyup = function(){
+
+            var navn = inpNavn.value; // oppretter en variabel navn hvor verdien i input-feltet lagres, oppdateres hver gang en tast trykkes
+
+            //Oppretter vi en if-setning, som sjekker om lengden på inpNavn sin verdi er kortere enn 4 tegn
+            if (navn.length < 4){
+                divResultat.innerHTML = "Hei " + navn + ". Navnet ditt er for kort (minst 4 tegn)";
+            }
+            else if (navn.length > 15){ // Hvis lengden på navn er større enn 15, gjør denne koden.
+                divResultat.innerHTML = "Hei " + navn + ". Navnet ditt er for langt (maks 15 tegn)";
+            }
+            else{ // Hvis ingen av de testene over var true, så kjøres denne koden:
+                divResultat.innerHTML = "Hei " + navn + ". Bra! Navnet er akkurat passe langt.";
+            }
+
+        }
+
+
+
+    </script>
+
+</body>
+</html>
