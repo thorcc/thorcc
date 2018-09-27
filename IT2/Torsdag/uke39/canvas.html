@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tegning med JS</title>
+
+    <style>
+        canvas{
+            border: solid;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Oppretter et canvas element -->
+    <canvas id="canvas" height="600" width="600"></canvas>
+
+
+    <script>
+
+        Number.prototype.toDeg = function(){
+            return this * Math.PI / 180;
+        };
+
+        function degToRad (rad){
+            return rad * Math.PI / 180;
+        }
+
+
+
+        //oppretter en referanse til canvas-elementet
+        const canvas = document.getElementById("canvas");
+
+        // oppretter en referanse til 2d-innholdet
+        const ctx = canvas.getContext("2d");
+
+        // tegner en firkant
+        //ctx.fillRect(x, y, bredde, høyde);
+        ctx.fillRect(50, 50, 300, 300);
+
+
+
+        // ----- Firkant uten fyll
+        ctx.fillStyle = "orange";
+        ctx.fillRect(150, 50, 200, 100);
+
+
+        //Linjer
+        ctx.moveTo(100,50);  // 1.
+        ctx.lineTo(75,500);  // 2.
+        ctx.lineTo(525,500); // 3.
+        ctx.moveTo(500,50);  // 4.
+        ctx.lineTo(100,50);  // 5.
+        ctx.stroke();        // 6.
+
+        //Sirkel
+        //Med fyll
+        ctx.fillStyle = "blue";
+        ctx.beginPath();
+        //ctx.arc(x, y, radius, startVinkel, sluttVinkel)
+        ctx.arc(400, 100, 50, 0, Math.PI * 2);
+        ctx.fill();
+
+        //Uten fyll
+        ctx.strokeStyle = "darkorange";
+        ctx.beginPath();
+        //ctx.arc(x, y, radius, startVinkel, sluttVinkel)
+        ctx.arc(400, 400, 50, 0, Math.PI * 2);
+        ctx.stroke();
+
+
+        ctx.strokeStyle = "darkorange";
+        ctx.beginPath();
+        //ctx.arc(x, y, radius, startVinkel, sluttVinkel)
+        ctx.arc(100, 500, 50, 0, Math.PI / 2);
+        ctx.lineTo(100, 500);
+        ctx.fill();
+
+
+
+        //Hode
+        ctx.strokeStyle = "black";
+        ctx.strokeRect(0, 0, 100, 100);
+
+        // Øyne
+
+        ctx.fillRect(20, 20, 10, 10);
+        ctx.fillRect(65, 20, 10, 10);
+
+        // nese
+        ctx.strokeRect(45, 40, 10, 40);
+
+        // munn
+        ctx.strokeRect(35, 84, 30, 10);
+
+        // tenner
+        ctx.fillRect(38, 84, 10, 10);
+        ctx.fillRect(52, 84, 10, 10);
+
+    </script>
+
+</body>
+</html>

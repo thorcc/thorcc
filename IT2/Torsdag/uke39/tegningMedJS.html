@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tegning med Javascript</title>
+
+    <style>
+        canvas{
+            border: solid; /* Lager en ramme rundt lerretet */
+        }
+    </style>
+
+</head>
+<body>
+
+    <canvas id="canvas" width="600" height="600"> <!-- Oppretter et canvas-element -->
+        Beklager nettleseren din ikke canvas-elementer.
+    </canvas>
+
+    <script>
+
+        const canvas = document.getElementById("canvas"); // lager en konstant som refererer til canvas-elementet
+        const ctx = canvas.getContext("2d");
+
+
+        // Fylte rektangler
+        //ctx.fillRect(x,y,bredde,høyde);
+        ctx.fillRect(100,100,200,300); // Lager en rektangel
+
+        ctx.fillStyle = "orange";
+        ctx.fillRect(50,350,150,200);
+        ctx.fillRect(400, 350, 50, 50);
+
+        // Rektangel uten fyll
+        ctx.strokeStyle = "blue"; // Blå farger på linjene
+        ctx.strokeRect(500, 50, 75, 75);
+
+
+        // Tegne linjer
+        ctx.moveTo(50, 25);
+        ctx.lineTo(75,500);
+        ctx.lineTo(525, 500);
+        ctx.moveTo(500, 50);
+        ctx.lineTo(50,25);
+        ctx.stroke(); // Lager streker mellom punktene
+        //ctx.fill(); // Fyller figuren mellom punktene
+    </script>
+
+</body>
+</html>
