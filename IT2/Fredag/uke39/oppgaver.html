@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+    <meta charset="UTF-8">
+    <title>Oppgaver</title>
+</head>
+<body>
+
+<div id="daftPunk">
+    <h4>Daft Punk - Around the World</h4>
+</div>
+
+<div id="gucciGang">
+    <h4>Lil Pump - Gucci gang</h4>
+</div>
+
+<div id="surfinBird">
+    <h4>The Trashmen - Surfin' bird</h4>
+</div>
+<script>
+
+    //Oppgave 1
+
+    var i = 0;       // må opprette variabelen i utenfor løkken
+
+    while(i <= 100){
+        console.log(i);
+        i++   // samme som i = i + 1, legger 1 til i hver gang løkken kjøres
+    }
+
+    //Oppgave 2
+    for(var j = 0; j <= 100; j++){  //for løkke som starter på j=0, legger 1 til j hver runde, og avslutter når j = 100
+        console.log(i);
+    }
+
+    //Oppgave 4
+
+    var daftPunk = document.getElementById("daftPunk");
+    var tekst = "<p>Around the world</p>";
+
+    for(var k = 0; k <= 164; k++){
+        daftPunk.innerHTML += tekst;
+    }
+
+    //Oppgave 5
+
+    var gucciGang = document.getElementById("gucciGang");
+    var tekstGG = "Gucci gang, "; //med mellomrom bak
+    var tekstChain = " spend three racks on new chains."; // med mellomrom foran
+    var sangTekst =""; // Oppretter en tom string som skal bli hele sangteksten
+
+    for (var l = 0; l <= 74; l++){
+        sangTekst += "<p>";  // Legger hvert vers inn i et avsnitt
+
+        for (var m = 0; m <= 9; m++){ // for-løkke inne i den andre løkken som skriver ut gucci gang 9 ganger
+            sangTekst += tekstGG;
+        }
+        sangTekst += tekstChain + "</p>";// Legger hvert vers inn i et avsnitt
+    }
+    gucciGang.innerHTML += sangTekst; // Skriver hele sangteksten ut på siden
+
+
+    //Oppgave 6
+
+    var surfinBird = document.getElementById("surfinBird");
+
+    var vers1 = "<p>A well a everybody's heard about the bird <br> B-b-b bird, bird, bird, b-bird's the word</p>";
+    var vers2 = "<p>Surfin' bird  <br> B-b-b aah, aah!</p>";
+    var vers3 = "<p>A well a don't you know about the bird? <br> Well, everybody knows that the bird is the word!</p>";
+    var refreng1 = "A well a bird, bird, bird, the bird is the word<br>";
+    var refreng2 = "A well a bird, bird, bird, well the bird is the word<br>";
+
+    var sangTekst = "";
+
+    for (var n = 0; n < 17; n++){
+        if (n === 0){ // Hvis n er 0 legg til linjen vers1
+           sangTekst += vers1;
+        }
+        else if (n===8){
+            sangTekst += vers2;
+        }
+        else if (n===16){
+            sangTekst += vers3;
+        }
+        else{ // Hvis n ikke er 0, 8 eller 16
+
+            if(n%2===0){// ny if, hvis n er partall
+              sangTekst += refreng2;
+            }
+            else{
+              sangTekst += refreng1;
+            }
+        }
+
+    }
+
+    surfinBird.innerHTML += sangTekst;
+/*
+
+Tekst med linjenummer
+n=0
+    A well a everybody's heard about the bird
+    B-b-b bird, bird, bird, b-bird's the word
+
+n=1
+    A well a bird, bird, bird, the bird is the word
+n=2
+    A well a bird, bird, bird, well the bird is the word
+n=3
+    A well a bird, bird, bird, the bird is the word
+
+    A well a bird, bird, bird, well the bird is the word
+    A well a bird, bird, bird, the bird is the word
+    A well a bird, bird, bird, well the bird is the word
+    A well a bird, bird, bird, the bird is the word
+n=8
+    A well a don't you know about the bird?
+    Well, everybody knows that the bird is the word!
+
+        A well a bird, bird, bird, the bird is the word
+    A well a bird, bird, bird, well the bird is the word
+    A well a bird, bird, bird, the bird is the word
+    A well a bird, bird, bird, well the bird is the word
+    A well a bird, bird, bird, the bird is the word
+    A well a bird, bird, bird, well the bird is the word
+    A well a bird, bird, bird, the bird is the word
+n=16
+    Surfin' bird
+    B-b-b aah, aah!
+
+   */
+</script>
+</body>
+</html>
