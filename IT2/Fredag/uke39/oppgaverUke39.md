@@ -51,3 +51,11 @@ A well a bird, bird, bird, the bird is the word
 
 Surfin' bird  
 B-b-b aah, aah!
+
+Denne koden kan kopieres:
+
+       var vers1 = "<p>A well a everybody's heard about the bird <br> B-b-b bird, bird, bird, b-bird's the word</p>";
+       var vers2 = "<p>Surfin' bird  <br> B-b-b aah, aah!</p>";
+       var vers3 = "<p>A well a don't you know about the bird? <br> Well, everybody knows that the bird is the word!</p>";
+       var refreng1 = "A well a bird, bird, bird, the bird is the word<br>";
+       var refreng2 = "A well a bird, bird, bird, well the bird is the word<br>";
