@@ -4,7 +4,7 @@
 Bruk class og id for å fikse nettsiden slik at den ser ut som på bildet.
 Link til kode på codepen: https://codepen.io/techie4good/pen/VKkJYd
 
-``
+```
 <!DOCTYPE html>
     <html lang="en">
         <head>
@@ -59,7 +59,7 @@ Link til kode på codepen: https://codepen.io/techie4good/pen/VKkJYd
 
 
 
-``
+```
 
 Koden kan kopieres over i Atom eller redigeres rett i codepen.
 
