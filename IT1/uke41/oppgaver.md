@@ -1,6 +1,6 @@
 # Oppgaver uke 41
 
-## 1 Class og id
+## 1 - Class og id
 Bruk class og id for å fikse nettsiden slik at den ser ut som på bildet under.
 
 ![Bilde av nettside](bilde.png)
@@ -73,8 +73,8 @@ Kopier denne koden inn i en ny html-fil i atom:
 
 ```
 
-## 2 Pseudoselektorer og pseudoklasser
+## 2 - Pseudoselektorer og pseudoklasser
 Gjør de tre prøv selv-oppgavene på s. 59
 
-## 3 Kombinasjoner av Pseudoselektorer
+## 3 - Kombinasjoner av Pseudoselektorer
 Gjør alle prøv selv-oppgavene på s. 64
