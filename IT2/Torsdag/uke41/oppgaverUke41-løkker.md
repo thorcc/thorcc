@@ -1,4 +1,4 @@
-# Uke 39 - Løkker
+# Uke 41 - Løkker
 
 ### Ressurs
 - [Fagtekst løkker](https://github.com/thorcc/IT2/blob/master/Fagtekster/Lokker.md)  
