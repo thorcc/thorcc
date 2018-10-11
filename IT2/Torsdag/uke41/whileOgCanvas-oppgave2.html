@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Canvas og while-løkke</title>
+    <style>
+
+        canvas{
+            border-style: solid; /*Lager en kant rundt canvas-elementet */
+        }
+
+    </style>
+</head>
+<body>
+
+    <canvas id="canvas" width="600" height="600"></canvas>
+
+
+    <script>
+
+        const canvas = document.getElementById("canvas");
+        const ctx = canvas.getContext("2d"); // Lager en referanse til innholdet på canvasen
+
+        /*
+        ctx.moveTo(0,10);
+        ctx.lineTo(600,10);
+        ctx.stroke();
+        */
+
+        var i = 0;
+
+        while(i < 600){
+            ctx.moveTo(0,i); // flytter pekeren til 0,i
+            ctx.lineTo(600,i); // lager en linje til 600,i
+            ctx.stroke(); // tegner streken
+            i += 10; // legger vi til 10 i teller
+        }
+
+    </script>
+
+</body>
+</html>
