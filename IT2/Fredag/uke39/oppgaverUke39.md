@@ -3,19 +3,22 @@
 ### Ressurs
 - [Fagtekst løkker](https://github.com/thorcc/IT2/blob/master/Fagtekster/Lokker.md)  
 - Kode2 - 4.4 og 4.5 (s. 87 - 94)
-#### Oppgave 1 - While-løkker
+#### Oppgave 1
 1. Se [while-løkker (YT)](https://www.youtube.com/watch?v=agBmm-nhpJQ&index=4&list=PLJC9cL8YfNXo_CUCsG17Nr5e1Zv8jm9HW)
 2. Lag en while-løkke som skriver ut tallene fra 0 til 100.
 
-#### Oppgave 2 - For-løkker
+#### Oppgave 2
+1. Gjør alle prøv selv oppgavene på s. 90 i boken.
+
+#### Oppgave 3
 1. Se [for-løkker (YT)](https://www.youtube.com/watch?v=cwEvgSA4LxQ&index=3&list=PLJC9cL8YfNXo_CUCsG17Nr5e1Zv8jm9HW)
 2. Lag en for-løkke som skriver ut tallene fra 0 til 100. 
 3. Sammenlign denne løkken med den fra oppgave 1. Hvilken løkke mener du er best egnet til å løse disse oppgavene?
 
-#### Oppgave 3
+#### Oppgave 4
 1. Gjør alle prøv selv oppgavene på s. 94 i boken.
 
-#### Oppgave 4 - Sanger
+#### Oppgave 5 - Sanger
 1. Lag en nettside som genererer hele sangteskten til Daft Punks *Around The World*. [Finn teksten her](https://genius.com/Daft-punk-around-the-world-lyrics)
 (tips: les kommentarene)
 
