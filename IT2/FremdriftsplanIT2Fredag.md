@@ -12,15 +12,15 @@
 | 40 |5 okt|Høstferie|||
 | 41 |12 okt|Funksjoner| |5.3|
 | 42 |19 okt|Funksjoner| |5.4 - 5.5|
-| 43 |26 okt|Interkativitet og brukergrensesnitt| |6.1 - 6.2|
+| 43 |26 okt|**Prosjektstart**  Interkativitet og brukergrensesnitt| |6.1 - 6.2|
 | 44 |2 nov|Interkativitet og brukergrensesnitt| |6.3 - 6.4|
-| 45 |9 nov|**Prøve kap. 5-6.** Multimedier| |7.1 - 7.3|
+| 45 |9 nov|Multimedier| |7.1 - 7.3|
 | 46 |16 nov|Bilder| |7.3 - 7.4|
 | 47 |23 nov|Vektorgrafikk| |7.5|
 | 48 |30 nov|Video| |7.6 - 7.7|
-| 49 |7 des|Lyd| |7.8|
-| 50 |14 des|Array| |8.1 - 8.2|
-| 51 |21 des|Set, map, nodelist| |8.3 - 8.5|
+| 49 |7 des|**Prosjektinnlevering**  Lyd| |7.8|
+| 50 |14 des|**Heldags**| ||
+| 51 |21 des|Array, set, map, nodelist| |8.1 - 8.2, 8.3 - 8.5|
 | 52 |28 des|Juleferie|||
 | 1  |4 jan|Diagrammer og JSON||8.6 - 8.7|
 | 2  |11 jan|Multimedier og animasjon||9.1 - 9.2|
