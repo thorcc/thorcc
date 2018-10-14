@@ -1,17 +1,22 @@
 # Uke 42 - Digital samtid
 
 
-- Se dokumentaren: “Lo and behold” (Werner Herzog) (Netflix: https://www.netflix.com/title/80097363)
-- Les mer om filmen: https://goo.gl/OcgeXh
+- Se filmen: [A Journey To The Bottom Of The Internet - Youtube](https://www.youtube.com/watch?v=H9R4tznCNB0)
+- Se dokumentaren: [“Lo and behold” (Werner Herzog) - Netflix](https://www.netflix.com/title/80097363)
+    - Les mer om filmen: https://goo.gl/OcgeXh
+
 
 
 ## Oppgave 1 (gruppearbeid):
-
 Diskuter disse spørsmålene:
 - Hva er internett, egentlig?
-- Var det noe som overrasket deg i filmen? 
+- Var det noe som overrasket dere i filmene? 
 - Var det noe som var vanskelig å forstå? 
 - Nevn noen avgjørende måter internett har forandret dagliglivet vårt på?
+
+Ekstra ressurser:
+- [Thin underwater cables hold the internet. See a map of them all (youtube)](https://www.youtube.com/watch?v=Ve810FHZ1CQ)
+- [How Undersea Internet Cables Carry The Internet Across The Ocean | Earth Lab (youtube)](https://www.youtube.com/watch?v=Pfr0XCTMhXE)
 
 
 ## Oppgave 2 (individuelt)
