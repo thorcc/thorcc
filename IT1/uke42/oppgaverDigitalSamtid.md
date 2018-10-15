@@ -17,7 +17,7 @@ Diskuter disse spørsmålene:
 Ekstra ressurser:
 - [Thin underwater cables hold the internet. See a map of them all (youtube)](https://www.youtube.com/watch?v=Ve810FHZ1CQ)
 - [How Undersea Internet Cables Carry The Internet Across The Ocean | Earth Lab (youtube)](https://www.youtube.com/watch?v=Pfr0XCTMhXE)
-
+- [Facebooks datasenter](https://youtu.be/_r97qdyQtIk?t=140)
 
 ## Oppgave 2 (individuelt)
 - Les kap. 5.1 og 5.2 (s.143-149)
