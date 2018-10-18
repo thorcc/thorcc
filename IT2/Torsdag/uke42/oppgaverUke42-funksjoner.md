@@ -1,4 +1,4 @@
-# Uke 41 - Funksjoner
+# Uke 42 - Funksjoner
 
 Gjør oppgavene, last opp koden på github og lever lenke til koden din på its.
 
