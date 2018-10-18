@@ -73,3 +73,7 @@ skal returnere en tekststreng med hele sangen.
 #### Oppgave 7
 - En generell annengradsfunksjon kan skrives på formen ax^2 + bx +c.
 Lag et program der en funksjon får inn a, b, c som innparameter. Den skal returnere alle nullpunkter til annengradsfunksjonen hvis de finnes. Hvis det ikke finnes noen nullpunkter skal funksjonen returnere teksten "Ingen løsning!"
+
+#### Oppgave 8
+1. Lag en løkke som skriver ut de 10 første fibonacci-tallene
+2. Lag et canvas-element på nettsiden og lag en tegning som visualiserer de fibonacci-tallene.
