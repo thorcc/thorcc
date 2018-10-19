@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://www.gstatic.com/firebasejs/5.5.5/firebase.js"></script>
+    <script src="firebase.js"></script>
+    <title>Paint og firebase</title>
+
+    <style>
+    
+        canvas{
+            position: absolute;
+            z-index: -1;
+        }
+        h1 {
+            margin: 15px;
+        }
+        
+    </style>
+</head>
+<body>
+
+    <h1>firebasePaint</h1>
+    
+    <canvas id="canvas"></canvas>
+
+    <div>
+        <label for="storrelse">Størrelse: </label>
+        <input id="storrelse" type="range" name="points" min="1" max="20">
+        <span id="storrelseValue"></span>
+        
+        <label for="storrelse">Type: </label>
+        <select id="type">
+                <option value="sirkel">Sirkel</option>
+                <option value="firkant">Firkant</option>
+        </select>
+
+        <input id="farge" type="color">
+    </div>
+
+
+
+
+
+    <script>
+
+        const canvas = document.getElementById("canvas");
+        const ctx = canvas.getContext("2d");
+
+        const inpStorrelse = document.getElementById("storrelse");
+        const inpType = document.getElementById("type");
+        const inpFarge = document.getElementById("farge");
+        
+        let database = firebase.database();
+        let punkter = database.ref("punkter");
+
+        canvas.height = window.innerHeight;
+        canvas.width = window.innerWidth;
+        document.body.style.margin = 0;
+        
+        storrelseValue.innerHTML = `Verdi: ${inpStorrelse.value}`;
+        inpStorrelse.onmousemove = function(){
+            storrelseValue.innerHTML = `Verdi: ${inpStorrelse.value}`;
+        }
+
+
+        function tegnSirkel(x,y,radius,farge){
+            ctx.fillStyle = farge;
+            ctx.beginPath();
+            ctx.arc(x,y,radius,0,Math.PI * 2);
+            ctx.fill();
+        }
+        
+        function tegnKvadrat(x,y,sider,farge){
+            ctx.fillStyle = farge;
+            ctx.fillRect(x,y,sider,sider);
+        }
+
+
+        let musNede = false;
+
+        function getMousePos(canvas, evt) {
+        
+}
+
+        canvas.onmousedown = function(event) {
+            musNede = true;
+            let x = event.clientX;
+            let y = event.clientY;
+            nyttPunkt(inpType.value,x,y,inpStorrelse.value,inpFarge.value);
+            console.log(x,y);
+            console.log(musNede);
+        }
+        canvas.onmousemove = function(event){
+            if (musNede){
+                let x = event.clientX;
+                let y = event.clientY;
+                nyttPunkt(inpType.value,x,y,inpStorrelse.value,inpFarge.value);
+                console.log(x,y);
+            }
+            console.log(musNede);
+        }
+        canvas.onmouseup = function(){
+            musNede = false;
+            console.log(musNede);
+        }
+        canvas.onmouseleave = function(){
+            musNede = false;
+            console.log(musNede);
+        }
+
+        function nyttPunkt(type,x,y,storrelse,farge){
+            let punkt = {
+                "type": type,
+                "x": x,
+                "y": y,
+                "storrelse": storrelse,
+                "farge": farge
+            }
+            punkter.push(punkt);
+        }
+        
+        function visPunkt(snapshot){
+            let punkt = snapshot.val();
+            console.log(punkt);
+            if (punkt.type === "sirkel"){
+                tegnSirkel(punkt.x,punkt.y,punkt.storrelse,punkt.farge);
+            }else if(punkt.type === "firkant"){
+                tegnKvadrat(punkt.x,punkt.y,punkt.storrelse,punkt.farge);
+            }
+            
+        }
+        punkter.on("child_added",visPunkt);
+        
+
+
+
+        
+        
+    </script>
+
+</body>
+</html>
