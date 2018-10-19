@@ -81,3 +81,6 @@ Lag et program der en funksjon får inn a, b, c som innparameter. Den skal retur
   1. Lag en løkke som skriver ut de 10 første fibonacci-tallene
   2. Lag et canvas-element på nettsiden og lag en tegning som visualiserer fibonacci-tallene.
 
+## Oppgave 8
+- Lag et tegneprogram i javascript. Tips: Se koden fra oppgaven med å tegne sirkler i forrige uke.
+- Legg til en mulighet for å velge farge.
