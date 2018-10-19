@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fibonacci</title>
+</head>
+<body>
+
+    <h1>Fibonacci-tallene</h1>
+    <p>Denne siden innholder javascript, sjekk konsollen</p>
+    <canvas id="canvas" width="600" height="600"></canvas>
+
+
+    <script>
+
+
+
+
+        const canvas = document.getElementById("canvas");
+        const ctx = canvas.getContext("2d");
+
+        function fibonacci(n) {
+            var fib = [1, 1]; // oppretter en array med de to første fibonacci-tallene
+
+            for (var i = 2; i < n; i++) {
+                // en for-løkke som går fra i=2 til i=10
+                fib[i] = fib[i - 1] + fib[i - 2]; //legger til neste fibonacci-tall i array-en fib. Neste fibonacci tall er summen av de to forrige
+
+            }
+            return fib;
+        }
+
+        var tiTall = fibonacci(10);
+
+
+
+        function getRandomColor() {
+            // ----- En funksjon som gir en tilfeldig farge ---
+            var letters = "0123456789ABCDEF"; // Alle tegn i en HEX-fargekode
+            var color = "#"; // En variabel for fargen, alle HEX-koder starter med #
+            for (var i = 0; i < 6; i++) { // En for-løkke som teller opp i fra 0 til 5
+                color += letters[Math.floor(Math.random() * letters.length)]; // Legg et tilfeldig tegn fra letters til i color
+            }
+            return color; // Returner fargen, eks: "#615C85"
+        }
+
+
+    </script>
+
+</body>
+</html>
