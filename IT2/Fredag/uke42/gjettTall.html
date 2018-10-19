@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+    <iframe id="katter" width="560" height="315" autoplay src="https://www.youtube.com/embed/Of2HU3LGdbo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+<script>
+
+    const katter = document.getElementById("katter");
+    katter.height = window.innerHeight;
+    katter.width = window.innerWidth;
+
+    var hemmeligTall = Math.floor(Math.random()*100)+1;
+    var gjett = Number(prompt("Gjett et tall mellom 1 og 100"));
+
+
+    while (gjett !== hemmeligTall){
+
+        if(gjett < hemmeligTall){
+            gjett = Number(prompt("Du gjettet for lavt. Prøv igjen."));
+            console.log("Du gjettet for lavt");
+        }
+        else{
+            gjett = Number(prompt("Du gjettet for høyt. Prøv igjen"));
+            console.log("Du gjettet for høyt");
+        }
+    }
+    alert("Riktig! Du vant!");
+
+</script>
+
+</body>
+</html>
