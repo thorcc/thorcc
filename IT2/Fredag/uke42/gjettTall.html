@@ -2,38 +2,41 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Gjett tall</title>
 </head>
 <body>
 
+
     <iframe id="katter" width="560" height="315" autoplay src="https://www.youtube.com/embed/Of2HU3LGdbo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
-<script>
+    <script>
 
-    document.style.backgroundImage =  `url("paper.gif")"`;
-
-    const katter = document.getElementById("katter");
-    katter.height = window.innerHeight;
-    katter.width = window.innerWidth;
-
-    var hemmeligTall = Math.floor(Math.random()*100)+1;
-    var gjett = Number(prompt("Gjett et tall mellom 1 og 100"));
+        //Hører til film som vises når vinneren har gjettet riktig, ikke viktig..
+        const katter = document.getElementById("katter");
+        katter.height = window.innerHeight;
+        katter.width = window.innerWidth;
+        //-------------------------------------
 
 
-    while (gjett !== hemmeligTall){
 
-        if(gjett < hemmeligTall){
-            gjett = Number(prompt("Du gjettet for lavt. Prøv igjen."));
-            console.log("Du gjettet for lavt");
+        var hemmeligTall = Math.floor(Math.random()*100)+1; // Oppretter en variabel hemmeligTall som er et tilfeldig tall mellom 1 og 100.
+        var gjett = Number(prompt("Gjett et tall mellom 1 og 100")); // Spør brukeren om et tall og lagrer det til variabelen gjett.
+
+        //En while-løkke som repeterer kode helt til brukeren gjetter riktig.
+        while (gjett !== hemmeligTall){
+
+            //Hvis brukeren gjetter et tall lavere enn hemmeligTall
+            if(gjett < hemmeligTall){
+                gjett = Number(prompt("Du gjettet for lavt. Prøv igjen.")); // Brukeren får en beskjed og skriver inn et nytt tall
+            }
+            //Hvis brukeren ikke har gjettet riktig eller gjettet et for lavt tall må han ha gjettet et tall som er for høyt, da kjøres denne koden:
+            else{
+                gjett = Number(prompt("Du gjettet for høyt. Prøv igjen")); // Brukeren får en bekskjed og gjetter på nytt
+            }
         }
-        else{
-            gjett = Number(prompt("Du gjettet for høyt. Prøv igjen"));
-            console.log("Du gjettet for høyt");
-        }
-    }
-    alert("Riktig! Du vant!");
+        alert("Riktig! Du vant!"); // Når while-løkken er ferdig har brukeren gjettet riktig, og denne koden kjøres.
 
-</script>
+    </script>
 
 </body>
 </html>
