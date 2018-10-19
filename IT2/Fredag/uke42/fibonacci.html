@@ -1,37 +1,54 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nb">
 <head>
     <meta charset="UTF-8">
     <title>Fibonacci</title>
 </head>
 <body>
 
-    <h1>Fibonacci-tallene</h1>
-    <p>Denne siden innholder javascript, sjekk konsollen</p>
     <canvas id="canvas" width="600" height="600"></canvas>
 
 
     <script>
-
-
-
-
+        // Oppretter variabler som referer til canvas-elementet
         const canvas = document.getElementById("canvas");
         const ctx = canvas.getContext("2d");
 
+        // Setter bredden og høyden på canvas-elementet til å være lik størrelsen på nettleservinduet
+        canvas.height = window.innerHeight;
+        canvas.width = window.innerWidth;
+
+        // Fjerner margen som Google Chrome legger på alle nettsider, ikke viktig..
+        document.body.style.margin = 0;
+
+
+
+        var fibTall = fibonacci(100); // Oppretter en array med de 100 første tallene i fibonacci ved å kalle opp funksjonen fibonacci(n).
+
+
+        // En for-løkke som går baklengs gjennom arrayen fibTall:
+        for(var j = fibTall.length - 1; j >= 0;  j--){
+                ctx.fillStyle = getRandomColor(); // Setter fargen på firkantene i canvas-elementet til å være en tilfeldig farge ved å kalle opp funksjonen getRandomColor();
+                ctx.fillRect(0,0,fibTall[j],fibTall[j]); // Tegner en en firkant i canvas-elementet, hvor x og y koordinatene er 0, og høyden og bredden er fibonacci-tallet med indeks j.
+        }
+
+
+
         function fibonacci(n) {
+            // En funksjon som returnerer en array med de n første fibonacci tallene,
+            // eks: fibonacci(4) vil returnere [1,1,2,3]
+            // eks: fibonacci(6) vil returnere [1,1,2,3,5,8]
+
+
             var fib = [1, 1]; // oppretter en array med de to første fibonacci-tallene
 
             for (var i = 2; i < n; i++) {
-                // en for-løkke som går fra i=2 til i=10
-                fib[i] = fib[i - 1] + fib[i - 2]; //legger til neste fibonacci-tall i array-en fib. Neste fibonacci tall er summen av de to forrige
+                // en for-løkke som går fra i=2 til i<n. Hvis n for eksempel er 20 teller den fra 2 til 19.
+                fib[i] = fib[i - 1] + fib[i - 2]; //legger til neste fibonacci-tall i array-en. Neste fibonacci tall er summen av de to forrige
 
             }
             return fib;
         }
-
-        var tiTall = fibonacci(10);
-
 
 
         function getRandomColor() {
