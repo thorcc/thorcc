@@ -1,4 +1,4 @@
-# Oppgaver uke 42
+# Uke 42 - Funksjoner
 
 ### Ressurser
 
