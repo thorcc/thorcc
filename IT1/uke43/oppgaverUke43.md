@@ -5,7 +5,11 @@
 - Lag en nettside som viser det periodiske system.
 - Bruk grid, legg inn alle grunnstoffene og forsøk å få det til å se pent ut.
 
-Ressurser:
+## Oppgave 2 - Skoleavis
+
+- Lag en skoleavis hvor innholdet er strukturert ved hjelp av grid.
+
+## Ressurser
 - [Introduksjon til grid](https://scrimba.com/p/pGQrYTk/cKzPbfE)
 - [Alt er bokser](https://scrimba.com/p/pGQrYTk/ceDV9HN)
 - [Class og det periodiske system](https://scrimba.com/p/pGQrYTk/cGP8NHv)
@@ -16,7 +20,8 @@ Ekstra ressurser:
 - [Kurs i webprogrammering: HTML](https://scrimba.com/playlist/pa3ezuy)
 
 Kode som kan kopieres:
-```<div>1</div>
+```
+<div>1</div>
 <div>2</div>
 <div>3</div>
 <div>4</div>
@@ -47,4 +52,5 @@ Kode som kan kopieres:
 <div>29</div>
 <div>30</div>
 <div>31</div>
-<div>32</div>```
+<div>32</div>
+```
