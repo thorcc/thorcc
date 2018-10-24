@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+    <meta charset="UTF-8">
+    <title>Funksjoner</title>
+
+</head>
+<body>
+
+<!--
+    <h1>Funksjoner i javascript</h1>
+
+    Vi bruker funksjoner når vi øsnker å:
+    <ul>
+        <li>gjenbruke kode flere ganger</li>
+        <li>skape interaktivitet mellom bruker og nettside</li>
+    </ul>
+
+-->
+    <script>
+
+        //---Skrivemåte---
+
+       /* function funksjonsnavn(){ //Funksjonshodet
+            // Funksjonskroppen - kode som funksjonen skal utføre
+        }
+        funksjonsnavn(); //Funksjonskallet
+
+        //Eksempel
+        function hurra(){ //Funksjonshodet
+            document.write("<br>Hurra for deg!"); //Funksjonskroppen
+        }
+
+        hurra(); //Funksjonskall 1
+        hurra(); //Funksjonskall 2
+        hurra(); //Funksjonskall 3
+
+        //-----------------
+*/
+        //---Funksjoner med en parameter---
+/*        function hurraMedNavn(navn){
+            document.write("<p>Hurra for " + navn + "</p>");
+        }
+        hurraMedNavn("Nils");
+        hurraMedNavn("Ben");
+        hurraMedNavn("Thor");
+
+
+        // Eksempel - En matematisk funksjon
+        function f(x){
+            return 4*x+2;
+        }
+*/
+        //------------------
+
+        //---Funksjoner med flere parametere ---
+
+        function hurraNavnAlder(navn,alder){
+            document.write("<p>Hurra for " + navn + " som blir " + alder + " år!</p>");
+        }
+        hurraNavnAlder("Thor", 27); //Funksjonskall 1
+        hurraNavnAlder("Ben", 32); // Funksjonskall 2
+
+
+
+        for (var i = 0; i < 10; i++){
+            console.log(i);
+        }
+
+        console.log(i);
+
+
+
+
+        (function(){
+            console.log("høyde:" + window.innerHeight);
+            console.log("bredde:" + window.innerWidth);
+            })
+        ();
+
+
+        function trekantAreal(h,b){
+            return h*b/2;
+        }
+
+        document.write("Arealet av trekanten er " + trekantAreal(4,6));
+
+
+    </script>
+
+
+</body>
+</html>

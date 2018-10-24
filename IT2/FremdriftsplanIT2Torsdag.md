@@ -5,10 +5,10 @@
 | 35  | 30.aug | Elevsamtaler                               |                    |             | 
 | 36  | 06.sep | Variabler og hendelser                     | Javascript-metoder | 2.1 - 2.3   | 
 | 37  | 13.sep | Array                                      |                    | 2.4 - 3.2   | 
-| 38  | 20.sep | Array og løkker                            |                    | 3.3 - 3.5   | 
+| 38  | 20.sep | Switch                           |                    | 3.3 - 3.5   | 
 | 39  | 27.sep | **Prøve kap. 1-4.**                        |                    | 4.1 - 4.2   | 
 | 40  | 04.okt | Høstferie                                  |                    |             | 
-| 41  | 11.okt | Switch og løkker                           |                    | 4.3 - 4.5   | 
+| 41  | 11.okt | Løkker                           |                    | 4.3 - 4.5   | 
 | 42  | 18.okt | Funksjoner                                 |                    | 5.1 - 5.3   | 
 | 43  | 25.okt | Funksjoner                                 |                    | 5.4 - 5.5   | 
 | 44  | 01.nov | Interkativitet og brukergrensesnitt        |                    | 6.1 - 6.2   | 

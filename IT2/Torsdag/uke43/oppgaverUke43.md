@@ -47,4 +47,3 @@ Pseudokode:
 ### Oppgave 6
 - Stein-saks-papir!  
   - Skriv et program som tar inn et tilfeldig tall mellom 1-3 (1 = stein, 2 = saks, 3 = papir), og enten stein, saks eller papir fra bruker. Sammenlign valgene og gi en beskjed om hvem som vant.
-- Tips: Bruk if-else if-else for å skrive programmet. Skriv resultatet ut til konsoll.
