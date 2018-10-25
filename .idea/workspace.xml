@@ -1,32 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/IT2/Torsdag/uke42/for-løkkeOgcanvas.html" line="8" mnemonic="8" />
-  </component>
   <component name="ChangeListManager">
-    <list default="true" id="8f6e60cb-e867-4fa1-8228-7a387190479f" name="Default Changelist" comment="oppgaver uke 39">
-      <change afterPath="$PROJECT_DIR$/IT2/Torsdag/uke43/funksjoner.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IT2/Torsdag/uke43/oppgaverUke43.md" afterDir="false" />
+    <list default="true" id="8f6e60cb-e867-4fa1-8228-7a387190479f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IT1/Uke34/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/IT1/Uke34/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IT1/uke37/reformasjonen/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/IT1/uke37/reformasjonen/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IT1/uke37/reformasjonen/stilark.css" beforeDir="false" afterPath="$PROJECT_DIR$/IT1/uke37/reformasjonen/stilark.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IT1/uke37_t/reformasjonen/bilder/bonus.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/IT1/uke37_t/reformasjonen/bilder/kart.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/IT1/uke37_t/reformasjonen/bilder/luther500logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/IT1/uke37_t/reformasjonen/bilder/lutherPepsi2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/IT1/uke37_t/reformasjonen/bilder/lutherTegning.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/IT1/uke37_t/reformasjonen/bilder/skysportsLuther.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/IT1/uke37_t/reformasjonen/historie.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/IT1/uke37_t/reformasjonen/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/IT1/uke37_t/reformasjonen/kart.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/IT1/uke37_t/reformasjonen/stilark.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/IT1/uke38/enkelGrid.html" beforeDir="false" afterPath="$PROJECT_DIR$/IT1/uke38/enkelGrid.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IT1/uke38/oppgaver.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/IT1/uke38/solsystemet-eksempelMedGrid/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/IT1/uke38/solsystemet-eksempelMedGrid/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/IT2/FremdriftsplanIT2Torsdag.md" beforeDir="false" afterPath="$PROJECT_DIR$/IT2/FremdriftsplanIT2Torsdag.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IT2/Torsdag/uke41/fibonacci.html" beforeDir="false" afterPath="$PROJECT_DIR$/IT2/Torsdag/uke41/fibonacci.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IT2/Torsdag/uke42/for-lokkeOgCanvas.html" beforeDir="false" afterPath="$PROJECT_DIR$/IT2/Torsdag/uke42/for-lokkeOgCanvas.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -41,7 +18,7 @@
     <session id="-319069123">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="56" />
+          <entry key="project.closed" value="57" />
           <entry key="project.open.time.0" value="7" />
           <entry key="project.open.time.1" value="3" />
           <entry key="project.open.time.10" value="1" />
@@ -52,10 +29,10 @@
           <entry key="project.open.time.5" value="8" />
           <entry key="project.open.time.5587" value="1" />
           <entry key="project.open.time.6" value="13" />
-          <entry key="project.open.time.7" value="7" />
+          <entry key="project.open.time.7" value="8" />
           <entry key="project.open.time.8" value="2" />
           <entry key="project.open.time.9" value="2" />
-          <entry key="project.opened" value="58" />
+          <entry key="project.opened" value="59" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -65,7 +42,7 @@
           <entry key="forOgWhile" value="1" />
           <entry key="html" value="187" />
           <entry key="js" value="2" />
-          <entry key="md" value="51" />
+          <entry key="md" value="53" />
           <entry key="oppgaver" value="2" />
         </counts>
       </usages-collector>
@@ -74,7 +51,7 @@
           <entry key="CSS" value="4" />
           <entry key="HTML" value="188" />
           <entry key="JavaScript" value="2" />
-          <entry key="Markdown" value="53" />
+          <entry key="Markdown" value="55" />
           <entry key="Scratch" value="1" />
         </counts>
       </usages-collector>
@@ -82,9 +59,9 @@
         <counts>
           <entry key="css" value="304" />
           <entry key="html" value="71445" />
-          <entry key="md" value="21326" />
+          <entry key="md" value="21482" />
           <entry key="oppgaver" value="1" />
-          <entry key="txt" value="717" />
+          <entry key="txt" value="770" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
@@ -92,8 +69,8 @@
           <entry key="CSS" value="304" />
           <entry key="HTML" value="71444" />
           <entry key="JavaScript" value="29" />
-          <entry key="Markdown" value="21298" />
-          <entry key="PLAIN_TEXT" value="717" />
+          <entry key="Markdown" value="21454" />
+          <entry key="PLAIN_TEXT" value="770" />
           <entry key="Scratch" value="1" />
         </counts>
       </usages-collector>
@@ -104,65 +81,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/IT2/Fredag/uke42/oppgaverUke42.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="1146">
-                <caret line="83" column="12" lean-forward="true" selection-start-line="83" selection-start-column="12" selection-end-line="83" selection-end-column="12" />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/IT2/Fredag/uke42/funksjonerUke42.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="588">
-              <caret line="56" lean-forward="true" selection-start-line="56" selection-end-line="56" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/IT2/Torsdag/uke43/oppgaverUke43.md">
+        <entry file="file://$PROJECT_DIR$/IT2/FremdriftsplanIT2Torsdag.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="705">
-                <caret line="47" column="21" lean-forward="true" selection-start-line="47" selection-start-column="21" selection-end-line="47" selection-end-column="21" />
+              <first_editor relative-caret-position="270">
+                <caret line="18" column="66" selection-start-line="18" selection-start-column="66" selection-end-line="18" selection-end-column="66" />
               </first_editor>
               <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/IT2/Fredag/uke42/gjettTall.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="465">
-              <caret line="31" column="140" lean-forward="true" selection-start-line="31" selection-start-column="140" selection-end-line="31" selection-end-column="140" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/IT2/Torsdag/uke42/oppgaverUke42-funksjoner.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="211">
-                <caret line="21" column="4" lean-forward="true" selection-start-line="21" selection-start-column="4" selection-end-line="21" selection-end-column="4" />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/IT2/Fredag/uke42/fibonacci.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="18" column="41" lean-forward="true" selection-start-line="18" selection-start-column="41" selection-end-line="18" selection-end-column="41" />
             </state>
           </provider>
         </entry>
@@ -208,7 +134,6 @@
         <option value="$PROJECT_DIR$/IT2/Torsdag/uke41/forSkrivemåte.html" />
         <option value="$PROJECT_DIR$/IT2/Fredag/uke39/oppgaverUke39.md" />
         <option value="$PROJECT_DIR$/IT2/Torsdag/uke41/oppgaverUke41-løkker.md" />
-        <option value="$PROJECT_DIR$/IT2/FremdriftsplanIT2Torsdag.md" />
         <option value="$PROJECT_DIR$/IT2/Torsdag/uke41/oppgave2.html" />
         <option value="$PROJECT_DIR$/IT2/Fredag/uke41/oppgaverUke41-funksjoner.md" />
         <option value="$PROJECT_DIR$/IT2/Torsdag/uke41/for.html" />
@@ -234,6 +159,7 @@
         <option value="$PROJECT_DIR$/firebasePaint/firebasePaint.html" />
         <option value="$PROJECT_DIR$/IT2/Torsdag/uke43/funksjoner.html" />
         <option value="$PROJECT_DIR$/IT2/Torsdag/uke43/oppgaverUke43.md" />
+        <option value="$PROJECT_DIR$/IT2/FremdriftsplanIT2Torsdag.md" />
       </list>
     </option>
   </component>
@@ -243,17 +169,17 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="152" />
-    <option name="y" value="85" />
-    <option name="width" value="2103" />
-    <option name="height" value="1315" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="y" value="23" />
+    <option name="width" value="989" />
+    <option name="height" value="838" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -315,7 +241,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -456,35 +381,8 @@
       <workItem from="1539843811569" duration="13143000" />
       <workItem from="1539929732569" duration="11711000" />
       <workItem from="1539948228452" duration="2872000" />
-      <workItem from="1540367666360" duration="9649000" />
-    </task>
-    <task id="LOCAL-00017" summary="Oppdatert fremdriftsplan">
-      <created>1535658462104</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1535658462104</updated>
-    </task>
-    <task id="LOCAL-00018" summary="kode fra timen uke35">
-      <created>1535711516487</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1535711516487</updated>
-    </task>
-    <task id="LOCAL-00019" summary="kode fra timen uke36">
-      <created>1536241197883</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1536241197883</updated>
-    </task>
-    <task id="LOCAL-00020" summary="kode fra timen uke36">
-      <created>1536505665005</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1536505665006</updated>
+      <workItem from="1540367666360" duration="10355000" />
+      <workItem from="1540448124757" duration="513000" />
     </task>
     <task id="LOCAL-00021" summary="Uke37">
       <created>1536761569219</created>
@@ -801,11 +699,39 @@
       <option name="project" value="LOCAL" />
       <updated>1539961652164</updated>
     </task>
-    <option name="localTasksCounter" value="66" />
+    <task id="LOCAL-00066" summary="oppgaver uke 43">
+      <created>1540396871547</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1540396871548</updated>
+    </task>
+    <task id="LOCAL-00067" summary="oppgaver uke 43">
+      <created>1540396989763</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1540396989763</updated>
+    </task>
+    <task id="LOCAL-00068" summary="la til prosjekt og heldags">
+      <created>1540448500607</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1540448500609</updated>
+    </task>
+    <task id="LOCAL-00069" summary="opprydning">
+      <created>1540448686832</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1540448686832</updated>
+    </task>
+    <option name="localTasksCounter" value="70" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="245746000" />
+    <option name="totallyTimeSpent" value="246965000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -817,10 +743,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="152" y="85" width="2103" height="1315" extended-state="0" />
+    <frame x="0" y="23" width="1439" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4973046" visible="true" weight="0.17819405" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4973046" visible="true" weight="0.2616361" />
       <window_info id="Structure" order="1" sideWeight="0.50269544" side_tool="true" weight="0.23608175" />
       <window_info id="Favorites" order="2" sideWeight="0.50339216" side_tool="true" weight="0.2924595" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -847,9 +773,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Uke37" />
-    <MESSAGE value="oppgaver uke37" />
-    <MESSAGE value="kode fra timen uke36" />
     <MESSAGE value="eksempelFirkantSomFølgerMusen" />
     <MESSAGE value="kode fra timen uke37" />
     <MESSAGE value="uke37" />
@@ -872,7 +795,10 @@
     <MESSAGE value="Fibonacci og gjettTall - kode fra timen uke 42" />
     <MESSAGE value="Kode fra timen uke 42 - la til kommentarer i koden" />
     <MESSAGE value="firebasePaint" />
-    <option name="LAST_COMMIT_MESSAGE" value="firebasePaint" />
+    <MESSAGE value="oppgaver uke 43" />
+    <MESSAGE value="la til prosjekt og heldags" />
+    <MESSAGE value="opprydning" />
+    <option name="LAST_COMMIT_MESSAGE" value="opprydning" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/IT2/Torsdag/uke37/oppgave3.html">
@@ -1006,30 +932,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/IT2/FremdriftsplanIT2Torsdag.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="105">
-            <caret line="7" column="23" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="23" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/IT2/Fredag/oppgave18.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="435">
           <caret line="29" column="31" selection-start-line="29" selection-start-column="31" selection-end-line="29" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/IT2/FremdriftsplanIT2Fredag.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="225">
-            <caret line="15" column="39" lean-forward="true" selection-start-line="15" selection-start-column="39" selection-end-line="15" selection-end-column="39" />
-          </first_editor>
-          <second_editor />
         </state>
       </provider>
     </entry>
@@ -1151,10 +1057,37 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/IT2/Fredag/uke42/oppgaverUke42.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="1245">
+            <caret line="83" column="12" selection-start-line="83" selection-start-column="12" selection-end-line="83" selection-end-column="12" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/IT2/Fredag/uke42/funksjonerUke42.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="840">
+          <caret line="56" selection-start-line="56" selection-end-line="56" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/IT2/Fredag/uke42/gjettTall.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="465">
           <caret line="31" column="140" lean-forward="true" selection-start-line="31" selection-start-column="140" selection-end-line="31" selection-end-column="140" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/IT2/Torsdag/uke42/oppgaverUke42-funksjoner.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="315">
+            <caret line="21" column="4" lean-forward="true" selection-start-line="21" selection-start-column="4" selection-end-line="21" selection-end-column="4" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
@@ -1165,38 +1098,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/IT2/Fredag/uke42/funksjonerUke42.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="588">
-          <caret line="56" lean-forward="true" selection-start-line="56" selection-end-line="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/IT2/Fredag/uke42/oppgaverUke42.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="1146">
-            <caret line="83" column="12" lean-forward="true" selection-start-line="83" selection-start-column="12" selection-end-line="83" selection-end-column="12" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/IT2/Torsdag/uke42/oppgaverUke42-funksjoner.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="211">
-            <caret line="21" column="4" lean-forward="true" selection-start-line="21" selection-start-column="4" selection-end-line="21" selection-end-column="4" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/IT2/Torsdag/uke43/oppgaverUke43.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="705">
-            <caret line="47" column="21" lean-forward="true" selection-start-line="47" selection-start-column="21" selection-end-line="47" selection-end-column="21" />
+          <first_editor relative-caret-position="603">
+            <caret line="48" column="45" lean-forward="true" selection-start-line="48" selection-start-column="45" selection-end-line="48" selection-end-column="45" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/IT2/FremdriftsplanIT2Fredag.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="130">
+            <caret line="15" column="39" lean-forward="true" selection-start-line="15" selection-start-column="39" selection-end-line="15" selection-end-column="39" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/IT2/FremdriftsplanIT2Torsdag.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="270">
+            <caret line="18" column="66" selection-start-line="18" selection-start-column="66" selection-end-line="18" selection-end-column="66" />
           </first_editor>
           <second_editor />
         </state>

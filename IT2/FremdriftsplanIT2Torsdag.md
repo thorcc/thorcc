@@ -16,7 +16,7 @@
 | 46  | 15.nov | Multimedier            |                    | 7.1 - 7.3   | 
 | 47  | 22.nov | Bilder                                     |                    | 7.3 - 7.4   | 
 | 48  | 29.nov | Vektorgrafikk                              |                    | 7.5 - 7.6   | 
-| 49  | 06.des | **Innlevering av prosjekt** + Video                                      |                    | 7.6 - 7.7   | 
+| 49  | 06.des | **Innlevering av prosjekt** + Vi øver til heldags                                      |                    | 7.6 - 7.7   | 
 | 50  | 13.des | **Heldags**                                |                    | 7.8      | 
 | 51  | 20.des | Array                                      |                    | 8.1 - 8.2   | 
 | 52  | 27.des | Juleferie                                  |                    |             | 
