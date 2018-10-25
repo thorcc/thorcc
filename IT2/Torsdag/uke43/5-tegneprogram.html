@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+    <meta charset="UTF-8">
+    <title>Tegneprogram i JS</title>
+
+    <style>
+        canvas{
+            border: solid;
+        }
+    </style>
+</head>
+<body>
+
+    <canvas id="canvas" width="600" height="600"></canvas>
+
+<script>
+    const canvas = document.getElementById("canvas");
+    const ctx = canvas.getContext("2d");
+
+
+    canvas.onmousedown = function(event) { //Funksjon som kjører hver gang musen beveger seg på canvas-elementet, event er parameteren som sendes inn
+        let x = event.clientX; // Oppretter variabel for x-koordinaten til musen
+        let y = event.clientY; // Oppretter variabel for y-koordinaten til musen
+        tegnSirkel(x,y);
+        console.log(x,y);
+    }
+
+    function tegnSirkel(x,y){
+        ctx.beginPath();
+        ctx.arc(x,y,20,0,Math.PI * 2);
+        ctx.fill();
+    }
+
+
+
+
+</script>
+
+</body>
+</html>

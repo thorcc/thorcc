@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+    <meta charset="UTF-8">
+    <title>Gjett tallet!</title>
+</head>
+<body>
+    <h3>Gjett tallet med prompt og while-løkke</h3>
+    <script>
+
+        let hemmeligTall = Math.floor(Math.random()*100)+1; // Oppretter en variabel hemmeligTall som er et tilfeldig tall mellom 1 og 100.
+        let gjett = Number(prompt("Gjett et tall mellom 1 og 100")); // Spør brukeren om et tall og lagrer det til variabelen gjett.
+
+        //En while-løkke som repeterer kode helt til brukeren gjetter riktig.
+        while (gjett !== hemmeligTall){
+
+            //Hvis brukeren gjetter et tall lavere enn hemmeligTall
+            if(gjett < hemmeligTall){
+                gjett = Number(prompt("Du gjettet for lavt. Prøv igjen.")); // Brukeren får en beskjed og skriver inn et nytt tall
+            }
+            //Hvis brukeren ikke har gjettet riktig eller gjettet et for lavt tall må han ha gjettet et tall som er for høyt, da kjøres denne koden:
+            else{
+                gjett = Number(prompt("Du gjettet for høyt. Prøv igjen")); // Brukeren får en bekskjed og gjetter på nytt
+            }
+        }
+        alert("Riktig! Du vant!"); // Når while-løkken er ferdig har brukeren gjettet riktig, og denne koden kjøres.
+
+    </script>
+
+</body>
+</html>

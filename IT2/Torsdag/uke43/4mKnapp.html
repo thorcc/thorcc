@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+    <meta charset="UTF-8">
+    <title>Gjett tallet!</title>
+</head>
+<body>
+<h3>Gjett tallet med knapp og input felt</h3>
+<input type="number" id="inpGjett">
+<button id="knapp">Trykk her for å gjette</button>
+
+<div id="svar">Gjett da!</div>
+
+<script>
+
+    const inpGjett = document.getElementById("inpGjett");
+    const knapp = document.getElementById("knapp");
+    const svar = document.getElementById("svar");
+
+    let hemmeligTall = Math.floor(Math.random()*100)+1; // Oppretter en variabel hemmeligTall som er et tilfeldig tall mellom 1 og 100.
+
+    knapp.onclick = function(){
+        let gjett = Number(inpGjett.value);
+
+        if(gjett > hemmeligTall){
+            svar.innerHTML = "Du gjetta for høyt. Prøv igjen!";
+        }
+        else if(gjett < hemmeligTall){
+            svar.innerHTML = "Du gjetta for lavt. Prøv igjen!"
+        }
+        else{
+            svar.innerHTML = "Du gjetta riktig! Gratulerer!!"
+        }
+    }
+</script>
+
+</body>
+</html>

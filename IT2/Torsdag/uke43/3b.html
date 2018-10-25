@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+    <meta charset="UTF-8">
+    <title>3b</title>
+</head>
+<body>
+
+
+
+<script>
+
+    function leggTilDiv(tekst,bakgrunnsfarge,skriftstorrelse){
+        document.body.innerHTML += "<div>" + tekst + "</div>"; // Lager ikke en const til body elementet, fordi det er så lett å skrive document.body.
+        document.body.style.backgroundColor = bakgrunnsfarge;
+        document.body.style.fontSize = skriftstorrelse + "px";
+    }
+
+    leggTilDiv("Hallo", "darkorange", 120); // Funksjonskall
+</script>
+
+</body>
+</html>

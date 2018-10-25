@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Paint og firebase</title>
+
+    <style>
+
+        canvas{
+            position: absolute;
+            z-index: -1;
+        }
+        h1 {
+            margin: 15px;
+        }
+
+    </style>
+</head>
+<body>
+<canvas id="canvas"></canvas>
+
+<div>
+    <label for="storrelse">Størrelse: </label>
+    <input id="storrelse" type="range" name="points" min="1" max="20">
+    <span id="storrelseValue"></span>
+
+    <label for="storrelse">Type: </label>
+    <select id="type">
+        <option value="sirkel">Sirkel</option>
+        <option value="firkant">Firkant</option>
+    </select>
+
+    <input id="farge" type="color">
+</div>
+
+
+
+
+
+<script>
+
+    const canvas = document.getElementById("canvas");
+    const ctx = canvas.getContext("2d");
+
+    const inpStorrelse = document.getElementById("storrelse");
+    const inpType = document.getElementById("type");
+    const inpFarge = document.getElementById("farge");
+
+
+    canvas.height = window.innerHeight; // Setter høyden  på canvas-elementet til å være lik høyden på vinduet
+    canvas.width = window.innerWidth; // Setter bredden på canvas-elementet til å være lik bredden på vinduet
+    document.body.style.margin = 0; // Fjerner margen som google-chrome setter på nettsiden
+
+    // Skriver ut størrelsen på "børsten" med en gang siden lastes, og hver gang den endres
+    storrelseValue.innerHTML = `Verdi: ${inpStorrelse.value}`;
+    inpStorrelse.onmousemove = function(){
+        storrelseValue.innerHTML = `Verdi: ${inpStorrelse.value}`;
+    }
+
+    function nyttPunkt(type,x,y,storrelse,farge) { // Tegner et punkt, hva som tegnes avhenger av hva brukeren velger av type
+        ctx.fillStyle = farge;
+        if(type === "sirkel"){
+            ctx.beginPath();
+            ctx.arc(x,y,storrelse,0,Math.PI * 2);
+            ctx.fill();
+        }
+        else if(type === "firkant"){
+            ctx.fillRect(x,y,storrelse,storrelse);
+        }
+    }
+
+    // Måtte jobbe litt for å få til både onclick og onmousemove samtidig
+
+    let musNede = false; // Oppretter en variabel som holder kontroll på om musepekeren holdes inne
+
+    canvas.onmousedown = function(event) {
+        musNede = true; // Musepekeren er trykket ned
+        let x = event.clientX;
+        let y = event.clientY;
+        nyttPunkt(inpType.value,x,y,inpStorrelse.value,inpFarge.value);
+    }
+    canvas.onmousemove = function(event){
+        if (musNede){ //Hvis musepekeren er trykket ned, og musen beveges
+            let x = event.clientX;
+            let y = event.clientY;
+            nyttPunkt(inpType.value,x,y,inpStorrelse.value,inpFarge.value);
+        }
+        console.log(musNede);
+    }
+    canvas.onmouseup = function(){ // Når brukeren slepper musepekeren settes musNede til false, og det ingenting på canvas-elementet
+        musNede = false;
+    }
+    canvas.onmouseleave = function(){ // Når musepekeren forlater canvas-elementet skal den ikke tegne lenger, og musnede settes til false.
+        musNede = false;
+    }
+
+
+
+</script>
+
+</body>
+</html>

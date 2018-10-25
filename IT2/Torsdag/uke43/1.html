@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+    <meta charset="UTF-8">
+    <title>Større enn 0?</title>
+</head>
+<body>
+
+<input id="inputFelt" type="number">
+<div id="svar"></div>
+
+<script>
+
+    const inputFelt = document.getElementById("inputFelt");
+    const svar = document.getElementById("svar");
+
+    inputFelt.oninput = function(){
+        storre(inputFelt.value); //funksjonskall til funksjonen storre(tall) som er definert under.
+    };
+
+
+    function storre(tall){
+        let verdi = Number(tall); // Opprettter en lokal variabel som er tall konvertert til Number, dette fordi input-felt alltid er string
+        if(verdi > 0){
+            svar.innerHTML = "Større enn 0";
+        }
+        else if(verdi === 0){
+            svar.innerHTML = "Er lik 0";
+        }
+        else{
+            svar.innerHTML = "Mindre enn 0";
+        }
+    }
+
+</script>
+
+</body>
+</html>
