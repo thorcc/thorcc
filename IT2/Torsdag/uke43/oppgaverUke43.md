@@ -23,6 +23,10 @@
 - Skriv noe tekst på en nettside, og lag funksjonen *endreStil(bakgrunnsFarge,skriftFarge,skriftStorrelse)*, som endrer stilen på nettsiden.  
 - For eksempel skal *endreStil("DarkOrange","White",120);* sette bakgrunnsfargen til mørk oransj, tekstfargen til hvit og skriftstørrelsen til 120px.
 
+### Oppgave 3b
+- Lag en funksjon som legger til et div-element i body-elementet.
+- function leggTilDiv(tekst,bakgrunnsfarge,skriftstorrelse){ din kode her }
+
 ## Større oppgaver (sammensatte opppgaver)
 
 ### Oppgave 4
