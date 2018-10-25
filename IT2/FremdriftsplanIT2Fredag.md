@@ -12,8 +12,8 @@
 | 40 |5 okt|Høstferie|||
 | 41 |12 okt|Funksjoner| |5.3|
 | 42 |19 okt|Funksjoner| |5.4 - 5.5|
-| 43 |26 okt|**Prosjektstart**  Interkativitet og brukergrensesnitt| |6.1 - 6.2|
-| 44 |2 nov|Interkativitet og brukergrensesnitt| |6.3 - 6.4|
+| 43 |26 okt|Litt funksjoner + interkativitet og brukergrensesnitt| |6.1 - 6.2|
+| 44 |2 nov|**Prosjektstart**  Interkativitet og brukergrensesnitt| |6.3 - 6.4|
 | 45 |9 nov|Multimedier| |7.1 - 7.3|
 | 46 |16 nov|Bilder| |7.3 - 7.4|
 | 47 |23 nov|Vektorgrafikk| |7.5|
