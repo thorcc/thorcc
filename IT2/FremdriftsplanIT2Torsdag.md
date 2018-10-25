@@ -11,12 +11,12 @@
 | 41  | 11.okt | Løkker                           |                    | 4.3 - 4.5   | 
 | 42  | 18.okt | Funksjoner                                 |                    | 5.1 - 5.3   | 
 | 43  | 25.okt | Funksjoner                                 |                    | 5.4 - 5.5   | 
-| 44  | 01.nov | *Lesothodag* Oppgaver        |                    | 6.1 - 6.2   | 
-| 45  | 08.nov | **Utlevering av prosjekt** Interkativitet og brukergrensesnitt        |                    | 6.3 - 6.4   | 
+| 44  | 01.nov | *Lesothodag* + Ukesoppgaver        |                    | 6.1 - 6.2   | 
+| 45  | 08.nov | **Utlevering av prosjekt** + Interkativitet og brukergrensesnitt        |                    | 6.3 - 6.4   | 
 | 46  | 15.nov | Multimedier            |                    | 7.1 - 7.3   | 
 | 47  | 22.nov | Bilder                                     |                    | 7.3 - 7.4   | 
 | 48  | 29.nov | Vektorgrafikk                              |                    | 7.5 - 7.6   | 
-| 49  | 06.des | **Innlevering av prosjekt**  Video                                      |                    | 7.6 - 7.7   | 
+| 49  | 06.des | **Innlevering av prosjekt** + Video                                      |                    | 7.6 - 7.7   | 
 | 50  | 13.des | **Heldags**                                |                    | 7.8      | 
 | 51  | 20.des | Array                                      |                    | 8.1 - 8.2   | 
 | 52  | 27.des | Juleferie                                  |                    |             | 
