@@ -7,7 +7,7 @@ Dagens oppgaver er inspirert av IT2 eksamen 2018.
 [Eksamen 2018](https://github.com/gloer/gloer.github.io/blob/master/eksamen/v2018/IT2V2018.pdf)
 
 
-## Oppgave 1 - Bildekarussel
+## Oppgave 1 - Bildekarrusell
 
 #### 1 - Opprett en nettside
 - Finn fem bilder på nettet eller på pcen din.
