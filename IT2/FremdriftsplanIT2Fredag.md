@@ -18,7 +18,7 @@
 | 46 |16 nov|Bilder| |7.3 - 7.4|
 | 47 |23 nov|Vektorgrafikk| |7.5|
 | 48 |30 nov|Video| |7.6 - 7.7|
-| 49 |7 des|**Prosjektinnlevering**  Lyd| |7.8|
+| 49 |7 des|**Prosjektinnlevering**  + Vi øver til heldags| |7.8|
 | 50 |14 des|**Heldags**| ||
 | 51 |21 des|Array, set, map, nodelist| |8.1 - 8.2, 8.3 - 8.5|
 | 52 |28 des|Juleferie|||
