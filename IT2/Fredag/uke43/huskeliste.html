@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+    <meta charset="UTF-8">
+    <title>Huskeliste</title>
+</head>
+<body>
+
+    <h1>Huskeliste</h1>
+
+    <form>
+        <input type="text" id="inpLeggTil" placeholder="Ting jeg må huske" required>
+        <button id="btnKnapp" type="submit">Legg til</button>
+    </form>
+    <div id="divListe">
+        <ul id="ulListe">
+            <li>Husk å rette prøvene i IT1</li>
+        </ul>
+    </div>
+
+    <script>
+
+        const inpLeggTil = document.getElementById("inpLeggTil");
+        const btnKnapp = document.getElementById("btnKnapp");
+        const ulListe = document.getElementById("ulListe");
+
+
+        btnKnapp.onclick = function(){
+            if (inpLeggTil.value !== ""){
+                leggTilPunkt(inpLeggTil.value);
+                inpLeggTil.value = "";
+            }
+        }
+
+        function leggTilPunkt(tekst){
+            //ulListe.innerHTML += "<li>" + tekst + "</li>";
+            ulListe.innerHTML += `<li>${tekst}</li>`;
+        }
+
+
+
+    </script>
+
+</body>
+</html>
