@@ -19,15 +19,30 @@
     </main>
 
     <script>
-
+        // Oppretter variabler som referer til html-elementene
         const pluss = document.getElementById("pluss");
         const minus = document.getElementById("minus");
         const tall = document.getElementById("tall");
 
-        let antall = 50;
-        tall.innerHTML = antall;
 
-        pluss.onclick = function(){
+
+
+        let antall = 0; // Definerer en global variabel som holder kontroll på antallet
+        tall.innerHTML = antall; //Skriver ut det opprinnelige antallet på nettsiden, som er 0
+
+        pluss.onclick = leggTil; // Kaller opp funksjonen leggTil når plussknappen trykkes på
+        minus.onclick = trekkFra; //Kaller opp funksjonen trekkFra når minusknappen er trykket på
+
+        window.onkeydown = function(event){ // Hendelsesstyrt funksjon som kjører ved tastetrykk
+            if (event.code === "ArrowUp"){
+                leggTil();
+            }
+            else if (event.code === "ArrowDown"){
+                trekkFra();
+            }
+        }
+
+        function leggTil(){
             antall++;
 
             if(antall > 55 && antall < 60){
@@ -42,7 +57,8 @@
                 tall.innerHTML = antall;
             }
         }
-        minus.onclick = function() {
+
+        function trekkFra(){
             antall--;
             if (antall > 60) {
                 tall.innerHTML = antall + "!";
