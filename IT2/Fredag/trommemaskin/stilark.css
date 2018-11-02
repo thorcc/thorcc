@@ -26,6 +26,6 @@ main{
 }
 
 .spiller{
-    border: solid 7px yellow;
-    transition: 0.2s;
+    border: solid 5px yellow;
+    transform: scale(1.1);
 }
