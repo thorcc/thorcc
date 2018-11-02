@@ -4,7 +4,7 @@ window.onkeydown = function(event){
     const boks = document.querySelector(`div[data-code=${event.code}]`);
     const lyd = document.querySelector(`audio[data-code=${event.code}]`);
 
-    if(!lyd){
+    if(!boks){
         return;
     }
 
@@ -16,5 +16,10 @@ window.onkeydown = function(event){
 }
 window.onkeyup = function(event){
     const boks = document.querySelector(`div[data-code=${event.code}]`);
+
+    if(!boks){
+        return;
+    }
+
     boks.classList.remove("spiller");
 }
