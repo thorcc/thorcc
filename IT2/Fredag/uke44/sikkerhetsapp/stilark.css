@@ -16,14 +16,12 @@ main{
     font-size: 256px;
     font-weight: bolder;
 }
-.knapp{
+.knapp{ /* Stil på knappene */
     width: 100px;
     height: 100px;
     background-color: black;
     border: none;
     color: white;
-    text-align: center;
     text-decoration: none;
-    display: inline-block;
     font-size: 64px;
 }
