@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+    <meta charset="UTF-8">
+    <title>Spill</title>
+</head>
+<body>
+    <canvas id="canvas"></canvas>
+
+    <script>
+
+        const canvas = document.getElementById("canvas");
+        const ctx = canvas.getContext("2d");
+        canvas.height = window.innerHeight; // Setter bredden og høyden på canvas elementet til å være lik høyden og bredden på nettleseren
+        canvas.width = window.innerWidth;
+
+        let x = 500; // Globale variabler som lagrer x- og y-koordinatene til sirkelen vi skal tegne
+        let y = 500;
+        let radius = 20;
+        tegnSirkel(x,y,radius); // Tegner en sirkel med en gang siden har lastet inn
+
+        window.onkeydown = function(event){ // En hendelsesstyrt funksjon som kjøres når en tast trykkes ned, event(hendelsen) sendes inn som parameter i funksjonen
+            if (event.code === "ArrowLeft"){ // Hvis hendelsen, som er tasten som er trykket ned på tastaturet, har koden "ArrowLeft" kjøres den følgende koden
+                x = x - 5; // Trekk bort 5 fra  x
+            }
+            else if(event.code === "ArrowRight"){ // Hvis høyre-piltast trykkes gjør følgende:
+                x = x + 5; // Legg 5 til x
+            }
+            else if(event.code === "ArrowDown"){  // Hvis pil ned trykkes gjør følgende:
+                y = y + 5; // Legg 5 til y
+            }
+            else if(event.code === "ArrowUp"){ // Hvis pil opp trykkes gjør følgende:
+                y = y - 5;
+            }
+            tegnSirkel(x,y,radius); // Kaller opp funksjonen tegnSirkel med de nye x- og y- koordinatene
+        }
+
+
+        function tegnSirkel(x,y,radius){
+            ctx.clearRect(0, 0, canvas.width, canvas.height); // Funksjon som fjerner alt innhold på canvas-elementet
+            ctx.beginPath();
+            ctx.arc(x,y,radius,0,2*Math.PI); // En sirkel fra 0 til 2*Pi, altså 360 grader
+            ctx.fill();
+        }
+    </script>
+</body>
+</html>
