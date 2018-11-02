@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+    <meta charset="UTF-8">
+    <title>Spill</title>
+    <style>
+        div{
+            width: 50px; /* Setter en bredde, høyde og bakgrunnsfarge på boksen, slik at den vises på nettsiden. */
+            height: 50px;
+            background-color: #0d99a5;
+            transition:0.1s; /* Setter på en overgang, dette gir et litt mindre hakkete spill*/
+        }
+    </style>
+</head>
+<body>
+
+    <div id="boks"></div>
+
+    <script>
+        let x = 500; // Global variabel som lagrer x-verdien
+        let y = 500; // Global variabel som lagrer y-verdien
+
+        const boks = document.getElementById("boks"); // variabel som referer til elementet med id "boks"
+        boks.style.marginLeft = x + "px"; // Setter marginLeft til å være lik x når nettsiden lastes
+        boks.style.marginTop = y + "px"; // Setter marginTop til å være lik y når nettsiden lastes
+
+        window.onkeydown = function(event){ // En hendelsesstyrt funksjon som kjøres når en tast trykkes ned, event(hendelsen) sendes inn som parameter i funksjonen
+            if (event.code === "ArrowLeft"){ // Hvis hendelsen, som er tasten som er trykket ned på tastaturet, har koden "ArrowLeft" kjøres den følgende koden
+                x = x - 5; // Trekk bort 5 fra  x
+            }
+            else if(event.code === "ArrowRight"){ // Hvis høyre-piltast trykkes gjør følgende:
+                x = x + 5; // Legg 5 til x
+            }
+            else if(event.code === "ArrowDown"){  // Hvis pil ned trykkes gjør følgende:
+                y = y + 5; // Legg 5 til y
+            }
+            else if(event.code === "ArrowUp"){ // Hvis pil opp trykkes gjør følgende:
+                y = y - 5;
+            }
+            boks.style.marginLeft = x + "px"; // Oppdater verdien på boks sin marginLeft
+            boks.style.marginTop = y + "px"; // Oppdater verdien på boks sin marginTop
+        }
+
+
+
+
+
+    </script>
+
+</body>
+</html>
