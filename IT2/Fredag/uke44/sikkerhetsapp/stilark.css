@@ -1,0 +1,29 @@
+body{
+    text-align: center;
+}
+main{
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+#app{
+    background-color: #0d99a5;
+    border-radius: 5%;
+    padding: 30px;
+}
+#tall{
+    font-size: 256px;
+    font-weight: bolder;
+}
+.knapp{
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 64px;
+}

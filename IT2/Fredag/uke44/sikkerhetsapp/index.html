@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+    <meta charset="UTF-8">
+    <title>Sikkerhets-app</title>
+    <link rel="stylesheet" href="stilark.css">
+</head>
+<body>
+
+    <main>
+        <div id="app">
+            <div id="tall">
+            </div>
+            <div id="knapper">
+                <button class="knapp" id="pluss">+</button>
+                <button class="knapp" id="minus">-</button>
+            </div>
+        </div>
+    </main>
+
+    <script>
+
+        const pluss = document.getElementById("pluss");
+        const minus = document.getElementById("minus");
+        const tall = document.getElementById("tall");
+
+        let antall = 50;
+        tall.innerHTML = antall;
+
+        pluss.onclick = function(){
+            antall++;
+
+            if(antall > 55 && antall < 60){
+                tall.innerHTML = antall;
+                tall.style.color = "red";
+            }
+            else if(antall >= 60){
+                tall.innerHTML = antall + "!";
+                tall.style.color = "red";
+            }
+            else{
+                tall.innerHTML = antall;
+            }
+        }
+        minus.onclick = function() {
+            antall--;
+            if (antall > 60) {
+                tall.innerHTML = antall + "!";
+                tall.style.color = "red";
+            }
+            else if (antall > 55) {
+                tall.innerHTML = antall;
+                tall.style.color = "red";
+            }
+            else {
+                tall.innerHTML = antall;
+                tall.style.color = "black";
+            }
+        }
+    </script>
+
+</body>
+</html>
