@@ -1,0 +1,18 @@
+body{
+  background-color: darkorange;
+}
+
+main{
+  display: grid;
+  grid-template-columns: repeat(18,1fr);
+  grid-gap: 5px; /* Gir en margin på 5 piksler rundt hvert grid-element */
+}
+.grunnstoff{
+  background-color: #eee;
+}
+.col-span-16{
+  grid-column: span 16;
+}
+.usynlig{
+  opacity: 0;
+}
