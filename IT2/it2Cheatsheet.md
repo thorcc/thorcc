@@ -2,22 +2,22 @@
 
 ## Variabler og datatyper
 
-Number:   
+Number: 
 `
 let mittTall = 72; // Number
 `
 
-String:  
+String:
 `
 let minTekst = "tekst her"; // String
 `
 
-Boolean:  
+Boolean:
 `
 let minBoolean = true; // Boolean, enten true eller false
 `
 
-Array:  
+Array:
 `
 let minArray = ["hei", 56, "ja"];
 `
