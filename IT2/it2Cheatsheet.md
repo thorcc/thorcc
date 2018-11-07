@@ -303,3 +303,7 @@ mittEl.removeEventListener(“click”, minFunksjon);
 ``  
 
 (I denne skrivemåten skrives hendelser uten *on* først.)
+
+## Diverse
+Link til javascript-fil i HTML-kode:  
+`<script src="filnavn.js"></script>`
