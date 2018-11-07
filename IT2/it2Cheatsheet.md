@@ -1,7 +1,7 @@
 # IT2 - Cheatsheet
 
 ## Javascript
-#### Variabler og datatyper
+### Variabler og datatyper
 
 **Number**
 ```
@@ -31,7 +31,7 @@ let mittObjekt = {
 }
 ```
 
-#### Document Object Model
+### Document Object Model
 Henter HTML-element med angitt id:
 ```
 document.getElementByID("id");
