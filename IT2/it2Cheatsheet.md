@@ -209,3 +209,59 @@ for (start; betingelse; endring) {
  // kode som kjøres så lenge betingelsen er sann
 }
 ```
+
+Finner egenskapene i et objekt:  
+```
+for (var egenskap in objekt) {
+ console.log(egenskap);
+}
+```
+
+Finner verdiene til egenskapene i et objekt
+
+```
+for (var egenskap in objekt) {
+ console.log(objekt[egenskap]);
+}
+```
+
+## Funksjoner
+Enkel funksjon:  
+```
+function funksjonsNavn() {
+ …
+}
+```
+Funksjon med argumenter:
+```
+function funksjonsNavn(arg1, arg2, …) {
+ …
+}
+```
+Funksjoner kan avsluttes og returnere verdier med nøkkelordet `return`.
+
+##Arrayer
+
+Vi bruker hakeparentes for å lage en array:  
+`var minArray = [];` 
+
+Finner lengden til en array:  
+`
+minArray.length;
+`  
+
+Går gjennom verdiene i en array:
+```
+for (var i = 0; i < minArray.length; i++) {
+ console.log(minArray[i]);
+}
+```
+
+Sortere en array med tall:
+``` javascript
+var mineTall = [2, 103, 1, 14];
+function sammenlignTall (a, b) {
+ return a – b;
+}
+mineTall.sort(sammenlignTall);
+```
