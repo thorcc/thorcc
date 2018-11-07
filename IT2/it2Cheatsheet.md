@@ -174,3 +174,38 @@ Bestemmer linjetykkelse:
 `
 ctx.lineWidth = “…”;
 `
+
+## If-setninger
+
+``` javascript
+if(betingelse){
+    //kode som kjøres hvis betingelsen er sann
+}
+```
+
+``` javascript
+if(betingelse){
+    //kode som kjøres hvis betingelse1 er sann
+} 
+else if (betingelse 2) {
+    //kode som kjøres hvis betingelse2 er sann og betingelse1 er usann
+} 
+else {
+  //kode som kjøres hvis betingelse1 og betingelse2 er usanne
+}
+```
+
+
+## Løkker
+
+``` javascript
+while (betingelse) {
+ // kode som kjøres så lenge betingelsen er sann
+}
+```
+
+``` javascript
+for (start; betingelse; endring) {
+ // kode som kjøres så lenge betingelsen er sann
+}
+```
