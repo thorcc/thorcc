@@ -3,25 +3,25 @@
 ## Javascript
 ### Variabler og datatyper
 
-**Number**
-```
+**Number**  
+`
 let mittTall = 72; // Number
-```
+`
 
-**String**
-```
+**String**  
+`
 let minTekst = "tekst her"; // String
-```
+`
 
-**Boolean**
-```
+**Boolean**  
+`
 let minBoolean = true; // Boolean, enten true eller false
-```
+`
 
-**Array**
-```
+**Array**  
+`
 let minArray = ["hei", 56, "ja"];
-```
+`
 
 **Object**
 ```
@@ -32,15 +32,18 @@ let mittObjekt = {
 ```
 
 ### Document Object Model
-Henter HTML-element med angitt id:
-```
+Henter HTML-element med angitt id:  
+`
 document.getElementByID("id");
-```
-Henter første element med angitt selektor:
-```
+`  
+
+Henter første element med angitt selektor:  
+`
 document.querySelector("CSS-selektor");
-```
-Henter alle elementer med angitt selektor og plasserer de i en array:
-````
+`
+
+Henter alle elementer med angitt selektor og plasserer de i en array:  
+`
 document.querySelectorAll("CSS-selektor");
-````
+`
+
