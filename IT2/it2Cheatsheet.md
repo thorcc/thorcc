@@ -1,7 +1,6 @@
-# IT2 - Cheatsheet
+# IT2 - Javascript cheatsheet
 
-## Javascript
-### Variabler og datatyper
+## Variabler og datatyper
 
 Number:   
 `
@@ -68,7 +67,6 @@ mittEl.style.backgroundColor = "..";
 `
 
 
-
 Lager et nytt HTML-element:   
 ` 
 let nyttEl = document.createElement("HTML-tagg");
@@ -80,3 +78,99 @@ Legger til et nytt HTML-element i et eksisterende HTML-element:
 `
 mittEl.appendChilde(nyttEl);
 `  
+
+## Math-objektet
+
+Tilfeldig tall mellom 0 og 1:  
+`
+Math.random();
+`
+
+Avrunding:  
+`
+Math.floor(tall); // Runder ned
+`  
+`
+Math.ceil(tall); // Runder opp
+`
+
+PI:  
+`
+Math.PI;
+`
+
+## Canvas
+
+Henter et canvas-element:  
+`let canvas = document.getElementByID("id til canvas")`
+
+Angir tegnekontekst:  
+`
+ctx = canvas.getContext("2d");
+`
+
+
+Tegner et fylt rektangel:  
+`
+ctx.fillRect(x, y, bredde, høyde);
+`
+
+Tegner omrisset av et rektangel:  
+`
+ctx.strokeRect(x, y, bredde, høyde);
+`
+
+Fjerner et rektangel fra tegneområdet:  
+`
+ctx.clearRect(x, y, bredde, høyde);
+`
+
+Tegner en sirkel:  
+`
+ctx.arc(x, y, radius, startvinkel, sluttvinkel);
+`
+
+Legger til tekst:  
+`
+ctx.fillText(“tekst”, x, y) ;
+`
+
+Starter en ny path  
+`
+ctx.beginPath();
+`
+
+Flytter «pennen» til punktet (x, y):  
+`
+ctx.moveTo(x, y);
+`
+
+Trekker en linje til punktet (x, y):  
+`
+ctx.lineTo(x, y);
+`
+
+Tegner opp linjen som er trukket:  
+`
+ctx.stroke();
+`
+
+Fyller linjen som er trukket:  
+`
+ctx.fill();
+`
+
+Setter fyllfarge:  
+`
+ctx.fillStyle = “…”;
+`
+
+Bestemmer omrissfarge:  
+`
+ctx.strokeStyle = “…”;
+`
+
+Bestemmer linjetykkelse:  
+`
+ctx.lineWidth = “…”;
+`
