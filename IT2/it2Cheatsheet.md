@@ -212,7 +212,7 @@ for (start; betingelse; endring) {
 
 Finner egenskapene i et objekt:  
 ```
-for (var egenskap in objekt) {
+for (let egenskap in objekt) {
  console.log(egenskap);
 }
 ```
@@ -220,7 +220,7 @@ for (var egenskap in objekt) {
 Finner verdiene til egenskapene i et objekt
 
 ```
-for (var egenskap in objekt) {
+for (let egenskap in objekt) {
  console.log(objekt[egenskap]);
 }
 ```
@@ -243,7 +243,7 @@ Funksjoner kan avsluttes og returnere verdier med nøkkelordet `return`.
 ##Arrayer
 
 Vi bruker hakeparentes for å lage en array:  
-`var minArray = [];` 
+`let minArray = [];` 
 
 Finner lengden til en array:  
 `
@@ -252,16 +252,54 @@ minArray.length;
 
 Går gjennom verdiene i en array:
 ```
-for (var i = 0; i < minArray.length; i++) {
+for (let i = 0; i < minArray.length; i++) {
  console.log(minArray[i]);
 }
 ```
 
 Sortere en array med tall:
 ``` javascript
-var mineTall = [2, 103, 1, 14];
+let mineTall = [2, 103, 1, 14];
 function sammenlignTall (a, b) {
  return a – b;
 }
 mineTall.sort(sammenlignTall);
 ```
+
+## Hendelser
+
+```
+mittEl.hendelse = minFunksjon;
+```
+
+```
+mittEl.hendelse = function(event){
+    //Kode som kjøres ved hendelse
+}
+```
+
+ 
+ 
+|Utvalgte hendelser||
+|--------|:-------------|
+|onclick |Et trykk med musepekeren |
+|onkeydown|En tast trykkes|
+|onmousemove|Musepekeren beveges|
+|onmouseout|Musepekeren forlater et element|
+|onmouseover|Musepekeren beves over et element|
+|oninput|Et input-element endres|
+|onchange|Et select-element endres|
+
+**Alternativ skrivemåte:**
+
+Legger til en lytter (her etter en click-hendelse):  
+``
+mittEl.addEventListener(“click”, minFunksjon);
+``
+
+Tar bort en lytter:  
+``
+mittEl.removeEventListener(“click”, minFunksjon);
+``  
+
+(I denne skrivemåten skrives hendelser uten *on* først.)
