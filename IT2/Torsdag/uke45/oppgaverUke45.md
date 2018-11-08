@@ -4,7 +4,7 @@
 [HTML-kode til eksempeloppgaven](https://gist.github.com/thorcc/79673810ab7abe9385fd86ac39e7444e)
 
 ### Oppgave 1 - Kaffe eller te?
-Lag et lite program der brukeren kan bestille kaffe eller te, og kjeks eller smultring ved hjelp av *checkboxes*. Bestillingen skal vises i en div når brukeren trykker på bestillingsknappen.  
+Lag et lite program der brukeren kan bestille kaffem te, kjeks eller smultring ved hjelp av *checkboxes*. Bestillingen skal vises i en div når brukeren trykker på bestillingsknappen.  
 
 Hint: Eksempel s. 139 i Kode2  
 

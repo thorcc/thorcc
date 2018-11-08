@@ -1,0 +1,29 @@
+#app{
+    background-color: #eee;
+    position: absolute;
+    left: 50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    width: 500px;
+    text-align: center;
+}
+#antall{
+    border-style: solid;
+    width: 50%;
+    margin: auto;
+}
+#divTeller{
+    font-size: 64px;
+}
+#skjema{
+    float: right;
+    text-align: left;
+    margin-right: 10px;
+}
+#registrer{
+    margin-top: 5px;
+    background-color: white;
+    box-shadow: 1px 1px #888888;
+    border: none;
+    margin-bottom: 5px;
+}

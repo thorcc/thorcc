@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+    <meta charset="UTF-8">
+    <title>Påmelding til nyttårsturen</title>
+
+    <link rel="stylesheet" href="stilark.css">
+
+</head>
+<body>
+    <main>
+        <div id="app">
+            <h1>Nyttårsturen</h1>
+            <div id="antall">
+                <h3>Antall påmeldte:</h3>
+                <div id="divTeller">0</div>
+            </div>
+            <div id="skjema">
+                <h3>Registrer deg her</h3>
+                <div id="knapper">
+                    <input type="checkbox" id="medFolge">
+                    <label for="medFolge">Med følge</label>
+                </div>
+                <button id="registrer">Registrer</button>
+            </div>
+        </div>
+    </main>
+
+    <script>
+
+        const divTeller = document.getElementById("divTeller");
+        const medFolge = document.getElementById("medFolge");
+        const registrer = document.getElementById("registrer");
+
+        let antall = 0; // En global variabel for antall påmeldte
+
+        registrer.onclick = function(){ // En funksjon som kjører når en bruker trykker på registrer-knappen
+            antall += 1; // Pluss en på antall
+            if(medFolge.checked){ // Hvis med følge er huket av gjør følgende:
+                antall +=1; // Pluss enda en på antall
+            }
+            divTeller.innerHTML = antall; // Bytt innholdet i divTeller med det nye antallet
+        }
+
+    </script>
+</body>
+</html>

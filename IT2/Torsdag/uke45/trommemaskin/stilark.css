@@ -1,0 +1,31 @@
+body{
+    background-color: #0d99a5;
+}
+main{
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper{
+    display: grid;
+    grid-template-columns: repeat(9,1fr);
+    grid-gap: 5px;
+
+}
+.tromme{
+    border: solid 5px black;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+
+.bokstav, .tekst{
+    text-align: center;
+}
+
+.spiller{
+    border: solid 5px yellow;
+    transform: scale(1.1);
+}
