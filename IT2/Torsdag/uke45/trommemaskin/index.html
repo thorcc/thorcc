@@ -8,7 +8,7 @@
 <body>
     <main>
         <div class="wrapper">
-            <div class="tromme" data-code="KeyA">
+            <div class="tromme" data-code="KeyA"> <!-- Kommentar: Kobler html-elementet til en knapp ved å bruke data-attributt, se s.126 i Kode2 -->
                 <div class="bokstav">A</div>
                 <div class="tekst">Boom</div>
             </div>
@@ -46,8 +46,8 @@
             </div>
         </div>
     </main>
-    <audio data-code="KeyA" src="lyder/boom.wav"></audio>
-    <audio data-code="KeyS" src="lyder/clap.wav"></audio>
+    <audio data-code="KeyA" src="lyder/boom.wav"></audio> <!-- Legger inn alle lydene nederst i HTML-elementet slik at de lastes inn når siden lastes inn. -->
+    <audio data-code="KeyS" src="lyder/clap.wav"></audio> <!-- Kommentar: Kobler html-elementet til en knapp ved å bruke data-attributt, se s.126 i Kode2 -->
     <audio data-code="KeyD" src="lyder/hihat.wav"></audio>
     <audio data-code="KeyF" src="lyder/kick.wav"></audio>
     <audio data-code="KeyG" src="lyder/openhat.wav"></audio>
@@ -57,6 +57,6 @@
     <audio data-code="KeyL" src="lyder/tom.wav"></audio>
 
 
-    <script src="script.js"></script>
+    <script src="script.js"></script> <!-- Lenke til filen script.js hvor javascript-koden står -->
 </body>
 </html>
