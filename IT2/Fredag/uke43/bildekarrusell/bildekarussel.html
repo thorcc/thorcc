@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+    <meta charset="UTF-8">
+    <title>Bildekarrusell</title>
+</head>
+<body>
+
+    <img id="bilder" src="bilder/bilde1.jpg" width="300">
+
+
+    <button id="forrige">Forrige</button>
+    <button id="neste">Neste</button>
+
+    <button id="random">Tilfeldig bilde</button>
+
+
+    <script>
+
+        const neste = document.getElementById("neste");
+        const forrige = document.getElementById("forrige");
+        const random = document.getElementById("random");
+
+        const bilder = document.getElementById("bilder");
+
+
+        let bildeListe = ["bilder/bilde1.jpg", "bilder/bilde2.jpg", "bilder/bilde3.jpg", "bilder/bilde4.jpg"]; //En liste med bilder
+
+        random.onclick = function(){
+            let n = Math.floor(Math.random()*bildeListe.length) // Setter n til å være et tilfeldig heltall mellom 0 og lengden på bildelisten minus 1.
+            bilder.src = bildeListe[n]; // Bytter bilde til bilde med indeks n
+        }
+
+        let n = 0; // lager en global variabel som har kontroll på hvilket bilde som vises
+
+        neste.onclick = function(){
+            n++; // plusser 1 på n
+            if (n >= bildeListe.length){ //Hvis n er større eller lik lengden på bildelisten gjør følgende:
+                 n = 0; //sett n til 0, slik at det første bilde vises igjen.
+            }
+            bilder.src = bildeListe[n]; //bytter bilde til bilde med indeks n
+        }
+        forrige.onclick = function(){
+            n--; // trekker 1 fra n
+            if (n<0){
+                n = bildeListe.length - 1 // Hvis n er mindre enn null sett n til det siste elementet som er lengden på listen minus 1
+            }
+            bilder.src = bildeListe[n]; //bytter bilde til bilde med indeks n
+        }
+
+
+    </script>
+
+</body>
+</html>
