@@ -1,4 +1,7 @@
-# IT2 - Javascript cheatsheet
+# IT2 - Cheatsheet
+
+# Javascript
+
 
 ## Variabler og datatyper
 
@@ -76,7 +79,7 @@ let nyttEl = document.createElement("HTML-tagg");
 
 Legger til et nytt HTML-element i et eksisterende HTML-element:  
 `
-mittEl.appendChilde(nyttEl);
+mittEl.appendChild(nyttEl);
 `  
 
 ## Math-objektet
