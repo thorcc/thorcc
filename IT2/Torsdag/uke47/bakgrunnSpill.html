@@ -4,20 +4,20 @@
     <meta charset="utf-8">
     <title></title>
     <style media="screen">
-      .bilderamme{
+      #bilderamme{
         height: 100vh;
         overflow:hidden;
       }
     </style>
   </head>
   <body>
-    <div class="bilderamme">
+    <div id="bilderamme">
       <img id="vei" src="veiSkalert.jpg">
     </div>
 
     <script type="text/javascript">
-      let bilderamme = document.querySelector(".bilderamme");
-      let vei = document.querySelector("#vei");
+      let bilderamme = document.getElementById(".bilderamme");
+      let vei = document.getElementById("#vei");
 
       vei.style.marginTop = "-3000px";
       animasjon();
@@ -27,7 +27,7 @@
       function animasjon(){
         let teller = 0;
         setInterval(frame,1000)
-        
+
         function frame(){
           teller++;
           vei.style.marginLeft = -teller + "px";
