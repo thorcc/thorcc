@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="nb" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+      body{
+        margin: 0;
+
+      }
+      .bilderamme{
+        height: 100vh;
+        overflow:hidden;
+        z-index: -1;
+      }
+      #figur{
+        position: absolute;
+        z-index: 1;
+        height: 50px;
+        width: 50px;
+        background-color: red;
+        transition: 0.2s;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="figur">
+
+    </div>
+    <div class="bilderamme">
+      <img id="vei" src="veiSkalert.jpg">
+    </div>
+
+    <script type="text/javascript">
+      let bilderamme = document.querySelector(".bilderamme");
+      let vei = document.querySelector("#vei");
+      const figur = document.querySelector("#figur");
+
+      vei.style.marginTop = "-3000px";
+
+      let posX = window.innerWidth / 2;
+      let posY = window.innerHeight / 2;
+      figur.style.left = posX + "px";
+      figur.style.top = posY + "px";
+      //console.log(posX,posY);
+
+      window.onkeydown = (event) =>{
+        console.log(event.key);
+        bevegSpiller(event);
+      }
+
+      function bevegSpiller(event){
+        if(event.key === "ArrowLeft"){
+          console.log("venstre");
+          posX= posX-20;
+        }
+        else if(event.key === "ArrowRight"){
+          console.log("høyre");
+          posX= posX+20;
+        }
+        else if(event.key === "ArrowDown"){
+          posY= posY+30;
+        }
+        else if(event.key === "ArrowUp"){
+          posY= posY-30;
+        }
+
+
+        if(posX > window.innerWidth - 50){
+          posX = window.innerWidth - 55;
+        }
+        else if(posX < 5){
+          posX = 10;
+        }
+        else if(posY > window.innerHeight - 50){
+          posY = window.innerHeight -55;
+        }
+        else if(posY < 5){
+          posY = 10;
+        }
+        figur.style.left = posX +"px";
+        figur.style.top = posY +"px";
+      }
+
+
+      function noscroll() {
+        window.scrollTo( 0, 0 );
+      }
+      // add listener to disable scroll
+      window.addEventListener('scroll', noscroll);
+
+    </script>
+  </body>
+</html>
