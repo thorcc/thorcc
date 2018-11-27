@@ -1,0 +1,67 @@
+body{
+  background-color: #ECEFF1;
+  margin: 0;
+  font-family: helvetica, sans-serif;
+}
+header{
+  text-align: center;
+  background-color: #37474F;
+  color: #FFFFFF;
+  padding: 5px;
+}
+header h1{
+  margin: 0;
+}
+main{
+  width:1000px;
+  margin:auto;
+  background-color: #607D8B;
+  color: #FFFFFF;
+  margin-top: 15px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 1%;
+}
+main p {
+  padding-left: 5px;
+}
+
+.grid-container{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-gap: 10px;
+}
+.grid-container img{
+  width: 100%;
+}
+
+.litenMiddels{
+  grid-row: span 2;
+}
+.litenStor{
+  grid-row: span 3;
+}
+.middelsLiten{
+  grid-column: span 2;
+}
+.middelsMiddels{
+  grid-column: span 2;
+  grid-row: span 2;
+}
+.middelsStor{
+  grid-column: span 2;
+  grid-row: span 3;
+}
+.storLiten{
+  grid-column: span 3;
+}
+.storMiddels{
+  grid-column: span 3;
+  grid-row: span 2;
+}
+.storStor{
+  grid-column: span 3;
+  grid-row: span 3;
+}
