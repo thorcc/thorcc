@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="nb" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+      body{
+        text-align: center; /* Sentrer alt innholdet på nettsiden */
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Album of the year 2018</h1>
+    <img class="artist" src="vedlegg/artister/brunomars.jpg" alt="Bilde av Bruno Mars">
+    <img class="artist" src="vedlegg/artister/gambino.jpg" alt="Bilde av Childish Gambino">
+    <img class="artist" src="vedlegg/artister/jayz.jpg" alt="Bilde av Jay-Z">
+    <img class="artist" src="vedlegg/artister/kendrick.jpg" alt="Bilde av Kendrick Lamar">
+    <img class="artist" src="vedlegg/artister/lorde.jpg" alt="Bilde av Lorde">
+    <div id="divArtistInfo"></div>
+
+    <div id="divSlideShow">
+          <img id="imgSlide"src="" alt="">
+          <div> <!-- Lager et eget div-element til knappene for at de skal komme under slideshowet -->
+            <button id="btnForrige" type="button" name="button">Forrige</button>
+            <button id="btnNeste" type="button" name="button">Neste</button>
+          </div>
+    </div>
+
+
+    <script>
+      // Artistbilder
+      const imgArtistbilder = document.querySelectorAll(".artist"); // Oppretter en variabel som er en array av alle html-elementer med klassen artist
+      //
+
+      //Div til artistinfo
+      const divArtistInfo = document.getElementById("divArtistInfo");
+      //
+
+      const artistInfo = [
+        "Info om Bruno Mars' 24K Magic skal stå her",
+        "Info om Childish Gambinos Awaken My Love skal stå her",
+        "Info om Jay-Z' 4:44 skal stå her",
+        "Info om Kendrick Lamars Damn skal stå her",
+        "Info om Lordes Melodrama skal stå her"
+      ];
+
+      // En løkke som legger til hendelsesstyrte funksjoner som skriver ut info om artistene i div-elementet artistInfo, på hvert bilde.
+      for (let i = 0; i < imgArtistbilder.length; i++){
+        imgArtistbilder[i].onclick = function(){
+          divArtistInfo.innerHTML = artistInfo[i];
+        }
+      }
+
+      //Slideshow
+      const imgSlide = document.getElementById("imgSlide"); //img-tagg til slideshow
+      const btnForrige = document.getElementById("btnForrige");
+      const btnNeste = document.getElementById("btnNeste");
+      //
+
+      // En array som inneholder "stier" til bildefilene i albumcover
+      const albumcover = ["vedlegg/albumcover/24KMagic.jpg","vedlegg/albumcover/444.jpg","vedlegg/albumcover/awaken.jpg","vedlegg/albumcover/damn.jpg","vedlegg/albumcover/melodrama.jpg"];
+
+      let bildeTeller = 0;       // En global variabel som holder kontroll på hvilket bilde som vises i slideshowet
+      imgSlide.src = albumcover[bildeTeller];      // Setter bilde i slideshowet til å være bilde med indeks 0 (bildeTeller) idet nettsiden åpnes.
+
+      btnNeste.onclick = nesteBilde;
+      btnForrige.onclick = forrigeBilde;
+
+      //En funksjon som bytter til forrige bilde
+      function forrigeBilde(){
+          bildeTeller = bildeTeller - 1; // Trekk fra 1 på variabelen bildeTeller
+          if (bildeTeller<0){ // Hvis bildeTeller blir mindre enn 0 settes den til det siste bilde
+            bildeTeller = albumcover.length-1; // verdien av bildeTeller settes til indeksverdien
+          }
+          imgSlide.src = albumcover[bildeTeller]; // bytter src til filstien med indeks bildeTeller i arrayen albumcover
+        }
+
+      // En funksjon som bytter til neste bilde
+      function nesteBilde(){
+          bildeTeller = bildeTeller + 1;
+          if (bildeTeller>albumcover.length-1){
+            bildeTeller = 0;
+          }
+          imgSlide.src = albumcover[bildeTeller];
+        }
+
+    </script>
+  </body>
+</html>

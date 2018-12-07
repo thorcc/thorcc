@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="nb" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+      body{
+        text-align: center; /* Sentrer alt innholdet på nettsiden */
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Album of the year 2018</h1>
+    <img id="imgBruno" src="vedlegg/artister/brunomars.jpg" alt="Bilde av Bruno Mars">
+    <img id="imgGambino"src="vedlegg/artister/gambino.jpg" alt="Bilde av Childish Gambino">
+    <img id="imgJayZ"src="vedlegg/artister/jayz.jpg" alt="Bilde av Jay-Z">
+    <img id="imgKendrick"src="vedlegg/artister/kendrick.jpg" alt="Bilde av Kendrick Lamar">
+    <img id="imgLorde"src="vedlegg/artister/lorde.jpg" alt="Bilde av Lorde">
+    <div id="artistInfo"></div>
+
+
+    <div id="divSlideShow">
+
+          <img id="imgSlide"src="" alt="">
+          <div> <!-- Lager et eget div-element til knappene for at de skal komme under slideshowet -->
+            <button id="btnForrige" type="button" name="button">Forrige</button>
+            <button id="btnNeste" type="button" name="button">Neste</button>
+          </div>
+    </div>
+
+
+    <script>
+      // Artistbilder
+      var imgBruno = document.getElementById("imgBruno");
+      var imgGambino = document.getElementById("imgGambino");
+      var imgJayZ = document.getElementById("imgJayZ");
+      var imgKendrick = document.getElementById("imgKendrick");
+      var imgLorde = document.getElementById("imgLorde");
+      var bilde = document.getElementById("bilde");
+
+      //
+
+      //Div til artistinfo
+      var artistInfo = document.getElementById("artistInfo");
+      //
+
+      //Slideshow
+      var imgSlide = document.getElementById("imgSlide"); //img-tagg til slideshow
+      var btnForrige = document.getElementById("btnForrige");
+      var btnNeste = document.getElementById("btnNeste");
+      //
+
+      imgBruno.onclick = function(){
+      artistInfo.innerHTML = "Info om Bruno Mars' 24K Magic skal stå her";
+      }
+      // Hendelsesstyrte funksjoner som skriver ut info om artistene i div-elementet artistInfo
+      imgBruno.onclick = function(){ // Når bilde av Bruno Mars klikkes på kjøres følgende funksjon
+        artistInfo.innerHTML = "Info om Bruno Mars' 24K Magic skal stå her";
+      }
+      imgGambino.onclick = function(){
+        artistInfo.innerHTML = " Info om Childish Gambinos Awaken My Love skal stå her";
+      }
+      imgJayZ.onclick = function(){
+        artistInfo.innerHTML = "Info om Jay-Z' 4:44 skal stå her";
+      }
+      imgKendrick.onclick = function(){
+        artistInfo.innerHTML = "Info om Kendrick Lamars Damn skal stå her";
+      }
+      imgLorde.onclick = function(){
+        artistInfo.innerHTML = "Info om Lordes Melodrama skal stå her";
+      }
+
+      // En array som inneholder "stier" til bildefilene i albumcover
+      var albumcover = ["vedlegg/albumcover/24KMagic.jpg","vedlegg/albumcover/444.jpg","vedlegg/albumcover/awaken.jpg","vedlegg/albumcover/damn.jpg","vedlegg/albumcover/melodrama.jpg"];
+
+      // En global variabel som holder kontroll på hvilket bilde som vises i slideshowet
+      var bildeTeller = 0;
+
+      // Setter bilde i slideshowet til å være bilde med indeks 0 (bildeTeller) idet nettsiden åpnes.
+      imgSlide.src = albumcover[bildeTeller];
+
+      //En funksjon som bytter til forrige bilde
+      btnForrige.onclick = function(){
+          bildeTeller = bildeTeller - 1; // Trekk fra 1 på variabelen bildeTeller
+          if (bildeTeller<0){ // Hvis bildeTeller blir mindre enn 0 settes den til det siste bilde
+            bildeTeller = albumcover.length-1; // verdien av bildeTeller settes til indeksverdien
+          }
+          imgSlide.src = albumcover[bildeTeller]; // bytter src til filstien med indeks bildeTeller i arrayen albumcover
+        }
+
+      // En funksjon som bytter til neste bilde
+      btnNeste.onclick = function(){
+          bildeTeller = bildeTeller + 1;
+          if (bildeTeller>albumcover.length-1){
+            bildeTeller = 0;
+          }
+          imgSlide.src = albumcover[bildeTeller];
+        }
+
+
+
+    </script>
+  </body>
+</html>
