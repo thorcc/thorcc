@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="nb" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Oppgave 3b</title>
+  </head>
+  <body>
+    <script>
+      var alder = Number(prompt("Hva er din alder?")); // En alert-boks hvor brukeren kan skrive inn sin alder, som er konvertert til datatypen number.
+
+
+      if(alder<5){
+        document.write("Du reiser gratis!");
+      }else if (alder <18 ) {
+        document.write("Barnebillett: 30kr");
+      }
+      else{
+        rabatt = prompt("Skriv 'student' for studentrabatt, eller 'pensjonist' for pensjonistrabatt. For ingen av delene skriv noe annet");
+        if (rabatt === "student"){
+          document.write("Studentbillett: " + 70*0.8 + "kr")
+        }
+        else if (rabatt === "pensjonist") {
+          document.write("Pensjonistbillett: " + 70*0.4 + "kr")
+        }
+        else{
+          document.write("Voksenbillett: 70kr")
+        }
+      }
+    </script>
+  </body>
+</html>
