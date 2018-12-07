@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="nb" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Oppgave 3b</title>
+  </head>
+  <body>
+    <label for="alder">Alder</label>
+    <input id="alder" type="number" name="" value="">
+    <label for="student">Student:</label>
+    <input id="student" type="checkbox" name="" value="">
+    <label for="pensjonist">Pensjonist:</label>
+    <input id="pensjonist" type="checkbox" name="" value="">
+    <button id="sendInn" type="button" name="button">Sjekk pris</button>
+    <script>
+      var alder = document.getElementById("alder"); // En alert-boks hvor brukeren kan skrive inn sin alder, som er konvertert til datatypen number.
+      var sendInn = document.getElementById("sendInn");
+      var student = document.getElementById("student");
+      var pensjonist = document.getElementById("pensjonist");
+
+      sendInn.onclick = function() {
+        if(alder.value<5){
+          document.write("Du reiser gratis!");
+        }else if (alder.value <18) {
+          document.write("Barnebillett: 30kr");
+        }
+        else{
+          if (student.checked){
+            document.write("Studentbillett: " + 70*0.8 + "kr")
+          }
+          else if (pensjonist.checked) {
+            document.write("Pensjonistbillett: " + 70*0.4 + "kr")
+          }
+          else{
+            document.write("Voksenbillett: 70kr")
+          }
+        }
+      }
+
+    </script>
+  </body>
+</html>
