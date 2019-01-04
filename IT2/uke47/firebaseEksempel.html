@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.3.1/css/foundation-flex.min.css">
+    <style>
+        main {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        main > img {
+            height: 250px;
+            margin: 2px;
+        }
+    </style>
+</head>
+<body>
+
+
+<input type="file" id="inpFile" class="button">
+<main></main>
+
+
+<script src="https://www.gstatic.com/firebasejs/5.5.9/firebase.js"></script>
+<script>
+    // Initialize Firebase
+    var config = {
+        apiKey: "AIzaSyDPOJ6uE2HSY25rfL4tG25K6Cb2Ycv3RsM",
+        authDomain: "eksamen-a2e04.firebaseapp.com",
+        databaseURL: "https://eksamen-a2e04.firebaseio.com",
+        projectId: "eksamen-a2e04",
+        storageBucket: "eksamen-a2e04.appspot.com",
+        messagingSenderId: "305459489398"
+    };
+    firebase.initializeApp(config);
+</script>
+
+<script>
+    let inpFile = document.getElementById("inpFile");
+    let main = document.querySelector("main");
+    let database = firebase.database();
+    let bildelinker = database.ref("bildelinker");
+    let storage = firebase.storage();
+    function lagreURL(snapshot) {
+        bildelinker.push(snapshot.downloadURL);
+    }
+    function lastOppBilde() {
+        let fil = this.files[0];
+        let plassering = storage.ref("allebildenemine/" + new Date());
+        plassering.put(fil)
+            .then(lagreURL);
+    }
+    function visBilder(snapshot) {
+        let url = snapshot.val();
+        main.innerHTML += `<img src="${url}">`;
+    }
+    inpFile.onchange = lastOppBilde;
+    bildelinker.on("child_added", visBilder);
+
+    bildelinker.push("hei hei");
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>For-løkke og canvas</title>
+
+    <style>
+
+        canvas{
+            border-style: solid;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <canvas id="canvas" height="600" width="600"></canvas>
+
+
+    <script>
+
+        const canvas = document.getElementById("canvas");
+        const ctx = canvas.getContext("2d");
+        canvas.height = window.innerHeight; // Setter høyden på canvas-elementet til høyden på nettleseren
+        canvas.width = window.innerWidth; // Setter bredden på canvas-elementet til bredden på nettleseren
+
+        for (var i = 1; i <= 100; i++){
+            var x = Math.random()*600;
+            var y = Math.random()*600;
+
+            ctx.beginPath();
+            ctx.fillStyle = getRandomColor();
+            ctx.arc(x, y, 25, 0, Math.PI * 2);
+            ctx.fill();
+        }
+
+        //------------------------
+        function getRandomColor() {
+            // ----- En funksjon som gir en tilfeldig farge ---
+            var letters = "0123456789ABCDEF"; // Alle tegn i en HEX-fargekode
+            var color = "#"; // En variabel for fargen, alle HEX-koder starter med #
+            for (var i = 0; i < 6; i++) { // En for-løkke som teller opp i fra 0 til 5
+                color += letters[Math.floor(Math.random() * letters.length)]; // Legg et tilfeldig tegn fra letters til i color
+            }
+            return color; // Returner fargen, eks: "#615C85"
+        }
+        //-------------------------
+
+    </script>
+
+</body>
+</html>

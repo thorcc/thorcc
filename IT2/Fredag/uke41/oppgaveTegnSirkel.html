@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Oppgave 6a</title>
+    <style>
+
+        canvas{
+            border-style: solid;
+        }
+
+    </style>
+</head>
+<body>
+
+    <canvas id="canvas" width="600" height="600"></canvas>
+
+    <script>
+
+        const canvas = document.getElementById("canvas");
+        const ctx = canvas.getContext("2d");
+
+
+
+
+
+        tegnSirkel();
+
+
+        function tegnSirkel() {
+            var x = 50;
+            var y = 50;
+            ctx.beginPath();
+            ctx.arc(x,y,20,0,Math.PI * 2);
+            ctx.fill();
+        }
+
+
+
+    </script>
+</body>
+</html>

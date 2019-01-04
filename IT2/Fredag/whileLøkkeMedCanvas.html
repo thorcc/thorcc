@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+
+        canvas{
+            border-style: solid;
+            border-width: 5px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <canvas id="minCanvas" width="300" height="300"></canvas>
+
+
+    <script>
+
+        const canvas = document.getElementById("minCanvas");
+        const ctx = canvas.getContext("2d");
+        let side = 150; // bredde og høyde
+        let xPosisjon = 0; //Startposisjon x
+        let yPosisjon = 0; //Startposisjon y
+
+        while(side>0){
+            ctx.rect(xPosisjon,yPosisjon,side,side);
+            ctx.stroke();
+            xPosisjon = xPosisjon + 10;
+            yPosisjon = yPosisjon + 10;
+            side = side - 20;
+        }
+
+
+        for (var i = 1;i<100;i++){
+            let tilfeldig = Math.random()
+            let tilfeldig5 = tilfeldig*6;
+            let avrundet = Math.floor(tilfeldig5);
+            let svar = 10 - avrundet;
+            if(svar === 5){
+                console.log("Math.random() = " + tilfeldig);
+                console.log("Math.random()*6 = " + tilfeldig5);
+                console.log("Math.floor(Math.random()*6) = " + avrundet);
+                console.log("10 - Math.floor(Math.random()*6) = "+ svar);
+            }
+        }
+
+    </script>
+
+</body>
+</html>

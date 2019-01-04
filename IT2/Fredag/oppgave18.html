@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Oppgave 18</title>
+</head>
+<body>
+
+<script>
+
+    // Oppgave 8
+
+    if (true){
+        alert("Hallo!");
+    }
+
+    /*----------------------------------------------*/
+
+    // Oppgave 18
+    // Løkke som kjører svaralternativ d 100 ganger
+
+    for (var i = 1, j = 0;i<100;i++){
+        let tilfeldig = Math.random()
+        let tilfeldig5 = tilfeldig*6;
+        let avrundet = Math.floor(tilfeldig5);
+        let svar = 10 - avrundet;
+        if(svar === 5){
+            j +=1;
+            console.log("-------------");
+            console.log("Svaret er lik 5, i = " + i);
+            console.log("Math.random() = " + tilfeldig);
+            console.log("Math.random()*6 = " + tilfeldig5);
+            console.log("Math.floor(Math.random()*6) = " + avrundet);
+            console.log("10 - Math.floor(Math.random()*6) = "+ svar);
+            console.log("j = " + j)
+        }
+    }
+
+    var navnListe = ["Christer", "Kåre"];
+    navnListe[0];
+    document.write(navnListe[1]);
+
+
+
+</script>
+</body>
+</html>

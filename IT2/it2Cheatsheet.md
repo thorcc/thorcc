@@ -5,7 +5,7 @@
 
 ## Variabler og datatyper
 
-Number: 
+Number:
 `
 let mittTall = 72; // Number
 `
@@ -71,7 +71,7 @@ mittEl.style.backgroundColor = "..";
 
 
 Lager et nytt HTML-element:   
-` 
+`
 let nyttEl = document.createElement("HTML-tagg");
 `  
 (Dette elementet dukker ikke opp på nettsiden, det må legges til i et eksisterende HTML-elementet, se under)
@@ -189,10 +189,10 @@ if(betingelse){
 ``` javascript
 if(betingelse){
     //kode som kjøres hvis betingelse1 er sann
-} 
+}
 else if (betingelse 2) {
     //kode som kjøres hvis betingelse2 er sann og betingelse1 er usann
-} 
+}
 else {
   //kode som kjøres hvis betingelse1 og betingelse2 er usanne
 }
@@ -246,7 +246,10 @@ Funksjoner kan avsluttes og returnere verdier med nøkkelordet `return`.
 ##Arrayer
 
 Vi bruker hakeparentes for å lage en array:  
-`let minArray = [];` 
+`let minArray = [];`
+
+Legger til verdi i array:
+`minArray.push("Dette legges til sist i arrayen");
 
 Finner lengden til en array:  
 `
@@ -269,6 +272,22 @@ function sammenlignTall (a, b) {
 mineTall.sort(sammenlignTall);
 ```
 
+## Objekter
+
+Vi bruker krøllparenteser for å lage et objekt:
+
+```
+let mittObjekt = {
+    navn: "Kåre",
+    alder: 21
+}
+```
+
+For å endre verdien til en egenskap i et objekt:
+`mittObjekt.egenskap = "ny verdi";`
+Alternativt:
+`mittObjekt["egenskap"] = "ny verdi";`
+
 ## Hendelser
 
 ```
@@ -281,8 +300,8 @@ mittEl.hendelse = function(event){
 }
 ```
 
- 
- 
+
+
 |Utvalgte hendelser||
 |--------|:-------------|
 |onclick |Et trykk med musepekeren |

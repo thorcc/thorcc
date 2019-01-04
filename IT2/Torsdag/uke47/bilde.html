@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="nb" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Bilde</title>
+    <style media="screen">
+      .bilderamme{
+        width: 500px;
+        height: 500px;
+        border: solid black 1px;
+        overflow: hidden;
+        margin: 50px auto;
+      }
+      .bilderamme img{
+        width: 500px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="bilderamme">
+      <img id="veiBilde" src="veiSkalert.jpg" alt="">
+    </div>
+
+    <script type="text/javascript">
+      let imgBilde = document.querySelector("#veiBilde");
+      let bilderamme = document.querySelector(".bilderamme");
+
+      veiBilde.onmousemove = (event) => {
+        veiBilde.style.width = "2000px";
+        veiBilde.style.marginLeft = 3*(-event.clientX+bilderamme.offsetLeft)+"px";
+        veiBilde.style.marginTop = 3*(-event.clientY+bilderamme.offsetTop)+"px";
+        console.log(3*(-event.clientY+bilderamme.offsetTop)+"px");
+
+        console.log(3*(-event.clientX+bilderamme.offsetLeft)+"px");
+      }
+      veiBilde.onmouseout = (event) => {
+        veiBilde.style.width = "500px";
+        veiBilde.style.marginLeft = 0;
+        veiBilde.style.marginTop = 0;
+      }
+
+    </script>
+  </body>
+</html>

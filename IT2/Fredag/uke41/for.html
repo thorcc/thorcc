@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>For-løkke</title>
+    <style>
+        canvas{
+            border: solid;
+        }
+
+    </style>
+</head>
+<body>
+
+
+
+    <canvas id="canvas" width="600" height="600"></canvas> <!-- Lager et canvas element -->
+
+    <script>
+        // OBS! Bruker let og const i stedet for var, fordi det er "bedre" kode.
+
+
+        const canvas = document.getElementById("canvas"); // ref til canvas-elementet
+        const ctx = canvas.getContext("2d"); // en variabel som gjør at vi kan interagere med canvas sitt 2d-api
+
+
+        let x; // oppretter en variabel for x-koordinaten
+        let y; // oppretter en variabel for y-koordinaten
+
+        for (let i = 0; i < 1000; i++) { //en for-løkke som teller oppover fra 0 til 999
+            x = Math.floor(Math.random()*600);
+            y = Math.floor(Math.random()*600);
+            ctx.fillStyle = getRandomColor(); // setter fillStyle til en tilfeldig farge, gitt av funksjonen getRandomColor();
+            ctx.beginPath(); // BeginPath må settes for å tegne sirkler
+            ctx.arc(x, y, 10, 0, Math.PI * 2); // Lager en sirkel med crx.arc(x-koordinat ,y-koordinat ,radius, start-vinkel, slutt-vinkel)
+            ctx.fill(); // Fyller sirkelen med farge
+        }
+
+        //------------------------
+        function getRandomColor() {
+            // ----- En funksjon som gir en tilfeldig farge ---
+            let letters = "0123456789ABCDEF"; // Alle tegn i en HEX-fargekode
+            let color = "#"; // En variabel for fargen, alle HEX-koder starter med #
+            for (let i = 0; i < 6; i++) { // En for-løkke som teller opp i fra 0 til 5
+                color += letters[Math.floor(Math.random() * letters.length)]; // Legg et tilfeldig tegn fra letters til i color
+            }
+            return color; // Returner fargen, eks: "#615C85"
+        }
+        //-------------------------
+
+    </script>
+
+</body>
+</html>

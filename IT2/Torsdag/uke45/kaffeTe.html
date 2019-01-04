@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+    <meta charset="UTF-8">
+    <title>Oppgave 1</title>
+</head>
+<body>
+
+    <main>
+
+        <div id="bestill">
+            <input type="checkbox" id="checkKaffe">
+            <label for="checkKaffe">Kaffe</label>
+            <br>
+            <input type="checkbox" id="checkTe">
+            <label for="checkTe">Te</label>
+            <br>
+            <input type="checkbox" id="checkKjeks">
+            <label for="checkKjeks">Kjeks</label>
+            <br>
+            <input type="checkbox" id="checkSmultring">
+            <label for="checkSmultring">Smultring</label>
+            <br>
+            <button id="btnSubmit">Fullfør bestilling</button>
+        </div>
+        <div id="ferdigBestilt">
+
+        </div>
+
+    </main>
+
+<script>
+
+    const checkKaffe = document.getElementById("checkKaffe");
+    const checkTe = document.getElementById("checkTe");
+    const checkKjeks = document.getElementById("checkKjeks");
+    const checkSmultring = document.getElementById("checkSmultring");
+    const btnSubmit = document.getElementById("btnSubmit");
+    const ferdigBestilt = document.getElementById("ferdigBestilt");
+
+
+
+    btnSubmit.onclick = function() {
+        let tekst = "Du har bestilt ";
+
+        if(checkKaffe.checked){
+            tekst += "kaffe ";
+        }
+        if(checkTe.checked){
+            tekst += ", te ";
+        }
+        if(checkSmultring.checked){
+            tekst += "smultring ";
+        }
+        if(checkKjeks.checked){
+            tekst += "kjeks ";
+        }
+        ferdigBestilt.innerHTML = tekst;
+    }
+
+</script>
+
+</body>
+</html>

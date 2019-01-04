@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Funksjoner</title>
+</head>
+<body>
+
+    <script>
+
+        function skrivHallo(){
+            console.log("Hallo");
+        }
+
+        function siHei(){
+            document.write("Hei hei!")
+        }
+        skrivHallo();
+        siHei();
+        siHei();
+        siHei();
+
+
+        function erPartall(tall){
+            return tall % 2 === 0;
+        }
+
+        console.log(erPartall(2));
+        console.log(erPartall(3));
+        console.log(erPartall(71));
+
+
+
+        function erPartall(mittTall){
+            // En funksjon som returnerer n^2.
+            // Input: number
+            // -- Skriv din kode under kode her: ---
+            return mittTall % 2 !== 0;
+        }
+
+
+        function erPartall(n){
+            // En funksjon som returnerer n^2.
+            // Input: number
+            // -- Skriv din kode under kode her: ---
+            return n % 2 !== 0;
+        }
+
+
+
+
+
+
+
+        function kvadrat(n){
+            // En funksjon som returnerer n^2.
+            // Input: number
+            // -- Skriv din kode under kode her: ---
+            if (isNaN(n)){
+                console.error("n er ikke et number");
+                return false
+            } else{
+                return n*n;
+            }
+        }
+
+        function kvadrat(n){
+            // En funksjon som returnerer n^2.
+            // Input: number
+            // -- Skriv din kode under kode her: ---
+                return n*n;
+        }
+
+        function iNte(n,p) {
+            var j = n;
+            for (var i = 1; i<p; i++){
+                j*=n;
+            }
+            return j;
+        }
+    </script>
+
+</body>
+</html>

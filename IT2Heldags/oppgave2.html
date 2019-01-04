@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="nb" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Oppgave 2</title>
+  </head>
+  <body>
+    <script>
+      function yatzyKast(/*Hva skal stå her?*/){
+        //En funksjon som kaster terninger i yatzy
+        //Input: antall terninger som skal kastes
+        //Output: en array med terningene som er kastet
+
+        var resultat = []; // en tom array som resultatene skal legges inn i
+
+        for (var i = 0; i < n; i++){
+          //En for-løkke som legger n antall tall mellom 1 og 6 i arrayen resultat
+          resultat.push(Math.floor(Math.random()*6)+1);
+        }
+        return resultat; // returner arrayen resultat.
+      }
+
+
+      /*
+      Til testing i konsollen:
+        yatzyKast(3) skal gi en array med 3 tall
+        yatzyKast(25) skal gi en array med 25 tall
+        yatzyKast(0) skal gi en tom array
+      */
+    </script>
+  </body>
+</html>

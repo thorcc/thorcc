@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Funksjoner uke 42</title>
+</head>
+<body>
+
+
+
+    <script>
+
+        function finnAreal(h,b){
+            document.write(`Arealet er ${h*b}`);
+            document.write("Arealet er " + h*b);
+            //return h*b;
+        }
+
+        var areal = finnAreal(3,5);
+
+
+        function erOddetall(tall){
+            return tall % 2 !== 0;
+        }
+
+
+
+
+        function kvadrat(hallo){
+            // En funksjon som returnerer n^2.
+            // Inputparameter n: number
+            // -- Bytt ut XXX under med riktig kode ---
+            return hallo*hallo;
+        }
+
+
+        var mittTall = kvadrat(4);
+        var randomTall = Math.random();
+
+        //Test av funksjon:
+        console.log(kvadrat(4)); // Skal gi 16 i konsollen
+        console.log(kvadrat(17)); // Skal gi 289 i konsollen
+
+
+
+
+
+        // ---- Oppgave 3 -------
+
+        function gange(tall1,tall2){
+            return tall1*tall2;
+        }
+
+
+
+        // Oppgave 5
+
+
+        function abc(a,b,c){
+            var roten = b*b - 4*a*c;
+
+            if (roten < 0){
+                console.log("Ingen løsning");
+                return null; // returnerer en null som er ingenting
+            }
+
+            else if (roten === 0){
+                console.log("En løsning");
+                return -b / (2*a);
+            }
+
+            else{
+                console.log("to løsninger");
+                var x1 = (-b + roten) / (2*a);
+                var x2 = (-b - roten) / (2*a);
+                return [x1,x2];
+            }
+        }
+
+
+
+
+
+
+
+
+    </script>
+
+</body>
+</html>

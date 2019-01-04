@@ -19,7 +19,7 @@
     const ctx = canvas.getContext("2d");
 
 
-    canvas.onmousedown = function(event) { //Funksjon som kjører hver gang musen beveger seg på canvas-elementet, event er parameteren som sendes inn
+    canvas.onmousemove = function(event) { //Funksjon som kjører hver gang musen beveger seg på canvas-elementet, event er parameteren som sendes inn
         let x = event.clientX; // Oppretter variabel for x-koordinaten til musen
         let y = event.clientY; // Oppretter variabel for y-koordinaten til musen
         tegnSirkel(x,y);

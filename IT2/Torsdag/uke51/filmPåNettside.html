@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+    <meta charset="UTF-8">
+    <title>Popup-bonanza</title>
+
+    <style>
+     #popup{
+         display: none; /* Skjuler popup-vinduet */
+         width: 400px; /* Setter en bredde på vinduet, høyden blir automatisk fikset */
+         background-color: peachpuff; /* Kul bakgrunnsfarge på popup-vinduet */
+
+         /* Midtstiller popup-vinduet horisontalt og vertikalt */
+         position: absolute;
+         top: 50%;
+         left: 50%;
+         transform: translate(-50%,-50%);
+
+
+         /* Setter på kant og skygge */
+         border: solid 1px black;
+         box-shadow: 10px 10px;
+        }
+
+        video{
+            width: 90%; /* Videoen tar 90% av popup-vinduet */
+            padding: 10px; /* Setter på 10px med "luft" rundt videoen */
+
+
+            /* Midtstiller video */
+            display: block;
+            margin: auto;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Min nettside</h1>
+    <p>Tekst</p>
+    <button id="minKnapp">Trykk her</button>
+
+    <div id="popup">
+        <video src="eksamen16-fisk.mp4" controls></video>
+    </div>
+
+    <script>
+
+        const popup = document.getElementById("popup");
+        const knapp = document.getElementById("minKnapp");
+
+
+        knapp.onclick = function(){
+            // En funksjon som gjør at popup-vinduet vises
+            popup.style.display = "block"; // Elementet popup vises på nettsiden.
+        };
+
+        window.onclick = function(event){
+            // En funksjon som gjør at hvis knappen, popup-vinduet eller videoen trykkes på vises popup-vinduet, eller fortsettes å vises.
+            // Hvis andre steder trykkes på vises ikke popup-vinduet.
+            if(event.target === knapp || event.target === popup || event.target === popup.children[0]){
+                popup.style.display = "block"; // Elementet popup vises på nettsiden.
+            }
+            else{
+                popup.style.display = "none"; // Elementet popup skjules på nettsiden
+            }
+        }
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        canvas{
+            border: solid;
+        }
+
+    </style>
+</head>
+<body>
+    <canvas id="canvas" width="600" height="600"></canvas>
+
+<script>
+
+
+    var canvas = document.getElementById("canvas");
+    var ctx = canvas.getContext("2d");
+
+
+    for (let i = 0; i <canvas.height; i = i + 100){
+        ctx.moveTo(0,i);
+        ctx.lineTo(canvas.width,i);
+        ctx.stroke();
+    }
+
+    for (let i = 0; i <canvas.width; i = i + 100){
+        ctx.moveTo(i,0);
+        ctx.lineTo(i,canvas.width);
+        ctx.stroke();
+    }
+
+
+</script>
+</body>
+</html>

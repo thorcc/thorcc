@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Oppgaver uke 42</title>
+</head>
+<body>
+    <h1>Funksjoner i JS</h1>
+
+    <script>
+
+
+        // ---------- Oppgave 1 ---------------
+
+        function kvadrat(n){
+            // En funksjon som returnerer n^2.
+            // Input: number
+            // -- Skriv din kode under kode her: --
+            return n*n;
+        }
+
+        //Tester:
+        // console.log(4) // skal gi 16
+        // console.log(21) // skal gi 441
+
+        //-------------------------------------
+
+
+        // ---------- Oppgave 2 ---------------
+
+        function iFjerde(n){
+            // En funksjon som bruker funksjonen kvadrat(n), og returnerer n^4.
+            // Input: number
+            // -- Skriv din kode under kode her: --
+            return kvadrat(kvadrat(n));
+        }
+
+        //Tester:
+        // console.log(2) // skal gi 16
+        // console.log(8) // skal gi 4096
+
+        //-------------------------------------
+
+
+
+        // ---------- Oppgave 3 ---------------
+
+        function oddeTall(n){
+            // En funksjon om returnerer true hvis n er oddetall, og false hvis n er partall
+            // Input: number
+            // -- Skrid din kode under her: --
+            return n % 2 !== 0;
+        }
+
+        //Tester:
+        // console.log(11) // skal gi false
+        // console.log(24) // skal gi true
+
+    </script>
+</body>
+</html>

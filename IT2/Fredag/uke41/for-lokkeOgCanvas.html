@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>for-løkke</title>
+
+    <style>
+
+        canvas{
+            border-style: solid;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <canvas id="canvas" height="600" width="600"></canvas>
+
+    <script>
+
+        const canvas = document.getElementById("canvas");
+        const ctx = canvas.getContext("2d");
+        canvas.height = window.innerHeight;
+        canvas.width = window.innerWidth;
+
+
+
+        for (var i = 0; i < 1000; i++){
+            var x = Math.random()*window.innerWidth;
+            var y = Math.random()*window.innerHeight;
+            ctx.fillStyle = getRandomColor();
+            ctx.beginPath();
+            ctx.arc(x, y, 25, 0, Math.PI* 2);   // Lager en sirkel med crx.arc(x-koordinat ,y-koordinat ,radius, start-vinkel, slutt-vinkel
+            ctx.fill();
+        }
+
+
+        //------------------------
+        function getRandomColor() {
+            // ----- En funksjon som gir en tilfeldig farge ---
+            let letters = "0123456789ABCDEF"; // Alle tegn i en HEX-fargekode
+            let color = "#"; // En variabel for fargen, alle HEX-koder starter med #
+            for (let i = 0; i < 6; i++) { // En for-løkke som teller opp i fra 0 til 5
+                color += letters[Math.floor(Math.random() * letters.length)]; // Legg et tilfeldig tegn fra letters til i color
+            }
+            return color; // Returner fargen, eks: "#615C85"
+        }
+        //-------------------------
+
+    </script>
+
+</body>
+</html>

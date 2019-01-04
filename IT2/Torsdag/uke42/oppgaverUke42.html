@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Oppgaver uke 42</title>
+</head>
+<body>
+
+
+    <script>
+
+        // f(x) = 2x + 3
+        // f(2) = 2*2 + 3 = 7
+
+        function f(x){
+            return 2*x+3;
+        }
+
+        function siHei(){
+            document.write("hei");
+        }
+
+        function g(x,y){
+            return 2*x + 3*y;
+        }
+
+        function skrivTekst(tekst){
+            document.write(tekst);
+        }
+
+
+        function aroundTheWorld(linjer){
+            for(var i = 0; i<linjer; i++){
+                document.write(`<br>Around the world</br>`)
+            }
+        }
+
+
+        siHei();
+
+        function tegnSirkel(){
+
+        }
+
+
+        document.onclick = function(){
+            ctx.beginPath();
+            ctx.fillStyle = "red";
+            ctx.arc(50, 50, 25, 0, Math.PI * 2);
+            ctx.fill();
+        }
+
+
+        //------ Oppgave 1 ----------
+
+        function kvadrat(n){
+            // En funksjon som returnerer n^2.
+            // Input: number
+            // -- Skriv din kode under kode her: ---
+            return n*n;
+
+        }
+
+        //----------------------------
+
+        //------ Oppgave 2 -----------
+
+        function oddeTall(n){
+            // En funksjon om returnerer true hvis n er oddetall, og false hvis n er partall
+            // Input: number
+            // -- Skriv din kode under her: --
+            return !!(n % 2);
+        }
+
+        //----------------------------
+
+        //----- Oppgave 3 ----------
+
+        function iFjerde(n){
+            // En funksjon som bruker funksjonen kvadrat(n), og returnerer n^4.
+            // Input: number
+            // -- Skriv din kode under kode her: ---
+            return kvadrat(kvadrat(n)); // En funksjon som argument til en annen funksjon
+
+        }
+
+    </script>
+
+</body>
+</html>
