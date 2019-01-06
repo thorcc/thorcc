@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>The Oscars</title>
+    <link rel="stylesheet" href="stil.css">
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="#">Hjem</a>
+        <a href="#">Priser</a>
+        <a href="#">Kinovisninger</a>
+        <a href="#">Historie</a>
+      </nav>
+      <h1>Oscar 2018</h1>
+      <h3>Best picture</h3>
+      <section id="storrelse">
+
+      </section>
+    </header>
+    <main>
+      <section class="grid">
+        <article>
+          <img src="bilder/CallMeByYourName.png">
+          <p>Olabukse</p>
+        </article>
+          <article>
+          <img src="bilder/Darkest_Hour_poster.png">
+          <p>Darkest Hour</p>
+        </article>
+          <article>
+          <img src="bilder/dunkirk.jpg">
+          <p>Dunkirk</p>
+        </article>
+          <article>
+          <img src="bilder/Get_Out.png">
+          <p>Get Out</p>
+        </article>
+          <article>
+          <img src="bilder/Lady_Bird.jpeg">
+          <p>Lady Bird</p>
+        </article>
+          <article>
+          <img src="bilder/Phantom_Thread.png">
+          <p>Phantom Thread</p>
+        </article>
+        <article>
+          <img src="bilder/The_Post.png">
+          <p>The Post</p>
+        </article>
+        <article>
+          <img src="bilder/The_Shape_of_Water.png">
+          <p>The Shape of Water</p>
+        </article>
+        <article>
+          <img src="bilder/Three_Billboards.png">
+          <p>Three Billboards</p>
+        </article>
+      </section>
+    </main>
+
+    <!-- Javascript-kode for å skrive ut størrelsen på vinduet -->
+    <script type="text/javascript">
+      const storrelse = document.querySelector("#storrelse");
+      storrelse.innerHTML = "Bredde på nettleser = " + window.innerWidth + " px";
+      window.onresize = () => {
+        storrelse.innerHTML = "Bredde på nettleser = " + window.innerWidth + " px";
+      }
+    </script>
+    <!-- Slutt på javascript -->
+  </body>
+</html>

@@ -1,0 +1,69 @@
+main{
+  width: 90%;
+  margin: auto;
+}
+img{
+  width: 100%;
+}
+
+.grid{
+  display: grid;
+  grid-gap: 5px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+@media(max-width:900px){
+  .grid{
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media(max-width:700px){
+  .grid{
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media(max-width:500px){
+  .grid{
+    grid-template-columns: 1fr;
+  }
+}
+
+
+header > nav{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+@media(max-width:500px){
+  header>nav{
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/*Overskrifter*/
+h1,h3{
+  text-align: center;
+}
+/* --- */
+
+/* Størrelse-boks */
+#storrelse{
+  background-color: peachpuff;
+  width: 600px;
+  margin: auto;
+  text-align: center;
+  font-size: 48px;
+  border-radius: 4px;
+  box-shadow: 4px 4px;
+  margin-bottom: 20px;
+}
+
+@media(max-width:630px){
+  #storrelse{
+    width: 370px;
+    font-size: 32px;
+  }
+}
+/*--------*/
