@@ -13,7 +13,7 @@ Lag et nettsted hvor man finner informasjon, råd og veiledning om sikrere bruk
 - En hovedside og fire undersider.
 - PC- og mobilvennlig.
 
-**Ressurser:**
+**Ressurser:**  
 [Nettvett.no](https://nettvett.no/veiledninger/)  
 [Sikkerhet på nett - Nordea](https://www.nordea.no/privat/kundeservice/sikkerhet/)  
 [Dinside.no - 11 ting du bør passe deg for på internett](https://www.dinside.no/data/11-ting-du-bor-passe-deg-for-pa-internett/60962963)  
