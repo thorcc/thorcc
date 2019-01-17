@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #balance{
+            border-style: solid;
+            width: 100px;
+            position: absolute;
+            right: 2px;
+        }
+        .spiller{
+            background-color: blue;
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+    <input type="number" id="input">
+    <button id="overfor">Overfør</button>
+
+    <select name="" id="kontoFra">
+        <option value="" id="sparekontoFra">Sparekonto</option>
+        <option value="" id="lonnskontoFra">Lønnskonto</option>
+    </select>
+    <select name="" id="kontoTil">
+        <option value="" id="sparekontoTil">Sparekonto</option>
+        <option value="" id="lonnskontoTil">Lønnskonto</option>
+    </select>
+
+    <div id="divSaldoLonn">
+        Saldo lønn kommer her
+    </div>
+    <div id="divSaldoSpare">
+        Saldo spare kommer her
+    </div>
+    <script>
+
+        // Variabler til HTML-elementer
+        var input = document.getElementById("input");
+        var lonnskontoFra = document.getElementById("lonnskontoFra");
+        var lonnskontoTil = document.getElementById("lonnskontoTil");
+        var sparekontoFra = document.getElementById("sparekontoFra");
+        var sparekontoTil = document.getElementById("sparekontoTil");
+        var divSaldoLonn = document.getElementById("divSaldoLonn");
+        var divSaldoSpare = document.getElementById("divSaldoSpare");
+        var overfor = document.getElementById("overfor");
+
+        var saldoSpare = 35000;
+        var saldoLonn = 500;
+
+        overfor.onclick = function(){
+            let belop = Number(input.value); // Lager vi en variabel som er beløpter i input-feltet
+            if(lonnskontoFra.selected && sparekontoTil.selected){
+               saldoLonn = saldoLonn - belop;  // Oppdaterer saldo på lønnskonto
+               saldoSpare = saldoSpare + belop; // oppdaterer saldo på sparekonto
+               divSaldoLonn.innerHTML = saldoLonn; //skriver saldolønn ut i en div
+               divSaldoSpare.innerHTML = saldoSpare; //skriver saldo spare ut i en div
+            }
+            else if(sparekontoFra.selected && lonnskontoTil.selected){
+                saldoLonn = saldoLonn + belop;  // Oppdaterer saldo på lønnskonto
+                saldoSpare = saldoSpare - belop; // oppdaterer saldo på sparekonto
+                divSaldoLonn.innerHTML = saldoLonn; //skriver saldolønn ut i en div
+                divSaldoSpare.innerHTML = saldoSpare; //skriver saldo spare ut i en div
+            }
+            else{
+                divSaldoSpare.innerHTML = "Dette ble feil";
+            }
+        }
+    </script>
+</body>
+</html>
