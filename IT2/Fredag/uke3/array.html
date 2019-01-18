@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+    <meta charset="UTF-8">
+    <title>Array</title>
+</head>
+<body>
+
+    <ul id="filmListe">
+
+    </ul>
+
+    <script>
+        let filmListe = document.querySelector("#filmListe");
+        // Denne gjør det samme som: let filmListe = document.getElementById("filmListe");
+
+        let filmer = ["Ben Hur","Shawshank Redemption","Star Wars","Oslo 31. august","The shape of water","spider man"];
+        /*
+        document.write(filmer[0]);
+        document.write(filmer[1]);
+        document.write(filmer[2]);
+        */
+        /*
+        for(let i = 0; i < filmer.length; i++){
+            document.write(filmer[i]);
+        }
+        */
+        for(let film of filmer){
+            filmListe.innerHTML += `<li> ${film}</li>`;
+            //Gjør det samme som linjen over: filmListe.innerHTML += "<li>" + film + "</li>";
+
+            /*
+            let nyttElement = document.createElement("li");
+            nyttElement.innerHTML = film;
+            filmListe.appendChild(nyttElement);
+            */
+        }
+
+        // Metoder til array
+
+        filmer.push("Inglorius Basterds","The Room"); // Legger til et elenment sist i listen
+        filmer.unshift("Hawaii Oslo"); //
+        filmer.pop(); // Fjerner siste element
+        filmer.shift(); // Fjerner første element
+
+        filmer.splice(1,3); // Fjerner element fra plass 1 og 3 plasser fremover.
+        filmer.splice(2,2,"Blade Runner","Blade Runner 2048");
+
+        document.write(filmer);
+    </script>
+</body>
+</html>

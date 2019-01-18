@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+    <meta charset="UTF-8">
+    <title>Huskeliste</title>
+</head>
+<body>
+<h1>Huskeliste</h1>
+
+<div>
+    <input type="text" id="inpLeggTil" placeholder="Ting jeg må huske">
+    <button id="btnKnapp">Legg til</button>
+</div>
+<div id="divListe">
+    <ul id="ulListe">
+    </ul>
+</div>
+ 
+<script>
+
+    const inpLeggTil = document.getElementById("inpLeggTil");
+    const btnKnapp = document.getElementById("btnKnapp");
+    const ulListe = document.getElementById("ulListe");
+
+
+    let punkter = [];
+
+    btnKnapp.onclick = function(){ // En anonym-funksjon som kjører når brukeren trykker på knappen
+        if (inpLeggTil.value !== ""){ // Hvis input-feltet ikke er tomt gjør følgende:
+            punkter.push(inpLeggTil.value); // Legg til verdien i input-feltet i punkter
+            inpLeggTil.value = ""; // Fjern det som står i input-feltet
+        }
+        skrivUtListe(); // Kaller opp funksjonen skriv ut liste, som skriver alle punktene til listen
+    }
+
+    function fjernPunkt(listepunkt){ // En funksjon som fjerner et listepunkt fra listen punkter, og skriver ut listen på nytt
+        fjernElementFraListe(punkter,listepunkt);
+        skrivUtListe(); // Kaller opp funksjonen skriv ut liste, som skriver alle punktene til listen
+    }
+
+    function skrivUtListe(){ // En funksjon som skriver ut listen punkter på nettsiden
+        ulListe.innerHTML = ""; // Fjerner alt som står i listen fra før av
+        for (let i = 0; i<punkter.length; i++){ // En løkke som går gjennom hvert element i listen punkter
+            ulListe.innerHTML += `<li onclick="fjernPunkt(this.innerHTML);">${punkter[i]}</li>`; // legger til hvert listepunkt i punkter som et li-element, som kaller opp funksjonen fjernPunkt hvis det blir trykket på med li-elementets egen innerHTML som parameter.
+        }
+    }
+
+   function fjernElementFraListe(liste,element){ // En generell funksjon som fjerner et element fra en liste(array)
+        for(let i = 0; i < liste.length; i++){ // En løkke som går gjennom hvert element i listen
+            if (element === liste[i]){ // Hvis elementet som skal fjernes er likt som elementet i listen skal følgende gjøres:
+                liste.splice(i,1); // Fjern 1 element på plass i
+            }
+        }
+       return liste; // returner listen uten elementet som er fjernet
+    }
+
+
+    
+    
+
+</script>
+
+</body>
+</html>
