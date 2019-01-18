@@ -32,8 +32,8 @@
 | 10  | 07.mar | Spillprogrammering               |                    | 11.1 - 11.4 |
 | 11  | 14.mar | Planlegging og dokumentasjon               |                    | 11.5 - 11.6 |
 | 12  | 21.mar | Objektorientert programmering              |                    | 12.1 - 12.2 |
-| 13  | 28.mar | Strukturere kode og JSON-databaser         |                    | 12.3 - 12.4 |
-| 14  | 04.apr | Sammensatte oppgaver                       |                    |             |
+| 13  | 28.mar | Objektorientert programmering         |                    | 12.3 - 12.4 |
+| 14  | 04.apr | Strukturere kode og JSON-databaser                       |                    |             |
 | 15  | 11.apr | Sammensatte oppgaver                       |                    |             |
 | 16  | 18.apr | Sammensatte oppgaver                       |                    |             |
 | 17  | 25.apr | Påske                                      |                    |             |
