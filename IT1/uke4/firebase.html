@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src="https://www.gstatic.com/firebasejs/5.8.0/firebase.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+          apiKey: "AIzaSyDSwx22s94g70maWxRV0jKV9QY1Qb-oZJA",
+          authDomain: "introduksjontildatabase.firebaseapp.com",
+          databaseURL: "https://introduksjontildatabase.firebaseio.com",
+          projectId: "introduksjontildatabase",
+          storageBucket: "",
+          messagingSenderId: "713671077173"
+        };
+        firebase.initializeApp(config);
+      </script>
+  </head>
+  <body>
+    <textarea name="name" rows="8" cols="80" id="inpTekst"></textarea>
+    <button type="button" name="button" id="knappSend">Send inn</button>
+    <div class="hovedDiv">
+
+    </div>
+
+    <script>
+      const inpTekst = document.querySelector("#inpTekst");
+      const knappSend = document.querySelector("#knappSend");
+      const hovedDiv = document.querySelector(".hovedDiv");
+
+      const db = firebase.database();
+      const innhold = db.ref("innhold");
+
+      // Knytter funksjonen til hendelsen at skjemaet blir sendt inn
+      inpTekst.onchange = sendTilDb;
+
+      // Starter funksjonen når det blir lagt til en kontakt
+      innhold.on("child_added", oppdaterSide);
+
+
+      function oppdaterSide(snapshot) {
+        let element = snapshot.val();
+        console.log(element);
+        hovedDiv.innerHTML += element;
+
+      }
+
+      function sendTilDb(snapshot){
+        innhold.push(inpTekst.value);
+        console.log("sendt");
+      }
+
+    </script>
+  </body>
+</html>
