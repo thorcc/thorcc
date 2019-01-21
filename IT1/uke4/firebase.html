@@ -2,7 +2,13 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>Dynamisk nettside</title>
+    <style media="screen">
+      body{
+        font-family: helvetica;
+        text-align: center;
+      }
+    </style>
     <script src="https://www.gstatic.com/firebasejs/5.8.0/firebase.js"></script>
     <script>
         // Initialize Firebase
@@ -21,7 +27,10 @@
     <h1>Dynamisk nettside</h1>
     <p>Skriv HTML-kode i vinduet under.</p>
     <textarea name="name" rows="8" cols="80" id="inpTekst"></textarea>
-    <button type="button" name="button" id="knappSend">Send inn</button>
+    <div class="">
+      <button type="button" name="button" id="knappSend">Send inn</button>
+    </div>
+
     <div class="hovedDiv">
 
     </div>
