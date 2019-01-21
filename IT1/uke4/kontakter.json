@@ -1,0 +1,14 @@
+{
+  "kontaktliste":{
+    "1":{
+      "firstName":"Thor Christian",
+      "lastName":"Coward",
+      "telephone":98607653
+    },
+    "2":{
+      "firstName":"Ravi",
+      "lastName":"Manikarnika",
+      "telephone":41512883
+    }
+  }
+}
