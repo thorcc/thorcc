@@ -55,8 +55,25 @@
     }
 
 
-    
-    
+    function fjernElementFraListe(liste,element){ // En generell funksjon som fjerner et element fra en liste(array)
+        for(indeks in liste){ // En løkke som går gjennom hvert element i listen
+            if(element === liste[indeks]){ // Hvis elementet som skal fjernes er likt som elementet i listen skal følgende gjøres:
+                liste.splice(indeks,1); // Fjern 1 element på plass i
+            }
+        }
+        return liste; // returner listen uten elementet som er fjernet
+    }
+
+    /*
+    function fjernElementFraListe(liste,element){ // En generell funksjon som fjerner et element fra en liste(array)
+        for(let i = 0; i < liste.length; i++){ // En løkke som går gjennom hvert element i listen
+            if (element === liste[i]){ // Hvis elementet som skal fjernes er likt som elementet i listen skal følgende gjøres:
+                liste.splice(i,1); // Fjern 1 element på plass i
+            }
+        }
+        return liste; // returner listen uten elementet som er fjernet
+    }
+    */
 
 </script>
 

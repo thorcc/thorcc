@@ -10,7 +10,33 @@
 
     </ul>
 
+    <select name="" id="minDropdown">
+        <option value="thor">Thor Christian</option>
+        <option value="ravi">Ravi</option>
+        <option value="eirik">Eirik</option>
+        <option value="gade">Gade-brødrene</option>
+    </select>
+
+
     <script>
+
+        let valg = document.querySelectorAll("option");
+        let minDropdown = document.querySelector("#minDropdown");
+
+        minDropdown.onchange = function(){
+            for (laerer of valg){
+                if(laerer.selected){
+                    if(laerer.value === "thor"){
+                        console.log("Gratulerer du fikk 6 i snitt");
+                    }
+                    console.log(laerer.value);
+                }
+            }
+        }
+
+
+
+
         let filmListe = document.querySelector("#filmListe");
         // Denne gjør det samme som: let filmListe = document.getElementById("filmListe");
 
@@ -47,6 +73,53 @@
         filmer.splice(2,2,"Blade Runner","Blade Runner 2048");
 
         document.write(filmer);
+
+        let elever = [
+            {navn: "Per",alder:18},
+            {navn: "Jens",alder:20},
+            {navn: "Thor Christian",alder:18}
+        ];
+
+        // Sortere array
+
+
+        // Sortere array med tall
+        let tallListe = [2,3,18,693,340,12,1,2,4];
+
+        let sum = 0;
+        for (tall of tallListe){
+            sum += tall;
+        }
+        let snitt = sum/tallListe.length;
+        console.log("Gjennomsnittet: " + snitt.toFixed(2));
+
+        //Sorteringsfunksjon
+
+        function sortereTall(tall1,tall2){
+            return tall1-tall2;
+        }
+
+        // Sorteringsmetoden .sort med sortereTall som sorteringsfunksjon
+        //tallListe.sort();
+        tallListe.sort(sortereTall);
+
+
+        // Sortere array med strings
+        let listeMedFilmer = ["Ben Hur","127 Hours","Shawshank Redemption","Star Wars","Oslo 31. august","aaThe shape of water","spider man"];
+
+        //listeMedFilmer.sort();
+
+
+        function sortereAlfabetisk(string1,string2){
+            string1 = string1.toLowerCase();
+            string2 = string2.toLowerCase();
+            if(string1<=string2){
+                return -1;
+            }
+        }
+
+        listeMedFilmer.sort(sortereAlfabetisk);
+
     </script>
 </body>
 </html>
