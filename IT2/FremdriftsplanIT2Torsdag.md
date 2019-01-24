@@ -40,8 +40,9 @@
 | 18  | 02.mai | Sammensatte oppgaver                       |                    |             |
 | 19  | 09.mai | Trekk til eksamen?                         |                    |             |
 | 20  | 16.mai | Eksamenstrening                            |                    |             |
-| 21  | 23.mai | Eksamenstrening                            |                    |             |
-| 22  | 30.mai | Eksamenstrening - Muntlig                  |                    |             |
+| 21  | 23.mai | Ingen undervisning - Eksamen norsk                          |                    |             |
+| 21  | 28.mai | Skriftlig eksamen                          |                    |             |
+| 22  | 30.mai | Ingen udervisning - Kristi Himmelfart                  |                    |             |
 | 23  | 06.jun | Eksamenstrening - Muntlig                  |                    |             |
 | 24  | 13.jun | Eksamenstrening - Muntlig                  |                    |             |
 | 25  | 20.jun | Eksamenstrening - Muntlig                  |                    |             |
