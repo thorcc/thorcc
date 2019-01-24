@@ -24,11 +24,11 @@
 | 2   | 10.jan | Scrimba del 2                        |                    | 8.6 - 8.7   |
 | 3   | 17.jan | Array                    |                    | 9.1 - 9.2   |
 | 4   | 24.jan | Set, map, nodelist                            |                    | 9.3 - 9.4   |
-| 5   | 31.jan | Diagrammer, JSON og Web-API                                    |                    | 9.5 - 9.6   |
-| 6   | 07.feb | CSS-animasjoner     |                    | 10.1 - 10.2 |
+| 5   | 31.jan | Animasjoner del 1                                    |                    | 9.5 - 9.6   |
+| 6   | 07.feb | Animasjoner del 2     |                    | 10.1 - 10.2 |
 | 7   | 14.feb | **Prøve** og Spillprogrammering                       |                    | 10.3            |
 | 8   | 21.feb | Vinterferie                         |                    | 10.4            |
-| 9   | 28.feb | Spillprogrammering                                |                    | 10.5           |
+| 9   | 28.feb | Diagrammer, JSON og Web-API                                |                    | 10.5           |
 | 10  | 07.mar | Spillprogrammering               |                    | 11.1 - 11.4 |
 | 11  | 14.mar | Planlegging og dokumentasjon               |                    | 11.5 - 11.6 |
 | 12  | 21.mar | Objektorientert programmering              |                    | 12.1 - 12.2 |
