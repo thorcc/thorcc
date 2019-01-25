@@ -22,13 +22,13 @@
 | 50 |14 des|**Heldags**| ||
 | 51 |21 des|Array, set, map, nodelist| |8.1 - 8.2, 8.3 - 8.5|
 | 52 |28 des|Juleferie|||
-| 1  |4 jan|Diagrammer og JSON||8.6 - 8.7|
-| 2  |11 jan|Multimedier og animasjon||9.1 - 9.2|
- |3  |18 jan|CSS-animasjoner||9.3 - 9.4|
- |4  |25 jan|Web-API||9.5 - 9.6|
- |5  |1 feb|**Prøve kap. 7-9.** Spillprogrammering||10.1 - 10.2|
- |6  |8 feb|Spillprogrammering||10.3|
-| 7  |15 feb|Spillprogrammering|||
+| 1   | 04.jan | Scrimba del 1                          |                    | 8.3 - 8.5   |
+| 2   | 11.jan | Scrimba del 2                        |                    | 8.6 - 8.7   |
+| 3   | 18.jan | Array                    |                    | 9.1 - 9.2   |
+| 4   | 25.jan | Set, map, nodelist                            |                    | 9.3 - 9.4   |
+| 5   | 01.feb | Animasjoner del 1                                    |                    | 9.5 - 9.6   |
+| 6   | 08.feb | Animasjoner del 2     |                    | 10.1 - 10.2 |
+| 7   | 15.feb | **Prøve** og Spillprogrammering                       |                    | 10.3            |
 | 8  |22 feb|Vinterferie|||
 | 9 |1 mar|Planlegging og dokumentasjon||11.1 - 11.4|
 | 10 |8 mar|Planlegging og dokumentasjon||11.5 - 11.6|
