@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+      body{
+        background-image: url("universe.jpeg")
+      }
+
+      @keyframes rakettAnimasjon{
+        0%{
+          left:-60%;
+          bottom: 0;
+          transform: rotate(90deg);
+        }
+        50%{
+          bottom: 0;
+          left: 60%;
+          transform: rotate(0deg);
+        }
+        70%{
+          bottom: 0;
+          left: 60%;
+          transform: rotate(0deg);
+        }
+        100%{
+          left:-10%;
+          bottom: 200%;
+          transform: rotate(-90deg);
+        }
+      }
+
+      .rakett{
+        position: absolute;
+        animation: rakettAnimasjon 10s infinite;
+      }
+    </style>
+  </head>
+  <body>
+    <img class="rakett" src="spaceX.png" alt="">
+  </body>
+</html>
