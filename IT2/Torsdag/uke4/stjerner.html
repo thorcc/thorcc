@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+    <meta charset="UTF-8">
+    <title>Stjerner</title>
+    <style>
+        body{
+            height: 100%;
+            background-color: black;
+        }
+        .stjerne{
+            position: absolute;
+            background-color: yellow;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div id="hjelpeListe"></div>
+
+    <script>
+        function lagStjerne(){
+            let stjerne = document.createElement("div");
+            stjerne.className = "stjerne";
+            stjerne.style.left = Math.random()*innerWidth + "px";
+            stjerne.style.top = Math.random()*innerHeight + "px";
+            stjerne.style.width = Math.random()*3 + "px";
+            stjerne.style.height = stjerne.style.width;
+            document.body.appendChild(stjerne);
+        }
+
+
+       setInterval(lagStjerne,0.0001);
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <input id="navn" type="text">
+    <input id="problem" type="text">
+    <button id="knapp">Send inn</button>
+    <div id="divProblemer"></div>
+
+    <script>
+        const inpNavn = document.getElementById("navn");
+        const inpProblem = document.getElementById("problem");
+        const btnSend = document.getElementById("knapp");
+        const divProblemer = document.getElementById("divProblemer");
+
+        let problemer = [];
+
+        btnSend.onclick = function(){
+           problemer.push({
+               navn: inpNavn.value,
+               problem: inpProblem.value
+           })
+            console.log(problemer);
+           divProblemer.innerHTML = "";
+
+           for(let problem of problemer){
+               divProblemer.innerHTML += `<p><b>Navn:</b> ${problem.navn}</p>
+                                         <p><b>Problem:</b> ${problem.problem}</p>`
+           }
+        }
+
+
+        document.write("<p>" + navn + "</p>" + "<p>" + problem + "</p>")
+
+    </script>
+</body>
+</html>

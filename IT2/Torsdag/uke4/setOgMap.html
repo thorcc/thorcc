@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+
+        let stjerner = new Set();
+        stjerner.add("Sirius");
+        stjerner.add("Vega");
+        stjerner.add("Pollux");
+
+        stjerner.has("Sirius"); // Returnerer true hvis "Sirius" er i settet.
+
+        for(stjerne of stjerner){
+            document.write(stjerne);
+        }
+
+
+        let land = ["England","Norge","Sverige","England"];
+        document.write(land[0]);
+
+
+        let landSet = new Set(land);
+
+
+        document.write(landSet.has("Norge"));
+
+
+        for(let i = 0;i<land.length;i++){
+            if(land[i]==="Norge"){
+                alert("Norge er i arrayen");
+            }
+        }
+
+        for(let landet of land){
+            if(landet==="Norge"){
+                alert("Norge er i arrayen");
+            }
+        }
+
+        if(land.indexOf("Norge")>0){
+            alert("Norge er i arrayen");
+        }
+
+
+
+        let innbyggere = new Map(); //Oppretter en tom map
+        innbyggere.set("001","Heath Ledger");
+        innbyggere.set("002","Christian Bale");
+        innbyggere.set("003","Michael Caine");
+
+
+        let innbyggere2 = {
+            "001":"Heath Ledger",
+            "002":"Christian Bale"
+        }
+    </script>
+</body>
+</html>

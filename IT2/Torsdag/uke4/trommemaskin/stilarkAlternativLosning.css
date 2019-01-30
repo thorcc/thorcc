@@ -1,0 +1,30 @@
+body{
+    background-color: #0d99a5;
+}
+
+#app{
+    position: absolute;
+    left:50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    display: grid;
+    grid-template-columns: repeat(9,1fr);
+    grid-gap: 5px;
+
+}
+
+.trommeBoks{
+    border: solid 5px black;
+    border-radius: 5px;
+    width:100px;
+}
+
+
+.bokstavTekst, .trommeTekst{
+    text-align: center;
+}
+
+.spiller{
+    border-color: yellow;
+    transform: scale(1.1);
+}

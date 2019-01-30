@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+    <meta charset="UTF-8">
+    <title>Eksempel s.222</title>
+</head>
+<body>
+
+    <div class="oransj">Hei</div>
+    <div>På</div>
+    <div class="oransj">Deg</div>
+
+    <script>
+        let divBokser = document.querySelectorAll(".oransj");
+
+        for(let boks of divBokser){
+            boks.style.backgroundColor = "orange";
+            boks.style.marginRight = "5px";
+            boks.style.float = "left";
+            boks.style.textAlign = "center";
+            boks.style.width = "200px";
+            boks.style.height = "120px";
+        }
+
+
+
+
+
+        window.onkeydown = function(hendelse){
+            if(hendelse.code === "Enter"){
+
+            }
+            console.log(hendelse);
+        }
+    </script>
+</body>
+</html>
