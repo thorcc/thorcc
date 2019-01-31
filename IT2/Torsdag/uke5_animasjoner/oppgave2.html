@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #tekst{
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="tekst">Hei</h1>
+
+    <script>
+        let tekst = document.querySelector("#tekst");
+
+        tekst.style.width = "300px";
+        tekst.style.margin = "auto"; // midtstiller teksten
+        tekst.style.transition = "2s"; // lager en animasjon
+
+        tekst.onmouseover = function(){
+            tekst.style.transform = "scale(3)";
+        }
+        tekst.onmouseleave = function(){
+            tekst.style.transform = "scale(1)";
+        }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS transition og JavaScript</title>
+    <style>
+        body{
+            transition: 1s;
+        }
+        #firkant{
+            width:100px;
+            height:100px;
+            background-color: blue;
+            transition: 1s;
+        }
+    </style>
+</head>
+<body>
+    <input type="text" id="inpFarge">
+    <div id="firkant">
+
+    </div>
+    <script>
+        let inpFarge = document.querySelector("#inpFarge");
+        let firkant = document.querySelector("#firkant");
+
+        inpFarge.oninput = function(){
+            firkant.style.backgroundColor = inpFarge.value;
+        }
+    </script>
+</body>
+</html>

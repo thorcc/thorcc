@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+    <meta charset="UTF-8">
+    <title>Løven</title>
+    <style>
+        .container{
+            position: relative;
+            width: 400px;
+            height: 280px;
+            background-color: lightgray;
+            overflow: hidden;
+        }
+        .container>img{
+            position: absolute;
+            transform: scale(1);
+            transition: 0.4s 0.2s;
+        }
+        .container>article{
+            position: absolute;
+            background-color: darkgreen;
+            transform: scale(0);
+            transition: 0.5s 0s;
+        }
+        .container:hover>img{
+            transform: scale(0);
+        }
+        .container:hover>article{
+            transform: scale(1);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="universe.jpeg" alt="">
+        <article>
+            <h1>Løve</h1>
+        </article>
+    </div>
+</body>
+</html>

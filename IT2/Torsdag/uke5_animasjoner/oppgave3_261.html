@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div id="minFirkant">
+
+    </div>
+
+    <script>
+        let minFirkant = document.querySelector("#minFirkant")
+
+        minFirkant.style.position = "absolute";
+        minFirkant.style.height = "50px";
+        minFirkant.style.width = "50px";
+        minFirkant.style.backgroundColor ="red";
+
+        minFirkant.style.left = "50px";
+        minFirkant.style.top = "50px";
+
+        window.onclick = function(event){
+            console.log(event.x);
+            minFirkant.style.left = event.x + "px";
+            minFirkant.style.top = event.y + "px";
+            minFirkant.style.transform = "translate(-50%,-50%)";
+        }
+
+
+        for(let inputEl of input){
+            inputEl.oninput = function(){
+                inputEl[0].style.width =inputEl[0].value;
+                inputEl[1].style.height =inputEl[0].value;
+            }
+        }
+    </script>
+</body>
+</html>

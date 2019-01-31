@@ -1,23 +1,30 @@
 <!DOCTYPE html>
-<html lang="nb" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-    <style media="screen">
-      #inpNavn{
-        width: 50px;
-        transition: width 0.2s;
-      }
-      #inpNavn:focus{
-        width: 100px;
-      }
+<html lang="nb">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #firkant{
+            background-color: green;
+            width: 50px;
+            height: 50px;
+            transition: all 2s 1.5s ease-in;
+            margin-left: 100px;
+            margin-top: 100px;
+        }
+        #firkant:hover{
+            width: 200px;
+            height: 200px;
+            transform: rotate(25deg);
+        }
+
+
     </style>
-  </head>
-  <body>
-    <input type="text" id="inpNavn">
+</head>
+<body>
+    <div id="firkant">
 
-    </input>
-  </body>
+    </div>
+
+</body>
 </html>
-
-
