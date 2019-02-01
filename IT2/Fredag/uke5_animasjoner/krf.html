@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+    <meta charset="UTF-8">
+    <title>KRF</title>
+    <style>
+        .container{
+            width: 700px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%);
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+        .container>.politiker>img{
+            width: 100%;
+            transition: 0.2s 0.2s;
+        }
+        .container>.politiker{
+            transition: 0.2s 0.2s;
+            position: relative;
+        }
+        .container>.politiker>p{
+            position: absolute;
+            left: 3px;
+            top:50%;
+            transform: translateY(-50%);
+            opacity: 0;
+            transition: 0.2s 0.2s;
+        }
+        .container>.politiker:hover>p{
+            opacity: 1;
+        }
+        .container>.politiker:hover>img{
+            opacity: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="bilder/krf.svg" alt="Overskrift">
+    </div>
+    <div class="container">
+        <div class="politiker">
+            <img src="bilder/hareide.jpg" alt="Bilde av Hareide">
+            <p>Venstre-mannen i KRF</p>
+        </div>
+        <div class="politiker">
+            <img src="bilder/bollestad.jpg" alt="Bilde av Bollestad">
+            <p>Limet av KRF, damen som holder KRF sammen</p>
+        </div>
+        <div class="politiker">
+            <img src="bilder/ropstad.jpg" alt="Bilde av Ropstad">
+            <p>Høyre-mannen i KRF</p>
+        </div>
+    </div>
+</body>
+</html>
