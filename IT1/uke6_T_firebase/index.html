@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="nb" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Kontaktliste</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://www.gstatic.com/firebasejs/5.8.2/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyDs3XiVv9bxJ7008TIdm2UDf0j8qItKKWM",
+        authDomain: "kontakter-af34e.firebaseapp.com",
+        databaseURL: "https://kontakter-af34e.firebaseio.com",
+        projectId: "kontakter-af34e",
+        storageBucket: "kontakter-af34e.appspot.com",
+        messagingSenderId: "886522146104"
+      };
+      firebase.initializeApp(config);
+    </script>
+  </head>
+  <body>
+
+    <header>
+      <h1>Kontaktlisten</h1>
+    </header>
+    <main>
+      <form id="skjema">
+        <input type="text" id="inpNavn" placeholder="Navn">
+        <input type="number" id="inpTelefon" placeholder="Telfon">
+        <input type="text" id="inpEpost" placeholder="E-post">
+        <button type="submit">Registrer kontakt</button>
+      </form>
+      <section id="secKontakter">
+        
+      </section>
+    </main>
+    <script src="./script.js" charset="utf-8"></script>
+  </body>
+</html>

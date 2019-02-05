@@ -1,0 +1,19 @@
+html{
+  font-size: 100%;
+}
+body{
+  font-family: sans-serif;
+}
+#secKontakter{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  max-width: 700px;
+}
+#secKontakter div{
+  padding: 1rem;
+}
+#secKontakter div:nth-child(6n+0),
+#secKontakter div:nth-child(6n-1),
+#secKontakter div:nth-child(6n-2){
+  background-color: #eee;
+}
