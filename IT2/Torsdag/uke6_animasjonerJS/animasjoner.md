@@ -207,4 +207,4 @@ Se eksempel under.
     
     let mittInterval = setInterval(alertHei,1000); // Lagrer intervallet som en egen variabel
 </script>
-~~~
+~~~~
