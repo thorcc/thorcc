@@ -82,7 +82,7 @@ Kode 2: kap. 9.4
 WAAPI er en ny standard for programmering av animasjoner i nettleseren.
 Den er veldig fleksibel og kobler CSS-animasjoner sammen med javascript.
 
-###Ressurser:  
+### Ressurser:  
 Kode 2: kap. 9.5-9.6
 [MDN - WAAPI](https://developer.mozilla.org/en-US/docs/Web/API/Web_Animations_API/Using_the_Web_Animations_API)
 
@@ -207,4 +207,4 @@ Se eksempel under.
     
     let mittInterval = setInterval(alertHei,1000); // Lagrer intervallet som en egen variabel
 </script>
-~~~~
+~~~
