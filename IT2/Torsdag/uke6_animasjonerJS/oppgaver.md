@@ -16,7 +16,7 @@ b. Finn en *sprite sheet* av en figur på nettet og animer figuren med .animate 
  - Sprite sheet av en katt: https://github.com/thorcc/thorcc.github.io/blob/master/IT2/Torsdag/uke6_animasjonerJS/ninjakatt.png
  - Side med sprite sheets: https://www.spriters-resource.com/
   
-## Oppgave 3 - Øve til prøve
+## Oppgave 3
  
 ### Animert bilpresentasjon
  - Oppgave 1. Eksamen høsten 2014  
@@ -37,7 +37,7 @@ Lever animasjonen i kildeformat.
   - [Vedlegg](https://github.com/thorcc/thorcc.github.io/blob/master/IT2/Torsdag/uke6_animasjonerJS/FilerH2014.zip)
   - [PDF av hele eksamen](https://github.com/thorcc/thorcc.github.io/blob/master/IT2/Torsdag/uke6_animasjonerJS/REA3015_Informasjonsteknologi_2_Eksamen_H14.pdf)
 
-## Oppgave 4 - Øve til prøve
+## Oppgave 4
 
 ### Auto start/stopp-kalkulator.
    - Oppgave 2. Eksamen høsten 2014   
