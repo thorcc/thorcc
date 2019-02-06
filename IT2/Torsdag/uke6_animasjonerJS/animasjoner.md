@@ -11,7 +11,7 @@
 For at HTML-elementer skal ha en jevn overgang når CSS-stilen deres endres kan vi bruke CSS-transitions.
 Overgangene lages ved å legge til egenskapen *transition* til elementet som skal endres.
 
-###Ressurser: 
+### Ressurser: 
 Kode 2: kap 9.1-9.3  
 [w3school: CSS-transitions](https://www.w3schools.com/css/css3_transitions.asp)  
 [Youtube: CSS-overganger](https://www.youtube.com/watch?v=jwejfF0Pg0w&index=1&list=PLJC9cL8YfNXpSJc3NPJ1hsTe_deDdHKa4)
@@ -207,4 +207,4 @@ Se eksempel under.
     
     let mittInterval = setInterval(alertHei,1000); // Lagrer intervallet som en egen variabel
 </script>
-~~~
+~~~~ 
