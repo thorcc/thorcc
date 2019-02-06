@@ -19,7 +19,7 @@ b. Finn en *sprite sheet* av en figur på nettet og animer figuren med .animate 
 ## Oppgave 3 - Øve til prøve
  
 ### Animert bilpresentasjon
- - Oppgave 1. Eksamen Høsten 2014  
+ - Oppgave 1. Eksamen høsten 2014  
   
 Ford Norge ønsker en animert presentasjon av bilmodellen Ford Kuga. 
 Du har fått dette oppdraget og skal lage en nettside som presenterer bilen. 
@@ -40,7 +40,7 @@ Lever animasjonen i kildeformat.
 ## Oppgave 4 - Øve til prøve
 
 ### Auto start/stopp-kalkulator.
-   - Oppgave 2. Eksamen Høsten 2014   
+   - Oppgave 2. Eksamen høsten 2014   
 
 Mange av Fords modeller har auto start-stop. 
 Når bilen står stille, som ved trafikklys eller i en bilkø, stopper motoren automatisk. 
