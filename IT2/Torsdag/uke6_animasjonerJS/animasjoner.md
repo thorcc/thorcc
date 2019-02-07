@@ -2,12 +2,12 @@
 
 ### Innhold
 
-- [CSS-transitions](##CSS-transitions)  
-- [CSS-animations](##CSS-Animations (@keyframes))  
-- [.animate](##.animate (Web Animations API (WAAPI))  
-- [setInterval](##setinterval())
+- [CSS-transitions](#CSS-transitions)  
+- [CSS-animations](#CSS-Animations)  
+- [.animate](#.animate)  
+- [setInterval](#setinterval())
 
-## CSS-transitions
+# CSS-transitions
 For at HTML-elementer skal ha en jevn overgang når CSS-stilen deres endres kan vi bruke CSS-transitions.
 Overgangene lages ved å legge til egenskapen *transition* til elementet som skal endres.
 
@@ -39,7 +39,7 @@ Kode 2: kap 9.1-9.3
 </body>
 ~~~~
 
-## CSS-Animations (@keyframes)
+# CSS-Animations (@keyframes)
 CSS-Animations kan brukes til å lage animasjoner som skal startes av seg selv.
 De lages ved å definere nøkkel*frames* for animasjonen i CSS.
 
@@ -77,7 +77,7 @@ Kode 2: kap. 9.4
 </body>
 ~~~~
 
-## .animate (Web Animations API (WAAPI))
+# .animate (Web Animations API (WAAPI))
 
 WAAPI er en ny standard for programmering av animasjoner i nettleseren.
 Den er veldig fleksibel og kobler CSS-animasjoner sammen med javascript.
@@ -172,7 +172,7 @@ bill.playState; // Hvilken tilstand animasjonen er i. Play, paused, finished, os
 ~~~~
 
 
-## setInterval()
+# setInterval()
 
 For å få en hvilken som helst javascript-funksjon til å kjøre ved et gitt intervall kan setInterval() brukes.
 
