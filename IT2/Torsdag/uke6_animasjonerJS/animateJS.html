@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        img{
+           width: 100px;
+           position: absolute;
+        }
+        body {
+            margin: 0;
+            height: 100%;
+            overflow: hidden
+        }
+    </style>
+</head>
+<body>
+    <img id="bill" src="Bill_Clinton.jpg" alt="">
+
+    <button id="btnPause">Pause</button>
+
+    <input type="range" id="slider" min="0.1" max="2" value="1" step="0.1">
+
+    <script>
+        const bill = document.querySelector("#bill");
+        const btnPause = document.querySelector("#btnPause");
+        const slider = document.querySelector("#slider");
+
+        let animasjonsStil = [
+            {
+                left:"0px",
+                top:"0px",
+                opacity:"1",
+                transform:"rotate(0deg)"
+            },
+            {
+                left:"300px",
+                top:"500px",
+                opacity:"0",
+                transform:"rotate(360deg)"
+            },
+            {
+                left:"900px",
+                top:"500px",
+                opacity:"1",
+                transform:"rotate(1440deg)"
+
+            }
+        ];
+
+        let animasjonsEgenskaper = {
+            duration: 1000,
+            easing: "ease-in-out",
+            direction: "alternate",
+            iterations: Infinity,
+            fill: "forwards"
+        };
+
+        let aniBill = bill.animate(animasjonsStil,animasjonsEgenskaper);
+        btnPause.onclick = function(){
+            aniBill.pause();
+        }
+        /*
+        aniBill.play();
+        aniBill.reverse();
+        */
+
+        slider.onchange = function(){
+            aniBill.playbackRate = slider.value;
+        }
+
+    </script>
+</body>
+</html>

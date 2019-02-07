@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #container{
+            width: 213.33px;
+            height: 213px;
+            overflow: hidden; /* Skjuler alt som er utenfor div-boksen */
+            position: relative;
+        }
+        img{
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <img id="ninjakatt" src="ninjakatt.png" alt="">
+    </div>
+
+    <script>
+        const ninjakatt = document.querySelector("#ninjakatt");
+
+        let ninjaCSS = [
+            {
+                left:"0%"
+            },
+            {
+                left:"-600%"
+            }
+        ];
+
+        let ninjaEgenskaper = {
+            duration:1500,
+            iterations: Infinity,
+            easing:"steps(6)"
+        };
+
+        ninjakatt.animate(ninjaCSS,ninjaEgenskaper);
+    </script>
+</body>
+</html>

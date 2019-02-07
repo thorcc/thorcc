@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+    <meta charset="UTF-8">
+    <title>Animasjon med Javascript</title>
+
+    <style>
+        #ramme{
+            width: 800px;
+            height: 800px;
+            background-color: yellow;
+            position: relative;
+        }
+        #bill{
+            width: 75px;
+            border-radius: 50%;
+            position: absolute;
+        }
+    </style>
+
+</head>
+<body>
+
+    <div id="ramme">
+        <img id="bill" src="Bill_Clinton.jpg" alt="Bilde av Bill Clinton">
+    </div>
+
+
+    <script>
+        const bill = document.querySelector("#bill");
+
+        let minAnimasjon = setInterval(flyttBill,100);
+
+        let x = 0;
+        let y = 0;
+        function flyttBill(){
+            x = x + 1;
+            y = y + 1;
+            bill.style.left = x + "px";
+            bill.style.top = y + "px";
+            if(x>800){
+                clearInterval(minAnimasjon);
+            }
+        }
+
+    </script>
+
+</body>
+</html>

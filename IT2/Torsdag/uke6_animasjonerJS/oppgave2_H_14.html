@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+</head>
+<body>
+
+    <div id="container">
+        <label for="inpKM">Antall kilometer:</label>
+        <input type="number" id="inpKM">
+
+        <label for="inpPris">Drivstoffpris (kr pr. liter):</label>
+        <input type="number" id="inpPris">
+
+        <input type="radio" id="radioBy"
+               name="type" value="by">
+        <label for="radioBy">Bykjøring</label>
+
+        <input type="radio" id="radioBlandet"
+               name="type" value="blandet">
+        <label for="radioBlandet">Blandet kjøring</label>
+
+        <button id="btnRegn">Regn ut</button>
+    </div>
+    <div id="resultat"></div>
+
+
+    <script>
+
+        const inpKM = document.querySelector("#inpKM");
+        const inpPris = document.querySelector("#inpPris");
+        const radioBy = document.querySelector("#radioBy");
+        const radioBlandet = document.querySelector("#radioBlandet");
+
+        const btnRegn = document.querySelector("#btnRegn");
+        const divResultat = document.querySelector("#resultat");
+
+        btnRegn.onclick = function () {
+            let total = Number(inpPris.value)*Number(inpKM.value)*0.65;
+            let besparelse = 0;
+
+            if(radioBy.checked){
+                besparelse = total*0.1;
+                divResultat.innerHTML = `Besparelse: ${besparelse.toFixed(2)}kr`
+            }
+            else if(radioBlandet.checked){
+                besparelse = total*0.05;
+                divResultat.innerHTML = `Besparelse: ${besparelse.toFixed(2)}kr`
+            }
+            else {
+                divResultat.innerHTML = "Du må huke av for by eller blandet!"
+            }
+
+        }
+
+    </script>
+
+</body>
+</html>

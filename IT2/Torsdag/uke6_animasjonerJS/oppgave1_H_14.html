@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+    <meta charset="UTF-8">
+    <title>Presentasjon av biler</title>
+</head>
+<body>
+    <style>
+        body{
+            background-color: lightgrey;
+            font-family: Helvetica;
+        }
+        #container{
+            margin: auto;
+            margin-top: 100px;
+            background-color: white;
+            width: 950px;
+            height: 400px;
+
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+        #bilde{
+            width: 100%;
+        }
+    </style>
+    <div id="container">
+            <img id="bilde" src="">
+            <div id="divTekst"></div>
+    </div>
+
+    <script>
+        const bilde = document.querySelector("#bilde");
+        const divTekst = document.querySelector("#divTekst");
+
+        let bilder = ["FilerH2014Biler/kuga_bak.jpg","FilerH2014Biler/kuga_front.jpg","FilerH2014Biler/kuga_side.jpg"];
+        let tekster = [
+            `
+                <h1>HELT NY FORD KUGA</h1>
+                <p>
+                   Kraftig, sporty og enda mer elegant både innvendig og utvendig. Vi er stolte over å kunne lansere den helt nye Ford Kuga, vår mest kompetente SUV hittil. Nye Ford Kuga har blitt større og byr på den absolutt nyeste teknologien.
+                </p>
+                <p>
+                   Et intelligent system for firehjulsdrift tilpasser seg terrenget og kjøreforholdene på et øyeblikk.
+                </p>
+                   Active City Stop aktiverer automatisk bremsene ved lave hastigheter for å unngå sammenstøt, og Ford SYNC gir handsfree-kontroll over musikk, telefonoppringninger og mye mer.
+                </p>
+                <p>
+                   Vi er også stolte over å være de første som lanserer automatisk bakluke på en SUV-modell. Den er imponerende enkel å betjene, selv med hendene fulle. Du beveger simpelthen foten under støtfangeren og bakluken åpner og lukker seg.
+                </p>
+            `,
+            `
+                <h1>Økonomi</h1>
+                <p>
+                   Girskiftindikator med mer drivstoffeffektiv giring
+                </p>
+                <p>
+                   Et lys i instrumentpanelet forteller deg når du må skifte gir for å oppnå maksimal drivstoffeffektivitet. Det er en enkel, men effektiv måte å bidra til at bilturene blir mer økonomiske.                </p>
+                </p>
+                <p>
+                   Et smart info-system som hjelper deg å kjøre mer effektivt
+                </p>
+                <p>
+                    Det innovative Ford Eco Mode-systemet vurderer kontinuerlig effekten av din kjøreadferd på drivstofforbruket. Systemet leser hastighet, giring, bremsing og forventningsnivåene, pluss forholdet mellom korte og lange turer. Smart programvare gir deg så råd om hvordan du kan forbedre drivstofføkonomien i forhold til din personlige kjørestil.
+                </p>
+            `,
+            `
+                <h1>Kjøreegenskaper</h1>
+                <p>
+                    Umiddelbart grep på skiftende underlag
+                </p>
+                <p>
+                    Kugas intelligente firehjulsdrift reagerer umiddelbart og justerer seg til skiftende underlag og kjøreforhold. Den sender nøyaktig riktig mengde effekt til det enkelte hjul som trenger mest veigrep. Og siden firehjulsdriften bare kobles inn ved behov, spares det drivstoff når underlaget er mindre krevende. Hvis du ønsker å se hva som skjer under hjulene dine i løpet av turen, vil en informasjonsskjerm for firehjulsdriften kontinuerlig vise - som et søylediagram - hvor mye effekt som sendes til hvert hjul.
+                </p>
+            `,
+            `
+                <h1>Kjøreegenskaper</h1>
+                <p>
+                    Dynamisk kurvekontroll for maksimum grep
+                </p>
+                <p>
+                    Dynamisk kurvekontroll reagerer på veioverflaten 100 ganger pr. sekund (det er 33 ganger raskere enn øyet blunker). Ved å bruke denne informasjonen balanseres kontinuerlig mengde effekt og bremsing som leveres til hvert av de to forhjulene. Dette maksimerer veigrepet og skjerper kjøreegenskapene, og hjelper deg på den måten gjennom svingene og over ujevnheter i veien. Dynamisk kurvekontroll er en spissteknologi som er standard på Kuga.
+                </p>
+            `
+        ];
+
+        let bildeTeller = 0; // Teller som holder kontroll på hvilket bilde som vises
+        let tekstTeller = 0; // Teller som holder kontroll på hvilken tekst som vises
+
+        bilde.src = bilder[0];
+        divTekst.innerHTML = tekster[0];
+
+            function byttSlide() {//Funksjon som bytter til neste bilde og tekst
+                bildeTeller++;
+                tekstTeller++;
+
+                if(bildeTeller===bilder.length){
+                    bildeTeller = 0;
+                }
+
+                if(tekstTeller===tekster.length){
+                    tekstTeller = 0;
+                }
+                console.log(bildeTeller);
+                console.log(tekstTeller);
+                bilde.src = bilder[bildeTeller];
+                divTekst.innerHTML = tekster[tekstTeller];
+        }
+
+        let animasjon = setInterval(byttSlide,3000);
+    </script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+    <meta charset="UTF-8">
+    <title>Ninjakatt</title>
+    <style>
+        #ninjakatt{
+            width: 213.33px;
+            height: 213px;
+            background-image: url("ninjakatt.png");
+        }
+    </style>
+</head>
+<body>
+    <div id="ninjakatt"></div>
+
+    <script>
+        const ninjaKatt = document.querySelector("#ninjakatt")
+
+
+        let animasjonKatt = [
+            {backgroundPosition:"0 0"},
+            {backgroundPosition:"-1280px 0"}
+        ];
+
+        let innstillingerKatt = {
+            duration:500,
+            iterations:Infinity,
+            easing:"steps(6)"
+        }
+
+        let spiller = ninjaKatt.animate(animasjonKatt,innstillingerKatt);
+    </script>
+</body>
+</html>

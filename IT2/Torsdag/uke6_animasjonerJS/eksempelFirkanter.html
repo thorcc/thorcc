@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body {
+            background-color: saddlebrown;
+        }
+        div{
+            float: left;
+            width: 20px;
+            height: 10px;
+            margin-right: 5px;
+            background-color: goldenrod;
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+
+
+    <script>
+        const divs = document.querySelectorAll("div");
+
+        let animasjon = [
+            {transform:"translateY(0px)",opacity:"1"},
+            {transform:"translateY(400px)",opacity:"0"}
+        ];
+        let kontrollobjekt = {
+            duration: 1500,
+            direction: "alternate",
+            iterations: Infinity,
+            easing:"ease-in-out"
+        };
+
+
+        let animasjonsArray = [];
+
+        for(let i = 0; i<divs.length; i++){
+            kontrollobjekt.delay = i*100;
+            animasjonsArray[i] = divs[i].animate(animasjon,kontrollobjekt);
+        }
+
+
+        window.onclick = function(){
+            for(let animasjon of animasjonsArray){
+                animasjon.reverse();
+            }
+        }
+    </script>
+</body>
+</html>
