@@ -35,7 +35,7 @@ Animasjonen skal være på 950 x 400 piksler.
   
 Lever animasjonen i kildeformat.
   
-  - [Vedlegg](https://github.com/thorcc/thorcc.github.io/blob/master/IT2/Torsdag/uke6_animasjonerJS/FilerH2014.zip)
+  - [Vedlegg](http://it2cha.com/eksamen/H%202014%20Biler/FilerH2014Biler.zip)
   - [PDF av hele eksamen](https://github.com/thorcc/thorcc.github.io/blob/master/IT2/Torsdag/uke6_animasjonerJS/REA3015_Informasjonsteknologi_2_Eksamen_H14.pdf)
 
 ## Oppgave 4
