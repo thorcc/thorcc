@@ -60,6 +60,8 @@ Normalforbruk (i kroner) = km x pris pr. liter x 0,65
 Hvis brukeren har valgt blandet kjøring:  
 Besparelse (i kroner) = normalforbruk i kroner x 0,05  
 
-## Utfordring: DVD-logo
+## Utfordring
+
+### DVD-logo
 
 Lag en animasjon av DVD-logoen. [Youtube: 10 hours of DVD screensaver](https://www.youtube.com/watch?v=Kxms-OtUXS0)
