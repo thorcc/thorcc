@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #ramme{
+            position: relative;
+            width: 400.25px;
+            height: 599.25px;
+            overflow: hidden;
+
+            margin: auto;
+            margin-top: 25%;
+        }
+        #figur{
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+    <div id="ramme">
+        <img id="figur" src="figur.png">
+    </div>
+
+    <script>
+        const figur = document.querySelector("#figur");
+
+        let aniCSS = [
+            {
+                left:"0"
+            },
+            {
+                left:"-1601px"
+            }
+        ];
+
+        let aniEgenskaper = {
+            duration:1000,
+            iterations:Infinity,
+            easing:"steps(4)"
+        };
+
+        let aniFigur = figur.animate(aniCSS,aniEgenskaper);
+
+
+        window.onkeydown = function (event) {
+
+            if(event.code === "ArrowUp"){
+                figur.style.top = "-600.25px"
+            }
+            else if(event.code === "ArrowLeft"){
+                figur.style.top = "-1200.5px"
+            }
+            else if(event.code === "ArrowRight"){
+                figur.style.top = "-1800.75px"
+            }
+            else if(event.code === "ArrowDown"){
+                figur.style.top = "0px"
+            }
+        }
+
+    </script>
+</body>
+</html>

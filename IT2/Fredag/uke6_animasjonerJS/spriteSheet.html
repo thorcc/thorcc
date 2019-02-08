@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+    <meta charset="UTF-8">
+    <title>Ninjakatt</title>
+    <style>
+        #ramme{
+            width: 213.33px;
+            height: 213px;
+            overflow: hidden;
+            position: relative;
+        }
+        img{
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+    <div id="ramme">
+        <img src="ninjakatt.png">
+    </div>
+
+    <script>
+        const ninjakatt = document.querySelector("img");
+
+        let ninjaCSS = [
+            {
+                left:"0px"
+            },
+            {
+                left:"-1280px"
+            }
+        ];
+
+        let ninjaEgenskaper = {
+            duration: 1500,
+            iterations: Infinity,
+            easing: "steps(6)"
+        };
+
+        ninjakatt.animate(ninjaCSS,ninjaEgenskaper);
+    </script>
+</body>
+</html>

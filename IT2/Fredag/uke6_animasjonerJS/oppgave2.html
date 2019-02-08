@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+    <meta charset="UTF-8">
+    <title>Oppgave 2</title>
+    <style>
+        body{
+            background-color: saddlebrown;
+        }
+        div{
+            width: 20px;
+            height: 10px;
+            background-color: goldenrod;
+            margin-right: 10px;
+            float: left;
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+
+    <script>
+        const divArray = document.querySelectorAll("div");
+
+        let divCSS = [
+            {
+                transform:"translateY(0px)",
+                opacity:"1"
+            },
+            {
+                transform:"translateY(300px)",
+                opacity:"0"
+            }
+        ];
+
+        let divEgenskaper = {
+            duration: 500,
+            iterations: Infinity,
+            direction: "alternate",
+            delay: 500,
+            easing:"ease-in-out"
+        }
+/*
+        divArray[0].animate(divCSS,divEgenskaper);
+        divArray[1].animate(divCSS,divEgenskaper);
+        divArray[2].animate(divCSS,divEgenskaper);
+ */
+/*
+        for(div of divArray){
+            divEgenskaper.delay = Math.random()*1000;
+            div.animate(divCSS,divEgenskaper);
+        }
+ */
+
+
+        for(let i = 0;i<divArray.length;i++){
+            let delayAni = i*100;
+            divEgenskaper.delay = delayAni;
+            divArray[i].animate(divCSS,divEgenskaper);
+        }
+    </script>
+</body>
+</html>
