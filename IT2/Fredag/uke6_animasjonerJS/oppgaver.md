@@ -64,4 +64,5 @@ Besparelse (i kroner) = normalforbruk i kroner x 0,05
 
 ### DVD-logo
 
-Lag en animasjon av DVD-logoen. [Youtube: 10 hours of DVD screensaver](https://www.youtube.com/watch?v=Kxms-OtUXS0)
+Lag en animasjon av DVD-logoen.  
+[Youtube: 10 hours of DVD screensaver](https://www.youtube.com/watch?v=Kxms-OtUXS0)
