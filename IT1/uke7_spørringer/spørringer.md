@@ -29,10 +29,11 @@ Tabellen under viser en oversikt over de tre mest brukte lytterne i IT1.
 
 Eksempler på spørringer:
 ~~~~
-/* Spørring som lytter til nye oppføringer i databasen, hvis det skjer kjøres funksjonen visVare.
+sko.on("child_added",visVare); 
+/* Over er en spørring som lytter til nye oppføringer i databasen, hvis det skjer kjøres funksjonen visVare.
 Når nettsiden lastes inn går den gjennom hver oppføring i databasen og kjører funksjonen visVare
 på hver oppføring. */
-sko.on("child_added",visVare); 
+
             
 jakker.on("child_added",visVare); // Samme som spørrefunksjonen over, bare med jakker.
 ~~~~
