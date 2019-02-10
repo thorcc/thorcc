@@ -1,7 +1,7 @@
 {
     "presidents": {
         "0": {
-            "S.No.": 1,
+            "no": 1,
             "start": "April 30, 1789",
             "end": "March 4, 1797",
             "president": "George Washington",
@@ -10,7 +10,7 @@
             "vice": "John Adams"
         },
         "1": {
-            "S.No.": 2,
+            "no": 2,
             "start": "March 4, 1797",
             "end": "March 4, 1801",
             "president": "John Adams",
@@ -19,7 +19,7 @@
             "vice": "Thomas Jefferson"
         },
         "2": {
-            "S.No.": 3,
+            "no": 3,
             "start": "March 4, 1801",
             "end": "March 4, 1809",
             "president": "Thomas Jefferson",
@@ -28,7 +28,7 @@
             "vice": "Aaron Burr"
         },
         "3": {
-            "S.No.": 4,
+            "no": 4,
             "start": "March 4, 1809",
             "end": "March 4, 1817",
             "president": "James Madison",
@@ -37,7 +37,7 @@
             "vice": "George Clinton"
         },
         "4": {
-            "S.No.": 5,
+            "no": 5,
             "start": "March 4, 1817",
             "end": "March 4, 1825",
             "president": "James Monroe",
@@ -46,7 +46,7 @@
             "vice": "Daniel D. Tompkins"
         },
         "5": {
-            "S.No.": 6,
+            "no": 6,
             "start": "March 4, 1825",
             "end": "March 4, 1829",
             "president": "John Quincy Adams",
@@ -55,7 +55,7 @@
             "vice": "John C. Calhoun"
         },
         "6": {
-            "S.No.": 7,
+            "no": 7,
             "start": "March 4, 1829",
             "end": "March 4, 1837",
             "president": "Andrew Jackson",
@@ -64,7 +64,7 @@
             "vice": "John C. Calhoun"
         },
         "7": {
-            "S.No.": 8,
+            "no": 8,
             "start": "March 4, 1837",
             "end": "March 4, 1841",
             "president": "Martin Van Buren",
@@ -73,7 +73,7 @@
             "vice": "Richard Mentor Johnson"
         },
         "8": {
-            "S.No.": 9,
+            "no": 9,
             "start": "March 4, 1841",
             "end": "April 4, 1841",
             "president": "William Henry Harrison",
@@ -82,7 +82,7 @@
             "vice": "John Tyler"
         },
         "9": {
-            "S.No.": 10,
+            "no": 10,
             "start": "April 4, 1841",
             "end": "March 4, 1845",
             "president": "John Tyler",
@@ -91,7 +91,7 @@
             "vice": "Office vacant"
         },
         "10": {
-            "S.No.": 11,
+            "no": 11,
             "start": "March 4, 1845",
             "end": "March 4, 1849",
             "president": "James K. Polk",
@@ -100,7 +100,7 @@
             "vice": "George M. Dallas"
         },
         "11": {
-            "S.No.": 12,
+            "no": 12,
             "start": "March 4, 1849",
             "end": "July 9, 1850",
             "president": "Zachary Taylor",
@@ -109,7 +109,7 @@
             "vice": "Millard Fillmore"
         },
         "12": {
-            "S.No.": 13,
+            "no": 13,
             "start": "July 9, 1850",
             "end": "March 4, 1853",
             "president": "Millard Fillmore",
@@ -118,7 +118,7 @@
             "vice": "Office vacant"
         },
         "13": {
-            "S.No.": 14,
+            "no": 14,
             "start": "March 4, 1853",
             "end": "March 4, 1857",
             "president": "Franklin Pierce",
@@ -127,7 +127,7 @@
             "vice": "William R. King"
         },
         "14": {
-            "S.No.": 15,
+            "no": 15,
             "start": "March 4, 1857",
             "end": "March 4, 1861",
             "president": "James Buchanan",
@@ -136,7 +136,7 @@
             "vice": "John C. Breckinridge"
         },
         "15": {
-            "S.No.": 16,
+            "no": 16,
             "start": "March 4, 1861",
             "end": "April 15, 1865",
             "president": "Abraham Lincoln",
@@ -145,7 +145,7 @@
             "vice": "Hannibal Hamlin"
         },
         "16": {
-            "S.No.": 17,
+            "no": 17,
             "start": "April 15, 1865",
             "end": "March 4, 1869",
             "president": "Andrew Johnson",
@@ -154,7 +154,7 @@
             "vice": "Office vacant"
         },
         "17": {
-            "S.No.": 18,
+            "no": 18,
             "start": "March 4, 1869",
             "end": "March 4, 1877",
             "president": "Ulysses S. Grant",
@@ -163,7 +163,7 @@
             "vice": "Schuyler Colfax"
         },
         "18": {
-            "S.No.": 19,
+            "no": 19,
             "start": "March 4, 1877",
             "end": "March 4, 1881",
             "president": "Rutherford B. Hayes",
@@ -172,7 +172,7 @@
             "vice": "William A. Wheeler"
         },
         "19": {
-            "S.No.": 20,
+            "no": 20,
             "start": "March 4, 1881",
             "end": "September 19, 1881",
             "president": "James A. Garfield",
@@ -181,7 +181,7 @@
             "vice": "Chester A. Arthur"
         },
         "20": {
-            "S.No.": 21,
+            "no": 21,
             "start": "September 19, 1881",
             "end": "March 4, 1885",
             "president": "Chester A. Arthur",
@@ -190,7 +190,7 @@
             "vice": "Office vacant"
         },
         "21": {
-            "S.No.": 22,
+            "no": 22,
             "start": "March 4, 1885",
             "end": "March 4, 1889",
             "president": "Grover Cleveland",
@@ -199,7 +199,7 @@
             "vice": "Thomas A. Hendricks"
         },
         "22": {
-            "S.No.": 23,
+            "no": 23,
             "start": "March 4, 1889",
             "end": "March 4, 1893",
             "president": "Benjamin Harrison",
@@ -208,7 +208,7 @@
             "vice": "Levi P. Morton"
         },
         "23": {
-            "S.No.": 24,
+            "no": 24,
             "start": "March 4, 1893",
             "end": "March 4, 1897",
             "president": "Grover Cleveland",
@@ -217,7 +217,7 @@
             "vice": "Adlai Stevenson"
         },
         "24": {
-            "S.No.": 25,
+            "no": 25,
             "start": "March 4, 1897",
             "end": "September 14, 1901",
             "president": "William McKinley",
@@ -226,7 +226,7 @@
             "vice": "Garret Hobart"
         },
         "25": {
-            "S.No.": 26,
+            "no": 26,
             "start": "September 14, 1901",
             "end": "March 4, 1909",
             "president": "Theodore Roosevelt",
@@ -235,7 +235,7 @@
             "vice": "Office vacant"
         },
         "26": {
-            "S.No.": 27,
+            "no": 27,
             "start": "March 4, 1909",
             "end": "March 4, 1913",
             "president": "William Howard Taft",
@@ -244,7 +244,7 @@
             "vice": "James S. Sherman"
         },
         "27": {
-            "S.No.": 28,
+            "no": 28,
             "start": "March 4, 1913",
             "end": "March 4, 1921",
             "president": "Woodrow Wilson",
@@ -253,7 +253,7 @@
             "vice": "Thomas R. Marshall"
         },
         "28": {
-            "S.No.": 29,
+            "no": 29,
             "start": "March 4, 1921",
             "end": "August 2, 1923",
             "president": "Warren G. Harding",
@@ -262,7 +262,7 @@
             "vice": "Calvin Coolidge"
         },
         "29": {
-            "S.No.": 30,
+            "no": 30,
             "start": "August 2, 1923",
             "end": "March 4, 1929",
             "president": "Calvin Coolidge",
@@ -271,7 +271,7 @@
             "vice": "Office vacant"
         },
         "30": {
-            "S.No.": 31,
+            "no": 31,
             "start": "March 4, 1929",
             "end": "March 4, 1933",
             "president": "Herbert Hoover",
@@ -280,7 +280,7 @@
             "vice": "Charles Curtis"
         },
         "31": {
-            "S.No.": 32,
+            "no": 32,
             "start": "March 4, 1933",
             "end": "January 20, 1941",
             "president": "Franklin D. Roosevelt",
@@ -289,7 +289,7 @@
             "vice": "John Nance Garner"
         },
         "32": {
-            "S.No.": 33,
+            "no": 33,
             "start": "April 12, 1945",
             "end": "January 20, 1953",
             "president": "Harry S. Truman",
@@ -298,7 +298,7 @@
             "vice": "Office vacant"
         },
         "33": {
-            "S.No.": 34,
+            "no": 34,
             "start": "January 20, 1953",
             "end": "January 20, 1961",
             "president": "Dwight D. Eisenhower",
@@ -307,7 +307,7 @@
             "vice": "Richard Nixon"
         },
         "34": {
-            "S.No.": 35,
+            "no": 35,
             "start": "January 20, 1961",
             "end": "November 22, 1963",
             "president": "John F. Kennedy",
@@ -316,7 +316,7 @@
             "vice": "Lyndon B. Johnson"
         },
         "35": {
-            "S.No.": 36,
+            "no": 36,
             "start": "November 22, 1963",
             "end": "January 20, 1969",
             "president": "Lyndon B. Johnson",
@@ -325,7 +325,7 @@
             "vice": "Office vacant"
         },
         "36": {
-            "S.No.": 37,
+            "no": 37,
             "start": "January 20, 1969",
             "end": "August 9, 1974",
             "president": "Richard Nixon",
@@ -334,7 +334,7 @@
             "vice": "Spiro Agnew"
         },
         "37": {
-            "S.No.": 38,
+            "no": 38,
             "start": "August 9, 1974",
             "end": "January 20, 1977",
             "president": "Gerald Ford",
@@ -343,7 +343,7 @@
             "vice": "Office vacant"
         },
         "38": {
-            "S.No.": 39,
+            "no": 39,
             "start": "January 20, 1977",
             "end": "January 20, 1981",
             "president": "Jimmy Carter",
@@ -352,7 +352,7 @@
             "vice": "Walter Mondale"
         },
         "39": {
-            "S.No.": 40,
+            "no": 40,
             "start": "January 20, 1981",
             "end": "January 20, 1989",
             "president": "Ronald Reagan",
@@ -361,7 +361,7 @@
             "vice": "George H. W. Bush"
         },
         "40": {
-            "S.No.": 41,
+            "no": 41,
             "start": "January 20, 1989",
             "end": "January 20, 1993",
             "president": "George H. W. Bush",
@@ -370,7 +370,7 @@
             "vice": "Dan Quayle"
         },
         "41": {
-            "S.No.": 42,
+            "no": 42,
             "start": "January 20, 1993",
             "end": "January 20, 2001",
             "president": "Bill Clinton",
@@ -379,7 +379,7 @@
             "vice": "Al Gore"
         },
         "42": {
-            "S.No.": 43,
+            "no": 43,
             "start": "January 20, 2001",
             "end": "January 20, 2009",
             "president": "George W. Bush",
@@ -388,7 +388,7 @@
             "vice": "Dick Cheney"
         },
         "43": {
-            "S.No.": 44,
+            "no": 44,
             "start": "January 20, 2009",
             "end": "January 20, 2017",
             "president": "Barack Obama",
@@ -397,7 +397,7 @@
             "vice": "Joe Biden"
         },
         "44": {
-            "S.No.": 45,
+            "no": 45,
             "start": "January 20, 2017",
             "end": "--",
             "president": "Donald Trump",
