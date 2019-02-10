@@ -9,7 +9,7 @@ databaseRef.spørrefunksjon();
 
 ## Spørrefunksjonen .on();
 
-I IT2 bruker vi spørrefunksjonen ``.on();``.
+I IT1 bruker vi spørrefunksjonen ``.on();``.
 Skrivemåte:
 ~~~~
 databaseRef.on("hendelseslytter",javascriptFunksjon);
@@ -29,9 +29,12 @@ Tabellen under viser en oversikt over de tre mest brukte lytterne i IT1.
 
 Eksempler på spørringer:
 ~~~~
-sko.on("child_added",visVare); // Spørring som lytter til nye oppføringer i databasen, hvis det skjer kjøres funksjonen visVare.
-                                        // Når nettsiden lastes inn går den gjennom hver oppføring i databasen og kjører funksjonen visVare
-                                        // på hver oppføring.
+/* 
+Spørring som lytter til nye oppføringer i databasen, hvis det skjer kjøres funksjonen visVare.
+Når nettsiden lastes inn går den gjennom hver oppføring i databasen og kjører funksjonen visVare
+på hver oppføring.
+*/
+sko.on("child_added",visVare); 
             
 jakker.on("child_added",visVare); // Samme som spørrefunksjonen over, bare med jakker.
 ~~~~
@@ -190,6 +193,6 @@ Spørringer til databasen (HTML og javascript)
 
 
 ## Les mer
-Kode 1 - kapittel 8
-[Firebase-dokumentasjon](https://firebase.google.com/docs/reference/android/com/google/firebase/database/package-summary)
-[Firebase Database Querying 101 (YT)](https://www.youtube.com/watch?v=3WTQZV5-roY&list=PLl-K7zZEsYLlP-k-RKFa7RyNPa9_wCH2s&index=3)
+Kode 1 - kapittel 8  
+[Firebase-dokumentasjon](https://firebase.google.com/docs/reference/android/com/google/firebase/database/package-summary)  
+[Firebase Database Querying 101 (YT)](https://www.youtube.com/watch?v=3WTQZV5-roY&list=PLl-K7zZEsYLlP-k-RKFa7RyNPa9_wCH2s&index=3)  

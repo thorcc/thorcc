@@ -1,0 +1,28 @@
+{
+    "varer":{
+        "sko":{
+            "sko001":{
+                "merke":"Nike",
+                "modell":"Air Max 97",
+                "pris":1849
+            },
+            "sko002":{
+                "merke":"Nike",
+                "modell":"Air VaporMax",
+                "pris":2049
+            },
+            "sko003":{
+                "merke":"Adidas",
+                "modell":"Yeezy Boost 700 v2",
+                "pris":2950
+            }
+        },
+        "jakker":{
+            "jakke001":{
+                "merke":"Supreme x The North Face",
+                "modell":"Expedition Jacket",
+                "pris":2800
+            }
+        }
+    }
+}

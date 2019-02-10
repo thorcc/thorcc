@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="nb">
+    <head>
+        <meta charset="UTF-8">
+        <title>Nettbutikk</title>
+        <!--Lim inn kode fra firebase her-->
+    </head>
+    <body>
+        
+        <main>
+            
+        </main>
+
+        <script>
+            const main = document.querySelector("main"); // Variabel som referer til mian-elementet
+
+            // Referanser til databasen
+            const db = firebase.database();
+            const sko = db.ref("varer/sko"); // Referer til alt som ligger under sko i databasen
+            const jakker = db.ref("varer/jakker"); // Referer til alt som ligger under jakker i databasen
+
+            function visVare(snapshot){
+                //Javascript-funksjon som skriver varene ut på nettsiden i main-elementet
+                let vare = snapshot.val();
+                main.innerHTML +=`
+                    <article class="vare">
+                        <h1>${vare.merke} - ${vare.modell}</h1>
+                        <p>Pris: ${vare.pris}</p>
+                    </article>
+                `
+            }
+
+            sko.on("child_added",visVare); // Spørring som lytter til nye oppføringer i databasen, hvis det skjer kjøres funksjonen visVare.
+                                        // Når nettsiden lastes inn går den gjennom hver oppføring i databasen og kjører funksjonen visVare
+                                        // på hver oppføring.
+            
+            jakker.on("child_added",visVare); // Samme som spørrefunksjonen over, bare med jakker.
+
+
+            // Spørring som sorterer sko etter pris, laveste først
+            sko
+                .orderByChild("pris")
+                .on("child_added",visVare);
+
+            // Spørring som sorterer sko etter pris laveste først, og gir de tre billigste skoene 
+            sko
+                .orderByChild("pris")
+                .limitToFirst(3)
+                .on("child_added",visVare);
+
+            // Spørring som gir alle sko med pris mellom 1800 og 2200, sortert etter pris.
+            sko
+                .orderByChild("pris")
+                .startAt(1800)
+                .endAt(2200)
+                .on("child_added",visVare);
+        </script>
+    </body>
+</html>
