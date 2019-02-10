@@ -1,0 +1,409 @@
+{
+    "presidents": {
+        "0": {
+            "S.No.": 1,
+            "start": "April 30, 1789",
+            "end": "March 4, 1797",
+            "president": "George Washington",
+            "prior": "Commander-in-Chief  of the  Continental Army   ( 1775–1783 )",
+            "party": "Nonpartisan   [13]",
+            "vice": "John Adams"
+        },
+        "1": {
+            "S.No.": 2,
+            "start": "March 4, 1797",
+            "end": "March 4, 1801",
+            "president": "John Adams",
+            "prior": "1st  Vice President of the United States",
+            "party": "Federalist",
+            "vice": "Thomas Jefferson"
+        },
+        "2": {
+            "S.No.": 3,
+            "start": "March 4, 1801",
+            "end": "March 4, 1809",
+            "president": "Thomas Jefferson",
+            "prior": "2nd  Vice President of the United States",
+            "party": "Democratic-  Republican",
+            "vice": "Aaron Burr"
+        },
+        "3": {
+            "S.No.": 4,
+            "start": "March 4, 1809",
+            "end": "March 4, 1817",
+            "president": "James Madison",
+            "prior": "5th  United States Secretary of State   (1801–1809)",
+            "party": "Democratic-  Republican",
+            "vice": "George Clinton"
+        },
+        "4": {
+            "S.No.": 5,
+            "start": "March 4, 1817",
+            "end": "March 4, 1825",
+            "president": "James Monroe",
+            "prior": "7th  United States Secretary of State   (1811–1817)",
+            "party": "Democratic-  Republican",
+            "vice": "Daniel D. Tompkins"
+        },
+        "5": {
+            "S.No.": 6,
+            "start": "March 4, 1825",
+            "end": "March 4, 1829",
+            "president": "John Quincy Adams",
+            "prior": "8th  United States Secretary of State   (1817–1825)",
+            "party": "Democratic-  Republican",
+            "vice": "John C. Calhoun"
+        },
+        "6": {
+            "S.No.": 7,
+            "start": "March 4, 1829",
+            "end": "March 4, 1837",
+            "president": "Andrew Jackson",
+            "prior": "U.S. Senator   ( Class 2 )   from  Tennessee   (1823–1825)",
+            "party": "Democratic",
+            "vice": "John C. Calhoun"
+        },
+        "7": {
+            "S.No.": 8,
+            "start": "March 4, 1837",
+            "end": "March 4, 1841",
+            "president": "Martin Van Buren",
+            "prior": "8th  Vice President of the United States",
+            "party": "Democratic",
+            "vice": "Richard Mentor Johnson"
+        },
+        "8": {
+            "S.No.": 9,
+            "start": "March 4, 1841",
+            "end": "April 4, 1841",
+            "president": "William Henry Harrison",
+            "prior": "United States Minister to Colombia   (1828–1829)",
+            "party": "Whig",
+            "vice": "John Tyler"
+        },
+        "9": {
+            "S.No.": 10,
+            "start": "April 4, 1841",
+            "end": "March 4, 1845",
+            "president": "John Tyler",
+            "prior": "10th  Vice President of the United States",
+            "party": "Whig   April 4, 1841  –  September 13, 1841",
+            "vice": "Office vacant"
+        },
+        "10": {
+            "S.No.": 11,
+            "start": "March 4, 1845",
+            "end": "March 4, 1849",
+            "president": "James K. Polk",
+            "prior": "9th  Governor of Tennessee   (1839–1841)",
+            "party": "Democratic",
+            "vice": "George M. Dallas"
+        },
+        "11": {
+            "S.No.": 12,
+            "start": "March 4, 1849",
+            "end": "July 9, 1850",
+            "president": "Zachary Taylor",
+            "prior": "Major General  of the  1st Infantry Regiment   United States Army   (1846–1849)",
+            "party": "Whig",
+            "vice": "Millard Fillmore"
+        },
+        "12": {
+            "S.No.": 13,
+            "start": "July 9, 1850",
+            "end": "March 4, 1853",
+            "president": "Millard Fillmore",
+            "prior": "12th  Vice President of the United States",
+            "party": "Whig",
+            "vice": "Office vacant"
+        },
+        "13": {
+            "S.No.": 14,
+            "start": "March 4, 1853",
+            "end": "March 4, 1857",
+            "president": "Franklin Pierce",
+            "prior": "Brigadier General  of the  9th Infantry   United States Army   (1847–1848)",
+            "party": "Democratic",
+            "vice": "William R. King"
+        },
+        "14": {
+            "S.No.": 15,
+            "start": "March 4, 1857",
+            "end": "March 4, 1861",
+            "president": "James Buchanan",
+            "prior": "United States Minister  to the   Court of St James's   (1853–1856)",
+            "party": "Democratic",
+            "vice": "John C. Breckinridge"
+        },
+        "15": {
+            "S.No.": 16,
+            "start": "March 4, 1861",
+            "end": "April 15, 1865",
+            "president": "Abraham Lincoln",
+            "prior": "U.S. Representative  for  Illinois' 7th District   (1847–1849)",
+            "party": "Republican   ( National Union )   [i]",
+            "vice": "Hannibal Hamlin"
+        },
+        "16": {
+            "S.No.": 17,
+            "start": "April 15, 1865",
+            "end": "March 4, 1869",
+            "president": "Andrew Johnson",
+            "prior": "16th  Vice President of the United States",
+            "party": "National Union   [i]   ( Democratic )   [j]",
+            "vice": "Office vacant"
+        },
+        "17": {
+            "S.No.": 18,
+            "start": "March 4, 1869",
+            "end": "March 4, 1877",
+            "president": "Ulysses S. Grant",
+            "prior": "Commanding General  of the U.S. Army   ( 1864–1869 )",
+            "party": "Republican",
+            "vice": "Schuyler Colfax"
+        },
+        "18": {
+            "S.No.": 19,
+            "start": "March 4, 1877",
+            "end": "March 4, 1881",
+            "president": "Rutherford B. Hayes",
+            "prior": "29th & 32nd  Governor of Ohio   (1868–1872 & 1876–1877)",
+            "party": "Republican",
+            "vice": "William A. Wheeler"
+        },
+        "19": {
+            "S.No.": 20,
+            "start": "March 4, 1881",
+            "end": "September 19, 1881",
+            "president": "James A. Garfield",
+            "prior": "U.S. Representative  for  Ohio's 19th District   (1863–1881)",
+            "party": "Republican",
+            "vice": "Chester A. Arthur"
+        },
+        "20": {
+            "S.No.": 21,
+            "start": "September 19, 1881",
+            "end": "March 4, 1885",
+            "president": "Chester A. Arthur",
+            "prior": "20th  Vice President of the United States",
+            "party": "Republican",
+            "vice": "Office vacant"
+        },
+        "21": {
+            "S.No.": 22,
+            "start": "March 4, 1885",
+            "end": "March 4, 1889",
+            "president": "Grover Cleveland",
+            "prior": "28th  Governor of New York   (1883–1885)",
+            "party": "Democratic",
+            "vice": "Thomas A. Hendricks"
+        },
+        "22": {
+            "S.No.": 23,
+            "start": "March 4, 1889",
+            "end": "March 4, 1893",
+            "president": "Benjamin Harrison",
+            "prior": "U.S. Senator   ( Class 1 )   from  Indiana   (1881–1887)",
+            "party": "Republican",
+            "vice": "Levi P. Morton"
+        },
+        "23": {
+            "S.No.": 24,
+            "start": "March 4, 1893",
+            "end": "March 4, 1897",
+            "president": "Grover Cleveland",
+            "prior": "22nd  President of the United States   (1885–1889)",
+            "party": "Democratic",
+            "vice": "Adlai Stevenson"
+        },
+        "24": {
+            "S.No.": 25,
+            "start": "March 4, 1897",
+            "end": "September 14, 1901",
+            "president": "William McKinley",
+            "prior": "39th  Governor of Ohio   (1892–1896)",
+            "party": "Republican",
+            "vice": "Garret Hobart"
+        },
+        "25": {
+            "S.No.": 26,
+            "start": "September 14, 1901",
+            "end": "March 4, 1909",
+            "president": "Theodore Roosevelt",
+            "prior": "25th  Vice President of the United States",
+            "party": "Republican",
+            "vice": "Office vacant"
+        },
+        "26": {
+            "S.No.": 27,
+            "start": "March 4, 1909",
+            "end": "March 4, 1913",
+            "president": "William Howard Taft",
+            "prior": "42nd  United States Secretary of War   (1904–1908)",
+            "party": "Republican",
+            "vice": "James S. Sherman"
+        },
+        "27": {
+            "S.No.": 28,
+            "start": "March 4, 1913",
+            "end": "March 4, 1921",
+            "president": "Woodrow Wilson",
+            "prior": "34th  Governor of New Jersey   (1911–1913)",
+            "party": "Democratic",
+            "vice": "Thomas R. Marshall"
+        },
+        "28": {
+            "S.No.": 29,
+            "start": "March 4, 1921",
+            "end": "August 2, 1923",
+            "president": "Warren G. Harding",
+            "prior": "U.S. Senator   ( Class 3 )   from  Ohio   (1915–1921)",
+            "party": "Republican",
+            "vice": "Calvin Coolidge"
+        },
+        "29": {
+            "S.No.": 30,
+            "start": "August 2, 1923",
+            "end": "March 4, 1929",
+            "president": "Calvin Coolidge",
+            "prior": "29th  Vice President of the United States",
+            "party": "Republican",
+            "vice": "Office vacant"
+        },
+        "30": {
+            "S.No.": 31,
+            "start": "March 4, 1929",
+            "end": "March 4, 1933",
+            "president": "Herbert Hoover",
+            "prior": "3rd  United States Secretary of Commerce   (1921–1928)",
+            "party": "Republican",
+            "vice": "Charles Curtis"
+        },
+        "31": {
+            "S.No.": 32,
+            "start": "March 4, 1933",
+            "end": "January 20, 1941",
+            "president": "Franklin D. Roosevelt",
+            "prior": "44th  Governor of New York   ( 1929–1932 )",
+            "party": "Democratic",
+            "vice": "John Nance Garner"
+        },
+        "32": {
+            "S.No.": 33,
+            "start": "April 12, 1945",
+            "end": "January 20, 1953",
+            "president": "Harry S. Truman",
+            "prior": "34th  Vice President of the United States",
+            "party": "Democratic",
+            "vice": "Office vacant"
+        },
+        "33": {
+            "S.No.": 34,
+            "start": "January 20, 1953",
+            "end": "January 20, 1961",
+            "president": "Dwight D. Eisenhower",
+            "prior": "Supreme Allied Commander Europe   ( 1949–1952 )",
+            "party": "Republican",
+            "vice": "Richard Nixon"
+        },
+        "34": {
+            "S.No.": 35,
+            "start": "January 20, 1961",
+            "end": "November 22, 1963",
+            "president": "John F. Kennedy",
+            "prior": "U.S. Senator   ( Class 1 )   from  Massachusetts   (1953–1960)",
+            "party": "Democratic",
+            "vice": "Lyndon B. Johnson"
+        },
+        "35": {
+            "S.No.": 36,
+            "start": "November 22, 1963",
+            "end": "January 20, 1969",
+            "president": "Lyndon B. Johnson",
+            "prior": "37th  Vice President of the United States",
+            "party": "Democratic",
+            "vice": "Office vacant"
+        },
+        "36": {
+            "S.No.": 37,
+            "start": "January 20, 1969",
+            "end": "August 9, 1974",
+            "president": "Richard Nixon",
+            "prior": "36th  Vice President of the United States   (1953–1961)",
+            "party": "Republican",
+            "vice": "Spiro Agnew"
+        },
+        "37": {
+            "S.No.": 38,
+            "start": "August 9, 1974",
+            "end": "January 20, 1977",
+            "president": "Gerald Ford",
+            "prior": "40th  Vice President of the United States",
+            "party": "Republican",
+            "vice": "Office vacant"
+        },
+        "38": {
+            "S.No.": 39,
+            "start": "January 20, 1977",
+            "end": "January 20, 1981",
+            "president": "Jimmy Carter",
+            "prior": "76th  Governor of Georgia   (1971–1975)",
+            "party": "Democratic",
+            "vice": "Walter Mondale"
+        },
+        "39": {
+            "S.No.": 40,
+            "start": "January 20, 1981",
+            "end": "January 20, 1989",
+            "president": "Ronald Reagan",
+            "prior": "33rd  Governor of California   ( 1967–1975 )",
+            "party": "Republican",
+            "vice": "George H. W. Bush"
+        },
+        "40": {
+            "S.No.": 41,
+            "start": "January 20, 1989",
+            "end": "January 20, 1993",
+            "president": "George H. W. Bush",
+            "prior": "43rd  Vice President of the United States",
+            "party": "Republican",
+            "vice": "Dan Quayle"
+        },
+        "41": {
+            "S.No.": 42,
+            "start": "January 20, 1993",
+            "end": "January 20, 2001",
+            "president": "Bill Clinton",
+            "prior": "40th & 42nd  Governor of Arkansas   (1979–1981 & 1983–1992)",
+            "party": "Democratic",
+            "vice": "Al Gore"
+        },
+        "42": {
+            "S.No.": 43,
+            "start": "January 20, 2001",
+            "end": "January 20, 2009",
+            "president": "George W. Bush",
+            "prior": "46th  Governor of Texas   ( 1995–2000 )",
+            "party": "Republican",
+            "vice": "Dick Cheney"
+        },
+        "43": {
+            "S.No.": 44,
+            "start": "January 20, 2009",
+            "end": "January 20, 2017",
+            "president": "Barack Obama",
+            "prior": "U.S. Senator   ( Class 3 )   from  Illinois   ( 2005–2008 )",
+            "party": "Democratic",
+            "vice": "Joe Biden"
+        },
+        "44": {
+            "S.No.": 45,
+            "start": "January 20, 2017",
+            "end": "--",
+            "president": "Donald Trump",
+            "prior": "Chairman of   The Trump Organization   ( 1971–present )",
+            "party": "Republican",
+            "vice": "Mike Pence"
+        }
+    }
+}
