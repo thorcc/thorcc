@@ -246,9 +246,12 @@ Dette gjelder også om vi skal bruke disse egenskapene i javascript.
 `position: absolute` gjør at HTML-elementet får absolutt posisjonering, det gjør at elementet legger seg over alt annet innhold på nettsiden, og vi kan bruke *left, top, right* og *bottom* til å posisjonere elementet akkurat der vi vil ha det.
 Hvis vi for eksempel vil ha het element sentrert både i høyden og bredden på nettsiden kan vi gjøre følgende i <style>:
 ~~~~
-position: absolute;
-left: 50%;
-top:50%;
-/* Med koden over vil øverste venstre hjørne av elementet ligge i senter, derfor må vi ha med linjen under også*/
-transform: translateX(-50%) translateY(-50%); /* Flytter elementet helt i senter */
+#mittElement{
+    position: absolute;
+    left: 50%;
+    top:50%;
+    /* Med koden over vil øverste venstre hjørne av elementet ligge i senter, derfor må vi ha med linjen under også*/
+    transform: translateX(-50%) translateY(-50%); /* Flytter elementet helt i senter */
+}
+
 ~~~~
