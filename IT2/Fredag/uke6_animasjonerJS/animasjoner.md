@@ -17,7 +17,7 @@ Kode 2: kap 9.1-9.3
 [w3school: CSS-transitions](https://www.w3schools.com/css/css3_transitions.asp)  
 [Youtube: CSS-overganger](https://www.youtube.com/watch?v=jwejfF0Pg0w&index=1&list=PLJC9cL8YfNXpSJc3NPJ1hsTe_deDdHKa4)
 
-### Eksempel
+### Eksempel:
 ~~~~
 <head>
     <style> 
@@ -240,11 +240,11 @@ De mest vanlige transform-egenskapene i IT2 er rotate for å rotere og translate
 For flere egenskaper se [w3school](https://www.w3schools.com/cssref/css3_pr_transform.asp).
 
 ## Position
-For å kunne bruke CSS-egenskapene *left, top, right* og *bottom* må vi sette `position: absolute` eller `position:relative` i <style>.
+For å kunne bruke CSS-egenskapene *left, top, right* og *bottom* må vi sette `position: absolute` eller `position:relative` i *style*.
 Dette gjelder også om vi skal bruke disse egenskapene i javascript.  
 
 `position: absolute` gjør at HTML-elementet får absolutt posisjonering, det gjør at elementet legger seg over alt annet innhold på nettsiden, og vi kan bruke *left, top, right* og *bottom* til å posisjonere elementet akkurat der vi vil ha det.
-Hvis vi for eksempel vil ha het element sentrert både i høyden og bredden på nettsiden kan vi gjøre følgende i <style>:
+Hvis vi for eksempel vil ha het element sentrert både i høyden og bredden på nettsiden kan vi gjøre følgende i *style*:
 ~~~~
 #mittElement{
     position: absolute;
