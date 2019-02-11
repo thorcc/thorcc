@@ -6,6 +6,7 @@
 - [CSS-animations](#CSS-Animations)  
 - [.animate](#.animate)  
 - [setInterval](#setinterval())
+- [Tips](#Tips)
 
 # CSS-transitions
 For at HTML-elementer skal ha en jevn overgang når CSS-stilen deres endres kan vi bruke CSS-transitions.
@@ -119,7 +120,7 @@ For å kontrollere animasjonen enda mer detaljert kan vi bytte ut tiden med et e
 |duration  |Varighet i millisekunder.| 
 |delay     |Forsinkelse i millisekunder.| 
 |iterations|Antall ganger animasjonen skal utføres. Ett tall eller *Infinity*.|
-|easing    |Hvordan animasjonen skal utføres. Eks: ease-in-out, steps(6)|
+|easing    |Hvordan animasjonen skal utføres. Eks: ease-in-out, ease-in, ease-out steps(6)|
 |direction |Retning på animasjonen. *alternate* er frem og tilbake, *reverse* snur og *normal* er default.|
 |fill      |Hva som skjer med elementet når animasjonen er ferdig. *forwards* fryser elementet og *backwards* setter elementet tilbake til start.| 
 
@@ -208,3 +209,46 @@ Se eksempel under.
     let mittInterval = setInterval(alertHei,1000); // Lagrer intervallet som en egen variabel
 </script>
 ~~~~ 
+
+# Tips
+Her kommer noen tips og triks til animasjoner.
+
+## Transform
+Transform brukes til å flytte på html-elementer.
+Skrivemåter:
+
+I style(CSS):
+~~~~
+/* Èn transform egenskap: */
+transform: rotate(360deg);
+
+/* Flere transform egenskaper skilles med mellomrom: */
+transform: rotate(25deg) translateX(-50px);
+~~~~
+I javascript:
+~~~~
+// I vanlig javascript-kode:
+eksempelElement.style.transform = "translateY(-150px)";
+
+// I et javascript-objekt:
+let minStil = {
+    transform: "translateY(-200px) rotate(45deg)"
+}
+~~~~
+
+De mest vanlige transform-egenskapene i IT2 er rotate for å rotere og translateX for å forskyve i x-retning.
+For flere egenskaper se [w3school](https://www.w3schools.com/cssref/css3_pr_transform.asp).
+
+## Position
+For å kunne bruke CSS-egenskapene *left, top, right* og *bottom* må vi sette `position: absolute` eller `position:relative` i <style>.
+Dette gjelder også om vi skal bruke disse egenskapene i javascript.  
+
+`position: absolute` gjør at HTML-elementet får absolutt posisjonering, det gjør at elementet legger seg over alt annet innhold på nettsiden, og vi kan bruke *left, top, right* og *bottom* til å posisjonere elementet akkurat der vi vil ha det.
+Hvis vi for eksempel vil ha het element sentrert både i høyden og bredden på nettsiden kan vi gjøre følgende i <style>:
+~~~~
+position: absolute;
+left: 50%;
+top:50%;
+/* Med koden over vil øverste venstre hjørne av elementet ligge i senter, derfor må vi ha med linjen under også*/
+transform: translateX(-50%) translateY(-50%); /* Flytter elementet helt i senter */
+~~~~
