@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<!-- Kommentar:
+
+    Dette er en løsning med .animate() i js, den har litt brå overganger
+
+     Måten jeg har løst denne oppgaven på er å lage ferdig HTML-koden
+     til alle slides-ene først, legge de inn i en ramme-div som har en størrelse.
+     Deretter bruker jeg overflow: hidden; på rammen i CSS. Dette skjuler de slides
+     som er utenfor rammen. Hver slide må ha lik størrelse som rammen.
+     Til slutt bruker jeg .animate i Javascript med transform: translateY() og dytter
+     en div som inneholder slides-ene oppover, slik at det blir et slideshow.
+
+-->
+  <head>
+    <meta charset="utf-8">
+    <title>Ford Kuga</title>
+    <style media="screen">
+      #ramme{
+        width:950px; /* Størrelsen på animasjonen skal være 950x450px*/
+        height:400px;
+        overflow: hidden; /* Skjuler alt som ligger på utsiden av boksen*/
+      }
+      .slide{ /*Stil for class="slide"*/
+        width:950px; /* Samme størrelse som rammen pr. slide*/
+        height: 400px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="ramme">
+      <div id="alleSlides">
+        <div class="slide" id="slide1">
+          <img src="FilerH2014Biler/kuga_bak.jpg">
+          <p>
+            Kraftig, sporty og enda mer elegant både innvendig og utvendig. Vi er stolte over å kunne lansere den helt nye Ford Kuga, vår mest kompetente SUV hittil. Nye Ford Kuga har blitt større og byr på den absolutt nyeste teknologien.
+          </p>
+        </div>
+        <div class="slide" id="slide2">
+          <img src="FilerH2014Biler/kuga_front.jpg">
+          <p>
+            Det innovative Ford Eco Mode-systemet vurderer kontinuerlig effekten av din kjøreadferd på drivstofforbruket. Systemet leser hastighet, giring, bremsing og forventningsnivåene, pluss forholdet mellom korte og lange turer.
+          </p>
+        </div>
+        <div class="slide" id="slide3">
+          <img src="FilerH2014Biler/kuga_side.jpg">
+          <p>
+            Kugas intelligente firehjulsdrift reagerer umiddelbart og justerer seg til skiftende underlag og kjøreforhold. Den sender nøyaktig riktig mengde effekt til det enkelte hjul som trenger mest veigrep.
+        </div>
+      </div>
+    </div>
+
+    <script type="text/javascript">
+      const alleSlides = document.querySelector("#alleSlides");
+
+      let aniCSS = [
+        {
+          transform: "translateY(0px)"
+        },
+        {
+          transform: "translateY(-1200px)"
+        }
+      ];
+
+      let aniEgenskaper = {
+        duration: 5000,
+        iterations: Infinity,
+        easing: "steps(3)"
+      };
+
+      alleSlides.animate(aniCSS,aniEgenskaper);
+
+    </script>
+  </body>
+</html>
