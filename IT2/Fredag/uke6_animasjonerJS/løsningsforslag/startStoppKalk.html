@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="nb" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Start og stopp-kalkulator</title>
+  </head>
+  <body>
+
+    <div>
+      <label for="">Kjøretype:</label>
+      <input type="radio" name="type" value="by" id="by"> <!--Kommentar: Må ha samme name på radioknapper for at bare en skal kunne velges -->
+      <label for="lengde">By</label>
+      <input type="radio" name="type" value="vanlig" id="vanlig">
+      <label for="lengde">Vanlig</label>
+    </div>
+    <div>
+      <label for="lengde">Kjørelengde:</label>
+      <input type="number" name="lengde" id="inpLengde">
+      <label for="pris">Pris:</label>
+      <input type="number" name="pris" id="inpPris">
+    </div>
+    <button type="button" name="button" id="btnRegn">Regn ut</button>
+
+    <div id="divResultat">
+
+    </div>
+
+    <script type="text/javascript">
+      const by = document.querySelector("#by");
+      const vanlig = document.querySelector("#vanlig");
+      const inpLengde = document.querySelector("#inpLengde");
+      const inpPris = document.querySelector("#inpPris");
+      const btnRegn = document.querySelector("#btnRegn");
+      const divResultat = document.querySelector("#divResultat");
+
+      btnRegn.onclick = function(){
+        let pris = Number(inpPris.value);
+        let lengde = Number(inpLengde.value);
+        let normalbruk = lengde * pris * 0.65;
+
+        if(by.checked){
+          spart = normalbruk*0.1; // Sparer 10% på bykjøring
+        }
+        else{
+          spart = normalbruk*0.05; // Sparer 5% på normalkjøring
+        }
+        divResultat.innerHTML = `Du sparer ${spart.toFixed(2)}kr på å bruke start-stop.`;
+        // Kommentar til linjen over: bruker string-literal (``) det gjør at jeg kan
+        // skrive javascript inne i en string. .toFixed(2) gir kun to desimaler i svaret.
+      }
+    </script>
+  </body>
+</html>
