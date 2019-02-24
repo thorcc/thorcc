@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="nb" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Messenger</title>
+    <script src="https://www.gstatic.com/firebasejs/5.8.4/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyBw148vUQE0uezb6DbQLxjE1j9_pUOzZSo",
+        authDomain: "chat-281af.firebaseapp.com",
+        databaseURL: "https://chat-281af.firebaseio.com",
+        projectId: "chat-281af",
+        storageBucket: "chat-281af.appspot.com",
+        messagingSenderId: "1053246261853"
+      };
+      firebase.initializeApp(config);
+    </script>
+    <link rel="stylesheet" href="./main.css">
+  </head>
+  <body>
+
+    <main>
+      <section id="secMeldinger">
+
+      </section>
+      <section class="skjemaer">
+        <form id="skjema">
+          <input type="text" id="inpMelding" autocomplete="off">
+        </form>
+      </section>
+
+      <script src="./main.js" charset="utf-8"></script>
+    </main>
+  </body>
+</html>

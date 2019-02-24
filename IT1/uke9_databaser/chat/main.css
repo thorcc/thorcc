@@ -1,0 +1,58 @@
+html{
+  font-size: 100%;
+}
+body{
+  background-color: #eee;
+  font-family: sans-serif;
+}
+main {
+  max-width: 700px;
+  margin: auto;
+  padding: 1rem;
+  background-color: white;
+}
+#secMeldinger{
+  height: 75vh;
+  display: grid;
+  align-content: end;
+  grid-gap: 0.5rem;
+  border-bottom: 1px solid #eee;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  overflow: auto;
+}
+#secMeldinger div span{
+  padding: 0.75rem;
+  border-radius: 1rem;
+}
+#secMeldinger div img{
+  height: 40px;
+  border-radius: 50%;
+}
+.me{
+  justify-self: end;
+}
+.others{
+  justify-self: start;
+}
+.me span{
+  background-color: blueviolet;
+  color: white;
+  grid-row-start: 1;
+}
+.me span{
+  background-color: #eee;
+}
+
+.skjemaer {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.skjemaer input {
+    width: 100%;
+    padding: 0.5rem;
+    box-sizing: border-box;
+}
+.notloggedin {
+    text-align: center;
+}
