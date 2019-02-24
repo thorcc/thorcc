@@ -40,7 +40,7 @@ main {
   color: white;
   grid-row-start: 1;
 }
-.me span{
+.others span{
   background-color: #eee;
 }
 
