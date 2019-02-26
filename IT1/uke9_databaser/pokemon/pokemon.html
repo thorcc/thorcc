@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="nb" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Pokemon</title>
+    <script src="https://www.gstatic.com/firebasejs/5.8.2/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyDs3XiVv9bxJ7008TIdm2UDf0j8qItKKWM",
+        authDomain: "kontakter-af34e.firebaseapp.com",
+        databaseURL: "https://kontakter-af34e.firebaseio.com",
+        projectId: "kontakter-af34e",
+        storageBucket: "kontakter-af34e.appspot.com",
+        messagingSenderId: "886522146104"
+      };
+      firebase.initializeApp(config);
+    </script>
+  </head>
+  <body>
+    <header>
+      <button type="button" name="button" onclick="visSterkeste()">Sterkeste Pokémon</button>
+      <button type="button" name="button" onclick="visNummer()">Nummer</button>
+      <button type="button" name="button" onclick="visSvakeste()">Svakeste</button>
+    </header>
+    <main>
+      <section id="secAllePokemon">
+
+      </section>
+    </main>
+
+
+    <script type="text/javascript">
+      const db = firebase.database();
+      const pokemon = db.ref("pokemon");
+
+
+      const secAllePokemon = document.querySelector("#secAllePokemon");
+
+      function visPokemon(snapshot){
+        let key = snapshot.key;
+        let poke = snapshot.val();
+        secAllePokemon.innerHTML += `
+          <section class="pokemon">
+            <h3>${key}:${poke["Name"]}</h3>
+            <img src=${poke["Image URL"]}>
+            <p>Type: ${poke["Type 1"]}</p>
+            <p>Max HP: ${poke["Max HP"]}</p>
+            <p>Max CP: ${poke["Max CP"]}</p>
+          </section>
+        `
+      }
+
+
+      pokemon
+        .orderByChild("Max HP")
+        .limitToLast(5)
+        .on("child_added",visPokemon);
+
+
+      function visSterkeste(){
+        secAllePokemon.innerHTML = ``;
+        pokemon
+          .orderByChild("Max CP")
+          .limitToLast(20)
+          .on("child_added",visPokemon);
+      }
+      function visSvakeste(){
+        secAllePokemon.innerHTML = ``;
+        pokemon
+          .orderByChild("Max CP")
+          .limitToFirst(20)
+          .on("child_added",visPokemon);
+      }
+      function visNummer(){
+        secAllePokemon.innerHTML = ``;
+        pokemon
+          .orderByKey()
+          .limitToFirst(20).on("child_added",visPokemon);
+      }
+
+    </script>
+  </body>
+</html>
