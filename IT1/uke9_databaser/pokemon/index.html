@@ -16,8 +16,9 @@
       };
       firebase.initializeApp(config);
     </script>
-    <style media="screen">
+    <style>
       #secPokemon{
+        /* Legger alle nye pokemon i en grid */
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-gap: 5px;
@@ -35,8 +36,8 @@
   </head>
   <body>
     <header>
-      <button type="button" name="button" onclick="vis20SterkestePokemon()">Vis sterkeste</button>
-      <button type="button" name="button" onclick="visAllePokemon()">Vis alle</button>
+      <button type="button" name="button" onclick="vis20SterkestePokemon()">Vis sterkeste</button> <!-- Knapp for å vise de sterkeste 20 pokemon, legg merke til oncklick="vis20SterkestePokemon()", den gjør at funksjonen kjøres idet knappen trykkes på -->
+      <button type="button" name="button" onclick="visAllePokemon()">Vis alle</button>  <!-- Knapp for å vise alle pokemon, legg merke til oncklick="visAllePokemon()", den gjør at funksjonen kjøres idet knappen trykkes på -->
     </header>
     <main>
       <section id="secPokemon">
@@ -53,10 +54,10 @@
       const db = firebase.database();
       const pokemon = db.ref("pokemon");
 
-      visAllePokemon(); // Kjører funksjonen visAllePokemon i det nettsiden starter
+      visAllePokemon(); // Kjører funksjonen visAllePokemon i det nettsiden starter, funksjonen er definert under
 
 
-      // Funksjonsdefinisjoner.
+      // Funksjonsdefinisjoner for spørringer.
       // Funksjoner kjøres bare når de kalles, slik som visAllePokemon(); på linje 57
       function visAllePokemon(){
         // En funksjon som kjører en spørring for å vise alle pokemon
@@ -73,7 +74,7 @@
         secAllePokemon.innerHTML = ``;
         pokemon.orderByChild("Max CP").limitToFirst(20).on("child_added",genererHTML);
       }
-
+      
 
 
       function genererHTML(snapshot){
