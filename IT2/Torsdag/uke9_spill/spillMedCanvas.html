@@ -3,6 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <title>Spill med canvas</title>
+    <style>
+        body{
+            /*CSS-kode for å hindre at siden kan scrolles*/
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+    </style>
 </head>
 <body>
     <canvas id="spillCanvas" width="400" height="200"></canvas>
@@ -28,7 +36,29 @@
         };
 
         // Setup
+
+        spillCanvas.width = window.innerWidth; // Setter bredden på canvaset til å ta hele bredden av skjermen
+        spillCanvas.height = window.innerHeight; // Setter bredden på canvaset til å ta hele høyden av skjermen
+
         gameLoop(); // Starter gameLoop()-funksjonen idet nettsiden lastes.
+
+        // Hendelsesfunksjoner
+
+        window.onkeydown = function(event){ // Funksjon som endrer retning på firkanten ved hjelp av piltastene
+            console.log(event);
+            if(event.key == "ArrowLeft"){
+                firkant.xretning = -1;
+            }
+            if(event.key == "ArrowRight"){
+                firkant.xretning = 1;
+            }
+            if(event.key == "ArrowUp"){
+                firkant.yretning = -1;
+            }
+            if(event.key == "ArrowDown"){
+                firkant.yretning = 1;
+            }
+        }
 
 
         // Funksjonsdefinisjoner
