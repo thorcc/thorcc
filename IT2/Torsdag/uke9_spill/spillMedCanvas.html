@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+    <meta charset="UTF-8">
+    <title>Spill med canvas</title>
+</head>
+<body>
+    <canvas id="spillCanvas" width="400" height="200"></canvas>
+
+
+    <script>
+        //Referanser til HTML-elementer
+        const spillCanvas = document.querySelector("#spillCanvas"); // Variabel som refererer til canvaset
+        const ctx = spillCanvas.getContext("2d"); // Variabel som refererer til innholdet på canvaset.
+
+
+        // Globale variabler
+        let firkant = { // En global variabel som inneholder egenskapene til firkant, hvis noe skal endres på firkanten kan det endres her.
+            bredde:20,
+            hoyde:30,
+            farge:"blue",
+            xpos:100,
+            ypos:20,
+            xfart:10,
+            yfart:4,
+            xretning:1,
+            yretning:1
+        };
+
+        // Setup
+        gameLoop(); // Starter gameLoop()-funksjonen idet nettsiden lastes.
+
+
+        // Funksjonsdefinisjoner
+        function gameLoop(){
+            fjernFirkant(firkant); // Fjerner firkanten fra canvaset
+            sjekkKollisjon(firkant); //Sjekker om firkanten har kollidert med en vegg
+            flyttFirkant(firkant); //Flytter firkanten
+            tegnFirkant(firkant); // Tegner en ny firkant
+            requestAnimationFrame(gameLoop); // Kaller opp seg selv(gameLoop) 60 ganger i sekundet
+        }
+
+        function tegnFirkant(figur){
+            ctx.fillStyle = figur.farge; // Setter fargen til å være fargen til figuren
+            ctx.fillRect(figur.xpos,figur.ypos,figur.bredde,figur.hoyde); // Tegner figuren
+        }
+        function flyttFirkant(figur){
+            //figur.xpos +=1;
+            figur.xpos = figur.xpos + (figur.xretning*figur.xfart); // Oppdaterer x-posisjonen til figur ved å ta den gamle verdien og plusse på xretning gange xfart for figuren
+            figur.ypos = figur.ypos + (figur.yretning*figur.yfart); // Oppdaterer y-posisjonen
+        }
+        function fjernFirkant(figur){
+            ctx.clearRect(figur.xpos,figur.ypos,figur.bredde,figur.hoyde); // Fjerner firkanten fra canvaset
+        }
+        function clearCanvas(){
+            ctx.fillStyle = "white"; // Setter fargen til hvis
+            ctx.fillRect(0,0,spillCanvas.width,spillCanvas.height); // Lager en firkant som dekker hele canvaset, slik at hele blir hvitt
+        }
+        function sjekkKollisjon(figur){
+            if(figur.xpos >= spillCanvas.width-figur.bredde || figur.xpos <=0){ // Hvis x-posisjonen til figuren er større enn canvaset minus størrelsen på figuren, eller x-posisjonen er mindre enn 0
+                figur.xretning = figur.xretning * -1; // Bytt retning
+            }
+            if(figur.ypos >= spillCanvas.height-figur.hoyde || figur.ypos <=0){ // Samme som over, bare med y-posisjonen
+                figur.yretning = figur.yretning * -1;
+            }
+        }
+
+    </script>
+</body>
+</html>
