@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="nb" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+      body{
+        background-image: url("vedlegg/earth.png"); /* Setter bakggrunnsbilde til earth.png*/
+        background-size: 100% auto; /* bakgrunnsbilde strekkes over hele skjermen */
+        transition: 2s; /* Overgang som kjøres når bakgrunnsbilde endres */
+      }
+      #rakett{
+        position: absolute;
+        left: 50%;
+        top: 37%;
+      }
+    </style>
+  </head>
+  <body>
+    <button id="btnFly" type="button" name="button">Take-off!</button>
+    <img id="rakett" src="vedlegg/spaceX.png" alt="">
+    <script type="text/javascript">
+      const btnFly = document.querySelector("#btnFly");
+      const rakett = document.querySelector("#rakett");
+
+      let aniCSS = [
+        { // Starter på utskytningsrampen
+          left:"50%",
+          top:"37%"
+        },
+        { // Slutter langt over skjermen
+          left:"10%",
+          top:"-300%"
+        }
+      ];
+
+      let aniEgenskaper = {
+        duration: 1000, //Hele animasjonen tar 1 sekund
+        iterations: 2, //Animasjonen kjører to ganger
+        direction: "alternate", // Frem og tlbake. En gang opp, og en gang ned
+        easing: "ease-in" // Sørger for en myk-landing
+      }
+
+      let rakettAnimasjon = rakett.animate(aniCSS,aniEgenskaper); // Lager animasjonen og lagrer den i variabelen animasjon
+      rakettAnimasjon.pause(); // Pauser animasjonen i det siden lastes inn
+
+      btnFly.onclick = function(){ // Funksjon som starter når knappen trykkes på
+        rakettAnimasjon.play(); // Kjør animasjonen
+        // Bytte bakgrunnsbilde, hvis bakrgrunnen ikke er måne, bytt til måne.
+        if(document.body.style.backgroundImage != 'url("vedlegg/moon.png")'){
+          document.body.style.backgroundImage = 'url("vedlegg/moon.png")'; // Endrer bakgrunnsbilde til månen
+        }
+        else {
+          document.body.style.backgroundImage = "url('vedlegg/earth.png')"; // Endrer bakgrunnsbilde til jorden
+        }
+      }
+    </script>
+  </body>
+</html>
