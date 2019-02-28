@@ -6,6 +6,7 @@
     <style>
         #kjeks{
             width: 150px;
+            position: absolute;
         }
     </style>
 </head>
@@ -25,18 +26,24 @@
         merPoeng(); // funksjonen merPoeng starter i det siden lastes
 
         //Hendelseslyttere
-        kjeks.onclick = merPoeng;
+        kjeks.onclick = gameLoop;
         window.onkeydown = merPoeng;
 
         //Funksjonsdefinisjoner
-        function merPoeng(){
-            poeng += 1;
-            divPoeng.innerHTML = `Poeng: ${poeng}`;
-            requestAnimationFrame(merPoeng);
+        function gameLoop(){
+            merPoeng();
+            flyttKjeks();
         }
 
-
-
+        function merPoeng(){
+            poeng += 10;
+            divPoeng.innerHTML = `Poeng: ${poeng}`;
+            //requestAnimationFrame(merPoeng);
+        }
+        function flyttKjeks(){
+            kjeks.style.left = Math.random()*window.innerWidth +"px";
+            kjeks.style.top = Math.random()*window.innerHeight + "px";
+        }
     </script>
 </body>
 </html>
