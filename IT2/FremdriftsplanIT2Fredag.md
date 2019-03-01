@@ -30,13 +30,13 @@
 | 6   | 08.feb | Animasjoner del 2     |                    | 10.1 - 10.2 |
 | 7   | 15.feb | **Prøve** og Spillprogrammering                       |                    | 10.3            |
 | 8  |22 feb|Vinterferie|||
-| 9 |1 mar|Planlegging og dokumentasjon||11.1 - 11.4|
-| 10 |8 mar|Planlegging og dokumentasjon||11.5 - 11.6|
- |11 |15 mar|Objektorientert programmering||12.1 - 12.2|
-| 12 |22 mar|Strukturere kode og JSON-databaser||12.3 - 12.4|
-| 13 |29 mar|Sammensatte oppgaver||
+| 9 |1 mar|Spillprogrammering||10.1 - 10.3|
+| 10 |8 mar|Spillprogrammering *Prosjektstart*|||
+ |11 |15 mar|Spillprogrammering, prosjekt|||
+| 12 |22 mar|Spillprogrammering, *Innlevering*|||
+| 13 |29 mar|Objektorientert programmering||
 | 14 |5 apr|Sammensatte oppgaver||
-| 15 |12 apr|Sammensatte oppgaver||
+| 15 |12 apr|Sammensatte oppgaver||d
 | 16 |19 apr|Påske||
 | 17 |26 apr|Sammensatte oppgaver||
 | 18 |3 mai|Trekk til eksamen?||
