@@ -31,9 +31,9 @@
 | 7   | 15.feb | **Prøve** og Spillprogrammering                       |                    | 10.3            |
 | 8  |22 feb|Vinterferie|||
 | 9 |1 mar|Spillprogrammering||10.1 - 10.3|
-| 10 |8 mar|Spillprogrammering *Prosjektstart*|||
+| 10 |8 mar|Spillprogrammering **Prosjektstart**|||
  |11 |15 mar|Spillprogrammering, prosjekt|||
-| 12 |22 mar|Spillprogrammering, *Innlevering*|||
+| 12 |22 mar|Spillprogrammering, **Innlevering**|||
 | 13 |29 mar|Objektorientert programmering||
 | 14 |5 apr|Sammensatte oppgaver||
 | 15 |12 apr|Sammensatte oppgaver||d
