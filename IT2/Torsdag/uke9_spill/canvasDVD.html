@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+    <meta charset="UTF-8">
+    <title>Dvd-logo</title>
+</head>
+<body>
+
+    <canvas id="dvdCanvas" width="400px" height="200px"></canvas>
+
+
+    <script>
+        //Referanser til HTML-elementer
+        const dvdCanvas = document.querySelector("#dvdCanvas");
+        const ctx = dvdCanvas.getContext("2d");
+
+        // Globale variabler
+        let bakgrunnsfarge = "LightBlue";
+
+        let figur1 = {
+            bredde: 200,
+            hoyde: 30,
+            xpos: 60,
+            ypos: 70,
+            farge: "green",
+            xfart: 1,
+            xretning: 1,
+            yfart: 1,
+            yretning: -1
+        };
+
+        //Setup
+        gameLoop();
+
+
+        // Funksjonsdefinisjoner
+        function gameLoop(){
+            clearCanvas();
+            flyttFirkant(figur1);
+            tegnFirkant(figur1);
+            requestAnimationFrame(gameLoop);
+        }
+
+        function tegnFirkant(firkant){
+            ctx.fillStyle = firkant.farge;
+            ctx.fillRect(firkant.xpos,firkant.ypos,firkant.bredde,firkant.hoyde);
+        }
+
+        function flyttFirkant(firkant){
+            firkant.xpos = firkant.xpos + (firkant.xretning * firkant.xfart);
+            firkant.ypos = firkant.ypos + (firkant.yretning * firkant.yfart);
+        }
+
+        function clearCanvas(){
+            ctx.fillStyle = bakgrunnsfarge;
+            ctx.fillRect(0,0,dvdCanvas.width,dvdCanvas.height);
+        }
+
+    </script>
+
+</body>
+</html>

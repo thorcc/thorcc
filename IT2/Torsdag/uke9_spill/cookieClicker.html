@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+    <meta charset="UTF-8">
+    <title>Cookie</title>
+    <style>
+        #kjeks{
+            position: absolute;
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="divPoeng">Poeng: 0</div>
+    <img id="kjeks" src="kjeks.png">
+
+
+    <script>
+        // Referanser til HTML-elementer
+        const divPoeng = document.querySelector("#divPoeng");
+        const kjeks = document.querySelector("#kjeks");
+
+        // Globale variabler
+        let poeng = 0;
+
+        // Setup
+        gameLoop();
+
+        //Hendelslyttere
+        //kjeks.onclick = gameLoop;
+        //window.onkeydown = gameLoop;
+
+
+        //Funksjonsdefinisjoner
+        function gameLoop(){
+            merPoeng();
+            //gameLoop();
+            if(poeng <= 100){
+                requestAnimationFrame(gameLoop);
+            }
+        }
+
+        function merPoeng(){
+            poeng += 1;
+            divPoeng.innerHTML = `Poeng: ${poeng}`;
+        }
+        function flyttKjeks(){
+            let x = Math.random()*(window.innerWidth-100);
+            let y = Math.random()*(window.innerHeight-100);
+            kjeks.style.left = x + "px";
+            kjeks.style.top = y + "px";
+        }
+
+    </script>
+</body>
+</html>
