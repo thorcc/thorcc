@@ -3,6 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <title>Dvd-logo</title>
+    <style>
+        body{
+            margin: 0;
+            width: 100%;
+            height: 100%;
+            overflow:hidden;
+        }
+    </style>
 </head>
 <body>
 
@@ -18,7 +26,7 @@
         let bakgrunnsfarge = "LightBlue";
 
         let figur1 = {
-            bredde: 200,
+            bredde: 30,
             hoyde: 30,
             xpos: 60,
             ypos: 70,
@@ -26,34 +34,56 @@
             xfart: 1,
             xretning: 1,
             yfart: 1,
-            yretning: -1
+            yretning: -1,
+            roter: 60
         };
 
+
+
+
         //Setup
+        dvdCanvas.width = window.innerWidth;
+        dvdCanvas.height = window.innerHeight;
+
         gameLoop();
+
 
 
         // Funksjonsdefinisjoner
         function gameLoop(){
-            clearCanvas();
-            flyttFirkant(figur1);
-            tegnFirkant(figur1);
-            requestAnimationFrame(gameLoop);
+            clearCanvas(); // Fjerner innholdet på canvaset
+            sjekkKollisjon(figur1); // Sjekker om firkanten har kollidert
+            flyttFirkant(figur1); // Flytter figur1
+            tegnFirkant(figur1); // Tegner figur1
+            requestAnimationFrame(gameLoop); // Kaller opp gameLoop på nytt (rekursivt funksjonskall med delay)
         }
 
+
         function tegnFirkant(firkant){
+            // Funksjon som tegner en firkant fra et objekt
             ctx.fillStyle = firkant.farge;
             ctx.fillRect(firkant.xpos,firkant.ypos,firkant.bredde,firkant.hoyde);
         }
 
         function flyttFirkant(firkant){
+            // Funksjon som flytter en firkant fra et objekt
             firkant.xpos = firkant.xpos + (firkant.xretning * firkant.xfart);
             firkant.ypos = firkant.ypos + (firkant.yretning * firkant.yfart);
         }
 
         function clearCanvas(){
+            // Funksjon som tegner hele canvas
             ctx.fillStyle = bakgrunnsfarge;
             ctx.fillRect(0,0,dvdCanvas.width,dvdCanvas.height);
+        }
+
+        function sjekkKollisjon(firkant){
+            if(firkant.xpos <= 0 || firkant.xpos >= dvdCanvas.width - firkant.bredde){
+                firkant.xretning = firkant.xretning * -1;
+            }
+            if(firkant.ypos <= 0 || firkant.ypos >= dvdCanvas.height -firkant.hoyde){
+                firkant.yretning = firkant.yretning * -1;
+            }
         }
 
     </script>
