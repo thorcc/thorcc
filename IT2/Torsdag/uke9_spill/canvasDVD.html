@@ -10,11 +10,14 @@
             height: 100%;
             overflow:hidden;
         }
+        canvas{
+            background-color: black;
+        }
     </style>
 </head>
 <body>
 
-    <canvas id="dvdCanvas" width="400px" height="200px"></canvas>
+    <canvas id="dvdCanvas"></canvas>
 
 
     <script>
@@ -23,69 +26,83 @@
         const ctx = dvdCanvas.getContext("2d");
 
         // Globale variabler
-        let bakgrunnsfarge = "LightBlue";
-
-        let figur1 = {
-            bredde: 30,
-            hoyde: 30,
-            xpos: 60,
-            ypos: 70,
-            farge: "green",
-            xfart: 1,
-            xretning: 1,
-            yfart: 1,
+        let dvdObjekt = {
+            bredde: 250,
+            hoyde:116.13,
+            xpos: 0,
+            ypos: 0,
+            xfart:3,
+            xretning: -1,
+            yfart: 3,
             yretning: -1,
-            roter: 60
+            farge: "blue"
         };
-
-
-
-
         //Setup
         dvdCanvas.width = window.innerWidth;
         dvdCanvas.height = window.innerHeight;
 
+        let img = document.createElement("img");
+        img.src = "dvd.png";
+
+
+        let dato = new Date();
+        let startTid = dato.getTime();
+
         gameLoop();
-
-
 
         // Funksjonsdefinisjoner
         function gameLoop(){
-            clearCanvas(); // Fjerner innholdet på canvaset
-            sjekkKollisjon(figur1); // Sjekker om firkanten har kollidert
-            flyttFirkant(figur1); // Flytter figur1
-            tegnFirkant(figur1); // Tegner figur1
+            clearCanvas(dvdCanvas); // Fjerner innholdet på canvaset
+            sjekkKollisjon(dvdObjekt,dvdCanvas); // Sjekker om dvd-en har kollidert
+            flyttDVD(dvdObjekt); // Flytter dvd-en
+            tegnBildePaaCanvas(img,dvdObjekt,dvdCanvas,ctx); //Tegner bilde av dvd-en
+            skrivTidSidenStart(startTid);
             requestAnimationFrame(gameLoop); // Kaller opp gameLoop på nytt (rekursivt funksjonskall med delay)
         }
-
-
-        function tegnFirkant(firkant){
-            // Funksjon som tegner en firkant fra et objekt
-            ctx.fillStyle = firkant.farge;
-            ctx.fillRect(firkant.xpos,firkant.ypos,firkant.bredde,firkant.hoyde);
+        function clearCanvas(cnv){
+            ctx.clearRect(0,0,cnv.width,cnv.height);
         }
-
-        function flyttFirkant(firkant){
+        function tegnBildePaaCanvas(bilde,objekt,canvas,ctx){
+            // draw image
+            ctx.drawImage(bilde, objekt.xpos, objekt.ypos,objekt.bredde,objekt.hoyde);
+            // set composite mode
+            ctx.globalCompositeOperation = "source-in";
+            // draw color
+            ctx.fillStyle = objekt.farge;
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
+            // reset composite mode
+            ctx.globalCompositeOperation = "source-over";
+        }
+        function flyttDVD(dvd){
             // Funksjon som flytter en firkant fra et objekt
-            firkant.xpos = firkant.xpos + (firkant.xretning * firkant.xfart);
-            firkant.ypos = firkant.ypos + (firkant.yretning * firkant.yfart);
+            dvd.xpos = dvd.xpos + (dvd.xretning * dvd.xfart);
+            dvd.ypos = dvd.ypos + (dvd.yretning * dvd.yfart);
         }
-
-        function clearCanvas(){
-            // Funksjon som tegner hele canvas
-            ctx.fillStyle = bakgrunnsfarge;
-            ctx.fillRect(0,0,dvdCanvas.width,dvdCanvas.height);
-        }
-
-        function sjekkKollisjon(firkant){
-            if(firkant.xpos <= 0 || firkant.xpos >= dvdCanvas.width - firkant.bredde){
-                firkant.xretning = firkant.xretning * -1;
+        function sjekkKollisjon(figur,canvas){
+            if(figur.xpos <= 0 || figur.xpos >= canvas.width - figur.bredde){
+                figur.xretning = figur.xretning * -1;
+                figur.farge = randomFarge();
             }
-            if(firkant.ypos <= 0 || firkant.ypos >= dvdCanvas.height -firkant.hoyde){
-                firkant.yretning = firkant.yretning * -1;
+            if(figur.ypos <= 0 || figur.ypos >= canvas.height - figur.hoyde){
+                figur.yretning = figur.yretning * -1;
+                figur.farge = randomFarge();
             }
         }
+        function randomFarge(){
+            let r = Math.random()*255;
+            let g = Math.random()*255;
+            let b = Math.random()*255;
+            return `rgb(${r},${g},${b})`;
+        }
 
+        function skrivTidSidenStart(startTid){
+            let nydato = new Date();
+            let nyTid = nydato.getTime();
+            let tidPassert = (nyTid-startTid)/1000;
+            ctx.fillStyle = "lightblue";
+            ctx.font = "40px Georgia";
+            ctx.fillText(`Tid:${tidPassert.toFixed(0)}s`,20,40);
+        }
     </script>
 
 </body>
