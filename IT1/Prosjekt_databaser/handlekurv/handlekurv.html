@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="nb" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src="https://www.gstatic.com/firebasejs/5.9.0/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyBe9hRVPjqQN0FOvyABBYp76OdsJKrRdYI",
+        authDomain: "boker-42dc5.firebaseapp.com",
+        databaseURL: "https://boker-42dc5.firebaseio.com",
+        projectId: "boker-42dc5",
+        storageBucket: "",
+        messagingSenderId: "352936595387"
+      };
+      firebase.initializeApp(config);
+    </script>
+    <style media="screen">
+      main{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+      }
+    </style>
+  </head>
+
+  <body>
+    <main>
+      <section>
+        <h1>Bøker</h1>
+        <section id="secBoker">
+
+        </section>
+      </section>
+
+      <section>
+        <h1>Handlekurv</h1>
+        <section id="secHandlekurv">
+          <p>Du har ikke opprettet en handlekurv enda</p>
+          <button name="button" onclick="lagHandlekurv(brukerID)">Lag handlekurv</button>
+        </section>
+        <button type="button" name="button" onclick="slettHandlekurv()">Slett handlekurv</button>
+      </section>
+
+    </main>
+
+    <script type="text/javascript">
+      //referanser til HTML-elementer
+      const main = document.querySelector("main");
+      const secBoker = document.querySelector("#secBoker");
+      const secHandlekurv = document.querySelector("#secHandlekurv");
+      const inpBrukerID = document.querySelector("#inpBrukerID");
+
+      const db = firebase.database();
+      const boker = db.ref("boklista");
+      const handlekurv = db.ref("handlekurv");
+      let handlekurvID; // Tom handlekurvID når nettsiden starter.
+      let brukerID = 1;
+
+
+      //Oppstart
+      alleBoker();
+      hentHandlekurv(brukerID);
+
+      function alleBoker(){
+        //Henter alle bøker fra databasen
+        secBoker.innerHTML = ``;
+        boker.on("child_added",genererBokHTML);
+      }
+
+      function kjop(bokID,brukerID){
+        // Pusher en ny bok til handlekurven, hvis det finnes en handlekurv
+        if(handlekurvID){
+          let bokerHandlekurv = handlekurv.child(handlekurvID+"/boker"); //opretter en ny referanse til selve handlekurven i databasen
+          bokerHandlekurv.push(bokID);
+          hentHandlekurv(brukerID);
+        }
+        else{
+          //console.log("Det finnes ingen handlekurv, du må lage en før du kjøper noe.");
+          console.error("Det finnes ingen handlekurv, du må lage en før du kjøper noe.");
+        }
+      }
+
+      function hentHandlekurv(brukerID){
+        //Henter bøkene i handlekurven
+        if(handlekurvID){ //Hvis det finnes en handlekurv skal innholdet i handlekurv slettes, hvis ikke skal det fortsatt være en knapp der for å opprette en handlekurv
+          secHandlekurv.innerHTML = "";
+        }
+        handlekurv.orderByChild("brukerID").equalTo(brukerID).on("child_added",hentBokerFraHandlekurv); //Spør etter handlekurven med fremmednøkkelen brukerID, kjører så funksjon for å hente bøkene i handlekurven
+      }
+
+      function hentBokerFraHandlekurv(snap){
+        //Henter ut alle primærnøklene til bøkene som er lagret i handlekurven og spør etter disse bøkene
+        let handlekurv = snap.val();
+        handlekurvID = snap.key; //Lagrer handlekurvID i den globale variablen for handlekurv
+        secHandlekurv.innerHTML = ``;
+        // Under er en kode som looper gjennom bøkene i handlekurven, spør etter bøkene i boker og genererer HTML-kode for hver bok.
+        // Hver bok får en egen nøkkel i handlekurven, slik at handlekurven kan inneholde flere av samme bok. Disse nøklene blir her bokKey. (Firebase genererer disse nøklene)
+        for(let bokKey in handlekurv.boker){
+          let bokID = handlekurv.boker[bokKey].toString();
+          boker.orderByKey().equalTo(bokID).on("child_added",genererBokerHandlekurv);
+        }
+      }
+
+      function genererBokHTML(snap){
+        let key = snap.key;
+        let bok = snap.val();
+        secBoker.innerHTML +=`
+          <div class="bok">
+            <h1>${bok.tittel}</h1>
+            <p>Forfatter: ${bok.forfatter}</p>
+            <p>Forlag: ${bok.forlag}</p>
+            <p>Utgitt: ${bok.utgitt}</p>
+            <button onclick="kjop(${key},${brukerID})">Kjøp</button>
+          </div>
+        `;
+      }
+
+      function genererBokerHandlekurv(snap){
+        let key = snap.key;
+        let bok = snap.val();
+          secHandlekurv.innerHTML +=`
+            <div class="bok">
+              <p>${bok.tittel} - ${bok.forfatter}</p>
+            </div>
+          `;
+        };
+
+        function lagHandlekurv(brukerID){
+          if(!handlekurvID){
+            handlekurv.push({
+              brukerID: brukerID
+            });
+            hentHandlekurv(brukerID);
+          }
+        }
+
+        function slettHandlekurv(){
+          handlekurv.remove();
+          hentHandlekurv(brukerID);
+        }
+    </script>
+  </body>
+</html>

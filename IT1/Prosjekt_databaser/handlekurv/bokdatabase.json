@@ -1,0 +1,58 @@
+{
+  "boklista":{
+    "9788202593209":{
+      "tittel":"Naiv. Super.",
+      "forfatter":"Erlend Loe",
+      "forlag":"Cappelen Damm",
+      "utgitt":1996
+    },
+    "9780141182704":{
+      "tittel":"Animal Farm",
+      "forfatter":"George Orwell",
+      "forlag":"Penguin Books",
+      "utgitt":1945
+    },
+    "9780061177576":{
+      "tittel":"Post Office",
+      "forfatter":"Charles Bukowski",
+      "forlag":"Black Sparrow Books",
+      "utgitt":1973
+    },
+    "9788203192760":{
+      "tittel":"Innsirkling",
+      "forfatter":"Carl Frode Tiller",
+      "forlag":"Aschehoug",
+      "utgitt":2007
+    },
+    "9788203357763":{
+      "tittel":"Innsirkling 2",
+      "forfatter":"Carl Frode Tiller",
+      "forlag":"Aschehoug",
+      "utgitt":2014
+    },
+    "9788203358869":{
+      "tittel":"Innsirkling 3",
+      "forfatter":"Carl Frode Tiller",
+      "forlag":"Aschehoug",
+      "utgitt":2015
+    },
+    "9788205394810":{
+      "tittel":"Sult",
+      "forfatter":"Knut Hamsun",
+      "forlag":"Gyldendal",
+      "utgitt":1890
+    },
+    "9788249506866":{
+      "tittel":"Min Kamp 1",
+      "forfatter":"Karl Ove Knausgård",
+      "forlag":"Oktober",
+      "utgitt":2009
+    },
+    "9788249507054":{
+      "tittel":"Min Kamp 2",
+      "forfatter":"Karl Ove Knausgård",
+      "forlag":"Oktober",
+      "utgitt":2009
+    }
+  }
+}
