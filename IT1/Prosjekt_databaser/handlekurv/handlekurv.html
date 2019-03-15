@@ -49,18 +49,20 @@
       const main = document.querySelector("main");
       const secBoker = document.querySelector("#secBoker");
       const secHandlekurv = document.querySelector("#secHandlekurv");
-      const inpBrukerID = document.querySelector("#inpBrukerID");
 
+      //referanser til databasen
       const db = firebase.database();
       const boker = db.ref("boklista");
       const handlekurv = db.ref("handlekurv");
+
+      //globale variabler
       let handlekurvID; // Tom handlekurvID når nettsiden starter.
-      let brukerID = 1;
+      let brukerID = 1; // BrukerID for brukeren
 
 
       //Oppstart
-      alleBoker();
-      hentHandlekurv(brukerID);
+      alleBoker(); //Henter alle bøker
+      hentHandlekurv(brukerID); //Henter handlekurv
 
       function alleBoker(){
         //Henter alle bøker fra databasen
@@ -82,14 +84,14 @@
       }
 
       function hentHandlekurv(brukerID){
-        //Henter bøkene i handlekurven
+        //Henter bøkene i handlekurven og lagrer primærnøkkelen til handlekurven i handlekurvID
         if(handlekurvID){ //Hvis det finnes en handlekurv skal innholdet i handlekurv slettes, hvis ikke skal det fortsatt være en knapp der for å opprette en handlekurv
           secHandlekurv.innerHTML = "";
         }
-        handlekurv.orderByChild("brukerID").equalTo(brukerID).on("child_added",hentBokerFraHandlekurv); //Spør etter handlekurven med fremmednøkkelen brukerID, kjører så funksjon for å hente bøkene i handlekurven
+        handlekurv.orderByChild("brukerID").equalTo(brukerID).on("child_added",hentIDogBokerFraHandlekurv); //Spør etter handlekurven med fremmednøkkelen brukerID, kjører så funksjon for å hente bøkene i handlekurven
       }
 
-      function hentBokerFraHandlekurv(snap){
+      function hentIDogBokerFraHandlekurv(snap){
         //Henter ut alle primærnøklene til bøkene som er lagret i handlekurven og spør etter disse bøkene
         let handlekurv = snap.val();
         handlekurvID = snap.key; //Lagrer handlekurvID i den globale variablen for handlekurv
