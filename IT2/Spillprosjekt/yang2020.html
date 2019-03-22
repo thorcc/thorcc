@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+    <meta charset="UTF-8">
+    <title>Dvd-logo</title>
+    <style>
+        body{
+            margin: 0;
+            width: 100%;
+            height: 100%;
+            overflow:hidden;
+        }
+        canvas{
+          background-color: black;
+        }
+    </style>
+</head>
+<body>
+
+    <canvas id="dvdCanvas"></canvas>
+
+
+    <script>
+        //Referanser til HTML-elementer
+        const dvdCanvas = document.querySelector("#dvdCanvas");
+        const ctx = dvdCanvas.getContext("2d");
+
+        // Globale variabler
+        let dvdObjekt = {
+            bredde: 399.5,
+            hoyde:98.75,
+            xpos: 0,
+            ypos: 0,
+            xfart:3,
+            xretning: -1,
+            yfart: 3,
+            yretning: -1,
+            farge: "blue"
+        };
+
+
+
+        //Setup
+        dvdCanvas.width = window.innerWidth; // Setter størrelsen på canvaset
+        dvdCanvas.height = window.innerHeight;
+
+        //Bilde
+        let bilde = new Image; // Oppretter et nytt bildeobjekt
+        bilde.src = "yang2020.png" // Setter bilde sin source til å være yang2020.png
+
+        //Tid
+        let dato = new Date(); // Oppretter et nytt datoobjekt når siden starter
+        let startTid = dato.getTime(); // Henter ut antall millisekunder som har gått siden 1 jan, 1970, 00:00:00.000 GMT
+
+
+        gameLoop();
+
+        // Funksjonsdefinisjoner
+        function gameLoop(){
+            clearCanvas(dvdCanvas); // Fjerner innholdet på canvaset
+            sjekkKollisjon(dvdObjekt,dvdCanvas); // Sjekker om dvd-en har kollidert
+            flyttDVD(dvdObjekt); // Flytter dvd-en
+            tegnBildePaaCanvas(bilde,dvdObjekt,dvdCanvas,ctx); //Tegner bilde av dvd-en
+            skrivTidSidenStart(startTid); // Skriver tiden som har gått
+            requestAnimationFrame(gameLoop); // Kaller opp gameLoop på nytt (rekursivt funksjonskall med delay)
+        }
+        function clearCanvas(cnv){
+            //Funksjon for å fjerne innholdet på canvaset
+            ctx.clearRect(0,0,cnv.width,cnv.height);
+        }
+        function tegnBildePaaCanvas(bilde,objekt,canvas,ctx){
+            ctx.drawImage(bilde, objekt.xpos, objekt.ypos,objekt.bredde,objekt.hoyde); // Tegner bilde på canvas
+
+            // Kode for å endre farge på bilde
+            ctx.globalCompositeOperation = "source-in"; //Setter på composite til source-in
+            ctx.fillStyle = objekt.farge; //Velger fargen på bildet
+            ctx.fillRect(0, 0, canvas.width, canvas.height); //Tegner en firkant over hele skjermen, men "source-in" gjør at den vil bare dekke området det er noe på fra før av
+            ctx.globalCompositeOperation = "source-over"; //Setter compositie tilbake til vanlig
+        }
+        function flyttDVD(dvd){
+            // Funksjon som flytter en firkant fra et objekt
+            dvd.xpos = dvd.xpos + (dvd.xretning * dvd.xfart); // Oppdaterer xpos til dvd'en med xretning*xfart
+            dvd.ypos = dvd.ypos + (dvd.yretning * dvd.yfart);
+        }
+
+        function sjekkKollisjon(figur,canvas){
+            if(figur.xpos <= 0 || figur.xpos >= canvas.width - figur.bredde){
+              // Hvis figuren treffer venstre eller høyrde kant:
+                figur.xretning = figur.xretning * -1; // Bytt retning
+                figur.farge = randomFarge(); //Få en ny farge fra funksjonen randomFarge
+            }
+            if(figur.ypos <= 0 || figur.ypos >= canvas.height - figur.hoyde){
+              // Hvis figuren treffer øvre eller nedre kant:
+                figur.yretning = figur.yretning * -1; // Bytt retning
+                figur.farge = randomFarge(); // Få en ny farge
+            }
+        }
+        function randomFarge(){
+          // Funksjon som returnerer en tilfeldig rgb-farge.
+            let r = Math.random()*255; // Tilfeldig tall mellom 0 og 255
+            let g = Math.random()*255;
+            let b = Math.random()*255;
+            return `rgb(${r},${g},${b})`; // returnerer rgb fargen
+        }
+
+        function skrivTidSidenStart(startTid){
+          // Funksjon som tar inn en startTid, og skriver tid som har gått siden starten
+            let nydato = new Date(); //Lag en ny dato
+            let nyTid = nydato.getTime(); //Henter ut antall millisekunder siden 1 jan, 1970, 00:00:00.000 GMT
+            let tidPassert = (nyTid-startTid)/1000; // Hvor mange sekunder som har gått siden starten
+            ctx.fillStyle = "lightblue"; // Farge på teksten
+            ctx.font = "40px Georgia"; // Tekstfont
+            ctx.fillText(`Tid:${tidPassert.toFixed(0)}s`,20,40); //Skriver tid ut på canvaset
+        }
+    </script>
+
+</body>
+</html>
