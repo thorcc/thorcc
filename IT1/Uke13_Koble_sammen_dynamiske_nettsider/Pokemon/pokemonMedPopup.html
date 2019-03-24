@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Pokemon</title>
+    <link rel="stylesheet" href="pokemon.css">
+
+
+    <script src="https://www.gstatic.com/firebasejs/5.8.4/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyCFhmDveqpzRvevF6EyrLOh0NbACDQ3C_4",
+        authDomain: "pokemon-uke-8.firebaseapp.com",
+        databaseURL: "https://pokemon-uke-8.firebaseio.com",
+        projectId: "pokemon-uke-8",
+        storageBucket: "",
+        messagingSenderId: "974522538356"
+      };
+      firebase.initializeApp(config);
+    </script>
+
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <button onclick="visAlle()">Alle</button>
+        <button onclick="visGrass()">Grass</button>
+
+
+      </nav>
+    </header>
+    <main>
+
+    </main>
+    <section id="secValgtPokemon"> <!-- En tom section til popup-vinduet -->
+
+    </section>
+    <script>
+        const main = document.querySelector("main"); // Variabel som referer til mian-elementet
+        const secValgtPokemon = document.querySelector("#secValgtPokemon"); // Referanse til popup-vinduet med id secValgtPokemon
+
+          // Referanser til databasen
+        const db = firebase.database();
+        const pokemon = db.ref("pokemon"); // Referer til alt som ligger under pokemon i databasen
+
+        function visPokemon(snapshot){
+              //Javascript-funksjon som skriver pokemon i main-elementet
+            let pokeSnap = snapshot.val();
+            let key = snapshot.key;
+            main.innerHTML +=`
+                <article class="Pokemon">
+                  <h1>${pokeSnap.Name}</h1>
+                  <img src="${pokeSnap.ImageURL}" alt="">
+                  <p>${pokeSnap.Type1} - ${pokeSnap.Type2}</p>
+                  <button onclick= 'visValgtPokemon("${key}")'>Les mer om ${pokeSnap.Name}</button> <!-- Knapp som kaller opp funksjonen visValgtPokemon(id), sender inn nøkkelen til pokemonen i funksjonen. OBS! Legg merke til atpostroffene, nøkkelen som sendes inn må være string. -->
+                </article>
+            `;
+        }
+
+        function visAlle(){
+          main.innerHTML = ``
+          pokemon.on("child_added",visPokemon);
+        }
+
+        visAlle();
+
+        function visGrass(){
+          main.innerHTML = ``
+          pokemon.orderByChild("Type1").equalTo("Grass").on("child_added",visPokemon);
+          pokemon.orderByChild("Type2").equalTo("Grass").on("child_added",visPokemon);
+        }
+
+        function genererValgtPokemon(snapshot){
+              //Javascript-funksjon som skriver ut en pokemon i popup-vinduet
+            let data = snapshot.val();
+            secValgtPokemon.innerHTML +=`
+              <h1>${data.Name}</h1>
+              <img src="${data.ImageURL}" alt="">
+              <p>Type 1: ${data.Type1}</p>
+              <p>Type 2: ${data.Type2}</p>
+              <p>Max value for combat power: ${data.MaxCP}</p>
+              <p>Max value for hit points: ${data.MaxHP}</p>
+              <button onclick="skjulValgtPokemon()">Lukk vindu</button> <!-- Knapp som kaller opp funksjonen skjulValgtPokemon() -->
+            `;
+            secValgtPokemon.style.display = "block"; // Endrer display på secValgtPokemon til block slik at den vises
+
+        }
+
+        function visValgtPokemon(id){
+          // En funksjon som tar inn id og kjører funksjonen genererValgtPokemon() på den pokemonen.
+          secValgtPokemon.innerHTML =``; // Sletter innholdet i popup-vinduet
+          const valgtPokemon = db.ref("pokemon/" + id ); // Oppretter en referanse til den valgte pokemonen i databasen
+          valgtPokemon.on("value", genererValgtPokemon); // Kjører genererValgtPokemon på pokemonen fra databasen
+        }
+
+        function skjulValgtPokemon(){
+          // Funksjon som skjuler popup-vinduet
+          secValgtPokemon.style.display = "none"; // Endrer secValgtPokemon sin dipsplay til none
+        }
+
+    </script>
+
+  </body>
+</html>

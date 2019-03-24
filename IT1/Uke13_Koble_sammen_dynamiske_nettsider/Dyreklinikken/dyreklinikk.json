@@ -1,0 +1,148 @@
+{
+  "Dyr" : {
+    "Hunder" : {
+      "H001" : {
+        "Alder" : 4,
+        "Bilde" : "hund1.jpg",
+        "Farge1" : "Hvit",
+        "Farge2" : "",
+        "Navn" : "Fido"
+      },
+      "H002" : {
+        "Alder" : 3,
+        "Bilde" : "hund2.jpg",
+        "Farge1" : "Hvit",
+        "Farge2" : "Beige",
+        "Navn" : "Ruffen"
+      },
+      "H003" : {
+        "Alder" : 6,
+        "Bilde" : "hund3.jpg",
+        "Farge1" : "Beige",
+        "Farge2" : "",
+        "Navn" : "Charlie"
+      },
+      "H004" : {
+        "Alder" : 9,
+        "Bilde" : "hund4.jpg",
+        "Farge1" : "Hvit",
+        "Farge2" : "Brun",
+        "Navn" : "Trofast"
+      },
+      "H005" : {
+        "Alder" : 11,
+        "Bilde" : "hund5.jpg",
+        "Farge1" : "Hvit",
+        "Farge2" : "",
+        "Navn" : "Tassen"
+      },
+      "H006" : {
+        "Alder" : 8,
+        "Bilde" : "hund6.jpg",
+        "Farge1" : "Hvit",
+        "Farge2" : "Svart",
+        "Navn" : "Bastian"
+      },
+      "H007" : {
+        "Alder" : 8,
+        "Bilde" : "hund7.jpg",
+        "Farge1" : "Hvit",
+        "Farge2" : "Brun",
+        "Navn" : "Ruffen"
+      },
+      "H008" : {
+        "Alder" : 6,
+        "Bilde" : "hund8.jpg",
+        "Farge1" : "Svart",
+        "Farge2" : "Hvit",
+        "Navn" : "Tarzan"
+      },
+      "H009" : {
+        "Alder" : 10,
+        "Bilde" : "hund9.jpg",
+        "Farge1" : "Brun",
+        "Farge2" : "",
+        "Navn" : "Luna"
+      },
+      "H010" : {
+        "Alder" : 7,
+        "Bilde" : "hund10.jpg",
+        "Farge1" : "Hvit",
+        "Farge2" : "Svart",
+        "Navn" : "Bella"
+      }
+    },
+    "Katter" : {
+      "K001" : {
+        "Alder" : 8,
+        "Bilde" : "katt1.jpg",
+        "Farge1" : "Grå",
+        "Farge2" : "Hvit",
+        "Navn" : "Milly"
+      },
+      "K002" : {
+        "Alder" : 4,
+        "Bilde" : "katt2.jpg",
+        "Farge1" : "Hvit",
+        "Farge2" : "Beige",
+        "Navn" : "Simba"
+      },
+      "K003" : {
+        "Alder" : 7,
+        "Bilde" : "katt3.jpg",
+        "Farge1" : "Grå",
+        "Farge2" : "",
+        "Navn" : "Pus"
+      },
+      "K004" : {
+        "Alder" : 4,
+        "Bilde" : "katt4.jpg",
+        "Farge1" : "Grå",
+        "Farge2" : "Hvit",
+        "Navn" : "Sofus"
+      },
+      "K005" : {
+        "Alder" : 2,
+        "Bilde" : "katt5.jpg",
+        "Farge1" : "Grå",
+        "Farge2" : "Hvit",
+        "Navn" : "Mira"
+      },
+      "K006" : {
+        "Alder" : 12,
+        "Bilde" : "katt6.jpg",
+        "Farge1" : "Grå",
+        "Farge2" : "",
+        "Navn" : "Mille"
+      },
+      "K007" : {
+        "Alder" : 7,
+        "Bilde" : "katt7.jpg",
+        "Farge1" : "Grå",
+        "Farge2" : "",
+        "Navn" : "Mons"
+      },
+      "K008" : {
+        "Alder" : 4,
+        "Bilde" : "katt8.jpg",
+        "Farge1" : "Hvit",
+        "Farge2" : "Brun",
+        "Navn" : "Nusse"
+      },
+      "K009" : {
+        "Alder" : 3,
+        "Bilde" : "katt9.jpg",
+        "Farge1" : "Beige",
+        "Farge2" : "Hvit",
+        "Navn" : "Mia"
+      },
+      "K010" : {
+        "Alder" : 13,
+        "Bilde" : "katt10.jpg",
+        "Farge1" : "Brun",
+        "Farge2" : "",
+        "Navn" : "Tigergutt"
+      }
+    }
+  }
+}

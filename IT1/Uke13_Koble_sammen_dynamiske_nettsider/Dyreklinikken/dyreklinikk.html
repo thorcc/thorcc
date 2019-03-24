@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Dyreklinikken</title>
+    <link rel="stylesheet" href="dyreklinikk.css">
+
+    <script src="https://www.gstatic.com/firebasejs/5.8.5/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyCMgj6PduCsMaYMf4omYY-oueY6V3QQ02o",
+        authDomain: "dyreklinikken-b127c.firebaseapp.com",
+        databaseURL: "https://dyreklinikken-b127c.firebaseio.com",
+        projectId: "dyreklinikken-b127c",
+        storageBucket: "dyreklinikken-b127c.appspot.com",
+        messagingSenderId: "472443790508"
+      };
+      firebase.initializeApp(config);
+    </script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <button onclick="visAlle()">Vis Alle</button>
+        <button onclick="visKatterAlfabetisk()">Oppgave 3a</button>
+        <button onclick="visHunderEldst()">Oppgave 3b</button>
+        <button onclick="visBeige()">Oppgave 3c</button>
+        <button onclick="visMellomMogT()">Oppgave 3d</button>
+      </nav>
+    </header>
+    <main>
+
+    </main>
+
+    <script>
+      const main = document.querySelector("main");
+      const db = firebase.database();
+      const hunder = db.ref("Dyr/Hunder");  //Fyll inn riktig referanse
+      const katter = db.ref("Dyr/Katter")             //Skriv ferdig
+
+      function genererHTML(snapshot){
+        let dyr = snapshot.val();
+        let key = snapshot.key;
+
+        main.innerHTML +=`
+            <article class="Dyr">
+              <h1>${dyr.Navn}</h1>
+              <img src="${dyr.Bilde}" class="poster">
+              <p>Farge: ${dyr.Farge1}, ${dyr.Farge2}</p>
+              <p>Alder: ${dyr.Alder}</p>
+              <a href="dyredetaljer.html?id=${key}">Detaljer</a>
+            </article>
+        `
+      }
+
+      function visAlle(){
+        main.innerHTML = "";
+        hunder.on("child_added",genererHTML);
+        katter.on("child_added",genererHTML)
+      }
+      visAlle();
+
+      function visKatterAlfabetisk(){
+        main.innerHTML = "";
+        katter.orderByChild("Navn").on("child_added", genererHTML);
+      }
+      function visHunderEldst(){
+        main.innerHTML = "";
+        hunder.orderByChild("Alder").limitToLast(3).on("child_added", genererHTML);
+      }
+      function visBeige(){
+        main.innerHTML = "";
+        hunder.orderByChild("Farge1").equalTo("Beige").on("child_added", genererHTML);
+        hunder.orderByChild("Farge2").equalTo("Beige").on("child_added", genererHTML);
+        katter.orderByChild("Farge1").equalTo("Beige").on("child_added", genererHTML);
+        katter.orderByChild("Farge2").equalTo("Beige").on("child_added", genererHTML);
+      }
+      function visMellomMogT(){
+        main.innerHTML = "";
+        hunder.orderByChild("Navn").startAt("M").endAt("U").on("child_added", genererHTML);
+        katter.orderByChild("Navn").startAt("M").endAt("U").on("child_added", genererHTML);
+      }
+
+
+      // Fyll inn resterende spørringer her
+    </script>
+
+  </body>
+</html>

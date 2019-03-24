@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+
+    <script src="https://www.gstatic.com/firebasejs/5.8.4/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyCFhmDveqpzRvevF6EyrLOh0NbACDQ3C_4",
+        authDomain: "pokemon-uke-8.firebaseapp.com",
+        databaseURL: "https://pokemon-uke-8.firebaseio.com",
+        projectId: "pokemon-uke-8",
+        storageBucket: "",
+        messagingSenderId: "974522538356"
+      };
+      firebase.initializeApp(config);
+    </script>
+
+  </head>
+  <body>
+
+    <main>
+
+    </main>
+
+
+    <script>
+        const main = document.querySelector("main"); // Variabel som referer til mian-elementet
+
+        // koden som henter key-verdien fra forrige side:
+        var url_string = window.location.href;
+        var url = new URL(url_string);
+        var id = url.searchParams.get("id");
+
+
+        // Referanser til databasen
+        const db = firebase.database();
+        const pokemon = db.ref("pokemon/" + id );
+
+        function visPokemon(snapshot){
+              /*Javascript-funksjon som skriver
+                pokemonen ut på nettsiden i main-elementet*/
+            let data = snapshot.val();
+
+            main.innerHTML +=`
+            <h1>${data.Name}</h1>
+            <img src="${data.ImageURL}" alt="">
+            <p>Type 1: ${data.Type1}</p>
+            <p>Type 2: ${data.Type2}</p>
+            <p>Max value for combat power: ${data.MaxCP}</p>
+            <p>Max value for hit points: ${data.MaxHP}</p>
+            `;
+        }
+
+        pokemon.on("value", visPokemon)
+
+      </script>
+
+
+  </body>
+</html>
+

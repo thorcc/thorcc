@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+
+    <!-- KOBLER TIL FIREBASE -->
+    <script src="https://www.gstatic.com/firebasejs/5.8.5/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyCMgj6PduCsMaYMf4omYY-oueY6V3QQ02o",
+        authDomain: "dyreklinikken-b127c.firebaseapp.com",
+        databaseURL: "https://dyreklinikken-b127c.firebaseio.com",
+        projectId: "dyreklinikken-b127c",
+        storageBucket: "dyreklinikken-b127c.appspot.com",
+        messagingSenderId: "472443790508"
+      };
+      firebase.initializeApp(config);
+    </script>
+
+  </head>
+  <body>
+    <main>
+      <section id="bildecontainer"></section>
+      <section id="sykdom"></section>
+
+    </main>
+
+    <!-- Med mye Javascript er det kanskje lurere om vi har koden i en egen fil (akkurat som vi gjør med css): -->
+    <script src="dyredetaljer.js"></script>
+
+  </body>
+</html>
