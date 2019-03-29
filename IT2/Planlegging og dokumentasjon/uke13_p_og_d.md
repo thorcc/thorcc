@@ -14,16 +14,17 @@ Mål for opplæringen er at eleven skal kunne
 
 ## Ressurser
 
-[Undervisningsopplegg]: https://docs.google.com/document/d/16-28q_hXilJhnLKAioNZAQli9pHS-WiU-fyn0tX8EZA/edit?usp=sharing
-[Eksamensoppgaver]: https://github.com/thorcc/thorcc.github.io/blob/master/IT2/Planlegging%20og%20dokumentasjon/oppgaver.md
-[Youtube: one day in the life of a SAP software]: https://www.youtube.com/watch?v=CxoGjX3JvHI
-[Youtube: Scrum ,Silicon Valley S01E05]: https://www.youtube.com/watch?v=oyVksFviJVE
+Undervisningsopplegg: https://docs.google.com/document/d/16-28q_hXilJhnLKAioNZAQli9pHS-WiU-fyn0tX8EZA/edit?usp=sharing
 
+Eksamensoppgaver: https://github.com/thorcc/thorcc.github.io/blob/master/IT2/Planlegging%20og%20dokumentasjon/oppgaver.md
 
+YT: one day in the life of a SAP software engineer: https://www.youtube.com/watch?v=CxoGjX3JvHI
+
+YT: Scrum ,Silicon Valley S01E05: https://www.youtube.com/watch?v=oyVksFviJVE
 
 ## Ordliste
 
-**Systemutvikler** - Programmerer eller utvikler betegner en person som utvikler programvare for datamaskiner, og i stor grad også for andre tekniske innretninger ved hjelp av et programmeringsspråk
+**Systemutvikler** - 
 
 **Vannfallsmetoden** -
 
