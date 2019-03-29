@@ -14,4 +14,3 @@ Dere skal gjøre eksamensoppgaver i par.
 ## Oppgaver
 
 https://github.com/thorcc/thorcc.github.io/blob/master/IT2/Planlegging%20og%20dokumentasjon/oppgaver.md
-
