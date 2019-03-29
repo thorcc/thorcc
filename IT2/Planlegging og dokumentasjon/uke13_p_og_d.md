@@ -15,6 +15,7 @@ Mål for opplæringen er at eleven skal kunne
 ## Ressurser
 
 [Undervisningsopplegg]: https://docs.google.com/document/d/16-28q_hXilJhnLKAioNZAQli9pHS-WiU-fyn0tX8EZA/edit?usp=sharing
+[Eksamensoppgaver]: https://github.com/thorcc/thorcc.github.io/blob/master/IT2/Planlegging%20og%20dokumentasjon/oppgaver.md
 [Youtube: one day in the life of a SAP software]: https://www.youtube.com/watch?v=CxoGjX3JvHI
 [Youtube: Scrum ,Silicon Valley S01E05]: https://www.youtube.com/watch?v=oyVksFviJVE
 
