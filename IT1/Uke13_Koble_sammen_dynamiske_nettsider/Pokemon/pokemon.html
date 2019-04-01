@@ -42,19 +42,30 @@
         const db = firebase.database();
         const pokemon = db.ref("pokemon"); // Referer til alt som ligger under sko i databasen
 
+
         function visPokemon(snapshot){
               //Javascript-funksjon som skriver varene ut på nettsiden i main-elementet
             let pokeSnap = snapshot.val();
             let key = snapshot.key;
+            let nyttElement = document.createElement("article");
+            let type = "";
 
-            main.innerHTML +=`
-                <article class="Pokemon">
-                  <h1>${pokeSnap.Name}</h1>
-                  <img src="${pokeSnap.ImageURL}" alt="">
-                  <p>${pokeSnap.Type1} - ${pokeSnap.Type2}</p>
-                  <a href="pokestats.html?id=${key}">Detaljer</a>
-                </article>
+            if(pokeSnap.Type2){
+              type = `<p>${pokeSnap.Type1} - ${pokeSnap.Type2}</p>`;
+            }
+            else{
+              type = `<p>${pokeSnap.Type1}</p>`;
+            }
+            
+            nyttElement.innerHTML =
             `
+              <h1>${pokeSnap.Name}</h1>
+              <img src="${pokeSnap.ImageURL}" alt="">
+              ${type}
+              <a href="pokestats.html?id=${key}">Detaljer</a>
+            `;
+            nyttElement.classList.add("pokemon");
+            main.insertBefore(nyttElement, main.childNodes[0]);
         }
 
         function visAlle(){
