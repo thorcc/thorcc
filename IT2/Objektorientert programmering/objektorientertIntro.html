@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+    <meta charset="UTF-8">
+    <title>Objektorientert programmering</title>
+</head>
+<body>
+    <script>
+
+        let statsminister = {
+            fornavn: "Erna",
+            etternavn: "Solberg",
+            parti: "Høyre",
+            interesser: ["Sysselsetting","Nordmenn må få fler barn","Norske interesser i FN"],
+            fulltnavn: function(){
+                return this.fornavn + " " + this.etternavn;
+            }
+        };
+
+        let statsminister2 = {
+            fornavn: "Jens",
+            etternavn: "Stoltenberg",
+            parti: "Arbeiderpartiet",
+            interesser: ["Sysselsetting","Nordmenn må få færre barn","Norske interesser i FN"],
+            fulltnavn: function(){
+                return this.fornavn + " " + this.etternavn;
+            }
+        };
+
+        class Statsminister{
+            constructor(fornavn,etternavn,parti,interesser){
+                this.fornavn = fornavn;
+                this.etternavn = etternavn;
+                this.parti = parti;
+                this.interesser =  interesser;
+            }
+            fulltnavn(){
+                document.write(this.fornavn + " " + this.etternavn);
+            }
+        }
+
+        let erna = new Statsminister("Erna","Solberg","Høyre",["Ja til EU/EØS","Ja til flere barn"]);
+        let jens = new Statsminister("Jens","Stoltenberg","Arbeiderpartiet",["Ja til EU/EØS","Ja til flere barn"]);
+        console.log(erna.fornavn);
+        console.log(jens.fornavn);
+
+        erna.fulltnavn();
+    </script>
+</body>
+</html>
