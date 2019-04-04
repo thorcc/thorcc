@@ -48,7 +48,13 @@ Arv og get-metoder
 
 ​	d. Legg til en get-metode som returnerer x- og y-verdiene firkantene og boblene.
 
-## 8. Eksamensoppgave Våren 2013
+## 8. Eksamensoppgave Høsten 2010
+
+![Eksamen 2010](https://github.com/thorcc/thorcc.github.io/blob/master/IT2/Objektorientert%20programmering/eksamen2010.png)
+
+[Eksamen](http://it2cha.com/eksamen2.html)
+
+## 9. Eksamensoppgave Våren 2013
 
 **Applikasjon for å analysere energiinnhold i frokost**
 Det er vanlig å bruke kilokalorier (kcal) som mål på hvor mye energi mat inneholder. Denne energien får vi i oss i form av proteiner, fett og karbohydrater. Alle matvarer har forskjellig andel av disse tre, og under ser du en tabell som viser hvor mye proteiner, fett og karbohydrater det er i «typiske» frokostenheter. 
