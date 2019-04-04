@@ -52,7 +52,7 @@ Arv og get-metoder
 
 ![Eksamen 2010](https://github.com/thorcc/thorcc.github.io/blob/master/IT2/Objektorientert%20programmering/eksamen2010.png)
 
-[Eksamen](http://it2cha.com/eksamen2.html)
+[Eksamen](http://it2cha.com/eksamen2.html) [Vedlegg.zip](http://it2cha.com/eksamen/H2010-Hoteller/FilerH2010Hoteller.zip)
 
 ## 9. Eksamensoppgave Våren 2013
 
