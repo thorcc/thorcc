@@ -33,6 +33,16 @@ class Hotell{
     return maks;
   }
 
+  min(){
+    let min = Infinity;
+    for(let tall of this.temp){
+      if(tall < min){
+        min = tall;
+      }
+    }
+    return min;
+  }
+
   vis(){
     let html = `
       <div>
@@ -42,6 +52,8 @@ class Hotell{
         <p>epost: ${this.epost}</p>
         <p>Temp. siste 7: ${this.temp.join(", ")}</p>
         <p>Gj. snitt: ${this.gjSnitt().toFixed(1)}</p>
+        <p>Min: ${this.min()}</p>
+        <p>Maks: ${this.maks()}</p>
       </div>
     `;
     valgtHotell.innerHTML = html;
