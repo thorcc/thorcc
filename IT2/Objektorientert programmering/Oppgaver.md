@@ -1,4 +1,4 @@
-# Torsdag 4.4 - Objektorientert programmering
+# Fredag 5.4 - Objektorientert programmering
 
 ## 1. Tavleundervisning
 
