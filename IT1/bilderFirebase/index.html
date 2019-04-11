@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src="https://www.gstatic.com/firebasejs/5.9.3/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyAyLRHAOpnGknbsnhbPp5p6bx-DtbK0QkU",
+        authDomain: "lasteoppbilder-5a231.firebaseapp.com",
+        databaseURL: "https://lasteoppbilder-5a231.firebaseio.com",
+        projectId: "lasteoppbilder-5a231",
+        storageBucket: "lasteoppbilder-5a231.appspot.com",
+        messagingSenderId: "611538550658"
+      };
+      firebase.initializeApp(config);
+    </script>
+  </head>
+  <body>
+
+    <form id="skjema">
+      <input type="file" id="inpFil" class="button" required>
+      <input type="text" id="inpBildeTekst" required placeholder="Hva har du tatt bilde av?">
+      <button class="button" type="submut">OK</button>
+    </form>
+    <section id="alleBildene">
+
+    </section>
+
+    <script type="text/javascript">
+      const database = firebase.database();
+      const storage = firebase.storage();
+      const bildedata = database.ref("bildedata");
+
+      const skjema = document.querySelector("#skjema");
+      const inpBildeTekst = document.querySelector("#inpBildeTekst");
+      const inpFil = document.querySelector("#inpFil");
+      const alleBildene = document.querySelector("#alleBildene");
+
+
+
+      function lagreData(url){
+        let bildeURL = url;
+        let bildetekst = inpBildeTekst.value;
+        let bildeinfo = {
+          "url":bildeURL,
+          "tekst":bildetekst
+        }
+        bildedata.push(bildeinfo);
+      }
+
+      function lastOppBilde(evt){
+        evt.preventDefault();
+        let fil = inpFil.files[0];
+        let lagringsplass = storage.ref("bilder/"+ new Date());
+        lagringsplass.put(fil)
+              .then(snapshot => snapshot.ref.getDownloadURL())
+              .then(url => lagreData(url));
+      }
+
+      function visAlleBildene(snapshot){
+        let bildedata = snapshot.val();
+        alleBildene.innerHTML = `
+        <article>
+          <img src=${bildedata.url}>
+          <p>${bildedata.tekst}</p>
+        </article>
+        <hr>
+        ` + alleBildene.innerHTML;
+      };
+
+      skjema.addEventListener("submit",lastOppBilde);
+      bildedata.on("child_added",visAlleBildene);
+
+    </script>
+  </body>
+</html>
