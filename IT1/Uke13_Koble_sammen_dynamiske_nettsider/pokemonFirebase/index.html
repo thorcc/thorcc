@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Pokemon</title>
+    <link rel="stylesheet" href="figurer.css">
+
+
+
+    <script src="https://www.gstatic.com/firebasejs/5.9.3/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyCX3PASRfuNgrh0HITIS_9RyNad9FqtZ-0",
+        authDomain: "pokedigi-ff258.firebaseapp.com",
+        databaseURL: "https://pokedigi-ff258.firebaseio.com",
+        projectId: "pokedigi-ff258",
+        storageBucket: "",
+        messagingSenderId: "400112227789"
+      };
+      firebase.initializeApp(config);
+    </script>
+
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <p>
+          <button onclick="visAlle()">Alle</button>
+        </p>
+
+      </nav>
+    </header>
+    <main>
+
+    </main>
+
+    <script>
+        const main = document.querySelector("main"); // Variabel som referer til mian-elementet
+
+          // Referanser til databasen
+        const db = firebase.database();
+        const pokemon = db.ref("figurer/pokemon"); // Referer til alt som ligger under sko i databasen
+        const digimon = db.ref("figurer/digimon"); // Referer til alt som ligger under sko i databasen
+
+
+        function genererHTML(snapshot){
+          let key = snapshot.key;
+          let objekt = snapshot.val();
+          let parent = snapshot.ref.parent.key;
+          main.innerHTML += `
+            <section class="pokemon">
+              <h1>${key}: ${objekt.Name}</h1>
+              <img src=${objekt.ImageURL}>
+              <p>Type: ${objekt.Type1}</p>
+              <p>Max CP: ${objekt.MaxCP}</p>
+              <p>Max HP: ${objekt.MaxHP}</p>
+              <a href="valgtFigur.html?key=${key}&parent=${parent}">Les mer</a>
+            </section>
+          `;
+        }
+
+        // Funksjoner til spørringene
+        function visAlle(){
+          main.innerHTML = ``;
+          pokemon.on("child_added",genererHTML);
+          digimon.on("child_added",genererHTML);
+        }
+
+        // Kaller opp funksjonen visAlle() når nettsiden lastes
+        visAlle();
+
+    </script>
+  </body>
+</html>

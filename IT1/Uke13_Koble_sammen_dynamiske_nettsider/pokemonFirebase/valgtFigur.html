@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="nb" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src="https://www.gstatic.com/firebasejs/5.9.3/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyCX3PASRfuNgrh0HITIS_9RyNad9FqtZ-0",
+        authDomain: "pokedigi-ff258.firebaseapp.com",
+        databaseURL: "https://pokedigi-ff258.firebaseio.com",
+        projectId: "pokedigi-ff258",
+        storageBucket: "",
+        messagingSenderId: "400112227789"
+      };
+      firebase.initializeApp(config);
+    </script>
+  </head>
+  <body>
+    <main>
+
+    </main>
+
+    <script type="text/javascript">
+      const main = document.querySelector("main");
+
+      let url_string = window.location.href;
+      let url = new URL(url_string);
+      let parent = url.searchParams.get("parent");
+      let key = url.searchParams.get("key");
+
+      console.log(key,parent);
+
+      const db = firebase.database();
+      const valgtFigur = db.ref("figurer/"+parent+"/"+key);
+
+      valgtFigur.on("value",genererHTML);
+
+
+
+      function genererHTML(snapshot){
+        let key = snapshot.key;
+        let objekt = snapshot.val();
+        let parent = snapshot.ref.parent.key;
+        main.innerHTML += `
+          <section class="pokemon">
+            <h1>${key}: ${objekt.Name}</h1>
+            <img src=${objekt.ImageURL}>
+            <p>Type: ${objekt.Type1}</p>
+            <p>Max CP: ${objekt.MaxCP}</p>
+            <p>Max HP: ${objekt.MaxHP}</p>
+          </section>
+        `;
+      }
+    </script>
+  </body>
+</html>

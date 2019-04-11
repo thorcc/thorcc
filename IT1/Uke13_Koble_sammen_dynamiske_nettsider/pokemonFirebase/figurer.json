@@ -1,0 +1,1232 @@
+{
+  "figurer" : {
+    "digimon" : {
+      "001" : {
+        "ImageURL" : "https://www.google.com/url?sa=i&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwiOx56an8jhAhUiyKYKHWwaBBUQjRx6BAgBEAU&url=https%3A%2F%2Fwikimon.net%2FAgumon&psig=AOvVaw02QJs8h5kOuKifoNBYi4pt&ust=1555079093281210",
+        "MaxCP" : 79,
+        "MaxHP" : 82,
+        "Name" : "Agumon",
+        "Type1" : "Common",
+        "Type2" : "Dragon"
+      },
+      "002" : {
+        "ImageURL" : "https://www.google.com/url?sa=i&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwiN0YKtn8jhAhVS06YKHedmDbsQjRx6BAgBEAU&url=https%3A%2F%2Fwikimon.net%2FGabumon&psig=AOvVaw0tTRInA62V7DnfEqz-78vl&ust=1555079133151008",
+        "MaxCP" : "80",
+        "MaxHP" : "82",
+        "Name" : "Gabumon",
+        "Type1" : "Common",
+        "Type2" : "Dragon"
+      }
+    },
+    "pokemon" : {
+      "001" : {
+        "ImageURL" : "http://cdn.bulbagarden.net/upload/thumb/2/21/001Bulbasaur.png/250px-001Bulbasaur.png",
+        "MaxCP" : 1079,
+        "MaxHP" : 83,
+        "Name" : "Bulbasaur",
+        "Type1" : [ "Grass", "Poison", "Water" ],
+        "Type2" : "Poison"
+      },
+      "002" : {
+        "ImageURL" : "http://cdn.bulbagarden.net/upload/thumb/7/73/002Ivysaur.png/250px-002Ivysaur.png",
+        "MaxCP" : 1643,
+        "MaxHP" : 107,
+        "Name" : "Ivysaur",
+        "Type1" : "Grass",
+        "Type2" : "Poison"
+      },
+      "003" : {
+        "ImageURL" : "http://cdn.bulbagarden.net/upload/thumb/a/ae/003Venusaur.png/250px-003Venusaur.png",
+        "MaxCP" : 2598,
+        "MaxHP" : 138,
+        "Name" : "Venusaur",
+        "Type1" : "Grass",
+        "Type2" : "Poison"
+      },
+      "004" : {
+        "ImageURL" : "http://cdn.bulbagarden.net/upload/thumb/7/73/004Charmander.png/250px-004Charmander.png",
+        "MaxCP" : 962,
+        "MaxHP" : 73,
+        "Name" : "Charmander",
+        "Type1" : "Fire",
+        "Type2" : ""
+      },
+      "005" : {
+        "ImageURL" : "http://cdn.bulbagarden.net/upload/thumb/4/4a/005Charmeleon.png/250px-005Charmeleon.png",
+        "MaxCP" : 1568,
+        "MaxHP" : 103,
+        "Name" : "Charmeleon",
+        "Type1" : "Fire",
+        "Type2" : ""
+      },
+      "006" : {
+        "ImageURL" : "http://cdn.bulbagarden.net/upload/thumb/7/7e/006Charizard.png/250px-006Charizard.png",
+        "MaxCP" : 2620,
+        "MaxHP" : 135,
+        "Name" : "Charizard",
+        "Type1" : "Fire",
+        "Type2" : "Flying"
+      },
+      "007" : {
+        "ImageURL" : "http://cdn.bulbagarden.net/upload/thumb/3/39/007Squirtle.png/250px-007Squirtle.png",
+        "MaxCP" : 1015,
+        "MaxHP" : 81,
+        "Name" : "Squirtle",
+        "Type1" : "Water",
+        "Type2" : ""
+      },
+      "008" : {
+        "ImageURL" : "http://cdn.bulbagarden.net/upload/thumb/0/0c/008Wartortle.png/250px-008Wartortle.png",
+        "MaxCP" : 1594,
+        "MaxHP" : 105,
+        "Name" : "Wartortle",
+        "Type1" : "Water",
+        "Type2" : ""
+      },
+      "009" : {
+        "ImageURL" : "http://cdn.bulbagarden.net/upload/thumb/0/02/009Blastoise.png/250px-009Blastoise.png",
+        "MaxCP" : 2560,
+        "MaxHP" : 137,
+        "Name" : "Blastoise",
+        "Type1" : "Water",
+        "Type2" : ""
+      },
+      "010" : {
+        "ImageURL" : "http://cdn.bulbagarden.net/upload/thumb/5/5d/010Caterpie.png/250px-010Caterpie.png",
+        "MaxCP" : 446,
+        "MaxHP" : 83,
+        "Name" : "Caterpie",
+        "Type1" : "Bug",
+        "Type2" : ""
+      },
+      "011" : {
+        "ImageURL" : "http://cdn.bulbagarden.net/upload/thumb/c/cd/011Metapod.png/250px-011Metapod.png",
+        "MaxCP" : 481,
+        "MaxHP" : 91,
+        "Name" : "Metapod",
+        "Type1" : "Bug",
+        "Type2" : ""
+      },
+      "012" : {
+        "ImageURL" : "http://cdn.bulbagarden.net/upload/thumb/d/d1/012Butterfree.png/250px-012Butterfree.png",
+        "MaxCP" : 1465,
+        "MaxHP" : 107,
+        "Name" : "Butterfree",
+        "Type1" : "Bug",
+        "Type2" : "Flying"
+      },
+      "013" : {
+        "ImageURL" : "http://cdn.bulbagarden.net/upload/thumb/d/df/013Weedle.png/250px-013Weedle.png",
+        "MaxCP" : 452,
+        "MaxHP" : 75,
+        "Name" : "Weedle",
+        "Type1" : "Bug",
+        "Type2" : "Poison"
+      },
+      "014" : {
+        "ImageURL" : "http://cdn.bulbagarden.net/upload/thumb/f/f0/014Kakuna.png/250px-014Kakuna.png",
+        "MaxCP" : 488,
+        "MaxHP" : 83,
+        "Name" : "Kakuna",
+        "Type1" : "Bug",
+        "Type2" : "Poison"
+      },
+      "015" : {
+        "ImageURL" : "http://cdn.bulbagarden.net/upload/thumb/6/61/015Beedrill.png/250px-015Beedrill.png",
+        "MaxCP" : 1450,
+        "MaxHP" : 115,
+        "Name" : "Beedrill",
+        "Type1" : "Bug",
+        "Type2" : "Poison"
+      },
+      "016" : {
+        "ImageURL" : "http://cdn.bulbagarden.net/upload/thumb/5/55/016Pidgey.png/250px-016Pidgey.png",
+        "MaxCP" : 684,
+        "MaxHP" : 75,
+        "Name" : "Pidgey",
+        "Type1" : "Normal",
+        "Type2" : "Flying"
+      },
+      "017" : {
+        "ImageURL" : "http://cdn.bulbagarden.net/upload/thumb/7/7a/017Pidgeotto.png/250px-017Pidgeotto.png",
+        "MaxCP" : 1232,
+        "MaxHP" : 111,
+        "Name" : "Pidgeotto",
+        "Type1" : "Normal",
+        "Type2" : "Flying"
+      },
+      "018" : {
+        "ImageURL" : "http://cdn.bulbagarden.net/upload/thumb/5/57/018Pidgeot.png/250px-018Pidgeot.png",
+        "MaxCP" : 2106,
+        "MaxHP" : 143,
+        "Name" : "Pidgeot",
+        "Type1" : "Normal",
+        "Type2" : "Flying"
+      },
+      "019" : {
+        "ImageURL" : "http://cdn.bulbagarden.net/upload/thumb/4/46/019Rattata.png/250px-019Rattata.png",
+        "MaxCP" : 585,
+        "MaxHP" : 59,
+        "Name" : "Rattata",
+        "Type1" : "Normal",
+        "Type2" : ""
+      },
+      "020" : {
+        "ImageURL" : "http://cdn.bulbagarden.net/upload/thumb/f/f4/020Raticate.png/250px-020Raticate.png",
+        "MaxCP" : 1454,
+        "MaxHP" : 99,
+        "Name" : "Raticate",
+        "Type1" : "Normal",
+        "Type2" : ""
+      },
+      "021" : {
+        "ImageURL" : "http://cdn.bulbagarden.net/upload/thumb/8/8b/021Spearow.png/250px-021Spearow.png",
+        "MaxCP" : 691,
+        "MaxHP" : 75,
+        "Name" : "Spearow",
+        "Type1" : "Normal",
+        "Type2" : "Flying"
+      },
+      "022" : {
+        "ImageURL" : "http://cdn.bulbagarden.net/upload/thumb/a/a0/022Fearow.png/250px-022Fearow.png",
+        "MaxCP" : 1758,
+        "MaxHP" : 115,
+        "Name" : "Fearow",
+        "Type1" : "Normal",
+        "Type2" : "Flying"
+      },
+      "023" : {
+        "ImageURL" : "http://cdn.bulbagarden.net/upload/thumb/f/fa/023Ekans.png/250px-023Ekans.png",
+        "MaxCP" : 830,
+        "MaxHP" : 67,
+        "Name" : "Ekans",
+        "Type1" : "Poison",
+        "Type2" : ""
+      },
+      "024" : {
+        "ImageURL" : "http://cdn.bulbagarden.net/upload/thumb/c/cd/024Arbok.png/250px-024Arbok.png",
+        "MaxCP" : 1779,
+        "MaxHP" : 107,
+        "Name" : "Arbok",
+        "Type1" : "Poison",
+        "Type2" : ""
+      },
+      "025" : {
+        "ImageURL" : "http://cdn.bulbagarden.net/upload/thumb/0/0d/025Pikachu.png/250px-025Pikachu.png",
+        "MaxCP" : 894,
+        "MaxHP" : 67,
+        "Name" : "Pikachu",
+        "Type1" : "Electric",
+        "Type2" : ""
+      },
+      "026" : {
+        "ImageURL" : "http://cdn.bulbagarden.net/upload/thumb/8/88/026Raichu.png/250px-026Raichu.png",
+        "MaxCP" : 2042,
+        "MaxHP" : 107,
+        "Name" : "Raichu",
+        "Type1" : "Electric",
+        "Type2" : ""
+      },
+      "027" : {
+        "ImageURL" : "http://cdn.bulbagarden.net/upload/thumb/9/9e/027Sandshrew.png/250px-027Sandshrew.png",
+        "MaxCP" : 804,
+        "MaxHP" : 91,
+        "Name" : "Sandshrew",
+        "Type1" : "Ground",
+        "Type2" : ""
+      },
+      "028" : {
+        "ImageURL" : "http://cdn.bulbagarden.net/upload/thumb/0/0b/028Sandslash.png/250px-028Sandslash.png",
+        "MaxCP" : 1823,
+        "MaxHP" : 130,
+        "Name" : "Sandslash",
+        "Type1" : "Ground",
+        "Type2" : ""
+      },
+      "029" : {
+        "ImageURL" : "http://cdn.bulbagarden.net/upload/thumb/8/81/029Nidoran.png/250px-029Nidoran.png",
+        "MaxCP" : 882,
+        "MaxHP" : 99,
+        "Name" : "Nidoran♀",
+        "Type1" : "Poison",
+        "Type2" : ""
+      },
+      "030" : {
+        "ImageURL" : "http://cdn.bulbagarden.net/upload/thumb/c/cd/030Nidorina.png/250px-030Nidorina.png",
+        "MaxCP" : 1414,
+        "MaxHP" : 122,
+        "Name" : "Nidorina",
+        "Type1" : "Poison",
+        "Type2" : ""
+      },
+      "031" : {
+        "ImageURL" : "http://cdn.bulbagarden.net/upload/thumb/b/bf/031Nidoqueen.png/250px-031Nidoqueen.png",
+        "MaxCP" : 2502,
+        "MaxHP" : 154,
+        "Name" : "Nidoqueen",
+        "Type1" : "Poison",
+        "Type2" : "Ground"
+      },
+      "032" : {
+        "ImageURL" : "http://cdn.bulbagarden.net/upload/thumb/4/4a/032Nidoran.png/250px-032Nidoran.png",
+        "MaxCP" : 849,
+        "MaxHP" : 84,
+        "Name" : "Nidoran♂",
+        "Type1" : "Poison",
+        "Type2" : ""
+      },
+      "033" : {
+        "ImageURL" : "http://cdn.bulbagarden.net/upload/thumb/9/9f/033Nidorino.png/250px-033Nidorino.png",
+        "MaxCP" : 1382,
+        "MaxHP" : 108,
+        "Name" : "Nidorino",
+        "Type1" : "Poison",
+        "Type2" : ""
+      },
+      "034" : {
+        "ImageURL" : "http://cdn.bulbagarden.net/upload/thumb/c/c6/034Nidoking.png/250px-034Nidoking.png",
+        "MaxCP" : 2492,
+        "MaxHP" : 140,
+        "Name" : "Nidoking",
+        "Type1" : "Poison",
+        "Type2" : "Ground"
+      },
+      "035" : {
+        "ImageURL" : "http://cdn.bulbagarden.net/upload/thumb/f/f4/035Clefairy.png/250px-035Clefairy.png",
+        "MaxCP" : 1209,
+        "MaxHP" : 122,
+        "Name" : "Clefairy",
+        "Type1" : "Fairy",
+        "Type2" : ""
+      },
+      "036" : {
+        "ImageURL" : "http://cdn.bulbagarden.net/upload/thumb/a/a9/036Clefable.png/250px-036Clefable.png",
+        "MaxCP" : 2414,
+        "MaxHP" : 162,
+        "Name" : "Clefable",
+        "Type1" : "Fairy",
+        "Type2" : ""
+      },
+      "037" : {
+        "ImageURL" : "http://cdn.bulbagarden.net/upload/thumb/6/60/037Vulpix.png/250px-037Vulpix.png",
+        "MaxCP" : 837,
+        "MaxHP" : 72,
+        "Name" : "Vulpix",
+        "Type1" : "Fire",
+        "Type2" : ""
+      },
+      "038" : {
+        "ImageURL" : "http://cdn.bulbagarden.net/upload/thumb/0/05/038Ninetales.png/250px-038Ninetales.png",
+        "MaxCP" : 2203,
+        "MaxHP" : 127,
+        "Name" : "Ninetales",
+        "Type1" : "Fire",
+        "Type2" : ""
+      },
+      "039" : {
+        "ImageURL" : "http://cdn.bulbagarden.net/upload/thumb/3/3e/039Jigglypuff.png/250px-039Jigglypuff.png",
+        "MaxCP" : 924,
+        "MaxHP" : 194,
+        "Name" : "Jigglypuff",
+        "Type1" : "Normal",
+        "Type2" : "Fairy"
+      },
+      "040" : {
+        "ImageURL" : "http://cdn.bulbagarden.net/upload/thumb/9/92/040Wigglytuff.png/250px-040Wigglytuff.png",
+        "MaxCP" : 2192,
+        "MaxHP" : 233,
+        "Name" : "Wigglytuff",
+        "Type1" : "Normal",
+        "Type2" : "Fairy"
+      },
+      "041" : {
+        "ImageURL" : "http://cdn.bulbagarden.net/upload/thumb/d/da/041Zubat.png/250px-041Zubat.png",
+        "MaxCP" : 647,
+        "MaxHP" : 75,
+        "Name" : "Zubat",
+        "Type1" : "Poison",
+        "Type2" : "Flying"
+      },
+      "042" : {
+        "ImageURL" : "http://cdn.bulbagarden.net/upload/thumb/0/0c/042Golbat.png/250px-042Golbat.png",
+        "MaxCP" : 1935,
+        "MaxHP" : 130,
+        "Name" : "Golbat",
+        "Type1" : "Poison",
+        "Type2" : "Flying"
+      },
+      "043" : {
+        "ImageURL" : "http://cdn.bulbagarden.net/upload/thumb/4/43/043Oddish.png/250px-043Oddish.png",
+        "MaxCP" : 1156,
+        "MaxHP" : 83,
+        "Name" : "Oddish",
+        "Type1" : "Grass",
+        "Type2" : "Poison"
+      },
+      "044" : {
+        "ImageURL" : "http://cdn.bulbagarden.net/upload/thumb/2/2a/044Gloom.png/250px-044Gloom.png",
+        "MaxCP" : 1701,
+        "MaxHP" : 107,
+        "Name" : "Gloom",
+        "Type1" : "Grass",
+        "Type2" : "Poison"
+      },
+      "045" : {
+        "ImageURL" : "http://cdn.bulbagarden.net/upload/thumb/6/6a/045Vileplume.png/250px-045Vileplume.png",
+        "MaxCP" : 2510,
+        "MaxHP" : 130,
+        "Name" : "Vileplume",
+        "Type1" : "Grass",
+        "Type2" : "Poison"
+      },
+      "046" : {
+        "ImageURL" : "http://cdn.bulbagarden.net/upload/thumb/d/d4/046Paras.png/250px-046Paras.png",
+        "MaxCP" : 923,
+        "MaxHP" : 67,
+        "Name" : "Paras",
+        "Type1" : "Bug",
+        "Type2" : "Grass"
+      },
+      "047" : {
+        "ImageURL" : "http://cdn.bulbagarden.net/upload/thumb/8/80/047Parasect.png/250px-047Parasect.png",
+        "MaxCP" : 1759,
+        "MaxHP" : 107,
+        "Name" : "Parasect",
+        "Type1" : "Bug",
+        "Type2" : "Grass"
+      },
+      "048" : {
+        "ImageURL" : "http://cdn.bulbagarden.net/upload/thumb/a/ad/048Venonat.png/250px-048Venonat.png",
+        "MaxCP" : 1036,
+        "MaxHP" : 107,
+        "Name" : "Venonat",
+        "Type1" : "Bug",
+        "Type2" : "Poison"
+      },
+      "049" : {
+        "ImageURL" : "http://cdn.bulbagarden.net/upload/thumb/d/d3/049Venomoth.png/250px-049Venomoth.png",
+        "MaxCP" : 1903,
+        "MaxHP" : 122,
+        "Name" : "Venomoth",
+        "Type1" : "Bug",
+        "Type2" : "Poison"
+      },
+      "050" : {
+        "ImageURL" : "http://cdn.bulbagarden.net/upload/thumb/3/31/050Diglett.png/250px-050Diglett.png",
+        "MaxCP" : 460,
+        "MaxHP" : 27,
+        "Name" : "Diglett",
+        "Type1" : "Ground",
+        "Type2" : ""
+      },
+      "051" : {
+        "ImageURL" : "http://cdn.bulbagarden.net/upload/thumb/e/e5/051Dugtrio.png/250px-051Dugtrio.png",
+        "MaxCP" : 1176,
+        "MaxHP" : 67,
+        "Name" : "Dugtrio",
+        "Type1" : "Ground",
+        "Type2" : ""
+      },
+      "052" : {
+        "ImageURL" : "http://cdn.bulbagarden.net/upload/thumb/d/d6/052Meowth.png/250px-052Meowth.png",
+        "MaxCP" : 761,
+        "MaxHP" : 75,
+        "Name" : "Meowth",
+        "Type1" : "Normal",
+        "Type2" : ""
+      },
+      "053" : {
+        "ImageURL" : "http://cdn.bulbagarden.net/upload/thumb/1/13/053Persian.png/250px-053Persian.png",
+        "MaxCP" : 1643,
+        "MaxHP" : 115,
+        "Name" : "Persian",
+        "Type1" : "Normal",
+        "Type2" : ""
+      },
+      "054" : {
+        "ImageURL" : "http://cdn.bulbagarden.net/upload/thumb/5/53/054Psyduck.png/250px-054Psyduck.png",
+        "MaxCP" : 1117,
+        "MaxHP" : 91,
+        "Name" : "Psyduck",
+        "Type1" : "Water",
+        "Type2" : ""
+      },
+      "055" : {
+        "ImageURL" : "http://cdn.bulbagarden.net/upload/thumb/f/fe/055Golduck.png/250px-055Golduck.png",
+        "MaxCP" : 2403,
+        "MaxHP" : 138,
+        "Name" : "Golduck",
+        "Type1" : "Water",
+        "Type2" : ""
+      },
+      "056" : {
+        "ImageURL" : "http://cdn.bulbagarden.net/upload/thumb/4/41/056Mankey.png/250px-056Mankey.png",
+        "MaxCP" : 884,
+        "MaxHP" : 75,
+        "Name" : "Mankey",
+        "Type1" : "Fighting",
+        "Type2" : ""
+      },
+      "057" : {
+        "ImageURL" : "http://cdn.bulbagarden.net/upload/thumb/9/9a/057Primeape.png/250px-057Primeape.png",
+        "MaxCP" : 1877,
+        "MaxHP" : 115,
+        "Name" : "Primeape",
+        "Type1" : "Fighting",
+        "Type2" : ""
+      },
+      "058" : {
+        "ImageURL" : "http://cdn.bulbagarden.net/upload/thumb/3/3d/058Growlithe.png/250px-058Growlithe.png",
+        "MaxCP" : 1344,
+        "MaxHP" : 99,
+        "Name" : "Growlithe",
+        "Type1" : "Fire",
+        "Type2" : ""
+      },
+      "059" : {
+        "ImageURL" : "http://cdn.bulbagarden.net/upload/thumb/b/b8/059Arcanine.png/250px-059Arcanine.png",
+        "MaxCP" : 3005,
+        "MaxHP" : 154,
+        "Name" : "Arcanine",
+        "Type1" : "Fire",
+        "Type2" : ""
+      },
+      "060" : {
+        "ImageURL" : "http://cdn.bulbagarden.net/upload/thumb/4/49/060Poliwag.png/250px-060Poliwag.png",
+        "MaxCP" : 801,
+        "MaxHP" : 75,
+        "Name" : "Poliwag",
+        "Type1" : "Water",
+        "Type2" : ""
+      },
+      "061" : {
+        "ImageURL" : "http://cdn.bulbagarden.net/upload/thumb/a/a9/061Poliwhirl.png/250px-061Poliwhirl.png",
+        "MaxCP" : 1350,
+        "MaxHP" : 115,
+        "Name" : "Poliwhirl",
+        "Type1" : "Water",
+        "Type2" : ""
+      },
+      "062" : {
+        "ImageURL" : "http://cdn.bulbagarden.net/upload/thumb/2/2d/062Poliwrath.png/250px-062Poliwrath.png",
+        "MaxCP" : 2523,
+        "MaxHP" : 154,
+        "Name" : "Poliwrath",
+        "Type1" : "Water",
+        "Type2" : "Fighting"
+      },
+      "063" : {
+        "ImageURL" : "http://cdn.bulbagarden.net/upload/thumb/6/62/063Abra.png/250px-063Abra.png",
+        "MaxCP" : 604,
+        "MaxHP" : 51,
+        "Name" : "Abra",
+        "Type1" : "Psychic",
+        "Type2" : ""
+      },
+      "064" : {
+        "ImageURL" : "http://cdn.bulbagarden.net/upload/thumb/9/97/064Kadabra.png/250px-064Kadabra.png",
+        "MaxCP" : 1140,
+        "MaxHP" : 75,
+        "Name" : "Kadabra",
+        "Type1" : "Psychic",
+        "Type2" : ""
+      },
+      "065" : {
+        "ImageURL" : "http://cdn.bulbagarden.net/upload/thumb/c/cc/065Alakazam.png/250px-065Alakazam.png",
+        "MaxCP" : 1826,
+        "MaxHP" : 99,
+        "Name" : "Alakazam",
+        "Type1" : "Psychic",
+        "Type2" : ""
+      },
+      "066" : {
+        "ImageURL" : "http://cdn.bulbagarden.net/upload/thumb/8/85/066Machop.png/250px-066Machop.png",
+        "MaxCP" : 1097,
+        "MaxHP" : 122,
+        "Name" : "Machop",
+        "Type1" : "Fighting",
+        "Type2" : ""
+      },
+      "067" : {
+        "ImageURL" : "http://cdn.bulbagarden.net/upload/thumb/8/8e/067Machoke.png/250px-067Machoke.png",
+        "MaxCP" : 1773,
+        "MaxHP" : 138,
+        "Name" : "Machoke",
+        "Type1" : "Fighting",
+        "Type2" : ""
+      },
+      "068" : {
+        "ImageURL" : "http://cdn.bulbagarden.net/upload/thumb/8/8f/068Machamp.png/250px-068Machamp.png",
+        "MaxCP" : 2612,
+        "MaxHP" : 154,
+        "Name" : "Machamp",
+        "Type1" : "Fighting",
+        "Type2" : ""
+      },
+      "069" : {
+        "ImageURL" : "http://cdn.bulbagarden.net/upload/thumb/a/a2/069Bellsprout.png/250px-069Bellsprout.png",
+        "MaxCP" : 1125,
+        "MaxHP" : 91,
+        "Name" : "Bellsprout",
+        "Type1" : "Grass",
+        "Type2" : "Poison"
+      },
+      "070" : {
+        "ImageURL" : "http://cdn.bulbagarden.net/upload/thumb/9/9f/070Weepinbell.png/250px-070Weepinbell.png",
+        "MaxCP" : 1736,
+        "MaxHP" : 115,
+        "Name" : "Weepinbell",
+        "Type1" : "Grass",
+        "Type2" : "Poison"
+      },
+      "071" : {
+        "ImageURL" : "http://cdn.bulbagarden.net/upload/thumb/b/be/071Victreebel.png/250px-071Victreebel.png",
+        "MaxCP" : 2548,
+        "MaxHP" : 138,
+        "Name" : "Victreebel",
+        "Type1" : "Grass",
+        "Type2" : "Poison"
+      },
+      "072" : {
+        "ImageURL" : "http://cdn.bulbagarden.net/upload/thumb/4/4e/072Tentacool.png/250px-072Tentacool.png",
+        "MaxCP" : 911,
+        "MaxHP" : 75,
+        "Name" : "Tentacool",
+        "Type1" : "Water",
+        "Type2" : "Poison"
+      },
+      "073" : {
+        "ImageURL" : "http://cdn.bulbagarden.net/upload/thumb/f/f6/073Tentacruel.png/250px-073Tentacruel.png",
+        "MaxCP" : 2236,
+        "MaxHP" : 138,
+        "Name" : "Tentacruel",
+        "Type1" : "Water",
+        "Type2" : "Poison"
+      },
+      "074" : {
+        "ImageURL" : "http://cdn.bulbagarden.net/upload/thumb/9/98/074Geodude.png/250px-074Geodude.png",
+        "MaxCP" : 855,
+        "MaxHP" : 75,
+        "Name" : "Geodude",
+        "Type1" : "Rock",
+        "Type2" : "Ground"
+      },
+      "075" : {
+        "ImageURL" : "http://cdn.bulbagarden.net/upload/thumb/7/75/075Graveler.png/250px-075Graveler.png",
+        "MaxCP" : 1443,
+        "MaxHP" : 99,
+        "Name" : "Graveler",
+        "Type1" : "Rock",
+        "Type2" : "Ground"
+      },
+      "076" : {
+        "ImageURL" : "http://cdn.bulbagarden.net/upload/thumb/f/f2/076Golem.png/250px-076Golem.png",
+        "MaxCP" : 2319,
+        "MaxHP" : 138,
+        "Name" : "Golem",
+        "Type1" : "Rock",
+        "Type2" : "Ground"
+      },
+      "077" : {
+        "ImageURL" : "http://cdn.bulbagarden.net/upload/thumb/3/3b/077Ponyta.png/250px-077Ponyta.png",
+        "MaxCP" : 1526,
+        "MaxHP" : 91,
+        "Name" : "Ponyta",
+        "Type1" : "Fire",
+        "Type2" : ""
+      },
+      "078" : {
+        "ImageURL" : "http://cdn.bulbagarden.net/upload/thumb/3/3f/078Rapidash.png/250px-078Rapidash.png",
+        "MaxCP" : 2215,
+        "MaxHP" : 115,
+        "Name" : "Rapidash",
+        "Type1" : "Fire",
+        "Type2" : ""
+      },
+      "079" : {
+        "ImageURL" : "http://cdn.bulbagarden.net/upload/thumb/7/70/079Slowpoke.png/250px-079Slowpoke.png",
+        "MaxCP" : 1227,
+        "MaxHP" : 154,
+        "Name" : "Slowpoke",
+        "Type1" : "Water",
+        "Type2" : "Psychic"
+      },
+      "080" : {
+        "ImageURL" : "http://cdn.bulbagarden.net/upload/thumb/8/80/080Slowbro.png/250px-080Slowbro.png",
+        "MaxCP" : 2615,
+        "MaxHP" : 162,
+        "Name" : "Slowbro",
+        "Type1" : "Water",
+        "Type2" : "Psychic"
+      },
+      "081" : {
+        "ImageURL" : "http://cdn.bulbagarden.net/upload/thumb/6/6c/081Magnemite.png/250px-081Magnemite.png",
+        "MaxCP" : 897,
+        "MaxHP" : 51,
+        "Name" : "Magnemite",
+        "Type1" : "Electric",
+        "Type2" : "Steel"
+      },
+      "082" : {
+        "ImageURL" : "http://cdn.bulbagarden.net/upload/thumb/7/72/082Magneton.png/250px-082Magneton.png",
+        "MaxCP" : 1893,
+        "MaxHP" : 91,
+        "Name" : "Magneton",
+        "Type1" : "Electric",
+        "Type2" : "Steel"
+      },
+      "083" : {
+        "ImageURL" : "http://cdn.bulbagarden.net/upload/thumb/f/f8/083Farfetch'd.png/250px-083Farfetch'd.png",
+        "MaxCP" : 1272,
+        "MaxHP" : 94,
+        "Name" : "Farfetch'd",
+        "Type1" : "Normal",
+        "Type2" : "Flying"
+      },
+      "084" : {
+        "ImageURL" : "http://cdn.bulbagarden.net/upload/thumb/5/54/084Doduo.png/250px-084Doduo.png",
+        "MaxCP" : 861,
+        "MaxHP" : 67,
+        "Name" : "Doduo",
+        "Type1" : "Normal",
+        "Type2" : "Flying"
+      },
+      "085" : {
+        "ImageURL" : "http://cdn.bulbagarden.net/upload/thumb/9/93/085Dodrio.png/250px-085Dodrio.png",
+        "MaxCP" : 1849,
+        "MaxHP" : 107,
+        "Name" : "Dodrio",
+        "Type1" : "Normal",
+        "Type2" : "Flying"
+      },
+      "086" : {
+        "ImageURL" : "http://cdn.bulbagarden.net/upload/thumb/1/1f/086Seel.png/250px-086Seel.png",
+        "MaxCP" : 1114,
+        "MaxHP" : 115,
+        "Name" : "Seel",
+        "Type1" : "Water",
+        "Type2" : ""
+      },
+      "087" : {
+        "ImageURL" : "http://cdn.bulbagarden.net/upload/thumb/c/c7/087Dewgong.png/250px-087Dewgong.png",
+        "MaxCP" : 2161,
+        "MaxHP" : 154,
+        "Name" : "Dewgong",
+        "Type1" : "Water",
+        "Type2" : "Ice"
+      },
+      "088" : {
+        "ImageURL" : "http://cdn.bulbagarden.net/upload/thumb/a/a0/088Grimer.png/250px-088Grimer.png",
+        "MaxCP" : 1293,
+        "MaxHP" : 138,
+        "Name" : "Grimer",
+        "Type1" : "Poison",
+        "Type2" : ""
+      },
+      "089" : {
+        "ImageURL" : "http://cdn.bulbagarden.net/upload/thumb/7/7c/089Muk.png/250px-089Muk.png",
+        "MaxCP" : 2621,
+        "MaxHP" : 178,
+        "Name" : "Muk",
+        "Type1" : "Poison",
+        "Type2" : ""
+      },
+      "090" : {
+        "ImageURL" : "http://cdn.bulbagarden.net/upload/thumb/4/40/090Shellder.png/250px-090Shellder.png",
+        "MaxCP" : 828,
+        "MaxHP" : 59,
+        "Name" : "Shellder",
+        "Type1" : "Water",
+        "Type2" : ""
+      },
+      "091" : {
+        "ImageURL" : "http://cdn.bulbagarden.net/upload/thumb/1/1d/091Cloyster.png/250px-091Cloyster.png",
+        "MaxCP" : 2067,
+        "MaxHP" : 91,
+        "Name" : "Cloyster",
+        "Type1" : "Water",
+        "Type2" : "Ice"
+      },
+      "092" : {
+        "ImageURL" : "http://cdn.bulbagarden.net/upload/thumb/c/ca/092Gastly.png/250px-092Gastly.png",
+        "MaxCP" : 810,
+        "MaxHP" : 59,
+        "Name" : "Gastly",
+        "Type1" : "Ghost",
+        "Type2" : "Poison"
+      },
+      "093" : {
+        "ImageURL" : "http://cdn.bulbagarden.net/upload/thumb/6/62/093Haunter.png/250px-093Haunter.png",
+        "MaxCP" : 1390,
+        "MaxHP" : 83,
+        "Name" : "Haunter",
+        "Type1" : "Ghost",
+        "Type2" : "Poison"
+      },
+      "094" : {
+        "ImageURL" : "http://cdn.bulbagarden.net/upload/thumb/c/c6/094Gengar.png/250px-094Gengar.png",
+        "MaxCP" : 2093,
+        "MaxHP" : 107,
+        "Name" : "Gengar",
+        "Type1" : "Ghost",
+        "Type2" : "Poison"
+      },
+      "095" : {
+        "ImageURL" : "http://cdn.bulbagarden.net/upload/thumb/9/9a/095Onix.png/250px-095Onix.png",
+        "MaxCP" : 863,
+        "MaxHP" : 67,
+        "Name" : "Onix",
+        "Type1" : "Rock",
+        "Type2" : "Ground"
+      },
+      "096" : {
+        "ImageURL" : "http://cdn.bulbagarden.net/upload/thumb/3/3e/096Drowzee.png/250px-096Drowzee.png",
+        "MaxCP" : 1082,
+        "MaxHP" : 107,
+        "Name" : "Drowzee",
+        "Type1" : "Psychic",
+        "Type2" : ""
+      },
+      "097" : {
+        "ImageURL" : "http://cdn.bulbagarden.net/upload/thumb/0/0a/097Hypno.png/250px-097Hypno.png",
+        "MaxCP" : 2199,
+        "MaxHP" : 146,
+        "Name" : "Hypno",
+        "Type1" : "Psychic",
+        "Type2" : ""
+      },
+      "098" : {
+        "ImageURL" : "http://cdn.bulbagarden.net/upload/thumb/a/a7/098Krabby.png/250px-098Krabby.png",
+        "MaxCP" : 797,
+        "MaxHP" : 59,
+        "Name" : "Krabby",
+        "Type1" : "Water",
+        "Type2" : ""
+      },
+      "099" : {
+        "ImageURL" : "http://cdn.bulbagarden.net/upload/thumb/7/71/099Kingler.png/250px-099Kingler.png",
+        "MaxCP" : 1836,
+        "MaxHP" : 99,
+        "Name" : "Kingler",
+        "Type1" : "Water",
+        "Type2" : ""
+      },
+      "100" : {
+        "ImageURL" : "http://cdn.bulbagarden.net/upload/thumb/d/da/100Voltorb.png/250px-100Voltorb.png",
+        "MaxCP" : 845,
+        "MaxHP" : 75,
+        "Name" : "Voltorb",
+        "Type1" : "Electric",
+        "Type2" : ""
+      },
+      "101" : {
+        "ImageURL" : "http://cdn.bulbagarden.net/upload/thumb/8/84/101Electrode.png/250px-101Electrode.png",
+        "MaxCP" : 1657,
+        "MaxHP" : 107,
+        "Name" : "Electrode",
+        "Type1" : "Electric",
+        "Type2" : ""
+      },
+      "102" : {
+        "ImageURL" : "http://cdn.bulbagarden.net/upload/thumb/a/af/102Exeggcute.png/250px-102Exeggcute.png",
+        "MaxCP" : 1107,
+        "MaxHP" : 107,
+        "Name" : "Exeggcute",
+        "Type1" : "Grass",
+        "Type2" : "Psychic"
+      },
+      "103" : {
+        "ImageURL" : "http://cdn.bulbagarden.net/upload/thumb/2/24/103Exeggutor.png/250px-103Exeggutor.png",
+        "MaxCP" : 2976,
+        "MaxHP" : 162,
+        "Name" : "Exeggutor",
+        "Type1" : "Grass",
+        "Type2" : "Psychic"
+      },
+      "104" : {
+        "ImageURL" : "http://cdn.bulbagarden.net/upload/thumb/2/2a/104Cubone.png/250px-104Cubone.png",
+        "MaxCP" : 1013,
+        "MaxHP" : 91,
+        "Name" : "Cubone",
+        "Type1" : "Ground",
+        "Type2" : ""
+      },
+      "105" : {
+        "ImageURL" : "http://cdn.bulbagarden.net/upload/thumb/9/98/105Marowak.png/250px-105Marowak.png",
+        "MaxCP" : 1668,
+        "MaxHP" : 107,
+        "Name" : "Marowak",
+        "Type1" : "Ground",
+        "Type2" : ""
+      },
+      "106" : {
+        "ImageURL" : "http://cdn.bulbagarden.net/upload/thumb/3/32/106Hitmonlee.png/250px-106Hitmonlee.png",
+        "MaxCP" : 1503,
+        "MaxHP" : 91,
+        "Name" : "Hitmonlee",
+        "Type1" : "Fighting",
+        "Type2" : ""
+      },
+      "107" : {
+        "ImageURL" : "http://cdn.bulbagarden.net/upload/thumb/a/a3/107Hitmonchan.png/250px-107Hitmonchan.png",
+        "MaxCP" : 1527,
+        "MaxHP" : 91,
+        "Name" : "Hitmonchan",
+        "Type1" : "Fighting",
+        "Type2" : ""
+      },
+      "108" : {
+        "ImageURL" : "http://cdn.bulbagarden.net/upload/thumb/0/00/108Lickitung.png/250px-108Lickitung.png",
+        "MaxCP" : 1638,
+        "MaxHP" : 154,
+        "Name" : "Lickitung",
+        "Type1" : "Normal",
+        "Type2" : ""
+      },
+      "109" : {
+        "ImageURL" : "http://cdn.bulbagarden.net/upload/thumb/1/17/109Koffing.png/250px-109Koffing.png",
+        "MaxCP" : 1160,
+        "MaxHP" : 75,
+        "Name" : "Koffing",
+        "Type1" : "Poison",
+        "Type2" : ""
+      },
+      "110" : {
+        "ImageURL" : "http://cdn.bulbagarden.net/upload/thumb/4/42/110Weezing.png/250px-110Weezing.png",
+        "MaxCP" : 2266,
+        "MaxHP" : 115,
+        "Name" : "Weezing",
+        "Type1" : "Poison",
+        "Type2" : ""
+      },
+      "111" : {
+        "ImageURL" : "http://cdn.bulbagarden.net/upload/thumb/9/9b/111Rhyhorn.png/250px-111Rhyhorn.png",
+        "MaxCP" : 1190,
+        "MaxHP" : 138,
+        "Name" : "Rhyhorn",
+        "Type1" : "Ground",
+        "Type2" : "Rock"
+      },
+      "112" : {
+        "ImageURL" : "http://cdn.bulbagarden.net/upload/thumb/4/47/112Rhydon.png/250px-112Rhydon.png",
+        "MaxCP" : 2259,
+        "MaxHP" : 178,
+        "Name" : "Rhydon",
+        "Type1" : "Ground",
+        "Type2" : "Rock"
+      },
+      "113" : {
+        "ImageURL" : "http://cdn.bulbagarden.net/upload/thumb/c/cd/113Chansey.png/250px-113Chansey.png",
+        "MaxCP" : 679,
+        "MaxHP" : 408,
+        "Name" : "Chansey",
+        "Type1" : "Normal",
+        "Type2" : ""
+      },
+      "114" : {
+        "ImageURL" : "http://cdn.bulbagarden.net/upload/thumb/3/3e/114Tangela.png/250px-114Tangela.png",
+        "MaxCP" : 1752,
+        "MaxHP" : 115,
+        "Name" : "Tangela",
+        "Type1" : "Grass",
+        "Type2" : ""
+      },
+      "115" : {
+        "ImageURL" : "http://cdn.bulbagarden.net/upload/thumb/4/4e/115Kangaskhan.png/250px-115Kangaskhan.png",
+        "MaxCP" : 2057,
+        "MaxHP" : 178,
+        "Name" : "Kangaskhan",
+        "Type1" : "Normal",
+        "Type2" : ""
+      },
+      "116" : {
+        "ImageURL" : "http://cdn.bulbagarden.net/upload/thumb/5/5a/116Horsea.png/250px-116Horsea.png",
+        "MaxCP" : 800,
+        "MaxHP" : 59,
+        "Name" : "Horsea",
+        "Type1" : "Water",
+        "Type2" : ""
+      },
+      "117" : {
+        "ImageURL" : "http://cdn.bulbagarden.net/upload/thumb/2/26/117Seadra.png/250px-117Seadra.png",
+        "MaxCP" : 1725,
+        "MaxHP" : 99,
+        "Name" : "Seadra",
+        "Type1" : "Water",
+        "Type2" : ""
+      },
+      "118" : {
+        "ImageURL" : "http://cdn.bulbagarden.net/upload/thumb/7/7b/118Goldeen.png/250px-118Goldeen.png",
+        "MaxCP" : 972,
+        "MaxHP" : 83,
+        "Name" : "Goldeen",
+        "Type1" : "Water",
+        "Type2" : ""
+      },
+      "119" : {
+        "ImageURL" : "http://cdn.bulbagarden.net/upload/thumb/6/6a/119Seaking.png/250px-119Seaking.png",
+        "MaxCP" : 2058,
+        "MaxHP" : 138,
+        "Name" : "Seaking",
+        "Type1" : "Water",
+        "Type2" : ""
+      },
+      "120" : {
+        "ImageURL" : "http://cdn.bulbagarden.net/upload/thumb/4/4f/120Staryu.png/250px-120Staryu.png",
+        "MaxCP" : 944,
+        "MaxHP" : 59,
+        "Name" : "Staryu",
+        "Type1" : "Water",
+        "Type2" : ""
+      },
+      "121" : {
+        "ImageURL" : "http://cdn.bulbagarden.net/upload/thumb/c/cd/121Starmie.png/250px-121Starmie.png",
+        "MaxCP" : 2197,
+        "MaxHP" : 107,
+        "Name" : "Starmie",
+        "Type1" : "Water",
+        "Type2" : "Psychic"
+      },
+      "122" : {
+        "ImageURL" : "http://cdn.bulbagarden.net/upload/thumb/e/ec/122Mr._Mime.png/250px-122Mr._Mime.png",
+        "MaxCP" : 1505,
+        "MaxHP" : 75,
+        "Name" : "Mr. Mime",
+        "Type1" : "Psychic",
+        "Type2" : "Fairy"
+      },
+      "123" : {
+        "ImageURL" : "http://cdn.bulbagarden.net/upload/thumb/b/ba/123Scyther.png/250px-123Scyther.png",
+        "MaxCP" : 2088,
+        "MaxHP" : 122,
+        "Name" : "Scyther",
+        "Type1" : "Bug",
+        "Type2" : "Flying"
+      },
+      "124" : {
+        "ImageURL" : "http://cdn.bulbagarden.net/upload/thumb/7/7c/124Jynx.png/250px-124Jynx.png",
+        "MaxCP" : 1728,
+        "MaxHP" : 115,
+        "Name" : "Jynx",
+        "Type1" : "Ice",
+        "Type2" : "Psychic"
+      },
+      "125" : {
+        "ImageURL" : "http://cdn.bulbagarden.net/upload/thumb/d/de/125Electabuzz.png/250px-125Electabuzz.png",
+        "MaxCP" : 2134,
+        "MaxHP" : 115,
+        "Name" : "Electabuzz",
+        "Type1" : "Electric",
+        "Type2" : ""
+      },
+      "126" : {
+        "ImageURL" : "http://cdn.bulbagarden.net/upload/thumb/8/8c/126Magmar.png/250px-126Magmar.png",
+        "MaxCP" : 2281,
+        "MaxHP" : 115,
+        "Name" : "Magmar",
+        "Type1" : "Fire",
+        "Type2" : ""
+      },
+      "127" : {
+        "ImageURL" : "http://cdn.bulbagarden.net/upload/thumb/7/71/127Pinsir.png/250px-127Pinsir.png",
+        "MaxCP" : 2137,
+        "MaxHP" : 115,
+        "Name" : "Pinsir",
+        "Type1" : "Bug",
+        "Type2" : ""
+      },
+      "128" : {
+        "ImageURL" : "http://cdn.bulbagarden.net/upload/thumb/b/b8/128Tauros.png/250px-128Tauros.png",
+        "MaxCP" : 1857,
+        "MaxHP" : 130,
+        "Name" : "Tauros",
+        "Type1" : "Normal",
+        "Type2" : ""
+      },
+      "129" : {
+        "ImageURL" : "http://cdn.bulbagarden.net/upload/thumb/0/02/129Magikarp.png/250px-129Magikarp.png",
+        "MaxCP" : 264,
+        "MaxHP" : 43,
+        "Name" : "Magikarp",
+        "Type1" : "Water",
+        "Type2" : ""
+      },
+      "130" : {
+        "ImageURL" : "http://cdn.bulbagarden.net/upload/thumb/4/41/130Gyarados.png/250px-130Gyarados.png",
+        "MaxCP" : 2708,
+        "MaxHP" : 162,
+        "Name" : "Gyarados",
+        "Type1" : "Water",
+        "Type2" : "Flying"
+      },
+      "131" : {
+        "ImageURL" : "http://cdn.bulbagarden.net/upload/thumb/a/ab/131Lapras.png/250px-131Lapras.png",
+        "MaxCP" : 3002,
+        "MaxHP" : 218,
+        "Name" : "Lapras",
+        "Type1" : "Water",
+        "Type2" : "Ice"
+      },
+      "132" : {
+        "ImageURL" : "http://cdn.bulbagarden.net/upload/thumb/3/36/132Ditto.png/250px-132Ditto.png",
+        "MaxCP" : 926,
+        "MaxHP" : 88,
+        "Name" : "Ditto",
+        "Type1" : "Normal",
+        "Type2" : ""
+      },
+      "133" : {
+        "ImageURL" : "http://cdn.bulbagarden.net/upload/thumb/e/e2/133Eevee.png/250px-133Eevee.png",
+        "MaxCP" : 1084,
+        "MaxHP" : 99,
+        "Name" : "Eevee",
+        "Type1" : "Normal",
+        "Type2" : ""
+      },
+      "134" : {
+        "ImageURL" : "http://cdn.bulbagarden.net/upload/thumb/f/fd/134Vaporeon.png/250px-134Vaporeon.png",
+        "MaxCP" : 2836,
+        "MaxHP" : 218,
+        "Name" : "Vaporeon",
+        "Type1" : "Water",
+        "Type2" : ""
+      },
+      "135" : {
+        "ImageURL" : "http://cdn.bulbagarden.net/upload/thumb/b/bb/135Jolteon.png/250px-135Jolteon.png",
+        "MaxCP" : 2155,
+        "MaxHP" : 115,
+        "Name" : "Jolteon",
+        "Type1" : "Electric",
+        "Type2" : ""
+      },
+      "136" : {
+        "ImageURL" : "http://cdn.bulbagarden.net/upload/thumb/d/dd/136Flareon.png/250px-136Flareon.png",
+        "MaxCP" : 2662,
+        "MaxHP" : 115,
+        "Name" : "Flareon",
+        "Type1" : "Fire",
+        "Type2" : ""
+      },
+      "137" : {
+        "ImageURL" : "http://cdn.bulbagarden.net/upload/thumb/6/6b/137Porygon.png/250px-137Porygon.png",
+        "MaxCP" : 1703,
+        "MaxHP" : 115,
+        "Name" : "Porygon",
+        "Type1" : "Normal",
+        "Type2" : ""
+      },
+      "138" : {
+        "ImageURL" : "http://cdn.bulbagarden.net/upload/thumb/7/79/138Omanyte.png/250px-138Omanyte.png",
+        "MaxCP" : 1127,
+        "MaxHP" : 67,
+        "Name" : "Omanyte",
+        "Type1" : "Rock",
+        "Type2" : "Water"
+      },
+      "139" : {
+        "ImageURL" : "http://cdn.bulbagarden.net/upload/thumb/4/43/139Omastar.png/250px-139Omastar.png",
+        "MaxCP" : 2249,
+        "MaxHP" : 122,
+        "Name" : "Omastar",
+        "Type1" : "Rock",
+        "Type2" : "Water"
+      },
+      "140" : {
+        "ImageURL" : "http://cdn.bulbagarden.net/upload/thumb/f/f9/140Kabuto.png/250px-140Kabuto.png",
+        "MaxCP" : 1112,
+        "MaxHP" : 59,
+        "Name" : "Kabuto",
+        "Type1" : "Rock",
+        "Type2" : "Water"
+      },
+      "141" : {
+        "ImageURL" : "http://cdn.bulbagarden.net/upload/thumb/2/29/141Kabutops.png/250px-141Kabutops.png",
+        "MaxCP" : 2145,
+        "MaxHP" : 107,
+        "Name" : "Kabutops",
+        "Type1" : "Rock",
+        "Type2" : "Water"
+      },
+      "142" : {
+        "ImageURL" : "http://cdn.bulbagarden.net/upload/thumb/e/e8/142Aerodactyl.png/250px-142Aerodactyl.png",
+        "MaxCP" : 2180,
+        "MaxHP" : 138,
+        "Name" : "Aerodactyl",
+        "Type1" : "Rock",
+        "Type2" : "Flying"
+      },
+      "143" : {
+        "ImageURL" : "http://cdn.bulbagarden.net/upload/thumb/f/fb/143Snorlax.png/250px-143Snorlax.png",
+        "MaxCP" : 3135,
+        "MaxHP" : 265,
+        "Name" : "Snorlax",
+        "Type1" : "Normal",
+        "Type2" : ""
+      },
+      "144" : {
+        "ImageURL" : "http://cdn.bulbagarden.net/upload/thumb/4/4e/144Articuno.png/250px-144Articuno.png",
+        "MaxCP" : 2999,
+        "MaxHP" : 154,
+        "Name" : "Articuno",
+        "Type1" : "Ice",
+        "Type2" : "Flying"
+      },
+      "145" : {
+        "ImageURL" : "http://cdn.bulbagarden.net/upload/thumb/e/e3/145Zapdos.png/250px-145Zapdos.png",
+        "MaxCP" : 3136,
+        "MaxHP" : 154,
+        "Name" : "Zapdos",
+        "Type1" : "Electric",
+        "Type2" : "Flying"
+      },
+      "146" : {
+        "ImageURL" : "http://cdn.bulbagarden.net/upload/thumb/1/1b/146Moltres.png/250px-146Moltres.png",
+        "MaxCP" : 3263,
+        "MaxHP" : 154,
+        "Name" : "Moltres",
+        "Type1" : "Fire",
+        "Type2" : "Flying"
+      },
+      "147" : {
+        "ImageURL" : "http://cdn.bulbagarden.net/upload/thumb/c/cc/147Dratini.png/250px-147Dratini.png",
+        "MaxCP" : 990,
+        "MaxHP" : 76,
+        "Name" : "Dratini",
+        "Type1" : "Dragon",
+        "Type2" : ""
+      },
+      "148" : {
+        "ImageURL" : "http://cdn.bulbagarden.net/upload/thumb/9/93/148Dragonair.png/250px-148Dragonair.png",
+        "MaxCP" : 1760,
+        "MaxHP" : 108,
+        "Name" : "Dragonair",
+        "Type1" : "Dragon",
+        "Type2" : ""
+      },
+      "149" : {
+        "ImageURL" : "http://cdn.bulbagarden.net/upload/thumb/8/8b/149Dragonite.png/250px-149Dragonite.png",
+        "MaxCP" : 3525,
+        "MaxHP" : 156,
+        "Name" : "Dragonite",
+        "Type1" : "Dragon",
+        "Type2" : "Flying"
+      },
+      "150" : {
+        "ImageURL" : "http://cdn.bulbagarden.net/upload/thumb/7/78/150Mewtwo.png/250px-150Mewtwo.png",
+        "MaxCP" : 4174,
+        "MaxHP" : 180,
+        "Name" : "Mewtwo",
+        "Type1" : "Psychic",
+        "Type2" : ""
+      },
+      "151" : {
+        "ImageURL" : "http://cdn.bulbagarden.net/upload/thumb/b/b1/151Mew.png/250px-151Mew.png",
+        "MaxCP" : 3322,
+        "MaxHP" : 170,
+        "Name" : "Mew",
+        "Type1" : "Psychic",
+        "Type2" : ""
+      }
+    }
+  }
+}
