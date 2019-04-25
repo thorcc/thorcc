@@ -1,3 +1,5 @@
+# Uke 17 - torsdag
+
 # Planlegging og dokumentasjon
 
 ## Kompetansemål
@@ -22,14 +24,6 @@ YT: one day in the life of a SAP software engineer: https://www.youtube.com/watc
 
 YT: Scrum ,Silicon Valley S01E05: https://www.youtube.com/watch?v=oyVksFviJVE
 
-## Ordliste
-
-**Systemutvikler** - 
-
-**Vannfallsmetoden** -
-
-**Smidig utvikling**-
-
-**Scrum**-
-
-**Lean startup**-
+# Øving til heldags
+Gjør oppgavene som hører til uke 20 og 21 her:
+http://it2cha.com/oppgaver.html
