@@ -1,7 +1,7 @@
 # Uke 17
 
 ## Øvingsoppgaver
-http://it2cha.com/  
+http://it2cha.com/oppgaver.html 
 Alle oppgavene er relevante. Høyreklikk og velg *vis sidekilde* for å se kildekode til løsningsforslag.
 
 ## Ressurser
