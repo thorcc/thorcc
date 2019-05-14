@@ -1,0 +1,39 @@
+body{
+  margin:0;
+  font-family: "europa",sans-serif;;
+}
+
+.info, .projects{
+  background-color: #fff;
+  color: #293347;;
+  text-align: center;
+  width: 600px;
+  padding: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  border-radius: 5px;
+}
+
+.projectGrid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.projectGrid section{
+  position: relative;
+}
+.projectGrid img{
+  width: 100%;
+}
+.projectGrid .textDiv{
+  position: absolute;
+  text-align: center;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  color: black;
+  -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+}
+
