@@ -3,7 +3,7 @@ body{
   font-family: "europa",sans-serif;;
 }
 
-.info, .projects{
+.header, .projects{
   background-color: #fff;
   color: #293347;;
   text-align: center;
@@ -19,7 +19,7 @@ body{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
 }
-.projectGrid section{
+.projectGrid a{
   position: relative;
 }
 .projectGrid img{
@@ -28,12 +28,25 @@ body{
 .projectGrid .textDiv{
   position: absolute;
   text-align: center;
-  top: 55%;
+  top: 57%;
   left: 50%;
   transform: translate(-50%,-50%);
   color: black;
   -webkit-text-fill-color: white; /* Will override color (regardless of order) */
-  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color: black;
 }
 
+.info{
+  background-color: #8C43FF;
+  height: 300px;
+  padding: 50px;
+}
+.skills{
+  width: 700px;
+  background-color: #fff;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  text-align: center;
+}
