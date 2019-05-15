@@ -57,11 +57,6 @@ class Kaster{
   }
 }
 
-// Setup
-deltakere.push(new Kaster("Per"))
-deltakere.push(new Kaster("Jens"))
-deltakere.push(new Kaster("Kåre"))
-
 
 // Hendelsesfunksjoner
 btnReg.onclick = regBruker;
