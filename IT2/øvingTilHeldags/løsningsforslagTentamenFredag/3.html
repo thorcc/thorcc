@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+      /* Skjuler innhold på nettsiden med display: none; */
+      #divRunde1{
+        display: none;
+      }
+      #divRunde2{
+        display: none;
+      }
+      #divResultat{
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+
+    <div id="divDeltakerReg">
+      <h2>Registrer deltakere</h2>
+      <input id="inpReg" type="text" placeholder="Navn">
+      <button id="btnReg">Registrer</button>
+      <div id="divAntall">
+        Antall påmeldte: 0/8
+      </div>
+      <ul id="ulDeltakere">
+
+      </ul>
+      <button id="btnStart1">Start runde 1</button>
+    </div>
+
+    <div id="divRunde1">
+      <h2>Runde 1</h2>
+      <table>
+        <thead>
+          <th>Navn</th>
+          <th>Kast 1</th>
+          <th>Kast 2</th>
+          <th>Kast 3</th>
+        </thead>
+        <tbody id="runde1tabell">
+
+        </tbody>
+      </table>
+      <button id="btnStart2">Start runde 2</button>
+    </div>
+    <div id="divRunde2">
+      <h2>Runde 2</h2>
+      <table>
+        <thead>
+          <th>Navn</th>
+          <th>Kast 4</th>
+          <th>Kast 5</th>
+          <th>Kast 6</th>
+        </thead>
+        <tbody id="runde2tabell">
+
+        </tbody>
+      </table>
+      <button id="btnResultat">Vis resultater</button>
+    </div>
+    <div id="divResultat">
+      <h2>Resultater</h2>
+      <ul id="ulResultat">
+
+      </ul>
+    </div>
+    <script src="3.js" charset="utf-8"></script>
+  </body>
+</html>
