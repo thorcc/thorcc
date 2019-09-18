@@ -1,7 +1,5 @@
-# Uke 43 - Lage nettsider med grid
+# Det periodiske system 150 år!
 
-
-## Oppgave - Det periodiske system 150 år:
 - Lag en nettside som viser det periodiske system.
 - Bruk grid, legg inn alle grunnstoffene og forsøk å få det til å se pent ut.
 
