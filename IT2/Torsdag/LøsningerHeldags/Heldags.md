@@ -6,7 +6,7 @@ https://github.com/fuzzbin/IT2-H17
 
 #### Oppgave 1
 
-Oppgave: https://www.youtube.com/watch?v=-dubBg1ADjw
+Youtube: https://www.youtube.com/watch?v=-dubBg1ADjw
 
 Bilderedigering: https://www.youtube.com/watch?v=6XjOiyU1b6Q
 
@@ -16,7 +16,7 @@ Script: https://github.com/fuzzbin/IT2-H17/blob/master/script.js
 
 #### Oppgave 2
 
-Oppgave: https://www.youtube.com/watch?v=KRopp_a3mDw
+Youtube: https://www.youtube.com/watch?v=KRopp_a3mDw
 
 HTML: https://github.com/fuzzbin/IT2-H17/blob/master/oppgave2.html
 
